@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMYStdUv5Sg5S6CGAWnQlCYcBSrpaxak4HgwjunT9dCCnhNy3idUoc0b4&s=10" alt="real or fiction" width="100%">
+<div class="a">
+<h4 class="blue">HISTÓRIAS REAIS OU FICTÍCIAS</h4>
+</div>
+<h2>Envie sua história e vamos publicá-la aqui no site</h2>
+<h4>Escreva o seu relato abaixo e iremos públicá-lo o mais breve possivel</h4>
+
+<h4 class="blue"><img src="https://cdn.icon-icons.com/icons2/1828/PNG/512/4313132notesrecordstationerytakingwriting-115803_115776.png" alt="write" height="25px" width="25px"> Escreva, relate e publique a sua história real ou fitícia </h4>
+<br />
+<hr><hr><hr><hr><hr><hr><hr>
+<p>Use os 6 elementos: <br>
+Por que?<br>
+Onde?<br>
+Quem?<br>
+Quando?<br>
+Como?<br>
+O que? 
+</p>
+    <form
+  action="https://formspree.io/f/meqyekvp"
+  method="POST"
+>
+  <label><br>
+    Seu email: <br><br>
+    <input placeholder="Digite aqui o seu email..." type="email" name="email" required>
+  </label><br><br>
+  <label>
+    Descreva: <br><br>
+    <textarea placeholder="Digite aqui a sua história real ou fictícia..." name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <br><br><button type="submit">Enviar</button><br><br>
+</form>
+
+    <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/meqyekvp",
+    title: "Como posso ajudar?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "Seu E-mail"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "Qual é a sua reclamação?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
+
+</body>
+
+</html>
