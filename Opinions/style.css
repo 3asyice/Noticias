@@ -74,6 +74,15 @@ html, body {
     color:rgba(216, 81, 0, 1);
     font-family: 'Merriweather', serif;
   }
+  .blue {
+    margin-top:5px;
+    text-shadow: 1px 1px 2px hsla(224, 100%, 42%, 1);
+    font-weight: 900;
+    float:left;
+    margin-left:15px;
+    color:hsla(228, 100%, 42%, 1);
+    font-family: 'Merriweather', serif;
+  }
   h2 {
     color:rgba(0, 0, 0, 1);
     margin-left:15px;
@@ -127,4 +136,44 @@ html, body {
   color:rgba(255, 255, 255, 1);
   background-color: rgba(255, 0, 0, 1);
  
+  }
+  form {
+    background-color: rgba(38, 38, 38, 1);
+    margin:0;
+    text-align: center;
+   
+  }
+  label {
+    margin:0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgba(255, 255, 255, 1);
+    border-radius: 20px;
+  }
+  textarea{
+    background-color: rgba(0, 0, 0, 1);
+    color:rgba(54, 255, 0, 1);
+    padding:115px;
+    margin:0;
+    font-family: 'Merriweather', serif;
+  }
+  ::placeholder {
+    color:rgba(59, 255, 0, 1);
+  }
+  
+  textarea:hover {
+background-color: rgba(0, 0, 0, 1);
+    color:rgba(251, 255, 0, 1);
+    padding:115px;
+    margin:0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  input {
+    padding:20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top:5px;
+    text-shadow: 1px 1px 2px hsla(224, 100%, 42%, 1);
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 1);
+    color:hsla(228, 100%, 42%, 1);
+    font-family: 'Merriweather', serif;
   }
