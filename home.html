@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias do Amanhã</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <header>
+   
+<img onclick="a()" class="img-1" src="https://cdn.icon-icons.com/icons2/903/PNG/512/menu_icon-icons.com_69502.png" alt="menu" width="25px"> <h1> 🄽🄴🅆🅂</h1>
+
+  </header>
+    <hr>
+    <p>Este site utiliza cookies para melhorar sua experiência.</p>
+    <button id="accept-cookies">Aceitar Cookies</button>
+<!-- Botão de Compartilhar -->
+<div style="text-align:center; margin-top:20px;">
+  <p style="float:right;" onclick="sharePage()">Compartilhar <img src="https://cdn.icon-icons.com/icons2/878/PNG/512/share-symbol_icon-icons.com_68493.png" alt="https://cdn.icon-icons.com/icons2/878/PNG/512/share-symbol_icon-icons.com_68493.png" width="15px"></p>
+  
+</div>
+<div class="z" id="z">
+  <header style="background: red">
+  
+    <img onclick="a()" class="img-1" src="https://cdn.icon-icons.com/icons2/903/PNG/512/menu_icon-icons.com_69502.png" alt="menu" width="25px">
+    <h1>🄽🄴🅆🅂</h1>
+  </header>
+  <div class="align">
+    <details>
+<summary>
+ <h3>NEWS</h3>
+</summary>
+<h5 onclick="location.href='suicide.html'">MILITAR COMETE SUICÍDIO</h5>
+<h5 onclick="location.href='/atropelamento.html'">MILITAR É ATROPELADO</h5>
+<h5 onclick="location.href='Project_Apocalypse/expulso.html'">UMA SINDICÂNCIA</h5>
+<h5 onclick="location.href='Project_Apocalypse/assedio.html'">MILITAR É ASSEDIADO</h5>
+<h5 onclick="location.href='Project_Apocalypse/expulso.html'">MILITAR É EXPULSO</h5>
+<h5 onclick="location.href='Project_Apocalypse/comandante.html'">COMANDANTE DA B ADM GU SM</h5>
+</details>
+<details>
+<summary>
+  <h3>OPINION</h3>
+</summary>
+</details>
+  
+  
+</div>
+
+<!-- Script para compartilhar a página -->
+<script>
+  function sharePage() {
+    const pageUrl = window.location.href;
+    const pageTitle = document.title;
+
+    if (navigator.share) {
+      navigator.share({
+        title: pageTitle,
+        url: pageUrl,
+      }).then(() => {
+        console.log('Página compartilhada com sucesso.');
+      }).catch((error) => {
+        console.error('Erro ao compartilhar a página:', error);
+      });
+    } else {
+      alert('O compartilhamento não é suportado neste navegador. Copie o link: ' + pageUrl);
+    }
+  }
+</script>
+
+    <script>
+        document.getElementById("accept-cookies").addEventListener("click", function() {
+            // Após aceitar, obtenha o IP do usuário
+            fetch('https://httpbin.org/ip')
+                .then(response => response.json())
+                .then(data => {
+                    const userIp = data.origin;
+                    console.log("IP do usuário:", userIp);
+
+                    // Enviar o IP para o backend (aqui você configuraria para um servidor seguro)
+                    fetch('/save-ip', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ ip: userIp })
+                    }).then(response => {
+                        if (response.ok) {
+                            console.log('IP salvo com sucesso.');
+                        } else {
+                            console.error('Erro ao salvar o IP.');
+                        }
+                    });
+                })
+                .catch(error => console.error('Erro ao obter o IP:', error));
+        });
+        
+    var x = document.getElementById('z');
+        var y = false;
+        function a() {
+          y = !y;
+          x.style.display = y?
+          'block' : 'none';
+        }
+        
+    </script>
+    <script src="node.js"></script>
+</body>
+</html>
