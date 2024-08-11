@@ -65,6 +65,15 @@ html, body {
     color:rgba(178, 39, 39, 1);
     font-family: 'Merriweather', serif;
   }
+  .or {
+    margin-top:5px;
+    text-shadow: 1px 1px 2px rgba(216, 81, 0, 1);
+    font-weight: 900;
+    float:left;
+    margin-left:15px;
+    color:rgba(216, 81, 0, 1);
+    font-family: 'Merriweather', serif;
+  }
   h2 {
     color:rgba(0, 0, 0, 1);
     margin-left:15px;
@@ -99,4 +108,23 @@ html, body {
     text-align: top;
     padding:0;
   }
-  
+  .p-share {
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding:5px;
+  float:left;
+  display:flex;
+  color:rgba(255, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+  }
+  .p-share:hover {
+    border: 1px solid #000000;
+  border-radius: 20px;
+  padding:5px;
+  display:flex;
+  float:left;
+  display:flex;
+  color:rgba(255, 255, 255, 1);
+  background-color: rgba(255, 0, 0, 1);
+ 
+  }
