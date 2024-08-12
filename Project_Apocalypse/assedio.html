@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Assédio em alojamento</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
@@ -28,7 +28,26 @@
 <p>O comandante da 6ª Brigada de Infantaria Blindada declarou que tomaria providências para mudar o comportamento dos militares. Como represália pelo ato de um dos militares, todos teriam que sofrer as consequências do ato impróprio de um único indivíduo.</p>
 <p>A punição foi aumentar o número de postos de serviço. O normal eram 3 postos de serviço no alojamento, mas, devido à consequência imposta pelo comandante, agora serão 12 postos de serviço de plantão. A escala foi aumentada de forma muito rigorosa.</p>
 <p>Não foi determinado nenhum tipo de punição para o rapaz que causou o alvoroço. Não teve punição de prisão e nem o afastamento do militar.</p>
+<p onclick="sharePage()" class="p-share"><img src="https://cdn.icon-icons.com/icons2/2036/PNG/512/sharing_share_icon_124236.png" alt="share" height="20px" width="20px">compartilhar</p>
+<script>
+  function sharePage() {
+    const pageUrl = window.location.href;
+    const pageTitle = document.title;
 
+    if (navigator.share) {
+      navigator.share({
+        title: pageTitle,
+        url: pageUrl,
+      }).then(() => {
+        console.log('Página compartilhada com sucesso.');
+      }).catch((error) => {
+        console.error('Erro ao compartilhar a página:', error);
+      });
+    } else {
+      alert('O compartilhamento não é suportado neste navegador. Copie o link: ' + pageUrl);
+    }
+  }
+</script>
 </body>
 
 </html>
