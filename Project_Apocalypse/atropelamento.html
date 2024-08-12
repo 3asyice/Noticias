@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><title>𝚂𝚄𝙿𝙴𝚁𝙼𝙰𝙽 = 𝙲𝙰𝚁𝚅𝙰𝙻𝙷𝙾</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Militar atropelado</title>
+
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
@@ -27,6 +29,26 @@
 </p>
 <p>A história ficou ainda mais sombria quando as ações do militar começaram a ser investigadas pela assessoria jurídica do quartel da 6ª Brigada Niederauer, em ordem do coronél Everton Conceição Soares, o qual resolveu abrir uma sindicância contra o soldado Carvalho.</p>
 <p>O militar ficou reconhecido como Superman, porque foi atropelado e não teve nenhuma lesão do acidente. Seu reconhecimento em massa pelos militares gerou indignação, bullying e piadas. O soldado Carvalho foi considerado ser uma vergonha por fazer parte do ambiente militar e o prometeram que ele jamais seria parte do Exército Brasileiro novamente. Ele não pode fazer nada para consertar os erros cometidos e a única alternativa era cumprir a consequência de suas ações por quebrar as regras.  </p>
+<p onclick="sharePage()" class="p-share"><img src="https://cdn.icon-icons.com/icons2/2036/PNG/512/sharing_share_icon_124236.png" alt="share" height="20px" width="20px">compartilhar</p>
+<script>
+  function sharePage() {
+    const pageUrl = window.location.href;
+    const pageTitle = document.title;
+
+    if (navigator.share) {
+      navigator.share({
+        title: pageTitle,
+        url: pageUrl,
+      }).then(() => {
+        console.log('Página compartilhada com sucesso.');
+      }).catch((error) => {
+        console.error('Erro ao compartilhar a página:', error);
+      });
+    } else {
+      alert('O compartilhamento não é suportado neste navegador. Copie o link: ' + pageUrl);
+    }
+  }
+</script>
 </body>
 
 </html>
