@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Comandante Soares</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
@@ -32,7 +32,26 @@
   Nasceu em 02 de Novembro de 1972, em Santana do Livramento, RS, é filho do sr Evandro Rodrigues Soares e da sra Gicelda Conceição Soares.
 </p>
 
+<p onclick="sharePage()" class="p-share"><img src="https://cdn.icon-icons.com/icons2/2036/PNG/512/sharing_share_icon_124236.png" alt="share" height="20px" width="20px">compartilhar</p>
+<script>
+  function sharePage() {
+    const pageUrl = window.location.href;
+    const pageTitle = document.title;
 
+    if (navigator.share) {
+      navigator.share({
+        title: pageTitle,
+        url: pageUrl,
+      }).then(() => {
+        console.log('Página compartilhada com sucesso.');
+      }).catch((error) => {
+        console.error('Erro ao compartilhar a página:', error);
+      });
+    } else {
+      alert('O compartilhamento não é suportado neste navegador. Copie o link: ' + pageUrl);
+    }
+  }
+</script>
 </body>
 
 </html>
