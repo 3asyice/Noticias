@@ -133,18 +133,32 @@ A história também leva a uma mulher suspeita de atropelamento. Uma advogada, C
 // outro
 
 var audio = document.getElementById("myAudio");
-var audioPlayed = false; // Para garantir que o áudio só toque uma vez
+var audioPlayed = false;
 
-window.addEventListener("scroll", function() {
-  // Verifica se o usuário rolou mais de 300px
-  if (!audioPlayed && window.scrollY > 1) {
-    audio.play().catch(error => {
+// Função para tentar tocar o áudio
+function tryPlayAudio() {
+  if (!audioPlayed && window.scrollY > 300) {
+    audio.play().then(() => {
+      audioPlayed = true;
+    }).catch(error => {
       console.error("Erro ao reproduzir o áudio:", error);
     });
-    audioPlayed = true; // Evita que o áudio toque novamente ao continuar rolando
   }
+}
+
+// Vincula o evento de rolagem ao clique inicial do usuário
+document.addEventListener("click", function() {
+  // Vincula o evento de rolagem após o primeiro clique
+  window.addEventListener("scroll", tryPlayAudio);
+  tryPlayAudio(); // Tenta reproduzir imediatamente após o clique
 });
 
+// Função para alternar o menu (exemplo)
+function toggleMenu() {
+  var menu = document.getElementById('z');
+  var isVisible = menu.style.display === 'block';
+  menu.style.display = isVisible ? 'none' : 'block';
+}
   function sharePage() {
     const pageUrl = window.location.href;
     const pageTitle = document.title;
