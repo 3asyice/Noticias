@@ -13,11 +13,18 @@
   }
 </style>
 <body>
-  <header>
+  
+  <audio id="myAudio" loop>
+     <source src="https://raw.githubusercontent.com/AnonymousPlay3r/CURSED_CHRISTMAS/main/Don't Fear  The Reaper Official Audio .mp3" type="audio/mp3">
+   </audio>
    
+  <header>
 <img onclick="a()" class="img-1" src="https://cdn.icon-icons.com/icons2/903/PNG/512/menu_icon-icons.com_69502.png" alt="menu" width="25px"> <h1> 🄽🄴🅆🅂</h1>
 
   </header>
+  
+ 
+
     <hr>
     <h2>O começo de um pesadelo</h2>
    <p>O começo de tudo
@@ -121,6 +128,23 @@ A história também leva a uma mulher suspeita de atropelamento. Uma advogada, C
 
 <!-- Script para compartilhar a página -->
 <script>
+
+
+// outro
+
+var audio = document.getElementById("myAudio");
+var audioPlayed = false; // Para garantir que o áudio só toque uma vez
+
+window.addEventListener("scroll", function() {
+  // Verifica se o usuário rolou mais de 300px
+  if (!audioPlayed && window.scrollY > 1) {
+    audio.play().catch(error => {
+      console.error("Erro ao reproduzir o áudio:", error);
+    });
+    audioPlayed = true; // Evita que o áudio toque novamente ao continuar rolando
+  }
+});
+
   function sharePage() {
     const pageUrl = window.location.href;
     const pageTitle = document.title;
@@ -174,6 +198,7 @@ A história também leva a uma mulher suspeita de atropelamento. Uma advogada, C
           x.style.display = y?
           'block' : 'none';
         }
+        
         
     </script>
     <script src="node.js"></script>
