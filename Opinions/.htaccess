@@ -1,3 +1,8 @@
+git add .htaccess
+git commit -m "Adiciona o arquivo .htaccess para configuração do servidor"
+git push origin main
+
+
 RewriteEngine On
 
 # Redirecionar URLs com .html para sem .html
