@@ -7,9 +7,39 @@ html, body {
     background-color: rgba(0, 162, 255, 1);
     color:rgba(255, 255, 255, 1);
   }
+  .horizontal-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .number-div {
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 0 2px;
+    width: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Aplicando cores alternadas usando nth-child */
+  .number-div:nth-child(3n+1) {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+  }
+  
+  .number-div:nth-child(3n+2) {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  
+  .number-div:nth-child(3n) {
+    background-color:rgba(0, 0, 0, 0.7);
+    color: white;
+  }
   button:hover {
-    background-color: rgba(0, 255, 75, 1);
-    color:rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.42);
+    color:white;
   }
   h1 {
     text-align: center;
@@ -18,7 +48,7 @@ html, body {
   header {
     display:fixed;
     letter-spacing: -0.5px;
-    background-color: rgba(255, 255, 255, 1)
+    background-color: rgba(255, 255, 255, 0.5)
    ; text-align:justify;
    
   }
@@ -36,12 +66,32 @@ html, body {
     color:rgba(0, 0, 0, 1);
     font-family: 'Merriweather', serif;
   }
-  .z {
-    color:rgba(255, 255, 255, 1);
-    top:7%;bottom:0;left:0;right:0;
+  .casos {
+    font-family:'Merriweather', serif;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 2em;
+    display:block;
+    margin:170px;
+    text-align: center;
+    margin-top:51px;
+    background-color: rgba(0, 22, 57, 0.61);
+    border: 5px solid rgba(0, 0, 0, 0.61);
+  }
+  
+  .b {
+    color:rgba(255, 255, 255, 0.1);
+    top:0;bottom:0;left:0;right:0;
     position:fixed;
     display:none;
-    background-color:rgba(0, 63, 255, 1);
+    background-color:rgba(102, 102, 102, 1)
+   ;}
+  .z {
+    color:rgba(255, 255, 255, 0.1);
+    top:0;bottom:0;left:0;right:0;
+    position:fixed;
+    display:none;
+    background-color:rgba(38, 38, 38, 0.91);
   }
   p {
     font-size: 14px;
@@ -74,6 +124,7 @@ html, body {
     color:rgba(216, 81, 0, 1);
     font-family: 'Merriweather', serif;
   }
+ 
   h2 {
     color:rgba(0, 0, 0, 1);
     margin-left:15px;
