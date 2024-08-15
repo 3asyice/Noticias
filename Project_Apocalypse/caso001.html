@@ -68,6 +68,26 @@
       O nível de encobrimento está no máximo nível de segredo da instituição da Organização Militar. O que poderia manchar a reputação da Instituição seria o vazamento de dados de encobrimento.
   
     </p>
+    <p onclick="sharePage()" class="p-share"><img src="https://cdn.icon-icons.com/icons2/2036/PNG/512/sharing_share_icon_124236.png" alt="share" height="20px" width="20px">compartilhar</p>
+    <script>
+      function sharePage() {
+        const pageUrl = window.location.href;
+        const pageTitle = document.title;
+    
+        if (navigator.share) {
+          navigator.share({
+            title: pageTitle,
+            url: pageUrl,
+          }).then(() => {
+            console.log('Página compartilhada com sucesso.');
+          }).catch((error) => {
+            console.error('Erro ao compartilhar a página:', error);
+          });
+        } else {
+          alert('O compartilhamento não é suportado neste navegador. Copie o link: ' + pageUrl);
+        }
+      }
+    </script>
     <script>
       // Função que toca o áudio assim que a página é carregada
       window.addEventListener('load', function() {
