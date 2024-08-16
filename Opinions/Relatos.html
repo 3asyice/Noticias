@@ -4,9 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="https://cdn.icon-icons.com/icons2/966/PNG/128/News_icon-icons.com_74697.png" sizes="16x16" />
   <title></title>
 </head>
+<link rel="stylesheet" href="index.php">
 <link rel="stylesheet" href="style.css">
+<style>
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btn {
+    border: 2px solid #555;
+    color: white;
+    background-color: #555;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+</style>
 <body>
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMYStdUv5Sg5S6CGAWnQlCYcBSrpaxak4HgwjunT9dCCnhNy3idUoc0b4&s=10" alt="real or fiction" width="100%">
 <div class="a">
@@ -15,7 +42,7 @@
 <h2>Envie sua história e vamos publicá-la aqui no site</h2>
 <h4>Escreva o seu relato abaixo e iremos públicá-lo o mais breve possivel</h4>
 
-<h4 class="blue"><img src="https://cdn.icon-icons.com/icons2/1828/PNG/512/4313132notesrecordstationerytakingwriting-115803_115776.png" alt="write" height="25px" width="25px"> Escreva, relate e publique a sua história real ou fitícia </h4>
+<h4 class="blue"><img src="https://cdn.icon-icons.com/icons2/1828/PNG/512/4313132notesrecordstationerytakingwriting-115803_115776.png" alt="write" height="25px" width="25px"> Escreva, relate e publique a sua história real ou fictícia </h4>
 <br />
 <hr><hr><hr><hr><hr><hr><hr>
 <p>Use os 6 elementos: <br>
@@ -40,6 +67,13 @@ O que?
   </label>
   <!-- your other form fields go here -->
   <br><br><button type="submit">Enviar</button><br><br>
+</form>
+<form action="upload.php" method="POST" enctype="multipart/form-data">
+  <div class="upload-btn-wrapper">
+    <button class="btn">Enviar Arquivo</button>
+    <input type="file" name="file" />
+  </div>
+  <input type="submit" value="Upload">
 </form>
 
     <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
