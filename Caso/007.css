@@ -1,0 +1,51 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  header {
+    position: relative;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWWM5MWwoJmyAb41d9-RlRWS3Qn0ZGSZCAoo48GlohdlNzXWEk0ggusw0&s=10') no-repeat center center;
+    background-size: cover;
+    margin: 0;
+    height: 100vh; /* Define a altura do header */
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Overlay */
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+  }
+
+  h1, h4 {
+    z-index: 1; /* Garante que o texto fique sobre o overlay */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+    margin: 0;
+    font-weight: normal;
+    font-family: monospace;
+  }
+
+  p {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    text-align: justify;
+    color: rgba(255, 255, 255, 1);
+    font-weight: normal;
+    margin-left:20px;margin-right:20px;
+    font-family: monospace;
+  }
+.bg-img {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeYSYBujYlj80TISGFAQ7dgXuo5gx_fdilDIBWxv81hR0Mb8lQpaNBfJY&s=10');
+}
