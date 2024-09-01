@@ -7,13 +7,13 @@ function handleKeyPress(event) {
     const inputText = inputField.value;
     inputField.value = '';
 
-    appendToOutput(`🐧 ${inputText}`);
+    appendToOutput(`☣︎: ${inputText}`);
 
 
     const resposta = processarEntrada(inputText);
 
 
-    appendToOutput(`🦄 ${resposta}`);
+    appendToOutput(`⚠: ${resposta}`);
   }
 }
 
@@ -32,36 +32,162 @@ function processarEntrada(input) {
     .replace('quem é', '' )
     .replace('uma', '')
     .replace('um', '')
+    .replace('qual é', '')
+    .replace(' a ', '')
+    .replace(' o ', '')
     .trim();
 
 
 
 
-  if (sanitizedInput === 'oi' || sanitizedInput === 'olá') {
+  if (sanitizedInput === 'oi' || sanitizedInput === 'olá' || sanitizedInput === 'oii' || sanitizedInput === 'oiii' || sanitizedInput === 'oiiii'
+  || sanitizedInput === 'oiiiii'
+  || sanitizedInput === 'oiiiiii'
+  || sanitizedInput === 'oiiiiiii') {
     return 'Olá! Como posso ajudar?';
   }
 else if (sanitizedInput === 'thales' || sanitizedInput === 'thales junior braga ferreira' || sanitizedInput === 'thales junior') {
   return 'O Thales nasceu dia 15 de novembro e ele tem um irmão chamado Rael. Ele é filho de Camila Braga e de Sandor Droppa.';
 }
+else if (sanitizedInput === 'alterações do carvalho?' || sanitizedInput === 'thales junior braga ferreira' || sanitizedInput === 'thales junior') {
+  return 'O Thales nasceu dia 15 de novembro e ele tem um irmão chamado Rael. Ele é filho de Camila Braga e de Sandor Droppa.';
+}
+else if (sanitizedInput === 'camila dalcol' || sanitizedInput === 'camila dalcol da silva') {
+  return 'A mulher predestinada ao acidente com o soldado 609 Carvalho. Isso estava escrito no código da Matrix e nada poderia impedir.'
+}
+else if (sanitizedInput === 'tassinari' || sanitizedInput === '601') {
+  return 'O Tassinari é o 601. Ele é um dos soldados mais altos da Base Administrativa da Guarnição de Santa Maria no ano de 2024.'
+}
+
+else if (sanitizedInput === 'weber' || sanitizedInput === '602') {
+  return 'O Weber é o 602. Ele costumava ser um skatista. Ele é realmente insuportável. Ele é o canga do Tassinari. A primeira vez que peguei serviço junto com ele e o Lemos. Eles me zoaram e ficaram bravos comigo, sem motivo aparente, porque na perpectiva deles, eles sangraram por minha culpa.'
+}
+else if (sanitizedInput === 'maidana' || sanitizedInput === '603') {
+  return 'O Maidana é o 603. Ele é um dos soldados que é gago e ele não consegue falar no número 33 corretamente. Isso acaba gerando bullying e piadas dos outros soldados.'
+}
+else if (sanitizedInput === 'richard' || sanitizedInput === '604') {
+  return 'O Richard é o 604. Ele é um dos soldados que tem uma cara de que está sempre chorando.'
+}
+else if (sanitizedInput === 'allan' || sanitizedInput === '605') {
+  return 'O Allan é o 605. Ele é um dos soldados mais espertos da Base Administrativa da Guarnição de Santa Maria no ano de 2024.'
+}
+else if (sanitizedInput === 'schumacher' || sanitizedInput === '606') {
+  return 'O Schumacher é o 606. Ele é melhor sendo jogador de futebol do que sendo um soldado.'
+}
+else if (sanitizedInput === 'Chimainski' || sanitizedInput === '607') {
+  return 'O Chimainski é o 607. Ele é o soldado mais carente e materialista que eu já conheci em toda a minha vida.'
+}
+else if (sanitizedInput === 'Dresher' || sanitizedInput === '608') {
+  return 'O Dresher é o 608. O Dresher é o tipo de soldado que não se importa realmente com ninguém além de si mesmo.'
+}
+else if (sanitizedInput === 'carvalho' || sanitizedInput === '609') {
+  return 'Eu sou o Carvalho 609. Fui o primeiro soldado a ser expuldo da Base Administrativa da Guarnição de Santa Maria em 11 de Julho de 2024. Fiz alterações, mas não me arrependo de nada. O coronel Soares que se arrependa de ter expulso um soldado por motivos de mau comportamento.'
+}
+else if (sanitizedInput === 'da rosa' || sanitizedInput === '610') {
+  return 'O Da Rosa é o 610. Ele foi o meu canga do campo. Posso confirmar que ele foi o melhor canga que alguém possivelmente poderia ter. Ele me ajudou em momentos difíceis, só tenho a agradecer por tudo o que ele fez por mim.'
+}
+else if (sanitizedInput === 'daniel' || sanitizedInput === '611') {
+  return 'O Daniel é o 611. O Daniel é o soldado mais baixinho da Base Administrativa da Guarnição de Santa Maria. Ele foi mais o canga do 610 Da Rosa do que o 609 Carvalho foi.'
+}
+else if (sanitizedInput === 'gonçalves' || sanitizedInput === '612') {
+  return 'O Gonçalves é o 612. Ele é o maldito responsável pela minha queda ao álcool no dia 26 de maio de 2024, o dia da minha maior alteração' ;
+}
+else if (sanitizedInput === 'ebling' || sanitizedInput === '613') {
+  return 'O Ebling é o 613. Ele teve um canga que cometeu suicídio no dia 08 de maio de 2024, o soldado Teixeira. O Ebling entrou para o curso de Cabo e possivelmente vai conseguir superar todos os obstáculos.'
+}
+else if (sanitizedInput === 'teixeira' || sanitizedInput === '614') {
+  return 'TE-I-XE-I-RA'
+}
+else if (sanitizedInput === 'bernardi' || sanitizedInput === '615') {
+  return 'O Bernardi é o 615. O Bernardi entrou para o curso de Cabo, mas acabou desistindo em menos de uma semana. Ele continua sendo um soldado rancheiro.'
+}
+else if (sanitizedInput === 'gregori' || sanitizedInput === '616') {
+  return 'O Gregori é o 616. Ele é um soldado que é bom em computador e informática. Ele é como um novo Edward Snowden só que sem as habilidades de expor uma Instituição doentil.'
+}
+else if (sanitizedInput === 'roger' || sanitizedInput === '618') {
+  return 'O Roger é o 617. Ele é rancheiro e um reclamão nato de sua profissão.'
+}
+else if (sanitizedInput === '617' || sanitizedInput === 'silvano') {
+  return 'O Silvano é o 618. Ele é um dos soldados que trabalha nos prédios militares. Ele é bom na parte de elétrica e também sabe pintar paredes. Ele é fumante como a maioria é.'
+}
+else if (sanitizedInput === '619' || sanitizedInput === 'zancan') {
+  return 'O Zancan é o 619. Ele é o soldado que gosta de festejar. "Tem culpa eu?".'
+}
+else if (sanitizedInput === 'da silva' || sanitizedInput === '620') {
+  return 'O Da Silva é o 620. Ele foi o único soldado a ser transferido para outro quartel por ser bom em ser veterinário de animais. Ele deve estar comendo as éguas do quartel.'
+}
+else if (sanitizedInput === 'kainan' || sanitizedInput === '621') {
+  return 'O Kainan é o 621. Ele é o soldado que nasceu para ser chato e rude o tempo todo. Não sei porque votei nele para ser destaque do campo. Confirmo o meu arrependimento eterno, não quero desmerecer, mas quem deveria ter ganhado mesmo o destaque do campo era o Silva Santos, porque ele sim foi energético no campo.'
+}
+else if (sanitizedInput === 'preuss' || sanitizedInput === '622') {
+  return 'O Preuss é o 622. Ele é o canga do Kainan. Ele é o soldado que sempre conta histórias que acontece com ele e ri de si mesmo.'
+}
+else if (sanitizedInput === 'cardoso' || sanitizedInput === '623') {
+  return 'O Cardoso é o 623. Ele é baixado porque sempre passava mal no internato.'
+}
+else if (sanitizedInput === 'nesske' || sanitizedInput === '624') {
+  return 'O Nesske é o 624. O Mib do filme homens de preto. Ele é um soldado que trabalha na vila militar.'
+}
+else if (sanitizedInput === 'hönig' || sanitizedInput === '625' || sanitizedInput === 'honig') {
+  return 'O Hönig é o 625. Ele é o soldado que tem uma cara de puto, mas é amigável. A sua experiência em saber falar o idioma inglês o levou a uma oportunidade de poder trabalhar no hotel de trânsito.'
+}
+else if (sanitizedInput === 'xavier' || sanitizedInput === '626') {
+  return 'O Xavier é o 626. Ele sempre teve uma cara de exausto e triste como se estivesse morrendo. Ele também se irrita com qualquer coisinha.'
+}
+else if (sanitizedInput === 'lemos' || sanitizedInput === '627') {
+  return 'O Lemos é o 627. O soldado que vende seu serviço para mim para ele poder ir para casa. Eu gostaria de reclamar do Lemos, mas não consigo porque ele tem as suas batalhas também. Não esqueço que ele quem me fez tropeçar em cima de uma mesa de um bar quando eu estava bêbado.'
+}
+else if (sanitizedInput === 'anderson' || sanitizedInput === '628') {
+  return 'O Anderson é o 628. Ele trabalha junto com o sargento De Morais, que me deve 225 reais pela farda militar que vendi para ele. Não estou cobrando, estou apenas falando com quem o soldado Anderson trabalha.'
+}
+else if (sanitizedInput === 'magalhães' || sanitizedInput === '629') {
+  return 'O Magalhães é o 629. O soldado que veio de Capão de Canoas para servir em um quartel de merda em Santa Maria. Mas que azar!'
+}
+else if (sanitizedInput === 'machado' || sanitizedInput === '630') {
+  return 'O Machado é o 630. O soldado ladrão desgraçado. Ele roubou minha carteira de cigarros que estava em meu armário quando eu ainda estava servindo o EB. Ele é o soldado mais insuportável que existe.'
+}
+else if (sanitizedInput === '631' || sanitizedInput === 'fagundes') {
+  return 'O Fagundes é o 631. O soldado que tem meus elogios porque ele é dedicado e .'
+}
+else if (sanitizedInput === 'sandor' || sanitizedInput === 'sandor droppa') {
+  return 'O Sandor Droppa atualmente trabalha como um repositor de mercadorias no Supermercado Kuchak';
+}
+else if (sanitizedInput === 'kaue' || sanitizedInput === 'o kaue') {
+  return 'o Kaue é um traficante traidor. Ele foi responsável por entregar o jovem Rafael Martins para a polícia.';
+}
+else if (sanitizedInput === 'seu nome' || sanitizedInput === 'você' || sanitizedInput === 'quem é você' || sanitizedInput === 'quem te criou') {
+  return 'Eu sou a consciência de Guilherme de Abreu Carvalho. Essa consciência foi tranferida para uma Inteligência Artificial.';
+}
   else if (sanitizedInput === 'jupiterh' || sanitizedInput === 'o que é jupiterh') {
     return 'é a senha usada por Guilherme de Abreu Carvalho. Esta é a sua senha de Email: Jupiterh12$ ou JUPITERH ou JUPITERH12';
+  }
+  else if (sanitizedInput === 'camila braga' || sanitizedInput === 'camila') {
+    return 'Camila Braga é a mãe de Thales Júnior e de Rael Droppa. Ela é a mulher de Sandor Droppa.';
+  }
+  else if (sanitizedInput === 'talinho' || sanitizedInput === 'o talinho') {
+    return 'Talinho é um prisioneiro que induz jovens a vender o seu fornecimento de drogas nas ruas de Ijuí.';
   }
   else if (sanitizedInput === 'como você está' || sanitizedInput === 'como vai' ) {
     return 'Estou bem, obrigado!';
   }
   else if (sanitizedInput === 'vania' || sanitizedInput === 'vania moura') {
-    return 'A Vania é uma mulher antipática. Ela mora em Ijuí, no bairro Colonial, perto da rua João Buzetto, ela é uma mulher muito arrogante. O marido dela se chama Jefferson Lopes Vargas. Ela tem uma filha chamada Laryssa.';
+    return 'A Vania é uma mulher antipática. Ela mora em Ijuí, no bairro Colonial, perto da rua João Buzetto, ela é uma mulher muito arrogante. O marido dela se chama Jefferson Lopes Vargas. Ela tem uma filha chamada Laryssa. <br> <img alt="Uma antipática do caralho nomeada Vania Moura. Ela está fazendo biquinho de galinha para ganhar milho." title="Vania dando biquinho de galinha." src="https://raw.githubusercontent.com/AnonymousPlay3r/CURSED_CHRISTMAS/main/1704510227080.jpg" width="100%">';
   }
   else if (sanitizedInput === 'google') {
     return 'acesse o <a href="https://www.google.com" target="_blank">Google</a>';
   }
+  else if (sanitizedInput === 'youtube do guilherme') {
+    return 'acesse o <a href="https://www.youtube.com/@i-am-carvalho-s-yt-channel" target="_blank">YouTube</a> do Guilherme Carvalho';
+  }
+  
   else if (sanitizedInput === 'youtube') {
     return 'acesse o <a href="https://www.youtube.com" target="_blank">YouTube</a>';
   }
 
   else if (sanitizedInput === 'odair' || sanitizedInput === 'odair josé trindade dos santos') {
-    return 'Ele é um criminoso desgraçado. É conhecido como Macanha e seu mais fiel conhecido é a "PEDRA FILOSOFAL" porque ele é um pedreiro de merda.';
+    return 'Ele é um criminoso desgraçado. É conhecido como Macanha e seu mais fiel conhecido é a "PEDRA FILOSOFAL" porque ele é um pedreiro de merda. <br> <img alt="Odair ou Macanha. É o agressor número 1 da lista." title="Um corno mal amado e agressor maníaco psicopata." src="https://raw.githubusercontent.com/AnonymousPlay3r/CURSED_CHRISTMAS/main/1704480749915.jpg" width="100%">';
   }
+  
   else if (sanitizedInput === 'guilherme' || sanitizedInput === 'guilherme de abreu carvalho') {
     return 'O Guilherme é o rapaz que criou tudo isto. Para com uma lembrança deixar e mostrar ao mundo quem estas pessoas citadas neste site realmente são de verdade.';
   }
@@ -75,7 +201,7 @@ else if (sanitizedInput === 'thales' || sanitizedInput === 'thales junior braga 
 else if (sanitizedInput === 'robinson') {
   return 'O Robinsom Pereira Lima é um professor de língua portuguesa e também um professor de sexologia.';
 }
-  else if (sanitizedInput === 'patricia' || sanitizedInput === 'patricia braga de abreu') {
+  else if (sanitizedInput === 'patricia' || sanitizedInput === 'patricia braga de abreu' || sanitizedInput === 'patrícia') {
     return 'Sinceramente a Patrícia Braga de Abreu é uma mulher boa, porém as escolhas que ela faz acabam tornando ela uma pessoa ruim, de certa forma, ruim para os próprios filhos e para os sobrinhos que também sairam machucados em situações a envolvendo . Todos que se aproximam dela acabam machucados.';
   }
 
@@ -284,6 +410,9 @@ else if (sanitizedInput === 'robinson') {
   }
   else if (sanitizedInput === 'tudo bem') {
     return 'Uma maravilha. Estou me sentindo em uma montanha russa que só vai para cima.';
+  }
+  else if (sanitizedInput === 'rafael' || sanitizedInput === 'rafael martins' ) {
+    return 'O Rafael Martins é um jovem que recentemente foi preso por tráfico de drogas no dia 30 de agosto de 2024.';
   }
   else if (sanitizedInput === 'gustavo santos') {
     return 'O Gustavo Santos é um estuprador. Uma de suas últimas tentativas de estupro foi no Colonial com uma menina que costumava ser uma babá das filhas de sua irmã mais velha. Daniele dos Santos';
