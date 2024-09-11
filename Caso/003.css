@@ -101,3 +101,8 @@ p {
                 text-shadow: -2px 0 red, 2px 0 blue;
             }
         }
+        .conteiner, h2, h3, p {
+          max-width: 1000px;
+          margin: 0 auto;
+          padding: 20px;
+        }
