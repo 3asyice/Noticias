@@ -19,6 +19,7 @@ Disallow: /register/
 Disallow: /checkout/
 Disallow: /user/
 Allow: /static/
+disallow: /downloads/
 Allow: /about/
 Sitemap: http://www.example.com/sitemap_general.xml
 
@@ -44,7 +45,7 @@ Disallow: /old/
 Allow: /new/
 
 user-agent: *
-disallow: /downloads/
+
 
 user-agent: magicsearchbot
 disallow: /uploads/
