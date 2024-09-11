@@ -42,3 +42,9 @@ Allow: /content/
 User-agent: Yandex
 Disallow: /old/
 Allow: /new/
+
+user-agent: *
+disallow: /downloads/
+
+user-agent: magicsearchbot
+disallow: /uploads/
