@@ -29,8 +29,8 @@ html, body {
   }
   
   .number-div:nth-child(3n+2) {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
+    background-color: rgba(67, 0, 0, 1);
+    color: rgba(240, 255, 0, 1);
   }
   
   .number-div:nth-child(3n) {
