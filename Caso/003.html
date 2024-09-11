@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -17,10 +17,10 @@
   <title>003&copy; Music</title>
 </head>
 
-<body> <br><br>
+<body> <br>
   <div class="tv">
     <div class="screen">
-      <span id="text" class="glitch"><iframe style="width: 360px;
+      <span id="text" class="glitch"><iframe id="videoIframe" style="width: 360px;
        height: 260px;
        background: url('https://www.santasombra.com/wp-content/uploads/2015/03/tv-noise-bkg.gif');
        display: flex;
@@ -29,22 +29,27 @@
        color: rgba(170, 8, 255, 1);
        font-size: 48px;
        text-shadow: 0 0 10px #0f0;
-       position: relative;" src="https://www.youtube.com/embed/kxpXb0ViNzo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+       position: relative;" src="https://www.youtube.com/embed/kxpXb0ViNzo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></span>
     </div>
   </div>
-  <br /><br /><div class="conteiner">
-  <h2>ALGO RUIM ESTÁ PRA ACONTECER COMIGO</h2>
-  <div class="a">
-    <h3>Spoiler: O autor de tudo isto irá cometer suicídio.</h3>
-  </div>
-  <p>Não me considero um homem virtuoso, mas sou um soldado competente. Não se pode dizer que me faltaram oportunidades; na verdade, a má sorte sempre esteve ao meu lado ao longo da vida. A existência não veio acompanhada de um manual que ensine como se viver em uma sociedade que consome cada gota de energia do nosso ser. Eu deveria ter consciência disso. Estamos, de fato, aprisionados em rotinas exaustivas e cercados por notícias desalentadoras que nos bombardeiam de todos os lados.</p>
   <br /><br />
-</div>
+  <div class="conteiner">
+    <h2>ALGO RUIM ESTÁ PRA ACONTECER COMIGO</h2>
+    <div class="a">
+      <h3>Spoiler: O autor de tudo isto irá cometer suicídio.</h3>
+    </div>
+    <p>Não me considero um homem virtuoso, mas sou um soldado competente. Não se pode dizer que me faltaram oportunidades; na verdade, a má sorte sempre esteve ao meu lado ao longo da vida. A existência não veio acompanhada de um manual que ensine como se viver em uma sociedade que consome cada gota de energia do nosso ser. Eu deveria ter consciência disso. Estamos, de fato, aprisionados em rotinas exaustivas e cercados por notícias desalentadoras que nos bombardeiam de todos os lados.</p>
+    <br /><br />
+  </div>
   <script>
-    window.onload = function() {
-      var video = document.getElementById("meuVideo");
-      video.play();
-    };
+     window.onload = function() {
+   var iframe = document.getElementById('videoIframe');
+   iframe.onload = function() {
+     // Vídeo do YouTube será reproduzido automaticamente com a configuração ?autoplay=1
+     console.log("Iframe carregado");
+   };
+ };
+  
   </script>
 </body>
 
