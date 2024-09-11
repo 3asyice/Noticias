@@ -1,7 +1,6 @@
 html, body {
   margin:0;
   
-  
 }
   button {
     background-color: rgba(0, 162, 255, 1);
@@ -147,6 +146,7 @@ html, body {
   }
   hr {
     background-color:rgba(255, 0, 0, 1);margin:4px;
+    color:rgba(252, 0, 0, 1);
   }
   .p-date {
     font-size: 12px;
@@ -179,8 +179,16 @@ html, body {
   background-color: rgba(255, 0, 0, 1);
  
   }
-  .container {
+  .container, p {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
+  }
+  footer {
+    background: linear-gradient(123deg, #D6D6D6,#A6A2A2,#868686);
+    color: rgba(43, 0, 0, 1);
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid rgba(255, 0, 0, 1);
+    font-size: 0.8rem;
   }
