@@ -20,8 +20,8 @@
 <body> <br>
   <div class="tv">
     <div class="screen">
-      <span id="text" class="glitch"><iframe id="videoIframe" style="width: 360px;
-       height: 260px;
+      <span id="text" class="glitch"><iframe id="videoIframe" width="360"
+      height="260" style="
        background: url('https://www.santasombra.com/wp-content/uploads/2015/03/tv-noise-bkg.gif');
        display: flex;
        justify-content: center;
@@ -29,7 +29,7 @@
        color: rgba(170, 8, 255, 1);
        font-size: 48px;
        text-shadow: 0 0 10px #0f0;
-       position: relative;" src="https://www.youtube.com/embed/kxpXb0ViNzo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></span>
+       position: relative;" src="https://www.youtube.com/embed/kxpXb0ViNzo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></span>
     </div>
   </div>
   <br /><br />
@@ -42,13 +42,7 @@
     <br /><br />
   </div>
   <script>
-     window.onload = function() {
-   var iframe = document.getElementById('videoIframe');
-   iframe.onload = function() {
-     // Vídeo do YouTube será reproduzido automaticamente com a configuração ?autoplay=1
-     console.log("Iframe carregado");
-   };
- };
+     
   
   </script>
 </body>
