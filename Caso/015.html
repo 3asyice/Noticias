@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de Livro - Ex-Militar Expulso</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+      <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://real-time-chat-ac762-default-rtdb.firebaseio.com/"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #3e3e3e; /* Cor de fundo escura */
+            color: #ffffff; /* Texto branco */
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #6b6e5e; /* Verde oliva */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+            color: #d4d600; /* Amarelo militar */
+        }
+        .content {
+            white-space: pre-wrap; /* Mantém quebras de linha do texto */
+            line-height: 1.6;
+            color: #ffffff; /* Texto branco */
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #4a4e3d; /* Cor de fundo do campo de pesquisa */
+            color: #ffffff; /* Texto do campo de pesquisa */
+        }
+        .search-bar input::placeholder {
+            color: #aaaaaa; /* Cor do texto do placeholder */
+        }
+        span.highlight {
+            background-color: yellow; /* Cor de destaque para pesquisa */
+            color: black; /* Texto preto no destaque */
+        }
+        .annotations, .comments {
+            margin-top: 20px;
+        }
+        .annotations h3, .comments h3 {
+            color: #d4d600; /* Amarelo militar */
+        }
+        .annotation-input, .comment-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #4a4e3d; /* Cor de fundo do campo de anotações */
+            color: #ffffff; /* Texto do campo de anotações */
+        }
+        .annotation-button, .comment-button {
+            padding: 10px;
+            background-color: #d4d600; /* Amarelo militar */
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .annotation-button:hover, .comment-button:hover {
+            background-color: #b3b300; /* Tom mais escuro ao passar o mouse */
+        }
+        .annotation-list, .comment-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .annotation-list li, .comment-list li {
+            background: #5c5f61; /* Fundo das anotações e comentários */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #d4d600; /* Amarelo militar */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Leitor de Livro</h1>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Pesquisar palavras...">
+        </div>
+        <div class="content" id="book-content">
+            <p>Este é um exemplo de texto do livro. O ex-militar compartilha suas experiências e reflexões sobre sua vida após a expulsão.</p>
+            <p>Mais conteúdo do livro pode ser adicionado aqui...</p>
+        </div>
 
+        <div class="annotations">
+            <h3>Anotações</h3>
+            <input type="text" id="annotation-input" class="annotation-input" placeholder="Adicionar uma anotação...">
+            <button id="add-annotation" class="annotation-button">Adicionar Anotação</button>
+            <ul id="annotation-list" class="annotation-list"></ul>
+        </div>
+
+        <div class="comments">
+            <h3>Comentários dos Leitores</h3>
+            <input type="text" id="comment-input" class="comment-input" placeholder="Adicionar um comentário...">
+            <button id="add-comment" class="comment-button">Adicionar Comentário</button>
+            <ul id="comment-list" class="comment-list"></ul>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Leitor de Livro</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('search-input').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const content = document.getElementById('book-content').innerText;
+            const highlightedContent = content.split('\n').map(paragraph => {
+                return paragraph.replace(new RegExp(searchTerm, 'gi'), match => `<span class="highlight">${match}</span>`);
+            }).join('\n');
+            document.getElementById('book-content').innerHTML = highlightedContent;
+        });
+
+        // Anotações
+        document.getElementById('add-annotation').addEventListener('click', function() {
+            const annotationInput = document.getElementById('annotation-input');
+            const annotationText = annotationInput.value.trim();
+            if (annotationText) {
+                const annotationList = document.getElementById('annotation-list');
+                const listItem = document.createElement('li');
+                listItem.textContent = annotationText;
+                annotationList.appendChild(listItem);
+                annotationInput.value = ''; // Limpa o campo de entrada
+            }
+        });
+
+        // Comentários
+        document.getElementById('add-comment').addEventListener('click', function() {
+            const commentInput = document.getElementById('comment-input');
+            const commentText = commentInput.value.trim();
+            if (commentText) {
+                const commentList = document.getElementById('comment-list');
+                const listItem = document.createElement('li');
+                listItem.textContent = commentText;
+                commentList.appendChild(listItem);
+                commentInput.value = ''; // Limpa o campo de entrada
+            }
+        });
+    </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAsoYCwSb96drQH3imBjyKM1TdQaTAn9SA",
+        authDomain: "real-time-chat-ac762.firebaseapp.com",
+        databaseURL: "https://real-time-chat-ac762-default-rtdb.firebaseio.com",
+        projectId: "real-time-chat-ac762",
+        storageBucket: "real-time-chat-ac762.firebasestorage.app",
+        messagingSenderId: "555925441261",
+        appId: "1:555925441261:web:d8ba2ac956b246b1601ae4",
+        measurementId: "G-91RW5G8MMN"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+</body>
+  </html>
