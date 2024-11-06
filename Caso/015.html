@@ -1,155 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta http-equiv="refresh" content="86400" url="https://www.big-loser.site/">
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-      <meta http-equiv="Pragma" content="no-cache" />
-      <meta http-equiv="Expires" content="0" />
-      <meta name="description" content="Author: Anonymous, Arquivos guardados e enterrados dentro do Internet Archive.">
-      <link rel="canonical" href="https://big-loser.site">
-      <link rel="icon" type="image/png" href="https://cdn.icon-icons.com/icons2/966/PNG/128/News_icon-icons.com_74697.png" sizes="16×16" />
-    <title>Leitor de Livro - Ex-Militar Expulso</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #0f0f0f; /* Fundo preto profundo */
-            color: #ffffff; /* Texto branco */
-            margin: 0;
-            padding: 20px;
-            overflow: auto; /* Para evitar barras de rolagem indesejadas */
-        }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="refresh" content="86400" url="https://www.big-loser.site/">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="description" content="Author: Anonymous, Arquivos guardados e enterrados dentro do Internet Archive.">
+  <link rel="canonical" href="https://big-loser.site">
+  <link rel="icon" type="image/png" href="https://cdn.icon-icons.com/icons2/966/PNG/128/News_icon-icons.com_74697.png" sizes="16×16" />
+  <title>Leitor de Livro - Ex-Militar Expulso</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0f0f0f;
+      /* Fundo preto profundo */
+      color: #ffffff;
+      /* Texto branco */
+      margin: 0;
+      padding: 20px;
+      overflow: auto;
+      /* Para evitar barras de rolagem indesejadas */
+    }
 
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: linear-gradient(145deg, #1a1a1a, #2a2a2a); /* Gradiente escuro */
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2), 0 5px 15px rgba(255, 0, 255, 0.2);
-            backdrop-filter: blur(10px); /* Efeito de desfoque do fundo */
-        }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+      /* Gradiente escuro */
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2), 0 5px 15px rgba(255, 0, 255, 0.2);
+      backdrop-filter: blur(10px);
+      /* Efeito de desfoque do fundo */
+    }
 
-        h1 {
-            text-align: center;
-            color: #00ffcc; /* Verde neon */
-            text-shadow: 0 0 10px rgba(0, 255, 204, 0.8); /* Sombra neon */
-        }
+    h1 {
+      text-align: center;
+      color: #00ffcc;
+      /* Verde neon */
+      text-shadow: 0 0 10px rgba(0, 255, 204, 0.8);
+      /* Sombra neon */
+    }
 
-        .content {
-            white-space: pre-wrap; /* Mantém quebras de linha do texto */
-            line-height: 1.6;
-            color: #ffffff; /* Texto branco */
-        }
-        .content p {
-          font-family: 'Times New Roman', Times, serif;
-    text-indent: 2em; /* Indenta o início do parágrafo */
-    margin-bottom: 1.5em; /* Espaço entre parágrafos */
-}
+    .content {
+      white-space: pre-wrap;
+      /* Mantém quebras de linha do texto */
+      line-height: 1.6;
+      color: #ffffff;
+      /* Texto branco */
+    }
 
-.content p::first-letter {
-    font-size: 3em; /* Tamanho maior para a primeira letra */
-    font-weight: bold; /* Letra em negrito */
-    float: left; /* Faz a letra flutuar à esquerda */
-    line-height: 1; /* Alinha a letra com o texto */
-    margin-right: 0.1em; /* Espaçamento à direita da letra */
-    color: #00ffcc; /* Cor da primeira letra, se desejar */
-}
+    .content p {
+      font-family: 'Times New Roman', Times, serif;
+      text-indent: 2em;
+      /* Indenta o início do parágrafo */
+      margin-bottom: 1.5em;
+      /* Espaço entre parágrafos */
+    }
 
-        .search-bar {
-            margin-bottom: 20px;
-        }
+    .content p::first-letter {
+      font-size: 3em;
+      /* Tamanho maior para a primeira letra */
+      font-weight: bold;
+      /* Letra em negrito */
+      float: left;
+      /* Faz a letra flutuar à esquerda */
+      line-height: 1;
+      /* Alinha a letra com o texto */
+      margin-right: 0.1em;
+      /* Espaçamento à direita da letra */
+      color: #00ffcc;
+      /* Cor da primeira letra, se desejar */
+    }
 
-        .search-bar input {
-            width: 80%;
-            padding: 10px;
-            border: 1px solid #00ffcc; /* Borda verde neon */
-            border-radius: 10px;
-            background-color: #1a1a1a; /* Cor de fundo do campo de pesquisa */
-            color: #ffffff; /* Texto do campo de pesquisa */
-            transition: border-color 0.3s;
-        }
+    .search-bar {
+      margin-bottom: 20px;
+    }
 
-        .search-bar input::placeholder {
-            color: #aaaaaa; /* Cor do texto do placeholder */
-        }
+    .search-bar input {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #00ffcc;
+      /* Borda verde neon */
+      border-radius: 10px;
+      background-color: #1a1a1a;
+      /* Cor de fundo do campo de pesquisa */
+      color: #ffffff;
+      /* Texto do campo de pesquisa */
+      transition: border-color 0.3s;
+    }
 
-        .search-bar input:focus {
-            border-color: #ff00ff; /* Mudança de cor ao focar */
-        }
+    .search-bar input::placeholder {
+      color: #aaaaaa;
+      /* Cor do texto do placeholder */
+    }
 
-        span.highlight {
-            background-color: rgba(0, 255, 204, 0.5); /* Destaque semi-transparente */
-            color: black; /* Texto preto no destaque */
-        }
+    .search-bar input:focus {
+      border-color: #ff00ff;
+      /* Mudança de cor ao focar */
+    }
 
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #00ffcc; /* Verde neon */
-        }
-    </style>
+    span.highlight {
+      background-color: rgba(0, 255, 204, 0.5);
+      /* Destaque semi-transparente */
+      color: black;
+      /* Texto preto no destaque */
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #00ffcc;
+      /* Verde neon */
+    }
+  </style>
 </head>
+
 <body>
-  
-    <div class="container">
-        <h1>História de Um Recruta</h1>
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Pesquisar palavras...">
-        </div>
-        <div class="content" id="book-content">
-        <p>A DECISÃO ERRADA <br><br>
-            Todo dia é um dia de pensar naquelas decisões que podem interferir completamente o seu futuro. Compreendo sobre isso completamente. Uma escolha errada e tudo ao seu redor desmorona em cima de você, com consequências.
-            Não importa o que eu faça para tentar consertar algo que não tem como voltar atrás. É como pegar um caminho onde um terremoto acontece, e abre
-            o chão e me puxa para dentro. Um abismo sem fim, perdido na escuridão das escolhas obrigatórias.
-            <br><br>
-            O senhor quer servir o Exército Brasileiro?, o militar que estava me entrevistando disse.
-            <br>
-            Sim, quero servir. Sou um voluntário, disse, ao mesmo tempo o entrevistador estava anotando em uma folha cheia de perguntas. É uma armadilha, eu devia saber disso. Essa é a maneira perfeita de cair em uma armadilha. Uma vez li em algum lugar, devia ser de um filme ou um documentário: Um rato preso em uma armadilha roe a própria perna para poder escapar. Essa
-            frase era de um filme com a atriz Rebecca Ferguson.
-            Não sou um rato, mas existe a possibilide de ter uma armadilha. <br>
-            O grande voluntarismo obrigatório que nós jovens temos que, infelizmente, fazer por nosso país. Em uma das inspeções, vergonhosamente, pedem a você que fique pelado, completamente pelado, para que o médico possa olhar o seu corpo dos pés, pênis e até a sua cabeça, à procura de alguma doença. O médico pede que assopre a palma da mão sem deixar sair o ar, procurando por alguma hérnia. Não tenho nenhuma doença, somente suspeito que tenho bipolaridade, mas não disse sobre essa suspeita, não tenho um diagnóstico.
-            <br><br>
-            Quando sermos incorporados no Exército Brasileiro, provável alguém dizer... Parabéns! Agora fique pronto para as mil palestras, o que são instruções militares, sobre às regras que proíbem você de fazer isso e aquilo. Talvez tentem impor medo em nós para que os sargentos sejam como Deuses Respeitáveis. Devem fazer isso no internato. Eles vão transformar cada um de nós, soldados recrutas em cobaias de sargentos e subtentate, até que, um de nós decida desistir sem
-            dar motivos aparentes, apenas desistir. Seria como fazer todos pensar que foi um acidente surreral. Ele não deu sinal de desistência, diriam.
-            <br><br>
-            O terceiro sargento Bergmann é um pai para nós, é o que ele mesmo diz, mesmo não gostando. Eu sou como um pai para os senhores, ele dizia. Talvez ele não saiba qual é a definição de "pai" Ele não comeu a minha
-            mãe e me colocou no mundo, e também não me criou quando crescia. Ele não é o meu pai. Não sei como um pai seria para mim, mas não seria o Bergmann, jamais. Pensar nisso me dá repulsa.
-            <br>
-            Os recrutas são todos jovens adultos com a mesma idade. A maldita geração Z, a geração que vivem online conectados à internet, a geração problemática, é um fato. Não temos culpa se a ascenção dos smartfones nasceu em nossa bendita geração. Deviam culpar os pioneiros de toda a tecnologia que atualmente temos, por estragar uma geração, com todas as palavras.
-            <br>
-            Eram apenas os recrutas que moram em Santa Maria presentes na Base Administrativa de Santa Maria. São quarenta vagas para quarenta recrutas. Por enquanto eram quinze, os de Santa Maria. Eu não sou dessa cidade, estou temporariamente morando aqui. Quando tudo acabar, de maneira definitiva, caso de errado em servir, vou partir para a minha cidade natal, Ijuí. Mais tarde viriam recrutas de outras cidades.
-            <br>
-            Essa seria a semana zero. A semana zero, o início de uma jornada. Uma jornada que estava começando. Vou conhecer gente nova. E todos vão saber o meu nome, ou sobrenome, e o número de recruta. Quero ser lembrado por
-            centenas de anos. Quero estar em arquivos históricos. A história tem que registrar o sobrenome e número. 609 Carvalho. Eu quero ser uma lenda histórica, lembrado para sempre. Quero arquivar tudo o que for dito em minha história. Foda-se o que pensariam a respeito, diria. Internet Archive é o meu amigo. Não pode apagar-me, serei preservado até o fim dos tempos.</p>
-        </div>
-        <p>Comentários</p>
-<iframe src="https://hack.chat/?609" frameborder="0" height="300px"></iframe>
-        <footer>
-            <p>&copy; 2023 Leitor de Livro</p>
-        </footer>
+
+  <div class="container">
+    <h1>História de Um Recruta</h1>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Pesquisar palavras...">
     </div>
+    <div class="content" id="book-content">
+      <p>A DECISÃO ERRADA <br><br>
+        Todo dia é um dia de pensar naquelas decisões que podem interferir completamente o seu futuro. Compreendo sobre isso completamente. Uma escolha errada e tudo ao seu redor desmorona em cima de você, com consequências.
+        Não importa o que eu faça para tentar consertar algo que não tem como voltar atrás. É como pegar um caminho onde um terremoto acontece, e abre
+        o chão e me puxa para dentro. Um abismo sem fim, perdido na escuridão das escolhas obrigatórias.
+        <br><br>
+        O senhor quer servir o Exército Brasileiro?, o militar que estava me entrevistando disse.
+        <br>
+        Sim, quero servir. Sou um voluntário, disse, ao mesmo tempo o entrevistador estava anotando em uma folha cheia de perguntas. É uma armadilha, eu devia saber disso. Essa é a maneira perfeita de cair em uma armadilha. Uma vez li em algum lugar, devia ser de um filme ou um documentário: Um rato preso em uma armadilha roe a própria perna para poder escapar. Essa
+        frase era de um filme com a atriz Rebecca Ferguson.
+        Não sou um rato, mas existe a possibilide de ter uma armadilha. <br>
+        O grande voluntarismo obrigatório que nós jovens temos que, infelizmente, fazer por nosso país. Em uma das inspeções, vergonhosamente, pedem a você que fique pelado, completamente pelado, para que o médico possa olhar o seu corpo dos pés, pênis e até a sua cabeça, à procura de alguma doença. O médico pede que assopre a palma da mão sem deixar sair o ar, procurando por alguma hérnia. Não tenho nenhuma doença, somente suspeito que tenho bipolaridade, mas não disse sobre essa suspeita, não tenho um diagnóstico.
+        <br><br>
+        Quando sermos incorporados no Exército Brasileiro, provável alguém dizer... Parabéns! Agora fique pronto para as mil palestras, o que são instruções militares, sobre às regras que proíbem você de fazer isso e aquilo. Talvez tentem impor medo em nós para que os sargentos sejam como Deuses Respeitáveis. Devem fazer isso no internato. Eles vão transformar cada um de nós, soldados recrutas em cobaias de sargentos e subtentate, até que, um de nós decida desistir sem
+        dar motivos aparentes, apenas desistir. Seria como fazer todos pensar que foi um acidente surreral. Ele não deu sinal de desistência, diriam.
+        <br><br>
+        O terceiro sargento Bergmann é um pai para nós, é o que ele mesmo diz, mesmo não gostando. Eu sou como um pai para os senhores, ele dizia. Talvez ele não saiba qual é a definição de "pai" Ele não comeu a minha
+        mãe e me colocou no mundo, e também não me criou quando crescia. Ele não é o meu pai. Não sei como um pai seria para mim, mas não seria o Bergmann, jamais. Pensar nisso me dá repulsa.
+        <br>
+        Os recrutas são todos jovens adultos com a mesma idade. A maldita geração Z, a geração que vivem online conectados à internet, a geração problemática, é um fato. Não temos culpa se a ascenção dos smartfones nasceu em nossa bendita geração. Deviam culpar os pioneiros de toda a tecnologia que atualmente temos, por estragar uma geração, com todas as palavras.
+        <br>
+        Eram apenas os recrutas que moram em Santa Maria presentes na Base Administrativa de Santa Maria. São quarenta vagas para quarenta recrutas. Por enquanto eram quinze, os de Santa Maria. Eu não sou dessa cidade, estou temporariamente morando aqui. Quando tudo acabar, de maneira definitiva, caso de errado em servir, vou partir para a minha cidade natal, Ijuí. Mais tarde viriam recrutas de outras cidades.
+        <br>
+        Essa seria a semana zero. A semana zero, o início de uma jornada. Uma jornada que estava começando. Vou conhecer gente nova. E todos vão saber o meu nome, ou sobrenome, e o número de recruta. Quero ser lembrado por
+        centenas de anos. Quero estar em arquivos históricos. A história tem que registrar o sobrenome e número. 609 Carvalho. Eu quero ser uma lenda histórica, lembrado para sempre. Quero arquivar tudo o que for dito em minha história. Foda-se o que pensariam a respeito, diria. Internet Archive é o meu amigo. Não pode apagar-me, serei preservado até o fim dos tempos.
+      </p>
+    </div>
+    <p>Comentários</p>
+    <iframe src="https://hack.chat/?609" frameborder="0" height="300px"></iframe>
+    <footer>
+      <p>&copy; 2023 Leitor de Livro</p>
+    </footer>
+  </div>
 
-    <script>
-        document.getElementById('search-input').addEventListener('input', function() {
-            const searchTerm = this.value.toLowerCase();
-            const content = document.getElementById('book-content').innerText;
-            const regex = new RegExp(searchTerm, 'gi');
-            const highlightedContent = content.replace(regex, match => `<span class="highlight">${match}</span>`);
-            document.getElementById('book-content').innerHTML = highlightedContent;
+  <script>
+    document.getElementById('search-input').addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase();
+      const content = document.getElementById('book-content').innerText;
+      const regex = new RegExp(searchTerm, 'gi');
+      const highlightedContent = content.replace(regex, match => `<span class="highlight">${match}</span>`);
+      document.getElementById('book-content').innerHTML = highlightedContent;
 
-            // Rolar até a primeira ocorrência do termo pesquisado
-            if (searchTerm) {
-                const firstMatch = document.querySelector('.highlight');
-                if (firstMatch) {
-                    firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }
-            }
-        });
-    </script>
+      // Rolar até a primeira ocorrência do termo pesquisado
+      if (searchTerm) {
+        const firstMatch = document.querySelector('.highlight');
+        if (firstMatch) {
+          firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    });
+  </script>
 </body>
+
 </html>
