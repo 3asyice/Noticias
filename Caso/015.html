@@ -15,9 +15,13 @@
   <link rel="icon" type="image/png" href="https://cdn.icon-icons.com/icons2/966/PNG/128/News_icon-icons.com_74697.png" sizes="16×16" />
   <title>Leitor de Livro - Ex-Militar Expulso</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Nosifer&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Nosifer&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Orbitron', sans-serif;
       background-color: #0f0f0f;
       /* Fundo preto profundo */
       color: #ffffff;
@@ -43,7 +47,7 @@
     h1 {
       text-align: center;
       color: #00ffcc;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Nosifer', Times, serif;
       /* Verde neon */
       text-shadow: 0 0 10px rgba(0, 255, 204, 0.8);
       /* Sombra neon */
@@ -58,7 +62,8 @@
     }
 
     .content p {
-      font-family: 'Times New Roman', Times, serif;
+      font-size: 15px;
+      font-family: 'Orbitron', Times, serif;
       text-indent: 2em;
       /* Indenta o início do parágrafo */
       margin-bottom: 1.5em;
@@ -72,9 +77,10 @@
       /* Letra em negrito */
       float: left;
       /* Faz a letra flutuar à esquerda */
+      letter-spacing: 1px;
       line-height: 1;
       /* Alinha a letra com o texto */
-      margin-right: 0.1em;
+      margin-right: 0.00em;
       /* Espaçamento à direita da letra */
       color: #00ffcc;
       /* Cor da primeira letra, se desejar */
@@ -85,14 +91,17 @@
     }
 
     .search-bar input {
-      width: 80%;
+      width: 95%;
       padding: 10px;
+      font-family: "Zen Tokyo Zoo", sans-serif;
       border: 1px solid #00ffcc;
       /* Borda verde neon */
       border-radius: 10px;
       background-color: #1a1a1a;
       /* Cor de fundo do campo de pesquisa */
-      color: #ffffff;
+      color: #FCFF00;
+      text-shadow: 0 0 10px #FCFF00;
+      font-size: 17px;
       /* Texto do campo de pesquisa */
       transition: border-color 0.3s;
     }
@@ -120,32 +129,76 @@
       color: #00ffcc;
       /* Verde neon */
     }
-/* From Uiverse.io by ShrinilDhorda */
-.btn {
-  font-size: 1.2rem;
-  padding: 1rem 2.5rem;
-  border: none;
-  outline: none;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  text-transform: uppercase;
-  background-color: rgb(14, 14, 26);
-  color: rgb(234, 234, 234);
-  font-weight: 700;
-  transition: 0.6s;
-  box-shadow: 0px 0px 60px #1f4c65;
-  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
-}
 
-.btn:active {
-  scale: 0.92;
-}
+    button {
+      font-size: 1.2rem;
+      padding: 1rem 2.5rem;
+      border: none;
+      outline: none;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      text-transform: uppercase;
+      background-color: rgb(14, 14, 26);
+            font-family: 'Nosifer', Times, serif;
+      color: rgb(234, 234, 234);
+      font-weight: 700;
+      transition: 0.6s;
+      box-shadow: 0px 0px 60px #1f4c65;
+      -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+    }
 
-.btn:hover {
-  background: rgb(2, 29, 78);
-  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
-  color: rgb(4, 4, 38);
-}
+    button:active {
+      scale: 0.92;
+    }
+
+    button:hover {
+      background: rgb(2, 29, 78);
+      background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+      color: rgb(4, 4, 38);
+    }
+
+    details {
+      display: flex;
+      text-align: center;
+      color: #876F00;
+      font-family: 'Nosifer', Times, serif;
+      font-weight: bolder;
+      background-color: #000000;
+      margin: 40px;
+      text-shadow: 0 0 10px #FE0000;
+      border-radius: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    a {
+      color: #FE0000;
+      text-shadow: 0 0 10px #FE0000;
+    }
+
+    a:hover {
+      color: #009DFE;
+      text-shadow: 0 0 10px #009DFE;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      outline: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+      #000000
+    }
+    
+ .chatIframe {
+            display: none; /* Os iframes começam ocultos */
+            width: 300px; /* Largura do iframe */
+            height: 500px; /* Altura do iframe */
+            border: 1px solid #ccc; /* Borda do iframe */
+            margin-top: 10px; /* Espaçamento entre os iframes */
+        }
   </style>
 </head>
 
@@ -154,32 +207,82 @@
   <div class="container">
     <h1>História de Um Recruta</h1>
     <div class="search-bar">
-      <input type="text" id="search-input" placeholder="Pesquisar palavras...">
+      <input type="text" id="search-input" placeholder="PESQUISAR PALAVRAS...">
     </div>
+    <details>
+      <summary>
+        Sumário
+      </summary>
+      <a href="#decisao">A Decisão Errada</a>
+      <a href="#incorporacao">Incorporação</a>
+      <a href="#internato">Internato</a>
+
+    </details>
     <div class="content" id="book-content">
-      <p>A DECISÃO ERRADA <br><br>
+      <p id="decisao">A DECISÃO ERRADA <br><br>
         Todo dia é um dia de pensar naquelas decisões que podem interferir completamente o seu futuro. Compreendo sobre isso completamente. Uma escolha errada e tudo ao seu redor desmorona em cima de você, com consequências. Não importa o que eu faça para tentar consertar algo que não tem como voltar atrás. É como pegar um caminho onde um terremoto acontece, e abre o chão e me puxa para dentro. Um abismo sem fim, perdido na escuridão das escolhas obrigatórias.
-        <br><br>
-        O senhor quer servir o Exército Brasileiro?, o militar que estava me entrevistando disse.
-        <br>
-        Sim, quero servir. Sou um voluntário, disse, ao mesmo tempo o entrevistador estava anotando em uma folha cheia de perguntas. É uma armadilha, eu devia saber disso. Essa é a maneira perfeita de cair em uma armadilha. Uma vez li em algum lugar, devia ser de um filme ou um documentário: Um rato preso em uma armadilha roe a própria perna para poder escapar. Essa frase era de um filme com a atriz Rebecca Ferguson. Não sou um rato, mas existe a possibilide de ter uma armadilha. <br>O grande voluntarismo obrigatório que nós jovens temos que, infelizmente, fazer por nosso país. Em uma das inspeções, vergonhosamente, pedem a você que fique pelado, completamente pelado, para que o médico possa olhar o seu corpo dos pés, pênis e até a sua cabeça, à procura de alguma doença. O médico pede que assopre a palma da mão sem deixar sair o ar, procurando por alguma hérnia. Não tenho nenhuma doença, somente suspeito que tenho bipolaridade, mas não disse sobre essa suspeita, não tenho um diagnóstico.
+        <br><br> O senhor quer servir o Exército Brasileiro?, perguntou o militar que estava me entrevistando.
+        <br> Sim, quero servir. Sou um voluntário, disse, ao mesmo tempo o entrevistador estava anotando em uma folha cheia de perguntas. É uma armadilha, eu devia saber disso. Essa é a maneira perfeita de cair em uma armadilha. Uma vez li em algum lugar, devia ser de um filme ou um documentário: Um rato preso em uma armadilha roe a própria perna para poder escapar. Essa frase era de um filme com a atriz Rebecca Ferguson. Não sou um rato, mas existe a possibilide de ter uma armadilha. <br>O grande voluntarismo obrigatório que nós jovens temos que, infelizmente, fazer por nosso país. Em uma das inspeções, vergonhosamente, pedem a você que fique pelado, completamente pelado, para que o médico possa olhar o seu corpo dos pés, pênis e até a sua cabeça, à procura de alguma doença. O médico pede que assopre a palma da mão sem deixar sair o ar, procurando por alguma hérnia. Não tenho nenhuma doença, somente suspeito que tenho bipolaridade, mas não disse sobre essa suspeita, não tenho um diagnóstico.
         <br><br>Quando sermos incorporados no Exército Brasileiro, provável alguém dizer... Parabéns! Agora fique pronto para as mil palestras, o que são instruções militares, sobre às regras que proíbem você de fazer isso e aquilo. Talvez tentem impor medo em nós para que os sargentos sejam como Deuses Respeitáveis. Devem fazer isso no internato. Eles vão transformar cada um de nós, soldados recrutas em cobaias de sargentos e subtentate, até que, um de nós decida desistir sem dar motivos aparentes, apenas desistir. Seria como fazer todos pensar que foi um acidente surreral. Ele não deu sinal de desistência, diriam.
         <br><br>O terceiro sargento Bergmann é um pai para nós, é o que ele mesmo diz, mesmo não gostando. Eu sou como um pai para os senhores, ele dizia. Talvez ele não saiba qual é a definição de "pai" Ele não comeu a minha mãe e me colocou no mundo, e também não me criou quando crescia. Ele não é o meu pai. Não sei como um pai seria para mim, mas não seria o Bergmann, jamais. Pensar nisso me dá repulsa.
         <br>Os recrutas são todos jovens adultos com a mesma idade. A maldita geração Z, a geração que vivem online conectados à internet, a geração problemática, é um fato. Não temos culpa se a ascenção dos smartfones nasceu em nossa bendita geração. Deviam culpar os pioneiros de toda a tecnologia que atualmente temos, por estragar uma geração, com todas as palavras.
         <br> Eram apenas os recrutas que moram em Santa Maria presentes na Base Administrativa de Santa Maria. São quarenta vagas para quarenta recrutas. Por enquanto eram quinze, os de Santa Maria. Eu não sou dessa cidade, estou temporariamente morando aqui. Quando tudo acabar, de maneira definitiva, caso de errado em servir, vou partir para a minha cidade natal, Ijuí. Mais tarde viriam recrutas de outras cidades.
         <br> Essa seria a semana zero. A semana zero, o início de uma jornada. Uma jornada que estava começando. Vou conhecer gente nova. E todos vão saber o meu nome, ou sobrenome, e o número de recruta. Quero ser lembrado por centenas de anos. Quero estar em arquivos históricos. A história tem que registrar o sobrenome e número. 609 Carvalho. Eu quero ser uma lenda histórica, lembrado para sempre. Quero arquivar tudo o que for dito em minha história. Foda-se o que pensariam a respeito, diria. Internet Archive é o meu amigo. Não pode apagar-me, serei preservado até o fim dos tempos.
       </p>
+ <button id="mostrarChat1">Bate Papo</button>
+    <iframe id="chatIframe1" class="chatIframe" src="" data-src="https://hack.chat/?609"></iframe> <!-- Substitua pelo URL do bate-papo 1 -->
 
-<button onclick="location.href='https://www.big-loser.site/Caso/incorporacao'" class="btn">
-  CAP 1 INCORPORAÇÃO
-</button>
+
+      <p id="incorporacao">CAPITULO UM - INCORPORAÇÃO <br><br> Augusto Bergmann era um dos sargentos instrutor. Direita e esquerda volver, frente para retaguarda, marcar passo e marchar. Tudo foi ensinado por ele. Eu detestava esse sargento, pelo fato dele simplesmente existir e pelas suas ordens absurdas. Tinha um ar de esforço em querer ensinar as posições de sentido e descansar.
+        <br>Somos apenas soldados recrutas, voluntários, de pressão psicológica e da abusividade de ensinamentos militares. Eles nos colocam números e nos chamam pele sobrenome. Assim me nomearam de 609 Carvalho. Eu estava de fato incorporado em uma Instituição, a Base Administrativa da Guarnição de Santa Maria. O nosso respectivo comandante Soares havia se apresentado para o novo pelotão de soldados recrutas do efetivo variável. O comandante Everton Conceição Soares tinha 52 anos de idade, cabelo grisalho. Era ele o homem responsável pela Organização Militar onde eu estava servindo. Era ele o homem, de poder suficiente, para decidir o caminho de qualquer um de nós. Quatro olhos poderoso, ele.
+        <br>A nossa formatura de incorporação foi emocionante. Foi como um "Bem Vindos a um ano de serviço forçado e de pressão psicológica. Agora, fiquem um mês sem poder ver as suas famílias porque estarão em internato" Teve cachorro-quente e suco de laranja como uma bela recepção aos familiares que estão ali orgulhosos vendo seus filhos, amigos e netos dando um passo novo em suas vidas. Era uma troca justa em oferecer cachorro-quente e suco em troca de soldados. Os meus avós estavam presentes, me aproximei deles.
+        <br>- Oi, estão perdidos? - falei, me revelando aos meus avós.
+        <br>- É, nós estavamos procurando por você - ele falou olhando com um olhar de orgulho e preocupação.
+        <br>- Você estava muito imóvel lá na formatura enquanto a maioria dos outros garotos estavam se movendo procurando com os olhos os familiares e amigos presentes – o avô disse.
+        <br>- O sargento Bergmann ordenou que olhássemos apenas para o horizonte e, não se mover - expliquei.
+        <br>Diante disso, a ideia de ficar um mês sem vê-los me deixou com um medo profundo em deixá-los. Respirei fundo.
+        <br>- Vamos tirar uma foto ? – ele disse, como se estivesse ali somente para tirar uma foto com o seu único neto, fardado.
+        <br>- Sim, vamos – falei.
+        <br>Tirei uma fotografia com os avós. usando o celular do avô Emílio porque a avó Rosalene não gostava de pessoas mexendo no celular dela. Ela é uma avó emprestada. Ela é italiana ou costumava a ser.
+        <br>- Por que você não vai até a mesa e pega um lanche para você? Eu aposto que mais tarde vai sentir fome. Não é mesmo? – ele falou.
+        <br>- Boa ideia, vou lá pegar um cachorro-quente na mesa. – Eu estava realmente faminto, pequei dois copinhos de suco e dois cachorro-quente. Um para o meu avô.
+        <br>- Vocês gostariam de conhecer o alojamento de cabo e soldados?
+        <br>- Sim senhor, soldado Carvalho. Seria uma ótima ideia – o avô Emilio falou.
+        <br>Levei eles até o alojamento. Eu senti um leve arrepio em pensar que isso tudo estava parecendo mais um episódio de Black Mirror. Não parecia certo eles estarem ali junto comigo. Era uma sensação estranha. O avô Emilio estava feliz e orgulhoso comigo. Eu estava feliz também.
+        <br>Mostrei a cama beliche de duas camas para eles. Tinha um manto verde.
+        <br>- Eu durmo aqui em cima – falei, mostrando o beliche que ficava em frente de um ar condicionado.
+        <br>- Você sente frio dormindo ai? – A Rosalene perguntou.
+        <br>- Sim, mas estou acostumado.
+        <br>Ela olhou de relance para o beliche. Meus avós eram altos, mesma altura, mas eu não sou alto igual a eles.
+        <br>- O alojamento é bem organizado – disse o Emilio.
+        <br>- Sim, eles sempre dão ordens para cada um arrumar as suas camas em um padrão. Assim todas as camas ficam padronizadas.
+        <br>- Onde ficam os armários de vocês? – perguntou Rosalene.
+        <br>Conduzi eles até o corredor onde ficavam os armários dos soldados. Os armários eram verde escuro. Os armários são trancados individualmente com cadeados. As vezes, alguns de nós esquecemos de remover a chave de dentro do armário e acabamos trancando-o com a chave dentro, acontece frequentemente, devido ao estresse e pela pressa do dia. Quando isso acontecia, eles pegavam e cortavam o cadeado fora e substituindo por um novo. Isso acontecia frequentemente e era um problema real
+        <br>- Esse aqui é o meu armário numerado com o meu número de recruta.
+        <br>- Legal. Onde fica o banheiro de vocês? - perguntou Rosalene com curiosidade além do normal.
+        <br>- O nosso banheiro fica no fim do corredor. Vocês querem ver?
+        <br>- Não. Acho que por hoje estamos ciente sobre onde o senhorzinho vai estar nos próximos dias. É um lugar bonito e organizado – disse o Emilio.
+        <br>- Sim, eu concordo.
+        <br>- Vamos te deixar aí então. Pode levar nós até os portões, não queremos caminhar perdidamente pelo quartel – o avô falou, como se estivesse segurando as lágrimas.
+        <br>Eu mostrei o caminho até os portões. Nós se despedimos e o avô Emilio disse que era para eu mandar mensagens ou telefonar se eu precisar de qualquer coisa. É para manter contato e atualizar sobre novidades novas. Fiquei observando eles irem embora, até não conseguir mais vê-los. Segurei as lágrimas. Talvez uma tenha escapado. Não sei. Eles me deixaram no temido desconhecido lugar que eu não estava nenhum pouco familiarizado. É como os pais abandonando um filho em um orfanato porque não têm condições de criá-lo. Não estou em um orfanato, estou no internato, oficialmente em internato.
+      </p>
+  <button id="mostrarChat2">Bate Papo</button>
+    <iframe id="chatIframe2" class="chatIframe" src="" data-src="https://hack.chat/?609"></iframe> <!-- Substitua pelo URL do bate-papo 2 -->
+
+
+      <p id="internato">CAPÍTULO DOIS - INTERNATO
+        <br><br>Estamos em internato. Estamos proibidos de ver o mundo exterior e o que restou para nós foi somente este lugar. Somos cobaias de experimentos militares. Somos reféns da mesma rotina de ontem, de hoje e a de amanhã, talvez isso seja um ciclo repetitivo. Todos os dias são iguais.
+        <br>Nós acordamos cedo e nos preparamos para o café da manhã. Às 06:00 horas da manhã o toque de alvorada é acionado. Ninguém pode continuar dormindo, todos temos que levantar. Vestimos a farda verde oliva guardado em nossos armários. O meu canga era o 610 Da Rosa. Ele era um garoto moreno. Ele era um soldado recruta que alegou ter problemas de coração, mas o Exército Brasileiro ignorou totalmente o seu problema de coração. Ele foi voluntário, esse é o motivo dele estar servindo ao meu lado. Ele era simpático, pelo menos isso.
+        <br>O nosso Treinamento Físico Militar (TFM) estava sendo conduzido pelo terceiro sargento Bergmann. Ele era um alemão de bigode por fazer, mas ele era musculoso e forte. O "Bergamota" sabia correr. Normalmente a corrida matinal são 3 Km, sem intervalos, depois da corrida temos que fazer barras. O meu máximo foram sete barras de braço. Era o meu record inquebrável. Quando o TFM acabou, de surpresa, eles deram 3 minutos para que os quarenta e um de nós tomássemos um banho no estilo "flesh" rápido de mais. Nem dava tempo de soltar um peido.
+        <br>Eu ficava na retaguarda. A retaguarda era o lugar dos baixinhos. O soldado 611 Daniel e o soldado 614 Teixeira, comigo, fechamos a retaguarda quando estamos em forma. Eu sentia o desejo de ser alto e não fazer parte da retaguarda. Às vezes desejava ser alguns centímetros mais alto, mas desejar não é o mesmo que poder. Essa minha altura é uma maldição. A maldição de não crescer mais.
+      </p>
+   <button id="mostrarChat3">Bate Papo</button>
+    <iframe id="chatIframe3" class="chatIframe" src="" data-src="https://hack.chat/?609"></iframe> <!-- Substitua pelo URL do bate-papo 3 -->
 
     </div>
-   
-    <p>Comentários</p>
-    <iframe src="https://hack.chat/?609" frameborder="0" height="300px"></iframe>
+
     <footer>
-      <p>&copy; 2023 Leitor de Livro</p>
+      <p>&copy; 2024 História de um Recruta</p>
     </footer>
   </div>
 
@@ -199,6 +302,32 @@
         }
       }
     });
+    let nicknameSolicitado = false;
+    
+    function solicitarNickname() {
+      if (!nicknameSolicitado) {
+        const nickname = prompt("Por favor, insira seu nickname:");
+        nicknameSolicitado = true;
+        // Aqui você pode usar o nickname, como armazená-lo ou enviá-lo ao iframe
+      }
+    }
+     document.getElementById('mostrarChat1').onclick = function() {
+       var iframe = document.getElementById('chatIframe1');
+       iframe.src = iframe.getAttribute('data-src'); // Define a URL do iframe ao clicar no botão
+       iframe.style.display = 'block'; // Exibe o iframe ao clicar no botão
+     };
+    
+     document.getElementById('mostrarChat2').onclick = function() {
+       var iframe = document.getElementById('chatIframe2');
+       iframe.src = iframe.getAttribute('data-src'); // Define a URL do iframe ao clicar no botão
+       iframe.style.display = 'block'; // Exibe o iframe ao clicar no botão
+     };
+    
+     document.getElementById('mostrarChat3').onclick = function() {
+       var iframe = document.getElementById('chatIframe3');
+       iframe.src = iframe.getAttribute('data-src'); // Define a URL do iframe ao clicar no botão
+       iframe.style.display = 'block'; // Exibe o iframe ao clicar no botão
+     };
   </script>
 </body>
 
