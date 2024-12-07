@@ -1,194 +1,224 @@
-html, body {
-  margin:0;
-  
-}
-  button {
-    background-color: rgba(0, 162, 255, 1);
-    color:rgba(255, 255, 255, 1);
-  }
-  .horizontal-row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .number-div {
-    padding: 10px;
-    border: 1px solid #000;
-    margin: 0 2px;
-    width: 50px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Aplicando cores alternadas usando nth-child */
-  .number-div:nth-child(3n+1) {
-    background-color: rgba(0, 0, 0, 1);
-    color: white;
-  }
-  
-  .number-div:nth-child(3n+2) {
-    background-color: rgba(67, 0, 0, 1);
-    color: rgba(240, 255, 0, 1);
-  }
-  
-  .number-div:nth-child(3n) {
-    background-color:rgba(0, 0, 0, 0.7);
-    color: white;
-  }
-  button:hover {
-    background-color: rgba(0, 0, 0, 0.42);
-    color:white;
-  }
-  h1 {
-    text-align: center;
-    margin:0;
-  }
-  header {
-    display:fixed;
-    letter-spacing: -0.5px;
-    background-color: rgba(255, 255, 255, 0.5)
-   ; text-align:justify;
-   
-  }
-  .img-1 {
-    align-self: flex-start;
-    float:left;
-   margin-top:15px;
-   margin-left:20px;
-   margin-bottom:10px;
-     }
-  .align {
-    text-align: flex-start;
-    margin-left:25px;
-    text-decoration: none;
-    color:rgba(0, 0, 0, 1);
-    font-family: 'Merriweather', serif;
-  }
-  .casos {
-    font-family:'Merriweather', serif;
-    font-size: 16px;
-    font-weight: bolder;
-    line-height: 2em;
-    display:block;
-    margin:170px;
-    text-align: center;
-    margin-top:51px;
-    background-color: rgba(0, 22, 57, 0.61);
-    border: 5px solid rgba(0, 0, 0, 0.61);
-  }
-  
-  .b {
-    color:rgba(255, 255, 255, 0.1);
-    top:0;bottom:0;left:0;right:0;
-    position:fixed;
-    display:none;
-    background-color:rgba(102, 102, 102, 1)
-   ;}
-  .z {
-    color:rgba(255, 255, 255, 0.1);
-    top:0;bottom:0;left:0;right:0;
-    position:fixed;
-    display:none;
-    background-image: linear-gradient(123deg,rgba(111, 111, 111, 1),rgba(59, 59, 59, 1),rgba(0, 0, 0, 1));
-  }
-  p {
-    font-size: 14px;
-    margin-left:20px;margin-right:20px;
+html,
+body {
+  margin: 0;
+  align-content: center;
+  background: linear-gradient(123deg,rgba(109, 109, 109, 1),rgba(50, 50, 50, 1),rgba(0, 0, 0, 1));
+  color: #E0E0E0;
   font-family: 'Merriweather', serif;
-  font-weight: normal;text-align: inline;
+}
 
-  }
-  details, summary {
-    text-decoration: none;
-    text-align: left;
-    list-style:none;
-  }
-  .h4-red{
-    margin:0;
-    margin-top:5px;
-    text-shadow: 1px 1px 2px rgba(178, 39, 39, 1);
-    font-weight: 900;
-    float:left;
-    margin-left:15px;
-    color:rgba(178, 39, 39, 1);
-    font-family: 'Merriweather', serif;
-  }
-  .or {
-    margin-top:5px;
-    text-shadow: 1px 1px 2px rgba(216, 81, 0, 1);
-    font-weight: 900;
-    float:left;
-    margin-left:15px;
-    color:rgba(216, 81, 0, 1);
-    font-family: 'Merriweather', serif;
-  }
- 
-  h2 {
-    color:rgba(0, 0, 0, 1);
-    margin-left:15px;
-    letter-spacing: -0.5px;
-    font-family:'Merriweather', serif;
-    font-weight: 900px;
-    font-stretch: 2em;
-  }
-  h5 {
-    color:rgba(255, 255, 255, 1);
-    font-family: 'Merriweather', serif;
-  }
-  h4 {
-    margin:0;
-    font-weight: bold;
-    float:left;
-    margin-left:15px;
-    color:rgba(0, 0, 0, 1);
-    font-family: 'Merriweather', serif;
-  }
-  hr {
-    background-color:rgba(255, 0, 0, 1);margin:4px;
-    color:rgba(252, 0, 0, 1);
-  }
-  .p-date {
-    font-size: 12px;
-    font-family:'Merriweather', serif; 
-  }
-  .a {
-    display:inline-block;
-    margin:0;
-    padding-top:0;
-    text-align: top;
-    padding:0;
-  }
-  .p-share {
-  border: 1px solid #000000;
-  border-radius: 20px;
-  padding:5px;
-  float:left;
-  display:flex;
-  color:rgba(0, 0, 0, 1);
-  background-color: rgba(255, 255, 255, 1);
-  }
-  .p-share:hover {
-    border: 1px solid #000000;
-  border-radius: 20px;
-  padding:5px;
-  display:flex;
-  float:left;
-  display:flex;
-  color:rgba(255, 255, 255, 1);
+.horizontal-row {
+  display: flex;
+  padding-top:50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.number-div {
+  padding: 10px;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  margin: 0 2px;
+  width: 50px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+}
+.number-div:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 1s infinite; /* Efeito de piscar */
+}
+.number-div:nth-child(3n+1) {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #00FF50;
+}
+
+.number-div:nth-child(3n+2) {
+  background-color: rgba(20, 20, 20, 1);
+  color: rgba(240, 0, 0, 1);
+}
+
+.number-div:nth-child(3n) {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+header {
+  position: fixed;
+  letter-spacing: -0.5px;
+  background-color: rgba(0, 255, 156, 0.54);
+  width:55%;
+  text-align: justify;
+  color: #E0E0E0;
+}
+
+.img-1 {
+  align-self: flex-start;
+  float: left;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.align {
+  text-align: flex-start;
+  margin-left: 25px;
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.casos {
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 2em;
+  display: block;
+  margin: 70px auto;
+  text-align: center;
+  background-color: rgba(10, 10, 10, 0.8);
+  border: 5px solid rgba(255, 0, 0, 0.5);
+}
+
+.b {
+  color: rgba(255, 255, 255, 0.1);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: none;
+  background-color: rgba(50, 50, 50, 0.8);
+}
+
+.z {
+  color: rgba(255, 255, 255, 0.1);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: none;
+  background-image: linear-gradient(123deg, rgba(20, 20, 20, 1), rgba(0, 0, 0, 1));
+}
+
+p {
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: normal;
+  text-align: inline;
+}
+
+details,
+summary {
+  text-decoration: none;
+  text-align: left;
+  list-style: none;
+}
+
+.h4-red {
+  margin: 0;
+  margin-top: 5px;
+  text-shadow: 1px 1px 2px rgba(178, 39, 39, 1);
+  font-weight: 900;
+  float: left;
+  margin-left: 15px;
+  color: rgba(178, 39, 39, 1);
+}
+
+.or {
+  margin-top: 5px;
+  text-shadow: 1px 1px 2px rgba(216, 81, 0, 1);
+  font-weight: 900;
+  float: left;
+  margin-left: 15px;
+  color: rgba(216, 81, 0, 1);
+}
+
+h2 {
+  color: rgba(255, 0, 0, 1);
+  margin-left: 15px;
+  letter-spacing: -0.5px;
+  font-weight: 900;
+}
+
+h5 {
+  color: rgba(255, 255, 255, 1);
+}
+
+h4 {
+  margin: 0;
+  font-weight: bold;
+  float: left;
+  margin-left: 15px;
+  color: rgba(255, 0, 0, 1);
+}
+
+hr {
   background-color: rgba(255, 0, 0, 1);
- 
-  }
-  .container, p {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  footer {
-    background: linear-gradient(123deg, #D6D6D6,#A6A2A2,#868686);
-    color: rgba(43, 0, 0, 1);
-    text-align: center;
-    padding: 10px 0;
-    border-top: 2px solid rgba(255, 0, 0, 1);
-    font-size: 0.8rem;
-  }
+  margin: 4px;
+  color: rgba(252, 0, 0, 1);
+}
+
+.p-date {
+  font-size: 12px;
+}
+
+.a {
+  display: inline-block;
+  margin: 0;
+  padding-top: 0;
+  text-align: top;
+  padding: 0;
+}
+
+.container,
+p {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  background: linear-gradient(123deg, #1C1C1C, #3D3D3D, #000000);
+  color: rgba(255, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  border-top: 2px solid rgba(255, 0, 0, 1);
+  font-size: 0.8rem;
+}
+
+.share__div {
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.share__btn {
+  border: 1px solid #000000;
+  border-radius: 15px;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 10px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.share__btn:hover {
+  
+  border: 1px solid #000000;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 0, 0, 0.8);
+}
