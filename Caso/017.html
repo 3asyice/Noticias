@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="author" content="anonymous">
+  <meta name="description" content="Uma tabela com os militares da 6BDA NIEDERAUER">
+  <meta name="keywords" content="tabela, conteúdo, privado, soldados, nomes, recrutas, sargentos, cabos, Base, Administrativa, da, Guarnição, de, Santa, Maria, B Adm Gu SM">
+  <title></title>
+</head>
+<style>
+html, body {
+  background-color: rgba(0, 0, 0, 0.66);
+  font-family: 'Courier New', Courier, monospace;
+  margin:0;
+}
+
+table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  border: 2px solid rgba(0, 255, 30, 1);
+  box-shadow: 0 0 20px rgba(0, 255, 30, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+th {
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+  color: #FF0000;
+  padding: 15px;
+  text-align:center;
+  border-bottom: 2px solid rgba(0, 255, 30, 1);
+  text-shadow: 0 0 5px rgba(255, 0, 0, 1);
+}
+
+td {
+  background: linear-gradient(90deg, rgba(0, 255, 30, 0.1), rgba(0, 0, 0, 0.7));
+  color: rgba(0, 255, 30, 1);
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 255, 30, 0.5);
+  transition: background 0.3s;
+}
+
+td:hover {
+  background: rgba(0, 255, 30, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 30, 1);
+}
+.search__container {
+  text-align: center;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.input__search {
+    width: 300px; /* Largura do input */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 18px; /* Tamanho da fonte */
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 24px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: box-shadow 0.3s; /* Transição suave para a sombra */
+}
+
+.input__search[type="text"]:focus {
+  outline: none; /* Remove o contorno padrão */
+  border-color: #4285f4; /* Cor da borda ao focar */
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.5); /* Sombra mais forte ao focar */
+}
+</style>
+<body>
+<div class="search__container">
+  <input class="input__search" type="text" id="searchInput" onkeyup="filterTable()" placeholder="Buscar por nome...">
+</div>
+<table id="militaryTable">
+  <th>Grad</th>
+  <th>Número</th>
+  <th>Nome</th>
+  <th>Seção</th>
+    <tr>
+     <td>Sgt</td>
+     <td></td>
+     <td><a href="https://www.facebook.com/augusto.cunha.984">Bergmann</a></td>
+     <td>Contingente</td>
+   </tr>
+      <tr>
+     <td>Sgt</td>
+     <td></td>
+     <td>Azevedo</td>
+     <td>Unknown</td>
+   </tr>
+      <tr>
+     <td>Sgt</td>
+     <td></td>
+     <td>Forgerini</td>
+     <td>Contingente</td>
+   </tr>
+      <tr>
+     <td>Sgt</td>
+     <td></td>
+     <td>De Moraes</td>
+     <td>Prédios</td>
+   </tr>
+      <tr>
+    <td>Sgt</td>
+    <td></td>
+    <td>Karlise</td>
+    <td>Unknown</td>
+  </tr>
+     <tr>
+    <td>Sgt</td>
+    <td></td>
+    <td>Manoel</td>
+    <td>Contingente</td>
+  </tr>
+      <tr>
+     <td>Cb</td>
+     <td></td>
+     <td>Marlom</td>
+     <td>Unknown</td>
+   </tr>
+      <tr>
+     <td>Cb</td>
+     <td></td>
+     <td>Thalison</td>
+     <td>RP</td>
+   </tr>
+      <tr>
+     <td>Cb</td>
+     <td></td>
+     <td>Vila Nova</td>
+     <td>Unknown</td>
+   </tr>
+      <tr>
+     <td>Cb</td>
+     <td></td>
+     <td>Prates</td>
+     <td>Unknown</td>
+   </tr>
+   <tr>
+     <td>Cb</td>
+     <td></td>
+     <td><a href="https://www.facebook.com/ygor.borin">Borin</a></td>
+     <td>Rancho</td>
+   </tr>
+   <tr>
+     <td>Cb</td>
+     <td></td>
+     <td><a href="https://www.facebook.com/diego.darciano">Vilanova</a></td>
+     <td>Contingente</td>
+   </tr>
+  <tr>
+    <td>Cb</td>
+    <td></td>
+    <td><a href="https://www.facebook.com/kawa.lorentz.1">Kauã</a></td>
+    <td>Contingente</td>
+  </tr>
+      <tr>
+     <td>Cb</td>
+     <td></td>
+     <td>Lopes</td>
+     <td>Vila</td>
+   </tr>
+   <tr>
+    <td>Sd EP</td>
+    <td></td>
+    <td><a href="https://www.facebook.com/gabriel.almeidaflores">Almeida</a></td>
+    <td>Seç Pessoal</td>
+   </tr>
+   <tr>
+     <td>Sd EP</td>
+     <td></td>
+     <td><a href="https://www.facebook.com/miguel.florespedrozo">Miguel</a></td>
+     <td>Informática</td>
+   </tr>
+    <tr>
+    <td>Sd EP</td>
+    <td></td>
+    <td>Isaias</td>
+    <td>EB F@cil</td>
+  </tr>
+    <tr>
+    <td>Sd EP</td>
+    <td></td>
+    <td>Streb</td>
+    <td>Arquivos</td>
+  </tr>
+    <tr>
+    <td>Sd EP</td>
+    <td></td>
+    <td>Dallago</td>
+    <td>Unknown</td>
+  </tr>
+    <tr>
+    <td>Sd EP</td>
+    <td></td>
+    <td>De Paula</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>Sd EP</td>
+    <td></td>
+    <td>Ziguinatti</td>
+    <td>Unknown</td>
+  </td>
+  <tr>
+    <td>Sd EV</td>
+    <td>601</td>
+    <td>Tassinari</td>
+    <td>HT</td>
+  </tr>
+  <tr>
+    <td>Sd EV</td>
+    <td>602</td>
+    <td><a href="https://www.facebook.com/samuel.weber.526">Weber</a></td>
+    <td>Vila</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>603</td>
+    <td>Maidana</td>
+    <td>Vila</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>604</td>
+    <td>Richard</td>
+    <td>Unknown</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>605</td>
+    <td>Allan</td>
+    <td>Contingente</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>606</td>
+    <td>Schumacher</td>
+    <td>Unknown</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>607</td>
+    <td>Chimainski</td>
+    <td>Vila</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>608</td>
+    <td>Drescher</td>
+    <td>HT</td>
+  </tr>
+    <tr>
+    <td><del>Sd EV</del></td>
+    <td><strike>609</strike></td>
+    <td><strike>Carvalho</strike></td>
+    <td><strike>EB F@cil</strike></td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>610</td>
+    <td>Da Rosa</td>
+    <td>Contingente</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>611</td>
+    <td>Daniel</td>
+    <td>Almox</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>612</td>
+    <td>Gonçalves</td>
+    <td>Prédios</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>613</td>
+    <td>Ebling</td>
+    <td>Unknown</td>
+  </tr>
+    <tr>
+    <td><strike>Sd EV</strike></td>
+    <td><strike>614</strike></td>
+    <td><strike>********</strike></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>615</td>
+    <td>Bernardi</td>
+    <td>Rancho</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>616</td>
+    <td>Gregori</td>
+    <td>Informática</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>617</td>
+    <td>Silvano</td>
+    <td>Prédios</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>618</td>
+    <td>Roger</td>
+    <td>Rancho</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>619</td>
+    <td>Zancan</td>
+    <td>Unknown</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>620</td>
+    <td>Da Silva</td>
+    <td>Contingente</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>621</td>
+    <td>Kainan</td>
+    <td>Contingente</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>622</td>
+    <td>Preuss</td>
+    <td>Contingente</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>623</td>
+    <td>Cardoso</td>
+    <td>RP</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>624</td>
+    <td>Nesske</td>
+    <td>Vila</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>625</td>
+    <td><a href="https://www.facebook.com/leonardo.honignogueira.7">Hönig</a></td>
+    <td>HT</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>626</td>
+    <td>Xavier</td>
+    <td>Almox</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>627</td>
+    <td>Lemos</td>
+    <td>Contingente</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>628</td>
+    <td>Anderson</td>
+    <td>Prédios</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>629</td>
+    <td>Magalhães</td>
+    <td>Vila</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>630</td>
+    <td>Machado</td>
+    <td>Vila</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>631</td>
+    <td>Fagundes</td>
+    <td>Contingente</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>632</td>
+    <td>Alberto</td>
+    <td>Vila</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>633</td>
+    <td>Coelho</td>
+    <td>EB F@cil</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>634</td>
+    <td>Gabriel</td>
+    <td>Rancho</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>635</td>
+    <td>Eduardo</td>
+    <td>Vila</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>636</td>
+    <td>Emanuel</td>
+    <td>Contingente</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>637</td>
+    <td>Silva Santos</td>
+    <td>Unknown</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>638</td>
+    <td>Oliveira</td>
+    <td>Vila</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>639</td>
+    <td>Keller</td>
+    <td>HT</td>
+  </tr>
+    <tr>
+    <td>Sd EV</td>
+    <td>640</td>
+    <td>Lucas</td>
+    <td>Unknown</td>
+  </tr>
+</table>
+<script>
+  function filterTable() {
+  const input = document.getElementById('searchInput');
+  const filter = input.value.toLowerCase();
+  const table = document.getElementById('militaryTable');
+  const tr = table.getElementsByTagName('tr');
+
+  let hasMatch = false; // Para verificar se há correspondência
+
+  for (let i = 1; i < tr.length; i++) {
+    const tdGrad = tr[i].getElementsByTagName('td')[0]; // Coluna do Grad
+    const tdNum = tr[i].getElementsByTagName('td')[1]; // Coluna do Número
+    const tdNome = tr[i].getElementsByTagName('td')[2]; // Coluna do Nome
+    const tdSecao = tr[i].getElementsByTagName('td')[3]; // Coluna da Seção
+
+    if (tdNome || tdNum || tdGrad || tdSecao) {
+      const txtValueGrad = tdGrad.textContent || tdGrad.innerText;
+      const txtValueNum = tdNum.textContent || tdNum.innerText;
+      const txtValueNome = tdNome.textContent || tdNome.innerText;
+      const txtValueSecao = tdSecao.textContent || tdSecao.innerText;
+
+      // Verifica se o valor de entrada corresponde a qualquer uma das colunas
+      if (
+        txtValueNome.toLowerCase().indexOf(filter) > -1 ||
+        txtValueNum.toLowerCase().indexOf(filter) > -1 ||
+        txtValueGrad.toLowerCase().indexOf(filter) > -1 ||
+        txtValueSecao.toLowerCase().indexOf(filter) > -1
+      ) {
+        tr[i].style.display = '';
+        hasMatch = true; // Há uma correspondência
+      } else {
+        tr[i].style.display = 'none';
+      }
+    }
+  }
+
+  // Rolar até a tabela se houver correspondência
+  if (hasMatch) {
+    table.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+</script>
+</body>
+
+</html>
