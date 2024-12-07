@@ -1,6 +1,9 @@
+* {
+  margin:0 auto;
+}
 html,
 body {
-  margin: 0;
+  margin:0;
   align-content: center;
   background: linear-gradient(123deg,rgba(109, 109, 109, 1),rgba(50, 50, 50, 1),rgba(0, 0, 0, 1));
   color: #E0E0E0;
@@ -8,7 +11,7 @@ body {
 }
 
 .horizontal-row {
-  display: flex;
+  display: block;
   padding-top:50px;
   justify-content: center;
   flex-wrap: wrap;
@@ -17,13 +20,14 @@ body {
 .number-div {
   padding: 10px;
   border: 1px solid rgba(255, 0, 0, 0.5);
-  margin: 0 2px;
-  width: 50px;
+  margin:10px;
+  display:block;
+  width: 90%;
   text-align: center;
   font-family: 'Courier New', monospace;
 }
 .number-div:hover {
-  transform: scale(1.1);
+  transform: scale(1.0);
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
 }
 @keyframes blink {
@@ -74,7 +78,9 @@ header {
 }
 
 .align {
-  text-align: flex-start;
+  padding-top:50px;
+  line-height: 3em;
+  text-align: center;
   margin-left: 25px;
   text-decoration: none;
   color: rgba(255, 0, 0, 0.7);
@@ -109,6 +115,7 @@ header {
   left: 0;
   right: 0;
   position: fixed;
+  overflow: auto;
   display: none;
   background-image: linear-gradient(123deg, rgba(20, 20, 20, 1), rgba(0, 0, 0, 1));
 }
