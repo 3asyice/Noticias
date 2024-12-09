@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined');
+
+html,
+body {
+  background-color: rgba(30, 30, 30, 0.9);
+  /* Escurecido para um efeito mais cyberpunk */
+  margin: 0;
+  overflow: auto;
+  font-family: 'Lovers Quarrel', sans-serif;
+  /* Definindo a fonte global */
+  color: #FFFFFF;
+  /* Cor de texto padrão */
+}
+
+.title__header {
+  font-size: 24px;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.8);
+  /* Mantido, mas levemente transparente */
+  color: rgba(28, 194, 47, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  /* Efeito de sombra mais forte */
+}
+
+.title__h1 {
+  font-weight: 400;
+  color: #FFFFFF;
+  transition: color 0.3s;
+  /* Transição suave */
+}
+
+.title__h1:hover {
+  color: rgba(0, 201, 255, 1);
+  /* Azul ciano */
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.menu__area {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu__btn {
+  color: rgba(0, 6, 255, 1);
+  background: transparent;
+  border: none;
+  transition: color 0.3s;
+  /* Transição suave */
+}
+
+.menu__btn:hover {
+  color: rgba(0, 255, 91, 1);
+  /* Verde neon */
+}
+
+.rodape {
+  margin-top: 340px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  /* Leve ajuste na transparência */
+}
+
+h2 {
+  font-family: 'Baskerville', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin: 30px;
+  padding: 10px 0;
+  /* Ajuste no padding */
+  border: 1px dashed rgba(252, 255, 0, 1);
+  /* Simplificado */
+  background: rgba(50, 50, 50, 0.8);
+  /* Fundo escuro */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  /* Sombra mais intensa */
+}
+
+h2:hover {
+  background: rgba(120, 120, 120, 0.9);
+  /* Efeito hover escurecido */
+  color: #FFFFFF;
+  padding: 10px 0;
+  /* Mantido para consistência */
+}
+
+.audio-player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 120px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #FFFFFF;
+  /* Cor do texto branca */
+  transition: color 0.3s, transform 0.3s;
+  /* Adicionando efeito de transformação */
+}
+
+button:hover {
+  color: #007BFF;
+  /* Azul ao passar o mouse */
+  transform: scale(1.05);
+  /* Leve aumento ao passar o mouse */
+}
+
+.pop__song {
+  justify-content: center;
+  display: block;
+  padding: 20px 0;
+  background-color: #000000;
+}
+
+.stop {
+  color: rgba(184, 0, 0, 1);
+  /* Mantido */
+}
+
+.number__page {
+  color: #FFFFFF;
+  font-family: transparent;
+  display: flex;
+  font-family: 'Times New Roman', sans-serif;
+  justify-content: center;
+}
+
+a {
+  color:#FFFFFF;
+  background:#000000 ;
+  padding: 5px;
+  border-radius: 5px;
+  margin:10px;
+  padding-left: 10px;
+  padding-right:10px;
+  border: 1px solid #FFEC00;
+}
+a:hover {
+  color:#000000;
+  background:#FFFFFF;
+  border:1px solid #FF0000;
+}
