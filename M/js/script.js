@@ -15,6 +15,9 @@ function playNext(currentPlayer) {
     currentAudio.pause(); // Pausa a música atual
     currentAudio.currentTime = 0; // Reseta o tempo
     nextAudioElement.play(); // Reproduz a próxima música
+
+    // Atualiza o título da página para o título da próxima música
+    document.title = nextPlayer.querySelector('h2').textContent;
   }
 }
 
@@ -40,6 +43,9 @@ audioPlayers.forEach(player => {
       }
     });
     audio.play(); // Reproduz a música atual
+
+    // Atualiza o título da página para o título da música atual
+    document.title = player.querySelector('h2').textContent;
   });
 
   pauseButton.addEventListener('click', () => {
