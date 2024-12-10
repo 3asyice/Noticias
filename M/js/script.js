@@ -16,8 +16,21 @@ function playNext(currentPlayer) {
     currentAudio.currentTime = 0; // Reseta o tempo
     nextAudioElement.play(); // Reproduz a próxima música
 
-    // Atualiza o título da página para o título da próxima música
-    document.title = nextPlayer.querySelector('h2').textContent;
+    // Atualiza o título da página e o título da mídia
+    const nextTitle = nextPlayer.querySelector('h2').textContent;
+    document.title = nextTitle;
+    updateMediaMetadata(nextTitle);
+  }
+}
+
+// Função para atualizar os metadados da mídia
+function updateMediaMetadata(title) {
+  if (typeof document.mediaSession !== 'undefined') {
+    document.mediaSession.metadata = new MediaMetadata({
+      title: title,
+      artist: 'Artista Desconhecido', // Você pode adicionar o artista aqui se desejar
+      album: 'Álbum Desconhecido' // Você pode adicionar o álbum aqui se desejar
+    });
   }
 }
 
@@ -44,8 +57,10 @@ audioPlayers.forEach(player => {
     });
     audio.play(); // Reproduz a música atual
 
-    // Atualiza o título da página para o título da música atual
-    document.title = player.querySelector('h2').textContent;
+    // Atualiza o título da página e o título da mídia
+    const currentTitle = player.querySelector('h2').textContent;
+    document.title = currentTitle;
+    updateMediaMetadata(currentTitle);
   });
 
   pauseButton.addEventListener('click', () => {
