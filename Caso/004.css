@@ -1,74 +1,65 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
 
-.search-container {
-  margin-bottom: 20px;
-}
-
-.search-input {
-  width: 80%;
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  /* Espaço entre os campos de pesquisa */
-}
-
-@keyframes move-gradient {
-  0% {
-    background-position: 0% 0%;
-  }
-
-  100% {
-    background-position: 100% 0%;
-  }
-}
-
-hr {
-  margin: 10px 0;
-  height: 1px;
-  border: none;
-  background: linear-gradient(123deg, rgba(255, 235, 0, 1), rgba(255, 0, 0, 1), rgba(36, 255, 0, 1), rgba(36, 255, 0, 1), rgba(255, 0, 0, 1), rgba(255, 235, 0, 1), rgba(255, 235, 0, 1));
-  background-size: 200% 100%;
-  animation: move-gradient 4s linear infinite;
-}
-
-input {
-  color: rgba(30, 255, 0, 1);
-  background-color: #323232;
-  width: 50px;
-  height: 20px;
-}
-
-input:hover {
-  color: rgba(255, 0, 0, 1);
-  background-color: #323232;
-}
-html, body {
-background-color:rgba(0, 0, 0, 1);
-color:rgba(43, 255, 56, 1);
-}
-h1 {
-  text-align: center;
+  @import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
   
-}
-h1, a {
-  color:rgba(43, 255, 56, 1);margin-left: 20px;display:inline-flex;
-  font-family: monospace;
-}
-p {
-  float:right;
-  font-size: 9px;
-  font-family: monospace;
-  color:rgba(43, 255, 56, 1);margin-left: 20px;
-  display: inline-flex;
-border-bottom: 1px dashed rgba(255, 0, 0, 1);
-}
-a {
-  font-size: 9px;
-    text-decoration: none;
-    border-bottom: 1px dashed rgba(240, 255, 0, 1);
-  margin-left: 20px;
-  display:inline-flex;
-}
+  *{
+      font-size: 24px;
+      font-family: 'Times New Roman', sans-serif;
+  }
+    html, body {
+      width:100%;
+      overflow-y: scroll;
+      background:#000000;
+      margin:0;
+    }
+    
+    .h1__title {
+      text-align: center;
+      font-size: 24px;
+      color:#00FF30;
+      font-family: 'Times New Roman', sans-serif;
+    }
+    .search-container {
+      justify-content: center;
+      display:flex;
+      margin:50px;
+    }
+    .search-input {
+      padding:15px;
+      
+    }
+    a {
+      color:rgba(18, 255, 0, 1);
+      font-size: 14px;
+      flex-wrap: wrap;
+      padding:5px;
+      background:rgba(0, 0, 0, 1);
+      text-decoration: none;
+    }
+    a:hover {
+      color:rgba(207, 32, 32, 1);
+      padding:8px;
+    }
+    .date {
+      color:rgba(252, 255, 0, 1);
+      flex-wrap: wrap;
+      padding:0px;
+      background:rgba(0, 0, 0, 1);
+      font-size: 12px;
+      float: right;
+      margin-right: 20px
+    }
+    .date, a {
+      margin-left: 20px;
+    }
+    .link-item {
+      display:inline-block;
+    }
+    #links {
+      background:url('css/leonardo.jpg') center / cover no-repeat fixed;
+    }
+    footer {
+      font-size: 12px;
+      padding:15px;
+      text-align: center;
+      color:rgba(255, 255, 255, 1);
+    }
