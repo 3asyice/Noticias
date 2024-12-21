@@ -1,0 +1,269 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0c0c0c;
+  /* Fundo preto profundo */
+  color: #e0e0e0;
+  /* Texto em cinza claro */
+  margin: 0;
+  padding: 10px;
+  overflow: auto;
+  /* Para evitar barras de rolagem indesejadas */
+}
+
+.container {
+  max-width: 906px;
+  margin: auto;
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3), 0 5px 20px rgba(255, 0, 255, 0.3);
+  backdrop-filter: blur(15px);
+  /* Efeito de desfoque do fundo */
+}
+
+h1 {
+  text-align: center;
+  color: #ff007f;
+  /* Rosa neon */
+  font-family: 'Nosifer', Times, serif;
+  /* Fonte estilizada */
+  text-shadow: 0 0 15px #ff007f;
+  /* Sombra neon mais intensa */
+}
+
+.content {
+  white-space: pre-wrap;
+  /* Mantém quebras de linha do texto */
+  line-height: 1.6;
+  color: #ffffff;
+  /* Texto branco */
+}
+
+.content p {
+  font-size: 16px;
+  /* Aumentado para melhor legibilidade */
+  font-family: 'Orbitron', Times, serif;
+  text-align: justify;
+  hyphens: auto;
+  text-indent: 2em;
+  /* Indenta o início do parágrafo */
+  margin-bottom: 1.5em;
+  /* Espaço entre parágrafos */
+}
+
+.content p::first-letter {
+  font-size: 4em;
+  /* Tamanho maior para a primeira letra */
+  font-weight: bold;
+  /* Letra em negrito */
+  float: left;
+  /* Faz a letra flutuar à esquerda */
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-right: 0.1em;
+  /* Espaçamento à direita da letra */
+  color: #00ffcc;
+  /* Cor da primeira letra */
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 95%;
+  padding: 12px;
+  font-family: "Zen Tokyo Zoo", sans-serif;
+  border: 2px solid #00ffcc;
+  /* Borda verde neon mais espessa */
+  border-radius: 10px;
+  background-color: #222222;
+  /* Cor de fundo mais escura */
+  color: #FCFF00;
+  /* Texto amarelo neon */
+  text-shadow: 0 0 10px #FCFF00;
+  font-size: 18px;
+  /* Aumentado para melhor legibilidade */
+  transition: border-color 0.3s, box-shadow 0.3s;
+  /* Adicionando transição para box-shadow */
+}
+
+.search-bar input::placeholder {
+  color: #aaaaaa;
+  /* Cor do texto do placeholder */
+}
+
+.search-bar input:focus {
+  border-color: #ff00ff;
+  /* Mudança de cor ao focar */
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+  /* Sombra ao focar */
+}
+
+span.highlight {
+  background-color: rgba(0, 255, 204, 0.5);
+  /* Destaque semi-transparente */
+  color: black;
+  /* Texto preto no destaque */
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #00ffcc;
+  /* Verde neon */
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(18, 18, 34);
+  /* Fundo escuro */
+  font-family: 'Nosifer', Times, serif;
+  color: #e0e0e0;
+  /* Texto claro */
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #00ffcc;
+  /* Efeito de sombra */
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+button:hover {
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(255, 255, 255);
+  /* Texto branco ao passar o mouse */
+}
+
+details {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: #f0e68c;
+  /* Amarelo neon */
+  font-family: 'Nosifer', Times, serif;
+  font-weight: bolder;
+  background-color: #111111;
+  /* Fundo escuro */
+  margin: 40px;
+  text-shadow: 0 0 10px #ff007f;
+  /* Sombra neon */
+  border-radius: 20px;
+  padding: 15px;
+  /* Aumentando o padding */
+}
+
+details:hover {
+  color: #E1FF00;
+  /* Verde neon ao passar o mouse */
+}
+
+::selection {
+  background-color: #FF006D;
+  /* Cor de seleção */
+  color: #0DFF00;
+  /* Cor do texto na seleção */
+}
+
+a {
+  color: #ff007f;
+  /* Rosa neon */
+  text-shadow: 0 0 10px #ff007f;
+  /* Sombra neon */
+}
+
+a:hover {
+  color: #009DFE;
+  /* Azul neon ao passar o mouse */
+  text-shadow: 0 0 10px #009DFE;
+  /* Sombra neon */
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+
+}
+
+summary::-webkit-details-marker {
+  display: none;
+  /* Escondendo o marcador padrão */
+}
+
+.chatIframe {
+  display: none;
+  /* Os iframes começam ocultos */
+  width: 300px;
+  /* Largura do iframe */
+  height: 500px;
+  /* Altura do iframe */
+  border: 2px solid #00ffcc;
+  /* Borda verde neon */
+  margin-top: 10px;
+  /* Espaçamento entre os iframes */
+}
+
+.btn-lang {
+  font-size: 12px;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+}
+
+.language-button,
+.option-button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00ffcc;
+  /* Verde neon */
+  color: black;
+  /* Texto preto */
+  cursor: pointer;
+}
+
+.options {
+  display: none;
+  /* Oculta as opções inicialmente */
+  margin-top: 10px;
+}
+
+.option-button {
+  background-color: #0099cc;
+  /* Azul neon */
+}
+
+.bate__papo {
+  background: transparent;
+  width: 10%;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 1;
+}
+
+section div {
+  justify-items: right;
+  width: 30%;
+  justify-content: right;
+}
