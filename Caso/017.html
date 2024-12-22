@@ -45,6 +45,7 @@ th {
 td{
   
   background: linear-gradient(90deg, rgba(0, 255, 30, 0.1), rgba(0, 0, 0, 0.7));
+  text-align: center;
   color: rgba(0, 255, 30, 1);
   padding: 5px;
   border-bottom: 1px solid rgba(0, 255, 30, 0.5);
@@ -116,23 +117,26 @@ footer{
     <tr>
      <td>3° Sgt</td>
      <td></td>
-     <td><a href="https://www.facebook.com/augusto.cunha.984">Bergmann</a></td>
+     <td onclick="bergmann()">Bergmann</td>
      <td onclick="nucleo()">Contingente</td>
    </tr>
    <div class="info" id="infoDiv"></div>
+   <div class="info" id="sgt__bergmann"></div>
       <tr>
      <td>3° Sgt</td>
      <td></td>
-     <td>Azevedo</td>
+     <td onclick="azevedo()">Azevedo</td>
      <td onclick="unknown()">Unknown</td>
    </tr>
    <div class="info" id="unknownDiv"></div>
+   <div class="info" id="sgt__azevedo"></div>
       <tr>
      <td>3° Sgt</td>
      <td></td>
-     <td>Forgerini</td>
+     <td onclick="forgerini()">Forgerini</td>
      <td onclick="nucleo()">Contingente</td>
    </tr>
+   <div class="info" id="sgt__forgerini"></div>
       <tr>
      <td>3° Sgt</td>
      <td></td>
@@ -283,9 +287,10 @@ footer{
   <tr>
     <td>Sd EV</td>
     <td>602</td>
-    <td><a href="https://www.facebook.com/samuel.weber.526">Weber</a></td>
+    <td onclick="weber()">Weber</td>
     <td>Vila</td>
   </tr>
+  <div class="info" id="sd__weber"></div>
     <tr>
     <td>Sd EV</td>
     <td>603</td>
@@ -325,9 +330,10 @@ footer{
     <tr>
     <td><del>Sd EV</del></td>
     <td><strike>609</strike></td>
-    <td><strike><a href="https://www.facebook.com/gui.abreu.313">Carvalho</a></strike></td>
+    <td onclick="carvalho()"><strike>Carvalho</strike></td>
     <td onclick="ebFacil()"><strike>EB F@cil</strike></td>
   </tr>
+  <div class="info" id="sd__carvalho"></div>
     <tr>
     <td>Sd EV</td>
     <td>610</td>
@@ -356,9 +362,10 @@ footer{
     <tr>
     <td><strike>Sd EV</strike></td>
     <td><strike>614</strike></td>
-    <td><strike><a href="https://www.facebook.com/carloshenrique.teixeiradasilva.31">********</a></strike></td>
+    <td onclick="teixeira()"><strike>********</strike></td>
     <td></td>
   </tr>
+  <div class="info" id="sd__teixeira"></div>
     <tr>
     <td>Sd EV</td>
     <td>615</td>
@@ -422,9 +429,10 @@ footer{
     <tr>
     <td>Sd EV</td>
     <td>625</td>
-    <td><a href="https://www.facebook.com/leonardo.honignogueira.7">Hönig</a></td>
+    <td onclick="honig()">Hönig</a></td>
     <td onclick="ht()">HT</td>
   </tr>
+  <div class="info" id="sd__honig"></div>
     <tr>
     <td>Sd EV</td>
     <td>626</td>
@@ -629,6 +637,83 @@ function rancho() {
   }, 5000);
 }
 
+// 609 carvalho
+
+function carvalho() {
+  const sd609 = document.getElementById('sd__carvalho');
+  sd609.innerHTML = "<img width='34x34' src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/609carvalho.jpg'> O soldado <a href='https://www.facebook.com/gui.abreu.313'>Carvalho</a> é reconhecido pela sua expulsão das Forças Armadas após se jogar no capô do carro da advogada Camila Dalcol.";
+  sd609.style.display = 'block';
+
+  setTimeout(() => {
+    sd609.style.display = 'none';
+  }, 5000);
+}
+
+// augusto bergmann
+function bergmann() {
+  const agst = document.getElementById('sgt__bergmann');
+  agst.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/bergmann.jpg'> Augusto <a href='https://www.facebook.com/augusto.cunha.984'>Bergmann</a> da Cunha é o terceiro sargento responsável pelos soldados recrutas.";
+  agst.style.display = 'block'; 
+  
+  setTimeout(() => {
+    agst.style.display = 'none'; 
+  }, 5000);
+}
+
+// 614 te-i-xe-i-ra
+function teixeira() {
+  const txra = document.getElementById('sd__teixeira');
+  txra.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/teixeira.jpg'> O soldado <a href='https://www.facebook.com/carloshenrique.teixeiradasilva.31'>Teixeira</a> cometeu suicídio ao pular de uma ponte em São Pedro do Sul no dia 08 de maio de 2024.";
+  txra.style.display = 'block';
+
+  setTimeout(() => {
+    txra.style.display = 'none';
+  }, 5000);
+}
+
+// honig
+function honig() {
+  const hng = document.getElementById('sd__honig');
+  hng.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/honig.jpg'> O soldado <a href='https://www.facebook.com/leonardo.honignogueira.7'>Hönig</a> tem a habilidade de se comunicar no idioma inglês, por esta razão foi escolhido para trabalhar no HT para receber estrangeiros de outros países.";
+  hng.style.display = 'block';
+
+  setTimeout(() => {
+    hng.style.display = 'none';
+  }, 5000);
+}
+
+// 602 weber
+function weber() {
+  const wbr = document.getElementById('sd__weber');
+  wbr.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/weber.jpg'> O soldado <a href='https://www.facebook.com/samuel.weber.526'>Weber</a> é o recruta 602.";
+  wbr.style.display = 'block';
+
+  setTimeout(() => {
+    wbr.style.display = 'none';
+  }, 5000);
+}
+
+// sgt azevedo
+function azevedo() {
+  const azvdo = document.getElementById('sgt__azevedo');
+  azvdo.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/azevedo.jpg'> O sargento <a href='https://www.instagram.com/pedro.gavriel?igsh=bmNkdmxteGVqdWE='>Azevedo</a> é conhecido por seu estilo gótico e peculiar roqueiro.";
+  azvdo.style.display = 'block';
+
+  setTimeout(() => {
+    azvdo.style.display = 'none';
+  }, 5000);
+}
+
+// sgt forgerini
+function forgerini() {
+  const fgri = document.getElementById('sgt__forgerini');
+  fgri.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/forgerini.webp'> O sargento <a href='#'>Forgerini</a> é um dos terceiros sargentos responsáveis pelos recrutas. Ele é um sargento instrutor.";
+  fgri.style.display = 'block';
+
+  setTimeout(() => {
+    fgri.style.display = 'none';
+  }, 5000);
+}
 
 </script>
 </body>
