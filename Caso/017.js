@@ -1,16 +1,18 @@
 /*!
-  * Bootstrap v5.3.3 (https://getbootstrap.com/)
-  * Copyright 2011-2024 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-  */
-(function (global, factory) {
+ * Bootstrap v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+(function(global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core')) :
-  typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
-})(this, (function (Popper) { 'use strict';
+    typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
+})(this, (function(Popper) {
+  'use strict';
 
   function _interopNamespaceDefault(e) {
-    const n = Object.create(null, { [Symbol.toStringTag]: { value: 'Module' } });
+    const n = Object.create(null, {
+      [Symbol.toStringTag]: { value: 'Module' } });
     if (e) {
       for (const k in e) {
         if (k !== 'default') {
@@ -26,7 +28,7 @@
     return Object.freeze(n);
   }
 
-  const Popper__namespace = /*#__PURE__*/_interopNamespaceDefault(Popper);
+  const Popper__namespace = /*#__PURE__*/ _interopNamespaceDefault(Popper);
 
   /**
    * --------------------------------------------------------------------------
@@ -352,12 +354,14 @@
   function makeEventUid(element, uid) {
     return uid && `${uid}::${uidEvent++}` || element.uidEvent || uidEvent++;
   }
+
   function getElementEvents(element) {
     const uid = makeEventUid(element);
     element.uidEvent = uid;
     eventRegistry[uid] = eventRegistry[uid] || {};
     return eventRegistry[uid];
   }
+
   function bootstrapHandler(element, fn) {
     return function handler(event) {
       hydrateObj(event, {
@@ -369,12 +373,13 @@
       return fn.apply(element, [event]);
     };
   }
+
   function bootstrapDelegationHandler(element, selector, fn) {
     return function handler(event) {
       const domElements = element.querySelectorAll(selector);
       for (let {
-        target
-      } = event; target && target !== this; target = target.parentNode) {
+          target
+        } = event; target && target !== this; target = target.parentNode) {
         for (const domElement of domElements) {
           if (domElement !== target) {
             continue;
@@ -390,9 +395,11 @@
       }
     };
   }
+
   function findHandler(events, callable, delegationSelector = null) {
     return Object.values(events).find(event => event.callable === callable && event.delegationSelector === delegationSelector);
   }
+
   function normalizeParameters(originalTypeEvent, handler, delegationFunction) {
     const isDelegated = typeof handler === 'string';
     // TODO: tooltip passes `false` instead of selector, so we need to check
@@ -403,6 +410,7 @@
     }
     return [isDelegated, callable, typeEvent];
   }
+
   function addHandler(element, originalTypeEvent, handler, delegationFunction, oneOff) {
     if (typeof originalTypeEvent !== 'string' || !element) {
       return;
@@ -413,7 +421,7 @@
     // this prevents the handler from being dispatched the same way as mouseover or mouseout does
     if (originalTypeEvent in customEvents) {
       const wrapFunction = fn => {
-        return function (event) {
+        return function(event) {
           if (!event.relatedTarget || event.relatedTarget !== event.delegateTarget && !event.delegateTarget.contains(event.relatedTarget)) {
             return fn.call(this, event);
           }
@@ -437,6 +445,7 @@
     handlers[uid] = fn;
     element.addEventListener(typeEvent, fn, isDelegated);
   }
+
   function removeHandler(element, events, typeEvent, handler, delegationSelector) {
     const fn = findHandler(events[typeEvent], handler, delegationSelector);
     if (!fn) {
@@ -445,6 +454,7 @@
     element.removeEventListener(typeEvent, fn, Boolean(delegationSelector));
     delete events[typeEvent][fn.uidEvent];
   }
+
   function removeNamespacedHandlers(element, events, typeEvent, namespace) {
     const storeElementEvent = events[typeEvent] || {};
     for (const [handlerKey, event] of Object.entries(storeElementEvent)) {
@@ -453,6 +463,7 @@
       }
     }
   }
+
   function getTypeEvent(event) {
     // allow to get the native events from namespaced events ('click.bs.button' --> 'click')
     event = event.replace(stripNameRegex, '');
@@ -528,6 +539,7 @@
       return evt;
     }
   };
+
   function hydrateObj(obj, meta = {}) {
     for (const [key, value] of Object.entries(meta)) {
       try {
@@ -550,7 +562,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
-const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div class="search__container">
+  const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div class="search__container">
       <input class="input__search" type="text" onblur="blured()" onfocus="foco()" id="searchInput" onkeyup="filterTable()" placeholder="Buscar por nome...">
     </div>
     <table id="militaryTable">
@@ -725,10 +737,11 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
       <tr>
         <td>Sd EV</td>
         <td>601</td>
-        <td>Tassinari</td>
+        <td onclick="tassinari()">Tassinari</td>
         <td onclick="ht()">HT</td>
       </tr>
       <div class="info" id="hotel__section"></div>
+<div class="info" id="sd__tassinari"></div>
       <tr>
         <td>Sd EV</td>
         <td>602</td>
@@ -801,9 +814,10 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
       <tr>
         <td>Sd EV</td>
         <td>613</td>
-        <td>Ebling</td>
+        <td onclick="ebling()">Ebling</td>
         <td onclick="unknown()">Unknown</td>
       </tr>
+      <div class="info" id="sd__ebling"></div>
       <tr>
         <td><strike>Sd EV</strike></td>
         <td><strike>614</strike></td>
@@ -833,15 +847,17 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
       <tr>
         <td>Sd EV</td>
         <td>618</td>
-        <td>Roger</td>
+      <td onclick="roger()">Roger</td>
         <td onclick="rancho()">Rancho</td>
       </tr>
+      <div class="info" id="sd__roger"></div>
       <tr>
         <td>Sd EV</td>
         <td>619</td>
-        <td>Zancan</td>
+        <td onclick="zancan()">Zancan</td>
         <td onclick="unknown()">Unknown</td>
       </tr>
+      <div class="info" id="sd__zancan"></div>
       <tr>
         <td>Sd EV</td>
         <td>620</td>
@@ -851,15 +867,17 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
       <tr>
         <td>Sd EV</td>
         <td>621</td>
-        <td>Kainan</td>
+        <td onclick="kainan()">Kainan</td>
         <td onclick="nucleo()">Contingente</td>
       </tr>
+      <div class="info" id="sd__kainan"></div>
       <tr>
         <td>Sd EV</td>
         <td>622</td>
-        <td><a href="https://www.facebook.com/charles.preuss.54">Preuss</a></td>
+        <td onclick="preuss()">Preuss</td>
         <td onclick="nucleo()">Contingente</td>
       </tr>
+      <div class="info" id="sd__preuss"></div>
       <tr>
         <td>Sd EV</td>
         <td>623</td>
@@ -900,9 +918,10 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
       <tr>
         <td>Sd EV</td>
         <td>629</td>
-        <td><a href="https://www.facebook.com/junior.magalhaes.5686322">Magalhães</a></td>
+        <td onclick="magalhaes()">Magalhães</td>
         <td>Vila</td>
       </tr>
+      <div class="info" id="sd__magalhaes"></div>
       <tr>
         <td>Sd EV</td>
         <td>630</td>
@@ -912,15 +931,17 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
       <tr>
         <td>Sd EV</td>
         <td>631</td>
-        <td><a href="https://www.facebook.com/jeremias.eduardo.9619">Fagundes</a></td>
+        <td onclick="fagundes()">Fagundes</td>
         <td onclick="nucleo()">Contingente</td>
       </tr>
+      <div class="info" id="sd__fagundes"></div>
       <tr>
         <td>Sd EV</td>
         <td>632</td>
-        <td><a href="https://www.facebook.com/cassio.alberto.338">Alberto</a></td>
+        <td onclick="alberto()">Alberto</td>
         <td>Vila</td>
       </tr>
+      <div class="info" id="sd__alberto"></div>
       <tr>
         <td>Sd EV</td>
         <td>633</td>
@@ -930,9 +951,10 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
       <tr>
         <td>Sd EV</td>
         <td>634</td>
-        <td><a href="https://www.facebook.com/gabriel.devargas.16">Gabriel</a></td>
+        <td onclick="gabriel()">Gabriel</a></td>
         <td onclick="rancho()">Rancho</td>
       </tr>
+      <div class="info" id="sd__gabriel"></div>
       <tr>
         <td>Sd EV</td>
         <td>635</td>
@@ -970,8 +992,8 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
         <td onclick="unknown()">Unknown</td>
       </tr>
     </table>`;
-    
-    const textoForm = document.getElementById('loginForm').innerHTML = `    <form  onsubmit="event.preventDefault(); authentication();">
+
+  const textoForm = document.getElementById('loginForm').innerHTML = `    <form  onsubmit="event.preventDefault(); authentication();">
       <label class="label__class" for="user">Usuário:</label>
       <input type="text" name="user" id="nome" placeholder="Digite o usuário..." required>
       <label class="label__class" for="pass">Senha:</label>
@@ -981,6 +1003,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
     <div class="messageError" id="error_Msg">
       <p>Credenciais inválidas: usuário ou senha estão incorretos..</p>
     </div>`;
+
   function normalizeData(value) {
     if (value === 'true') {
       return true;
@@ -1003,6 +1026,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
       return value;
     }
   }
+
   function normalizeDataKey(key) {
     return key.replace(/[A-Z]/g, chr => `-${chr.toLowerCase()}`);
   }
@@ -1252,7 +1276,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
   const enableDismissTrigger = (component, method = 'hide') => {
     const clickEvent = `click.dismiss${component.EVENT_KEY}`;
     const name = component.NAME;
-    EventHandler.on(document, clickEvent, `[data-bs-dismiss="${name}"]`, function (event) {
+    EventHandler.on(document, clickEvent, `[data-bs-dismiss="${name}"]`, function(event) {
       if (['A', 'AREA'].includes(this.tagName)) {
         event.preventDefault();
       }
@@ -1317,7 +1341,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
 
     // Static
     static jQueryInterface(config) {
-      return this.each(function () {
+      return this.each(function() {
         const data = Alert.getOrCreateInstance(this);
         if (typeof config !== 'string') {
           return;
@@ -1380,7 +1404,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
 
     // Static
     static jQueryInterface(config) {
-      return this.each(function () {
+      return this.each(function() {
         const data = Button.getOrCreateInstance(this);
         if (config === 'toggle') {
           data[config]();
@@ -1845,7 +1869,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
 
     // Static
     static jQueryInterface(config) {
-      return this.each(function () {
+      return this.each(function() {
         const data = Carousel.getOrCreateInstance(this, config);
         if (typeof config === 'number') {
           data.to(config);
@@ -1865,7 +1889,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
    * Data API implementation
    */
 
-  EventHandler.on(document, EVENT_CLICK_DATA_API$5, SELECTOR_DATA_SLIDE, function (event) {
+  EventHandler.on(document, EVENT_CLICK_DATA_API$5, SELECTOR_DATA_SLIDE, function(event) {
     const target = SelectorEngine.getElementFromSelector(this);
     if (!target || !target.classList.contains(CLASS_NAME_CAROUSEL)) {
       return;
@@ -2099,7 +2123,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
       if (typeof config === 'string' && /show|hide/.test(config)) {
         _config.toggle = false;
       }
-      return this.each(function () {
+      return this.each(function() {
         const data = Collapse.getOrCreateInstance(this, _config);
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
@@ -2115,7 +2139,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
    * Data API implementation
    */
 
-  EventHandler.on(document, EVENT_CLICK_DATA_API$4, SELECTOR_DATA_TOGGLE$4, function (event) {
+  EventHandler.on(document, EVENT_CLICK_DATA_API$4, SELECTOR_DATA_TOGGLE$4, function(event) {
     // preventDefault only for <a> elements (which change the URL) not inside the collapsible element
     if (event.target.tagName === 'A' || event.delegateTarget && event.delegateTarget.tagName === 'A') {
       event.preventDefault();
@@ -2409,7 +2433,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
 
     // Static
     static jQueryInterface(config) {
-      return this.each(function () {
+      return this.each(function() {
         const data = Dropdown.getOrCreateInstance(this, config);
         if (typeof config !== 'string') {
           return;
@@ -2490,7 +2514,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
   EventHandler.on(document, EVENT_KEYDOWN_DATA_API, SELECTOR_MENU, Dropdown.dataApiKeydownHandler);
   EventHandler.on(document, EVENT_CLICK_DATA_API$3, Dropdown.clearMenus);
   EventHandler.on(document, EVENT_KEYUP_DATA_API, Dropdown.clearMenus);
-  EventHandler.on(document, EVENT_CLICK_DATA_API$3, SELECTOR_DATA_TOGGLE$3, function (event) {
+  EventHandler.on(document, EVENT_CLICK_DATA_API$3, SELECTOR_DATA_TOGGLE$3, function(event) {
     event.preventDefault();
     Dropdown.getOrCreateInstance(this).toggle();
   });
@@ -3076,7 +3100,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
 
     // Static
     static jQueryInterface(config, relatedTarget) {
-      return this.each(function () {
+      return this.each(function() {
         const data = Modal.getOrCreateInstance(this, config);
         if (typeof config !== 'string') {
           return;
@@ -3093,7 +3117,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
    * Data API implementation
    */
 
-  EventHandler.on(document, EVENT_CLICK_DATA_API$2, SELECTOR_DATA_TOGGLE$2, function (event) {
+  EventHandler.on(document, EVENT_CLICK_DATA_API$2, SELECTOR_DATA_TOGGLE$2, function(event) {
     const target = SelectorEngine.getElementFromSelector(this);
     if (['A', 'AREA'].includes(this.tagName)) {
       event.preventDefault();
@@ -3297,7 +3321,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
 
     // Static
     static jQueryInterface(config) {
-      return this.each(function () {
+      return this.each(function() {
         const data = Offcanvas.getOrCreateInstance(this, config);
         if (typeof config !== 'string') {
           return;
@@ -3314,7 +3338,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
    * Data API implementation
    */
 
-  EventHandler.on(document, EVENT_CLICK_DATA_API$1, SELECTOR_DATA_TOGGLE$1, function (event) {
+  EventHandler.on(document, EVENT_CLICK_DATA_API$1, SELECTOR_DATA_TOGGLE$1, function(event) {
     const target = SelectorEngine.getElementFromSelector(this);
     if (['A', 'AREA'].includes(this.tagName)) {
       event.preventDefault();
@@ -3426,6 +3450,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
     // Check if a regular expression validates the attribute.
     return allowedAttributeList.filter(attributeRegex => attributeRegex instanceof RegExp).some(regex => regex.test(attributeName));
   };
+
   function sanitizeHtml(unsafeHtml, allowList, sanitizeFunction) {
     if (!unsafeHtml.length) {
       return unsafeHtml;
@@ -4082,7 +4107,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
 
     // Static
     static jQueryInterface(config) {
-      return this.each(function () {
+      return this.each(function() {
         const data = Tooltip.getOrCreateInstance(this, config);
         if (typeof config !== 'string') {
           return;
@@ -4163,7 +4188,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
 
     // Static
     static jQueryInterface(config) {
-      return this.each(function () {
+      return this.each(function() {
         const data = Popover.getOrCreateInstance(this, config);
         if (typeof config !== 'string') {
           return;
@@ -4413,7 +4438,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
 
     // Static
     static jQueryInterface(config) {
-      return this.each(function () {
+      return this.each(function() {
         const data = ScrollSpy.getOrCreateInstance(this, config);
         if (typeof config !== 'string') {
           return;
@@ -4671,7 +4696,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
 
     // Static
     static jQueryInterface(config) {
-      return this.each(function () {
+      return this.each(function() {
         const data = Tab.getOrCreateInstance(this);
         if (typeof config !== 'string') {
           return;
@@ -4688,7 +4713,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
    * Data API implementation
    */
 
-  EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_DATA_TOGGLE, function (event) {
+  EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_DATA_TOGGLE, function(event) {
     if (['A', 'AREA'].includes(this.tagName)) {
       event.preventDefault();
     }
@@ -4838,16 +4863,16 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
       switch (event.type) {
         case 'mouseover':
         case 'mouseout':
-          {
-            this._hasMouseInteraction = isInteracting;
-            break;
-          }
+        {
+          this._hasMouseInteraction = isInteracting;
+          break;
+        }
         case 'focusin':
         case 'focusout':
-          {
-            this._hasKeyboardInteraction = isInteracting;
-            break;
-          }
+        {
+          this._hasKeyboardInteraction = isInteracting;
+          break;
+        }
       }
       if (isInteracting) {
         this._clearTimeout();
@@ -4872,7 +4897,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
 
     // Static
     static jQueryInterface(config) {
-      return this.each(function () {
+      return this.each(function() {
         const data = Toast.getOrCreateInstance(this, config);
         if (typeof config === 'string') {
           if (typeof data[config] === 'undefined') {
@@ -4923,275 +4948,414 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
 }));
 
 
-  // Login Form 
-    function authentication() {
-      const login = document.getElementById('loginForm');
-      const user = document.getElementById('nome').value;
-      const psw = document.getElementById('senha').value;
-      const error = document.getElementById('error_Msg');
-      const errorAudio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/NOAH GREY - self Destruct.opus');
+// Login Form 
+function authentication() {
+  const login = document.getElementById('loginForm');
+  const user = document.getElementById('nome').value;
+  const psw = document.getElementById('senha').value;
+  const error = document.getElementById('error_Msg');
+  const errorAudio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/NOAH GREY - self Destruct.opus');
 
-      if (user === 'Carvalho' && psw === '609')
-      {
-        login.style.display = 'none';
-      }
-      else {
-        error.style.display = 'block';
-        errorAudio.play();
-        setTimeout(() => {
-          error.style.display = 'none';
-       }, 3000)
-      }
-    }
+  if (user === 'Carvalho' && psw === '609')
+  {
+    login.style.display = 'none';
+  }
+  else {
+    error.style.display = 'block';
+    errorAudio.play();
+    setTimeout(() => {
+      error.style.display = 'none';
+    }, 3000)
+  }
+}
 
 
 
-    function filterTable() {
-      const input = document.getElementById('searchInput');
-      const filter = input.value.toLowerCase();
-      const table = document.getElementById('militaryTable');
-      const tr = table.getElementsByTagName('tr');
+function filterTable() {
+  const input = document.getElementById('searchInput');
+  const filter = input.value.toLowerCase();
+  const table = document.getElementById('militaryTable');
+  const tr = table.getElementsByTagName('tr');
 
-      let hasMatch = false; // Para verificar se há correspondência
+  let hasMatch = false; // Para verificar se há correspondência
 
-      for (let i = 1; i < tr.length; i++) {
-        const tdGrad = tr[i].getElementsByTagName('td')[0]; // Coluna do Grad
-        const tdNum = tr[i].getElementsByTagName('td')[1]; // Coluna do Número
-        const tdNome = tr[i].getElementsByTagName('td')[2]; // Coluna do Nome
-        const tdSecao = tr[i].getElementsByTagName('td')[3]; // Coluna da Seção
+  for (let i = 1; i < tr.length; i++) {
+    const tdGrad = tr[i].getElementsByTagName('td')[0]; // Coluna do Grad
+    const tdNum = tr[i].getElementsByTagName('td')[1]; // Coluna do Número
+    const tdNome = tr[i].getElementsByTagName('td')[2]; // Coluna do Nome
+    const tdSecao = tr[i].getElementsByTagName('td')[3]; // Coluna da Seção
 
-        if (tdNome || tdNum || tdGrad || tdSecao) {
-          const txtValueGrad = tdGrad.textContent || tdGrad.innerText;
-          const txtValueNum = tdNum.textContent || tdNum.innerText;
-          const txtValueNome = tdNome.textContent || tdNome.innerText;
-          const txtValueSecao = tdSecao.textContent || tdSecao.innerText;
+    if (tdNome || tdNum || tdGrad || tdSecao) {
+      const txtValueGrad = tdGrad.textContent || tdGrad.innerText;
+      const txtValueNum = tdNum.textContent || tdNum.innerText;
+      const txtValueNome = tdNome.textContent || tdNome.innerText;
+      const txtValueSecao = tdSecao.textContent || tdSecao.innerText;
 
-          if (
-            txtValueNome.toLowerCase().indexOf(filter) > -1 ||
-            txtValueNum.toLowerCase().indexOf(filter) > -1 ||
-            txtValueGrad.toLowerCase().indexOf(filter) > -1 ||
-            txtValueSecao.toLowerCase().indexOf(filter) > -1
-          ) {
-            tr[i].style.display = '';
-            hasMatch = true; // Há uma correspondência
-          } else {
-            tr[i].style.display = 'none';
-          }
-        }
-      }
-      if (hasMatch) {
-        table.scrollIntoView({ behavior: 'smooth' });
+      if (
+        txtValueNome.toLowerCase().indexOf(filter) > -1 ||
+        txtValueNum.toLowerCase().indexOf(filter) > -1 ||
+        txtValueGrad.toLowerCase().indexOf(filter) > -1 ||
+        txtValueSecao.toLowerCase().indexOf(filter) > -1
+      ) {
+        tr[i].style.display = '';
+        hasMatch = true; // Há uma correspondência
+      } else {
+        tr[i].style.display = 'none';
       }
     }
+  }
+  if (hasMatch) {
+    table.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
-    // input audio
+// input audio
 
-    let audio;
+let audio;
 
-    function foco() {
-      if (!audio) {
-        audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Jero3n - Military typing sound effect.opus');
-      }
-      audio.play();
-    }
+function foco() {
+  if (!audio) {
+    audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Jero3n - Military typing sound effect.opus');
+  }
+  audio.play();
+}
 
-    function blured() {
-      if (audio) {
-        audio.pause();
-        audio.currentTime = 0;
-      }
-    }
-
-
-    const inputElement = document.getElementById('focus');
-    inputElement.addEventListener('focus', foco);
-    inputElement.addEventListener('blur', blured);
+function blured() {
+  if (audio) {
+    audio.pause();
+    audio.currentTime = 0;
+  }
+}
 
 
-    // contingente
+const inputElement = document.getElementById('focus');
+inputElement.addEventListener('focus', foco);
+inputElement.addEventListener('blur', blured);
 
-    function nucleo() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const infoDiv = document.getElementById('infoDiv');
-      infoDiv.innerHTML = "O contingente é o núcleo de controle sobre os soldados recrutas.";
-      infoDiv.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        infoDiv.style.display = 'none';
-      }, 5000);
-    }
 
-    // unknown 
+// contingente
 
-    function unknown() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const unknownDiv = document.getElementById('unknownDiv');
-      unknownDiv.innerHTML = "Seção desconhecida ou não específicada.";
-      unknownDiv.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        unknownDiv.style.display = 'none';
-      }, 5000);
-    }
+function nucleo() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const infoDiv = document.getElementById('infoDiv');
+  infoDiv.innerHTML = "O contingente é o núcleo de controle sobre os soldados recrutas.";
+  infoDiv.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    infoDiv.style.display = 'none';
+  }, 5000);
+}
 
-    // eb f@cil
-    function ebFacil() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const ebF = document.getElementById('eb__facil');
-      ebF.innerHTML = "O EB F@cil é a seção de atendimento ao público geralmente idoso.";
-      ebF.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        ebF.style.display = 'none';
-      }, 5000);
-    }
+// unknown 
 
-    // almox
+function unknown() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const unknownDiv = document.getElementById('unknownDiv');
+  unknownDiv.innerHTML = "Seção desconhecida ou não específicada.";
+  unknownDiv.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    unknownDiv.style.display = 'none';
+  }, 5000);
+}
 
-    function almox() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const alx = document.getElementById('almox__section');
-      alx.innerHTML = "O Almox é a seção responsável pela gestão e controle de estoques e materiais.";
-      alx.style.display = 'block';
-      audio.play()
-      setTimeout(() => {
-        alx.style.display = 'none';
-      }, 5000);
-    }
+// eb f@cil
+function ebFacil() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const ebF = document.getElementById('eb__facil');
+  ebF.innerHTML = "O EB F@cil é a seção de atendimento ao público geralmente idoso.";
+  ebF.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    ebF.style.display = 'none';
+  }, 5000);
+}
 
-    // hotel de trânsito 
-    function ht() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const oht = document.getElementById('hotel__section');
-      oht.innerHTML = "O Hotel de Trânsito destina-se a oferecer hospedagem aos militares das forças armadas e complementares, mediante indenização pecuniária.";
-      oht.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        oht.style.display = 'none';
-      }, 5000);
-    }
+// almox
 
-    // rancho
-    function rancho() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const refeitorio = document.getElementById('rancho__section');
-      refeitorio.innerHTML = "O rancho é conhecido informalmente como o refeitório. Ou seja, o local de alimentação dos militares.";
-      refeitorio.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        refeitorio.style.display = 'none';
-      }, 5000);
-    }
+function almox() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const alx = document.getElementById('almox__section');
+  alx.innerHTML = "O Almox é a seção responsável pela gestão e controle de estoques e materiais.";
+  alx.style.display = 'block';
+  audio.play()
+  setTimeout(() => {
+    alx.style.display = 'none';
+  }, 5000);
+}
 
-    // 609 carvalho
+// hotel de trânsito 
+function ht() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const oht = document.getElementById('hotel__section');
+  oht.innerHTML = "O Hotel de Trânsito destina-se a oferecer hospedagem aos militares das forças armadas e complementares, mediante indenização pecuniária.";
+  oht.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    oht.style.display = 'none';
+  }, 5000);
+}
 
-    function carvalho() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const sd609 = document.getElementById('sd__carvalho');
-      sd609.innerHTML = "<img width='34x34' src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/609carvalho.jpg'> O soldado <a href='https://www.facebook.com/gui.abreu.313'>Carvalho</a> é reconhecido pela sua expulsão das Forças Armadas após a solução da sua <a href='https://www.big-loser.site/M/Dec/sindicancia.html'>sindicância</a> por se jogar no capô do carro da advogada Camila Dalcol.";
-      sd609.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        sd609.style.display = 'none';
-      }, 5000);
-    }
+// rancho
+function rancho() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const refeitorio = document.getElementById('rancho__section');
+  refeitorio.innerHTML = "O rancho é conhecido informalmente como o refeitório. Ou seja, o local de alimentação dos militares.";
+  refeitorio.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    refeitorio.style.display = 'none';
+  }, 5000);
+}
 
-    // augusto bergmann
-    function bergmann() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const agst = document.getElementById('sgt__bergmann');
-      agst.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/bergmann.jpg'> Augusto <a href='https://www.facebook.com/augusto.cunha.984'>Bergmann</a> da Cunha é o terceiro sargento responsável pelos soldados recrutas.";
-      agst.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        agst.style.display = 'none';
-      }, 5000);
-    }
+// 609 carvalho
 
-    // 614 te-i-xe-i-ra
-    function teixeira() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Ribet - unfriended.opus');
-      const txra = document.getElementById('sd__teixeira');
-      txra.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/teixeira.jpg'> O soldado <a href='https://www.facebook.com/carloshenrique.teixeiradasilva.31'>Teixeira</a> cometeu suicídio ao pular de uma ponte em São Pedro do Sul no dia 08 de maio de 2024.";
-      txra.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        txra.style.display = 'none';
-      }, 5000);
-    }
+function carvalho() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const sd609 = document.getElementById('sd__carvalho');
+  sd609.innerHTML = "<img width='34x34' src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/609carvalho.jpg'> O soldado <a href='https://www.facebook.com/gui.abreu.313'>Carvalho</a> é reconhecido pela sua expulsão das Forças Armadas após a solução da sua <a style='color:gold' href='https://www.big-loser.site/M/Dec/sindicancia.html'>sindicância</a> por se jogar no capô do carro da advogada Camila Dalcol.";
+  sd609.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    sd609.style.display = 'none';
+  }, 5000);
+}
 
-    // honig
-    function honig() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const hng = document.getElementById('sd__honig');
-      hng.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/honig.jpg'> O soldado <a href='https://www.facebook.com/leonardo.honignogueira.7'>Hönig</a> tem a habilidade de se comunicar no idioma inglês, por esta razão foi escolhido para trabalhar no HT para receber estrangeiros de outros países.";
-      hng.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        hng.style.display = 'none';
-      }, 5000);
-    }
+// augusto bergmann
+function bergmann() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const agst = document.getElementById('sgt__bergmann');
+  agst.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/bergmann.jpg'> Augusto <a href='https://www.facebook.com/augusto.cunha.984'>Bergmann</a> da Cunha é o terceiro sargento responsável pelos soldados recrutas.";
+  agst.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    agst.style.display = 'none';
+  }, 5000);
+}
 
-    // 602 weber
-    function weber() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const wbr = document.getElementById('sd__weber');
-      wbr.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/weber.jpg'> O soldado <a href='https://www.facebook.com/samuel.weber.526'>Weber</a> é o recruta 602.";
-      wbr.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        wbr.style.display = 'none';
-      }, 5000);
-    }
+// 614 te-i-xe-i-ra
+function teixeira() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Ribet - unfriended.opus');
+  const txra = document.getElementById('sd__teixeira');
+  txra.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/teixeira.jpg'> O soldado <a href='https://www.facebook.com/carloshenrique.teixeiradasilva.31'>Teixeira</a> cometeu suicídio ao pular de uma ponte em São Pedro do Sul no dia 08 de maio de 2024.";
+  txra.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    txra.style.display = 'none';
+  }, 5000);
+}
 
-    // sgt azevedo
-    function azevedo() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const azvdo = document.getElementById('sgt__azevedo');
-      azvdo.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/azevedo.jpg'> O sargento <a href='https://www.instagram.com/pedro.gavriel?igsh=bmNkdmxteGVqdWE='>Azevedo</a> é conhecido por seu estilo gótico e peculiar roqueiro.";
-      azvdo.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        azvdo.style.display = 'none';
-      }, 5000);
-    }
+// honig
+function honig() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const hng = document.getElementById('sd__honig');
+  hng.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/honig.jpg'> O soldado <a href='https://www.facebook.com/leonardo.honignogueira.7'>Hönig</a> tem a habilidade de se comunicar no idioma inglês, por esta razão foi escolhido para trabalhar no HT para receber estrangeiros de outros países.";
+  hng.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    hng.style.display = 'none';
+  }, 5000);
+}
 
-    // sgt forgerini
-    function forgerini() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const fgri = document.getElementById('sgt__forgerini');
-      fgri.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/forgerini.webp'> O sargento <a href='#'>Forgerini</a> é um dos terceiros sargentos responsáveis pelos recrutas. Ele é um sargento instrutor.";
-      fgri.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        fgri.style.display = 'none';
-      }, 5000);
-    }
+// 602 weber
+function weber() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const wbr = document.getElementById('sd__weber');
+  wbr.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/weber.jpg'> O soldado <a href='https://www.facebook.com/samuel.weber.526'>Weber</a> é o recruta 602.";
+  wbr.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    wbr.style.display = 'none';
+  }, 5000);
+}
 
-    // gregori
-    function gregori() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const grgri = document.getElementById('sd__gregori');
-      grgri.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/gregori.jpg'> O soldado <a href='#'>Gregori</a> fez a melhor entrevista para a seção de informática e foi escolhido pelo capitão Vargas porque ele tinha experiências em consertar computadores.";
-      grgri.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        grgri.style.display = 'none';
-      }, 5000);
-    }
+// sgt azevedo
+function azevedo() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const azvdo = document.getElementById('sgt__azevedo');
+  azvdo.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/azevedo.jpg'> O sargento <a href='https://www.instagram.com/pedro.gavriel?igsh=bmNkdmxteGVqdWE='>Azevedo</a> é conhecido por seu estilo gótico e peculiar roqueiro.";
+  azvdo.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    azvdo.style.display = 'none';
+  }, 5000);
+}
 
-    // isaias
-    function isaias() {
-      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-      const jesse = document.getElementById('sd__isaias');
-      jesse.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/isaias.jpg'> O soldado <a href='https://www.instagram.com/jovemduart?igsh=MTh5MHd5YWY2cnNiZA=='>Isaias</a> é um soldado que engajou e trabalha na seção do EB F@cil. O Jessé <a href='https://www.facebook.com/profile.php?id=100008310944263'>Isaias</a> Duart Pereira ingressou em 2023.";
-      jesse.style.display = 'block';
-      audio.play();
-      setTimeout(() => {
-        jesse.style.display = 'none';
-      }, 5000);
-    }
-    
-    
+// sgt forgerini
+function forgerini() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const fgri = document.getElementById('sgt__forgerini');
+  fgri.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/forgerini.webp'> O sargento <a href='#'>Forgerini</a> é um dos terceiros sargentos responsáveis pelos recrutas. Ele é um sargento instrutor.";
+  fgri.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    fgri.style.display = 'none';
+  }, 5000);
+}
+
+// gregori
+function gregori() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const grgri = document.getElementById('sd__gregori');
+  grgri.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/gregori.jpg'> O soldado <a href='https://www.instagram.com/_fred_0.1?igsh=MWFqOTlpbTR5emRsaQ=='>Gregori</a> fez a melhor entrevista para a seção de informática e foi escolhido pelo capitão Vargas porque ele tinha experiências em consertar computadores.";
+  grgri.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    grgri.style.display = 'none';
+  }, 5000);
+}
+
+// isaias
+function isaias() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const jesse = document.getElementById('sd__isaias');
+  jesse.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/isaias.jpg'> O soldado <a href='https://www.instagram.com/jovemduart?igsh=MTh5MHd5YWY2cnNiZA=='>Isaias</a> é um soldado que engajou e trabalha na seção do EB F@cil. O Jessé <a href='https://www.facebook.com/profile.php?id=100008310944263'>Isaias</a> Duart Pereira ingressou em 2023.";
+  jesse.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    jesse.style.display = 'none';
+  }, 5000);
+}
+
+function gabriel() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const gbrl = document.getElementById('sd__gabriel');
+  gbrl.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/gabriel.jpg'> O soldado 634 <a href='https://www.facebook.com/gabriel.devargas.16'>Gabriel</a> é um soldado rancheiro.";
+  gbrl.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    gbrl.style.display = 'none';
+  }, 5000);
+}
+
+function fagundes() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const fgnds = document.getElementById('sd__fagundes');
+  fgnds.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/fagundes.jpg'> O soldado 631 <a href='https://www.instagram.com/jeremias_fagundes?igsh=MWh1bjIyYW56eXZlYQ=='>Fagundes</a> é o soldado responsável por fazer as escalas de serviço.";
+  fgnds.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    fgnds.style.display = 'none';
+  }, 5000);
+}
+
+function roger() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const rgr = document.getElementById('sd__roger');
+  rgr.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/roger.jpg'> O soldado 618 <a href='https://www.instagram.com/luan_roger?igsh=NG1vZHYyMDMzbW41'>Roger</a> é um rancheiro.";
+  rgr.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    rgr.style.display = 'none';
+  }, 5000);
+}
+
+function alberto() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const alberto = document.getElementById('sd__alberto');
+  alberto.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/alberto.jpg'> O soldado 632 <a href='https://www.facebook.com/cassio.alberto.338?mibextid=ZbWKwL'>Alberto</a> faz parte da vila militar.";
+  alberto.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    alberto.style.display = 'none';
+  }, 5000);
+}
+function ebling() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const ebling = document.getElementById('sd__alberto');
+  ebling.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/ebling.jpg'> O soldado 613 <a href='https://www.instagram.com/gabriell.ebling?igsh=MTU3b2hqbHRoOXlmeA=='>Ebling</a> é um aluno no curso para formação a cabos.";
+  ebling.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    ebling.style.display = 'none';
+  }, 5000);
+}
+
+function kainan() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const kainan = document.getElementById('sd__kainan');
+  kainan.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/kainan.jpg'> O soldado 621 <a href='https://www.instagram.com/kainan_zippenfeild?igsh=cjBxaXI3eThpaDZq'>Kainan</a> é um aluno no curso de formação a cabos.";
+  kainan.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    kainan.style.display = 'none';
+  }, 5000);
+}
+
+function tassinari() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const tassinari = document.getElementById('sd__tassinari');
+  tassinari.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/tassinari.jpg'> O soldado 601 <a href='https://www.instagram.com/tassinari__20?igsh=MThyZGRydTZxdmhwMw=='>Tassinari</a> é um dos recrutas que trabalha no Hotel de Trânsito.";
+  tassinari.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    tassinari.style.display = 'none';
+  }, 5000);
+}
+
+
+function ebling() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const ebling = document.getElementById('sd__alberto');
+  ebling.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/ebling.jpg'> O soldado 613 <a href='https://www.instagram.com/gabriell.ebling?igsh=MTU3b2hqbHRoOXlmeA=='>Ebling</a> é um aluno no curso para formação a cabos.";
+  ebling.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    ebling.style.display = 'none';
+  }, 5000);
+}
+
+function zancan() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const zancan = document.getElementById('sd__zancan');
+  zancan.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/zancan.jpg'> O soldado 619 <a href='https://www.instagram.com/alisson_maziero_?igsh=MWNpdDdlc3VwMXpjNg=='>Zancan</a> é um dos recrutas. A sua Seção não foi especificado ou é desconhecido.";
+  zancan.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    zancan.style.display = 'none';
+  }, 5000);
+}
+
+function alberto() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const alberto = document.getElementById('sd__alberto');
+  alberto.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/alberto.jpg'> O soldado 632 <a href='https://www.facebook.com/cassio.alberto.338?mibextid=ZbWKwL'>Alberto</a> faz parte da vila militar.";
+  alberto.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    alberto.style.display = 'none';
+  }, 5000);
+}
+function ebling() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const ebling = document.getElementById('sd__alberto');
+  ebling.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/ebling.jpg'> O soldado 613 <a href='https://www.instagram.com/gabriell.ebling?igsh=MTU3b2hqbHRoOXlmeA=='>Ebling</a> é um aluno no curso para formação a cabos.";
+  ebling.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    ebling.style.display = 'none';
+  }, 5000);
+}
+
+function preuss() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const preuss = document.getElementById('sd__preuss');
+  preuss.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/preuss.jpg'> O soldado 622 <a href='https://www.instagram.com/_charles_ofc__?igsh=d295c3l5NHhxMHEw'>Preuss</a> faz parte do contingente.";
+  preuss.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    preuss.style.display = 'none';
+  }, 5000);
+}
+
+function magalhaes() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const maga = document.getElementById('sd__magalhaes');
+  maga.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/magalhaes.jpg'> O soldado 629 <a href='https://www.instagram.com/29_magalhaes?igsh=djM5NTRwaW9uZXg4'>Magalhães</a> faz parte da vila militar.";
+  maga.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    maga.style.display = 'none';
+  }, 5000);
+}
 //# sourceMappingURL=bootstrap.js.map
-
