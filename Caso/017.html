@@ -10,773 +10,898 @@
   <meta name="author" content="anonymous">
   <meta name="description" content="Uma tabela com os militares da 6BDA NIEDERAUER">
   <meta name="keywords" content="tabela, conteúdo, privado, soldados, nomes, recrutas, sargentos, cabos, Base, Administrativa, da, Guarnição, de, Santa, Maria, B Adm Gu SM">
+  <link rel="preload" href="https://64.media.tumblr.com/40e8a59710744baed5f96dfda3175055/tumblr_nhn7510l1z1raievko1_r1_400.gif" as="image">
   <title>Tabela de Militares</title>
 </head>
 <style>
-* {
-  margin:0;
-  width:100%;
-  box-sizing: border-box;
-}
-html, body {
-  background-color: rgba(0, 0, 0, 0.66);
-  font-family: 'Courier', Courier, monospace, sans-serif;
-  margin:0;
-}
+  * {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-table {
-  width: 100%;
-  margin: 0;
-  border-collapse: collapse;
-  border: 2px solid rgba(0, 255, 30, 1);
-  box-shadow: 0 0 20px rgba(0, 255, 30, 0.5);
-  backdrop-filter: blur(10px);
-}
+  html,
+  body {
+    background-color: rgba(0, 0, 0, 0.66);
+    font-family: 'Courier', Courier, monospace, sans-serif;
+    margin: 0;
+  }
 
-th {
-  background: linear-gradient(90deg, rgba(255, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
-  color: #FF0000;
-  padding: 15px;
-  text-align:center;
-  border-bottom: 2px solid rgba(0, 255, 30, 1);
-  text-shadow: 0 0 5px rgba(255, 0, 0, 1);
-}
+  table {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    border: 2px solid rgba(0, 255, 30, 1);
+    box-shadow: 0 0 20px rgba(0, 255, 30, 0.5);
+    backdrop-filter: blur(10px);
+  }
 
-td{
-  
-  background: linear-gradient(90deg, rgba(0, 255, 30, 0.1), rgba(0, 0, 0, 0.7));
-  text-align: center;
-  color: rgba(0, 255, 30, 1);
-  padding: 5px;
-  border-bottom: 1px solid rgba(0, 255, 30, 0.5);
-  transition: background 0.3s;
-}
+  th {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+    color: #FF0000;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 255, 30, 1);
+    text-shadow: 0 0 5px rgba(255, 0, 0, 1);
+  }
 
-td:hover {
-  background: rgba(0, 255, 30, 0.3);
-  box-shadow: 0 0 15px rgba(0, 255, 30, 1);
-}
-a {
-  color: rgba(0, 255, 30, 1);
-  text-decoration: none;
-}
-.search__container {
-  text-align: center;
-  padding-top:50px;
-  padding-bottom:50px;
-}
-.input__search {
-    width: 300px; /* Largura do input */
-  padding: 10px; /* Espaçamento interno */
-  font-size: 18px; /* Tamanho da fonte */
-  border: 1px solid #ccc; /* Borda */
-  border-radius: 24px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-  transition: box-shadow 0.3s; /* Transição suave para a sombra */
-}
+  td {
 
-.input__search[type="text"]:focus {
-  outline: none; /* Remove o contorno padrão */
-  border-color: #4285f4; /* Cor da borda ao focar */
-  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.5); /* Sombra mais forte ao focar */
-}
+    background: linear-gradient(90deg, rgba(0, 255, 30, 0.1), rgba(0, 0, 0, 0.7));
+    text-align: center;
+    color: rgba(0, 255, 30, 1);
+    padding: 5px;
+    border-bottom: 1px solid rgba(0, 255, 30, 0.5);
+    transition: background 0.3s;
+  }
 
-footer{
-  background:#000000;
-  text-align: center;
-  color:#27FF00;
-  padding:20px;
-}
+  td:hover {
+    background: rgba(0, 255, 30, 0.3);
+    box-shadow: 0 0 15px rgba(0, 255, 30, 1);
+  }
 
- .info {
-      background-color:#000000A1;
-      color: #fff;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      position:fixed;
-      margin-left:10%;
-      font-size: 12px;
-      width:50%;
-      text-align: justify;
-      hyphens: auto;
-      flex-wrap: wrap;
-      z-index:999;
-      display: none; 
-    }
+  a {
+    color: rgba(0, 255, 30, 1);
+    text-decoration: none;
+  }
+
+  .search__container {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .input__search {
+    width: 300px;
+    /* Largura do input */
+    padding: 10px;
+    /* Espaçamento interno */
+    font-size: 18px;
+    /* Tamanho da fonte */
+    border: 1px solid #ccc;
+    /* Borda */
+    border-radius: 24px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    transition: box-shadow 0.3s;
+    /* Transição suave para a sombra */
+  }
+
+  .input__search[type="text"]:focus {
+    outline: none;
+    /* Remove o contorno padrão */
+    border-color: #4285f4;
+    /* Cor da borda ao focar */
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.5);
+    /* Sombra mais forte ao focar */
+  }
+
+  footer {
+    background: #000000;
+    text-align: center;
+    color: #27FF00;
+    padding: 20px;
+  }
+
+  .info {
+    background-color: #000000A1;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: fixed;
+    margin-left: 10%;
+    font-size: 12px;
+    width: 50%;
+    text-align: justify;
+    hyphens: auto;
+    flex-wrap: wrap;
+    z-index: 998;
+    display: none;
+  }
+
+  .login {
+    position: fixed;
+    background-color: #1C1C1C;
+    background-size: cover;
+    background-attachment: scroll;
+    z-index: 999;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    height: 2500px;
+    flex-flow: row wrap;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  section form {
+    padding: 20%;
+    width: 100%;
+  }
+
+  form {
+    margin-top: 30%;
+    border-radius: 20px;
+    background: #000000C9;
+    text-align: center;
+    box-sizing: border-box;
+    color: #00FF04;
+  }
+
+  input {
+    margin: 20px;
+    background: #2D2D2D;
+    color: #00FF04;
+    font-family: 'Courier', sans-serif;
+    width: 80%;
+    padding: 14px 16px;
+    border-radius: 15px;
+    border: none;
+  }
+
+  input:focus {
+    border: none;
+    outline: 1px solid #00FF04;
+  }
+
+  .submit__btn {
+    width: 50%;
+    background: #000000;
+    color: #00D704;
+    font-weight: 800;
+    padding: 7px;
+    border: 2px solid #00D704;
+  }
+
+  .submit__btn:focus {
+    outline: none;
+  }
+
+  .submit__btn:hover {
+    color: #FF0000;
+    border: 2px solid #FF0000;
+  }
+
+  .messageError {
+    background: #FF0000;
+    width: 60%;
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+  }
 </style>
+
 <body>
-<div class="search__container">
-  <input class="input__search" type="text" onblur="blured()" onfocus="foco()" id="searchInput" onkeyup="filterTable()" placeholder="Buscar por nome...">
-</div>
-<table id="militaryTable">
-  <th>Grad</th>
-  <th>Número</th>
-  <th>Nome</th>
-  <th>Seção</th>
-    <tr>
-     <td>3° Sgt</td>
-     <td></td>
-     <td onclick="bergmann()">Bergmann</td>
-     <td onclick="nucleo()">Contingente</td>
-   </tr>
-   <div class="info" id="infoDiv"></div>
-   <div class="info" id="sgt__bergmann"></div>
+
+  <section class="login" id="loginForm">
+    <form onsubmit="event.preventDefault(); authentication();">
+      <label class="label__class" for="user">Usuário:</label>
+      <input type="text" name="user" id="nome" placeholder="Digite o usuário..." required>
+      <label class="label__class" for="pass">Senha:</label>
+      <input type="password" name="pass" id="senha" placeholder="Digite a senha..." required>
+      <input class="submit__btn" type="submit" value="ENTER">
+    </form>
+    <div class="messageError" id="error_Msg">
+      <p>Credenciais inválidas: usuário ou senha estão incorretos..</p>
+    </div>
+  </section>
+  <main>
+    <div class="search__container">
+      <input class="input__search" type="text" onblur="blured()" onfocus="foco()" id="searchInput" onkeyup="filterTable()" placeholder="Buscar por nome...">
+    </div>
+    <table id="militaryTable">
+      <th>Grad</th>
+      <th>Número</th>
+      <th>Nome</th>
+      <th>Seção</th>
       <tr>
-     <td>3° Sgt</td>
-     <td></td>
-     <td onclick="azevedo()">Azevedo</td>
-     <td onclick="unknown()">Unknown</td>
-   </tr>
-   <div class="info" id="unknownDiv"></div>
-   <div class="info" id="sgt__azevedo"></div>
+        <td>3° Sgt</td>
+        <td></td>
+        <td onclick="bergmann()">Bergmann</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <div class="info" id="infoDiv"></div>
+      <div class="info" id="sgt__bergmann"></div>
       <tr>
-     <td>3° Sgt</td>
-     <td></td>
-     <td onclick="forgerini()">Forgerini</td>
-     <td onclick="nucleo()">Contingente</td>
-   </tr>
-   <div class="info" id="sgt__forgerini"></div>
+        <td>3° Sgt</td>
+        <td></td>
+        <td onclick="azevedo()">Azevedo</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <div class="info" id="unknownDiv"></div>
+      <div class="info" id="sgt__azevedo"></div>
       <tr>
-     <td>3° Sgt</td>
-     <td></td>
-     <td>De Moraes</td>
-     <td>Prédios</td>
-   </tr>
-   <tr>
-     <td>3° Sgt</td>
-     <td></td>
-     <td>Guilherme</td>
-     <td onclick="unknown()">Unknown</td>
-   </tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td onclick="forgerini()">Forgerini</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <div class="info" id="sgt__forgerini"></div>
       <tr>
-    <td>3° Sgt</td>
-    <td></td>
-    <td>Karlise</td>
-    <td onclick="unknown()">Unknown</td>
-  </tr>
-     <tr>
-    <td>3° Sgt</td>
-    <td></td>
-    <td>Manoel</td>
-    <td onclick="nucleo()">Contingente</td>
-  </tr>
-  <tr>
-    <td>3° Sgt</td>
-    <td></td>
-    <td>Stefanie</td>
-    <td onclick="unknown()">Unknown</td>
-  </tr>
-  <tr>
-    <td>3° Sgt</td>
-    <td></td>
-    <td>Lorensi</td>
-    <td onclick="unknown()">Unknown</td>
-  </tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td>De Moraes</td>
+        <td>Prédios</td>
+      </tr>
       <tr>
-     <td>Cb</td>
-     <td></td>
-     <td>Marlom</td>
-     <td onclick="unknown()">Unknown</td>
-   </tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td>Guilherme</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
       <tr>
-     <td>Cb</td>
-     <td></td>
-     <td>Thalisson</td>
-     <td>RP</td>
-   </tr>
-   <tr>
-     <td>Cb</td>
-     <td></td>
-     <td>Siqueira</td>
-     <td onclick="unknown()">Unknown</td>
-   </tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td>Karlise</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
       <tr>
-     <td>Cb</td>
-     <td></td>
-     <td>Vila Nova</td>
-     <td onclick="unknown()">Unknown</td>
-   </tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td>Manoel</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
       <tr>
-     <td>Cb</td>
-     <td></td>
-     <td>Prates</td>
-     <td onclick="unknown()">Unknown</td>
-   </tr>
-   <tr>
-     <td>Cb</td>
-     <td></td>
-     <td><a href="https://www.facebook.com/ygor.borin">Borin</a></td>
-     <td onclick="rancho()">Rancho</td>
-   </tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td>Stefanie</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td>Lorensi</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td>Marlom</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td>Thalisson</td>
+        <td>RP</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td>Siqueira</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td>Vila Nova</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td>Prates</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td><a href="https://www.facebook.com/ygor.borin">Borin</a></td>
+        <td onclick="rancho()">Rancho</td>
+      </tr>
       <div class="info" id="rancho__section"></div>
-   <tr>
-     <td>Cb</td>
-     <td></td>
-     <td><a href="https://www.facebook.com/diego.darciano">Vilanova</a></td>
-     <td onclick="nucleo()">Contingente</td>
-   </tr>
-  <tr>
-    <td>Cb</td>
-    <td></td>
-    <td><a href="https://www.facebook.com/kawa.lorentz.1">Kauã</a></td>
-    <td onclick="nucleo()">Contingente</td>
-  </tr>
       <tr>
-     <td>Cb</td>
-     <td></td>
-     <td>Lopes</td>
-     <td>Vila</td>
-   </tr>
-   <tr>
-    <td>Sd EP</td>
-    <td></td>
-    <td><a href="https://www.facebook.com/gabriel.almeidaflores">Almeida</a></td>
-    <td>Seç Pessoal</td>
-   </tr>
-   <tr>
-     <td>Sd EP</td>
-     <td></td>
-     <td><a href="https://www.facebook.com/miguel.florespedrozo">Miguel</a></td>
-     <td>Informática</td>
-   </tr>
-   <tr>
-     <td>Sd EP</td>
-     <td></td>
-     <td>Davi</td>
-     <td>Vila</td>
-   </tr>
-    <tr>
-    <td>Sd EP</td>
-    <td></td>
-    <td onclick="isaias()">Isaias</a></td>
-    <td onclick="ebFacil()">EB F@cil</td>
-  </tr>
-  <div class="info" id="eb__facil"></div>
-  <div class="info" id="sd__isaias"></div>
-    <tr>
-    <td>Sd EP</td>
-    <td></td>
-    <td>Streb</td>
-    <td>Arquivos</td>
-  </tr>
-    <tr>
-    <td>Sd EP</td>
-    <td></td>
-    <td>Dallago</td>
-    <td onclick="unknown()">Unknown</td>
-  </tr>
-    <tr>
-    <td>Sd EP</td>
-    <td></td>
-    <td>De Paula</td>
-    <td onclick="unknown()">Unknown</td>
-  </tr>
-  <tr>
-    <td>Sd EP</td>
-    <td></td>
-    <td>Ziquinatti</td>
-    <td onclick="unknown()">Unknown</td>
-  </td>
-  <tr>
-    <td>Sd EV</td>
-    <td>601</td>
-    <td>Tassinari</td>
-    <td onclick="ht()">HT</td>
-  </tr>
-     <div class="info" id="hotel__section"></div>
-  <tr>
-    <td>Sd EV</td>
-    <td>602</td>
-    <td onclick="weber()">Weber</td>
-    <td>Vila</td>
-  </tr>
-  <div class="info" id="sd__weber"></div>
-    <tr>
-    <td>Sd EV</td>
-    <td>603</td>
-    <td>Maidana</td>
-    <td>Vila</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>604</td>
-    <td><a href="https://www.facebook.com/rafael.diasdeoliveira.583">Richard</a></td>
-    <td onclick="unknown()">Unknown</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>605</td>
-    <td>Allan</td>
-    <td onclick="nucleo()">Contingente</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>606</td>
-    <td>Schumacher</td>
-    <td onclick="unknown()">Unknown</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>607</td>
-    <td>Chimainski</td>
-    <td>Vila</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>608</td>
-    <td>Drescher</td>
-    <td onclick="ht()">HT</td>
-  </tr>
-    <tr>
-    <td><del>Sd EV</del></td>
-    <td><strike>609</strike></td>
-    <td onclick="carvalho()"><strike>Carvalho</strike></td>
-    <td onclick="ebFacil()"><strike>EB F@cil</strike></td>
-  </tr>
-  <div class="info" id="sd__carvalho"></div>
-    <tr>
-    <td>Sd EV</td>
-    <td>610</td>
-    <td>Da Rosa</td>
-    <td onclick="nucleo()">Contingente</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>611</td>
-    <td>Daniel</td>
-    <td onclick="almox()">Almox</td>
-  </tr>
-  <div class="info" id="almox__section"></div>
-    <tr>
-    <td>Sd EV</td>
-    <td>612</td>
-    <td>Gonçalves</td>
-    <td>Prédios</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>613</td>
-    <td>Ebling</td>
-    <td onclick="unknown()">Unknown</td>
-  </tr>
-    <tr>
-    <td><strike>Sd EV</strike></td>
-    <td><strike>614</strike></td>
-    <td onclick="teixeira()"><strike>********</strike></td>
-    <td></td>
-  </tr>
-  <div class="info" id="sd__teixeira"></div>
-    <tr>
-    <td>Sd EV</td>
-    <td>615</td>
-    <td>Bernardi</td>
-    <td onclick="rancho()">Rancho</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>616</td>
-    <td onclick="gregori()">Gregori</td>
-    <td>Informática</td>
-  </tr>
-  <div class="info" id="sd__gregori"></div>
-    <tr>
-    <td>Sd EV</td>
-    <td>617</td>
-    <td>Silvano</td>
-    <td>Prédios</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>618</td>
-    <td>Roger</td>
-    <td onclick="rancho()">Rancho</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>619</td>
-    <td>Zancan</td>
-    <td onclick="unknown()">Unknown</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>620</td>
-    <td>Da Silva</td>
-    <td onclick="nucleo()">Contingente</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>621</td>
-    <td>Kainan</td>
-    <td onclick="nucleo()">Contingente</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>622</td>
-    <td><a href="https://www.facebook.com/charles.preuss.54">Preuss</a></td>
-    <td onclick="nucleo()">Contingente</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>623</td>
-    <td>Cardoso</td>
-    <td>RP</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>624</td>
-    <td>Nesske</td>
-    <td>Vila</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>625</td>
-    <td onclick="honig()">Hönig</a></td>
-    <td onclick="ht()">HT</td>
-  </tr>
-  <div class="info" id="sd__honig"></div>
-    <tr>
-    <td>Sd EV</td>
-    <td>626</td>
-    <td>Xavier</td>
-    <td onclick="almox()">Almox</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>627</td>
-    <td><a href="https://www.facebook.com/joaovitor.lemosdasilva">Lemos</a></td>
-    <td onclick="nucleo()">Contingente</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>628</td>
-    <td>Anderson</td>
-    <td>Prédios</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>629</td>
-    <td><a href="https://www.facebook.com/junior.magalhaes.5686322">Magalhães</a></td>
-    <td>Vila</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>630</td>
-    <td>Machado</td>
-    <td>Vila</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>631</td>
-    <td><a href="https://www.facebook.com/jeremias.eduardo.9619">Fagundes</a></td>
-    <td onclick="nucleo()">Contingente</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>632</td>
-    <td><a href="https://www.facebook.com/cassio.alberto.338">Alberto</a></td>
-    <td>Vila</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>633</td>
-    <td><a href="https://www.facebook.com/profile.php?id=100008533549009">Coelho</a></td>
-    <td onclick="ebFacil()">EB F@cil</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>634</td>
-    <td><a href="https://www.facebook.com/gabriel.devargas.16">Gabriel</a></td>
-    <td onclick="rancho()">Rancho</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>635</td>
-    <td>Eduardo</td>
-    <td>Vila</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>636</td>
-    <td><a href="https://www.facebook.com/emanuel.rosapereira.1">Emanuel</a></td>
-    <td onclick="nucleo()">Contingente</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>637</td>
-    <td>Silva Santos</td>
-    <td onclick="unknown()">Unknown</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>638</td>
-    <td><a href="https://www.facebook.com/profile.php?id=61554036208372">Oliveira</a></td>
-    <td>Vila</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>639</td>
-    <td>Keller</td>
-    <td onclick="ht()">HT</td>
-  </tr>
-    <tr>
-    <td>Sd EV</td>
-    <td>640</td>
-    <td><a href="https://www.facebook.com/lukas.vandersand">Lucas</a></td>
-    <td onclick="unknown()">Unknown</td>
-  </tr>
-</table>
+        <td>Cb</td>
+        <td></td>
+        <td><a href="https://www.facebook.com/diego.darciano">Vilanova</a></td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td><a href="https://www.facebook.com/kawa.lorentz.1">Kauã</a></td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td>Lopes</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td><a href="https://www.facebook.com/gabriel.almeidaflores">Almeida</a></td>
+        <td>Seç Pessoal</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td><a href="https://www.facebook.com/miguel.florespedrozo">Miguel</a></td>
+        <td>Informática</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td>Davi</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td onclick="isaias()">Isaias</a></td>
+        <td onclick="ebFacil()">EB F@cil</td>
+      </tr>
+      <div class="info" id="eb__facil"></div>
+      <div class="info" id="sd__isaias"></div>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td>Streb</td>
+        <td>Arquivos</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td>Dallago</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td>De Paula</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td>Ziquinatti</td>
+        <td onclick="unknown()">Unknown</td>
+        </td>
+      <tr>
+        <td>Sd EV</td>
+        <td>601</td>
+        <td>Tassinari</td>
+        <td onclick="ht()">HT</td>
+      </tr>
+      <div class="info" id="hotel__section"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>602</td>
+        <td onclick="weber()">Weber</td>
+        <td>Vila</td>
+      </tr>
+      <div class="info" id="sd__weber"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>603</td>
+        <td>Maidana</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>604</td>
+        <td><a href="https://www.facebook.com/rafael.diasdeoliveira.583">Richard</a></td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>605</td>
+        <td>Allan</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>606</td>
+        <td>Schumacher</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>607</td>
+        <td>Chimainski</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>608</td>
+        <td>Drescher</td>
+        <td onclick="ht()">HT</td>
+      </tr>
+      <tr>
+        <td><del>Sd EV</del></td>
+        <td><strike>609</strike></td>
+        <td onclick="carvalho()"><strike>Carvalho</strike></td>
+        <td onclick="ebFacil()"><strike>EB F@cil</strike></td>
+      </tr>
+      <div class="info" id="sd__carvalho"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>610</td>
+        <td>Da Rosa</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>611</td>
+        <td>Daniel</td>
+        <td onclick="almox()">Almox</td>
+      </tr>
+      <div class="info" id="almox__section"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>612</td>
+        <td>Gonçalves</td>
+        <td>Prédios</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>613</td>
+        <td>Ebling</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>614</strike></td>
+        <td onclick="teixeira()"><strike>********</strike></td>
+        <td></td>
+      </tr>
+      <div class="info" id="sd__teixeira"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>615</td>
+        <td>Bernardi</td>
+        <td onclick="rancho()">Rancho</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>616</td>
+        <td onclick="gregori()">Gregori</td>
+        <td>Informática</td>
+      </tr>
+      <div class="info" id="sd__gregori"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>617</td>
+        <td>Silvano</td>
+        <td>Prédios</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>618</td>
+        <td>Roger</td>
+        <td onclick="rancho()">Rancho</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>619</td>
+        <td>Zancan</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>620</td>
+        <td>Da Silva</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>621</td>
+        <td>Kainan</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>622</td>
+        <td><a href="https://www.facebook.com/charles.preuss.54">Preuss</a></td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>623</td>
+        <td>Cardoso</td>
+        <td>RP</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>624</td>
+        <td>Nesske</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>625</td>
+        <td onclick="honig()">Hönig</a></td>
+        <td onclick="ht()">HT</td>
+      </tr>
+      <div class="info" id="sd__honig"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>626</td>
+        <td>Xavier</td>
+        <td onclick="almox()">Almox</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>627</td>
+        <td><a href="https://www.facebook.com/joaovitor.lemosdasilva">Lemos</a></td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>628</td>
+        <td>Anderson</td>
+        <td>Prédios</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>629</td>
+        <td><a href="https://www.facebook.com/junior.magalhaes.5686322">Magalhães</a></td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>630</td>
+        <td>Machado</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>631</td>
+        <td><a href="https://www.facebook.com/jeremias.eduardo.9619">Fagundes</a></td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>632</td>
+        <td><a href="https://www.facebook.com/cassio.alberto.338">Alberto</a></td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>633</td>
+        <td><a href="https://www.facebook.com/profile.php?id=100008533549009">Coelho</a></td>
+        <td onclick="ebFacil()">EB F@cil</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>634</td>
+        <td><a href="https://www.facebook.com/gabriel.devargas.16">Gabriel</a></td>
+        <td onclick="rancho()">Rancho</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>635</td>
+        <td>Eduardo</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>636</td>
+        <td><a href="https://www.facebook.com/emanuel.rosapereira.1">Emanuel</a></td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>637</td>
+        <td>Silva Santos</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>638</td>
+        <td><a href="https://www.facebook.com/profile.php?id=61554036208372">Oliveira</a></td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>639</td>
+        <td>Keller</td>
+        <td onclick="ht()">HT</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>640</td>
+        <td><a href="https://www.facebook.com/lukas.vandersand">Lucas</a></td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+    </table>
+  </main>
+  <footer>
+    <p>&copy; All Rights Reserved</p>
+  </footer>
+  <script>
+    // Login Form 
+    function authentication() {
+      const login = document.getElementById('loginForm');
+      const user = document.getElementById('nome').value;
+      const psw = document.getElementById('senha').value;
+      const error = document.getElementById('error_Msg');
+      const errorAudio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/NOAH GREY - self Destruct.opus');
 
-<footer>
-  <p>&copy; All Rights Reserved</p>
-</footer>
-<script>
-  function filterTable() {
-  const input = document.getElementById('searchInput');
-  const filter = input.value.toLowerCase();
-  const table = document.getElementById('militaryTable');
-  const tr = table.getElementsByTagName('tr');
-
-  let hasMatch = false; // Para verificar se há correspondência
-
-  for (let i = 1; i < tr.length; i++) {
-    const tdGrad = tr[i].getElementsByTagName('td')[0]; // Coluna do Grad
-    const tdNum = tr[i].getElementsByTagName('td')[1]; // Coluna do Número
-    const tdNome = tr[i].getElementsByTagName('td')[2]; // Coluna do Nome
-    const tdSecao = tr[i].getElementsByTagName('td')[3]; // Coluna da Seção
-
-    if (tdNome || tdNum || tdGrad || tdSecao) {
-      const txtValueGrad = tdGrad.textContent || tdGrad.innerText;
-      const txtValueNum = tdNum.textContent || tdNum.innerText;
-      const txtValueNome = tdNome.textContent || tdNome.innerText;
-      const txtValueSecao = tdSecao.textContent || tdSecao.innerText;
-
-      if (
-        txtValueNome.toLowerCase().indexOf(filter) > -1 ||
-        txtValueNum.toLowerCase().indexOf(filter) > -1 ||
-        txtValueGrad.toLowerCase().indexOf(filter) > -1 ||
-        txtValueSecao.toLowerCase().indexOf(filter) > -1
-      ) {
-        tr[i].style.display = '';
-        hasMatch = true; // Há uma correspondência
-      } else {
-        tr[i].style.display = 'none';
+      if (user === 'Carvalho' && psw === '609')
+      {
+        login.style.display = 'none';
+      }
+      else {
+        error.style.display = 'block';
+        errorAudio.play();
+        setTimeout(() => {
+          error.style.display = 'none';
+       }, 3000)
       }
     }
-  }
-  if (hasMatch) {
-    table.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-
-// input audio
-
-let audio;
-
-function foco() {
-  if (!audio) {
-    audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Jero3n - Military typing sound effect.opus');
-  }
-  audio.play();
-}
-
-function blured() {
-  if (audio) {
-    audio.pause(); 
-    audio.currentTime = 0;
-  }
-}
 
 
-const inputElement = document.getElementById('focus');
-inputElement.addEventListener('focus', foco);
-inputElement.addEventListener('blur', blured);
+
+    function filterTable() {
+      const input = document.getElementById('searchInput');
+      const filter = input.value.toLowerCase();
+      const table = document.getElementById('militaryTable');
+      const tr = table.getElementsByTagName('tr');
+
+      let hasMatch = false; // Para verificar se há correspondência
+
+      for (let i = 1; i < tr.length; i++) {
+        const tdGrad = tr[i].getElementsByTagName('td')[0]; // Coluna do Grad
+        const tdNum = tr[i].getElementsByTagName('td')[1]; // Coluna do Número
+        const tdNome = tr[i].getElementsByTagName('td')[2]; // Coluna do Nome
+        const tdSecao = tr[i].getElementsByTagName('td')[3]; // Coluna da Seção
+
+        if (tdNome || tdNum || tdGrad || tdSecao) {
+          const txtValueGrad = tdGrad.textContent || tdGrad.innerText;
+          const txtValueNum = tdNum.textContent || tdNum.innerText;
+          const txtValueNome = tdNome.textContent || tdNome.innerText;
+          const txtValueSecao = tdSecao.textContent || tdSecao.innerText;
+
+          if (
+            txtValueNome.toLowerCase().indexOf(filter) > -1 ||
+            txtValueNum.toLowerCase().indexOf(filter) > -1 ||
+            txtValueGrad.toLowerCase().indexOf(filter) > -1 ||
+            txtValueSecao.toLowerCase().indexOf(filter) > -1
+          ) {
+            tr[i].style.display = '';
+            hasMatch = true; // Há uma correspondência
+          } else {
+            tr[i].style.display = 'none';
+          }
+        }
+      }
+      if (hasMatch) {
+        table.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // input audio
+
+    let audio;
+
+    function foco() {
+      if (!audio) {
+        audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Jero3n - Military typing sound effect.opus');
+      }
+      audio.play();
+    }
+
+    function blured() {
+      if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    }
 
 
-// contingente
+    const inputElement = document.getElementById('focus');
+    inputElement.addEventListener('focus', foco);
+    inputElement.addEventListener('blur', blured);
 
-function nucleo() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+
+    // contingente
+
+    function nucleo() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
       const infoDiv = document.getElementById('infoDiv');
       infoDiv.innerHTML = "O contingente é o núcleo de controle sobre os soldados recrutas.";
-      infoDiv.style.display = 'block'; 
-audio.play();
+      infoDiv.style.display = 'block';
+      audio.play();
       setTimeout(() => {
         infoDiv.style.display = 'none';
       }, 5000);
     }
-    
+
     // unknown 
-    
+
     function unknown() {
       const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const unknownDiv = document.getElementById('unknownDiv');
-  unknownDiv.innerHTML = "Seção desconhecida ou não específicada.";
-  unknownDiv.style.display = 'block'; 
-audio.play();
-  setTimeout(() => {
-    unknownDiv.style.display = 'none'; 
-  }, 5000);
-}
+      const unknownDiv = document.getElementById('unknownDiv');
+      unknownDiv.innerHTML = "Seção desconhecida ou não específicada.";
+      unknownDiv.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        unknownDiv.style.display = 'none';
+      }, 5000);
+    }
 
-// eb f@cil
-function ebFacil() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const ebF = document.getElementById('eb__facil');
-  ebF.innerHTML = "O EB F@cil é a seção de atendimento ao público geralmente idoso.";
-  ebF.style.display = 'block';
-audio.play();
-  setTimeout(() => {
-    ebF.style.display = 'none';
-  }, 5000);
-}
+    // eb f@cil
+    function ebFacil() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+      const ebF = document.getElementById('eb__facil');
+      ebF.innerHTML = "O EB F@cil é a seção de atendimento ao público geralmente idoso.";
+      ebF.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        ebF.style.display = 'none';
+      }, 5000);
+    }
 
-// almox
+    // almox
 
-function almox() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const alx = document.getElementById('almox__section');
-  alx.innerHTML = "O Almox é a seção responsável pela gestão e controle de estoques e materiais.";
-  alx.style.display = 'block'; 
-  audio.play()
-  setTimeout(() => {
-    alx.style.display = 'none'; 
-  }, 5000);
-}
+    function almox() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+      const alx = document.getElementById('almox__section');
+      alx.innerHTML = "O Almox é a seção responsável pela gestão e controle de estoques e materiais.";
+      alx.style.display = 'block';
+      audio.play()
+      setTimeout(() => {
+        alx.style.display = 'none';
+      }, 5000);
+    }
 
-// hotel de trânsito 
-function ht() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const oht = document.getElementById('hotel__section');
-  oht.innerHTML = "O Hotel de Trânsito destina-se a oferecer hospedagem aos militares das forças armadas e complementares, mediante indenização pecuniária.";
-  oht.style.display = 'block';
-audio.play();
-  setTimeout(() => {
-    oht.style.display = 'none';
-  }, 5000);
-}
+    // hotel de trânsito 
+    function ht() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+      const oht = document.getElementById('hotel__section');
+      oht.innerHTML = "O Hotel de Trânsito destina-se a oferecer hospedagem aos militares das forças armadas e complementares, mediante indenização pecuniária.";
+      oht.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        oht.style.display = 'none';
+      }, 5000);
+    }
 
-// rancho
-function rancho() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const refeitorio = document.getElementById('rancho__section');
-  refeitorio.innerHTML = "O rancho é conhecido informalmente como o refeitório. Ou seja, o local de alimentação dos militares.";
-  refeitorio.style.display = 'block'; 
-audio.play();
-  setTimeout(() => {
-    refeitorio.style.display = 'none'; 
-  }, 5000);
-}
+    // rancho
+    function rancho() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+      const refeitorio = document.getElementById('rancho__section');
+      refeitorio.innerHTML = "O rancho é conhecido informalmente como o refeitório. Ou seja, o local de alimentação dos militares.";
+      refeitorio.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        refeitorio.style.display = 'none';
+      }, 5000);
+    }
 
-// 609 carvalho
+    // 609 carvalho
 
-function carvalho() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const sd609 = document.getElementById('sd__carvalho');
-  sd609.innerHTML = "<img width='34x34' src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/609carvalho.jpg'> O soldado <a href='https://www.facebook.com/gui.abreu.313'>Carvalho</a> é reconhecido pela sua expulsão das Forças Armadas após se jogar no capô do carro da advogada Camila Dalcol.";
-  sd609.style.display = 'block';
-audio.play();
-  setTimeout(() => {
-    sd609.style.display = 'none';
-  }, 5000);
-}
+    function carvalho() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+      const sd609 = document.getElementById('sd__carvalho');
+      sd609.innerHTML = "<img width='34x34' src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/609carvalho.jpg'> O soldado <a href='https://www.facebook.com/gui.abreu.313'>Carvalho</a> é reconhecido pela sua expulsão das Forças Armadas após se jogar no capô do carro da advogada Camila Dalcol.";
+      sd609.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        sd609.style.display = 'none';
+      }, 5000);
+    }
 
-// augusto bergmann
-function bergmann() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const agst = document.getElementById('sgt__bergmann');
-  agst.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/bergmann.jpg'> Augusto <a href='https://www.facebook.com/augusto.cunha.984'>Bergmann</a> da Cunha é o terceiro sargento responsável pelos soldados recrutas.";
-  agst.style.display = 'block'; 
-  audio.play();
-  setTimeout(() => {
-    agst.style.display = 'none'; 
-  }, 5000);
-}
+    // augusto bergmann
+    function bergmann() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+      const agst = document.getElementById('sgt__bergmann');
+      agst.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/bergmann.jpg'> Augusto <a href='https://www.facebook.com/augusto.cunha.984'>Bergmann</a> da Cunha é o terceiro sargento responsável pelos soldados recrutas.";
+      agst.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        agst.style.display = 'none';
+      }, 5000);
+    }
 
-// 614 te-i-xe-i-ra
-function teixeira() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Ribet - unfriended.opus');
-  const txra = document.getElementById('sd__teixeira');
-  txra.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/teixeira.jpg'> O soldado <a href='https://www.facebook.com/carloshenrique.teixeiradasilva.31'>Teixeira</a> cometeu suicídio ao pular de uma ponte em São Pedro do Sul no dia 08 de maio de 2024.";
-  txra.style.display = 'block';
-audio.play();
-  setTimeout(() => {
-    txra.style.display = 'none';
-  }, 5000);
-}
+    // 614 te-i-xe-i-ra
+    function teixeira() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Ribet - unfriended.opus');
+      const txra = document.getElementById('sd__teixeira');
+      txra.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/teixeira.jpg'> O soldado <a href='https://www.facebook.com/carloshenrique.teixeiradasilva.31'>Teixeira</a> cometeu suicídio ao pular de uma ponte em São Pedro do Sul no dia 08 de maio de 2024.";
+      txra.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        txra.style.display = 'none';
+      }, 5000);
+    }
 
-// honig
-function honig() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const hng = document.getElementById('sd__honig');
-  hng.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/honig.jpg'> O soldado <a href='https://www.facebook.com/leonardo.honignogueira.7'>Hönig</a> tem a habilidade de se comunicar no idioma inglês, por esta razão foi escolhido para trabalhar no HT para receber estrangeiros de outros países.";
-  hng.style.display = 'block';
-audio.play();
-  setTimeout(() => {
-    hng.style.display = 'none';
-  }, 5000);
-}
+    // honig
+    function honig() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+      const hng = document.getElementById('sd__honig');
+      hng.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/honig.jpg'> O soldado <a href='https://www.facebook.com/leonardo.honignogueira.7'>Hönig</a> tem a habilidade de se comunicar no idioma inglês, por esta razão foi escolhido para trabalhar no HT para receber estrangeiros de outros países.";
+      hng.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        hng.style.display = 'none';
+      }, 5000);
+    }
 
-// 602 weber
-function weber() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const wbr = document.getElementById('sd__weber');
-  wbr.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/weber.jpg'> O soldado <a href='https://www.facebook.com/samuel.weber.526'>Weber</a> é o recruta 602.";
-  wbr.style.display = 'block';
-audio.play();
-  setTimeout(() => {
-    wbr.style.display = 'none';
-  }, 5000);
-}
+    // 602 weber
+    function weber() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+      const wbr = document.getElementById('sd__weber');
+      wbr.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/weber.jpg'> O soldado <a href='https://www.facebook.com/samuel.weber.526'>Weber</a> é o recruta 602.";
+      wbr.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        wbr.style.display = 'none';
+      }, 5000);
+    }
 
-// sgt azevedo
-function azevedo() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const azvdo = document.getElementById('sgt__azevedo');
-  azvdo.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/azevedo.jpg'> O sargento <a href='https://www.instagram.com/pedro.gavriel?igsh=bmNkdmxteGVqdWE='>Azevedo</a> é conhecido por seu estilo gótico e peculiar roqueiro.";
-  azvdo.style.display = 'block';
-audio.play();
-  setTimeout(() => {
-    azvdo.style.display = 'none';
-  }, 5000);
-}
+    // sgt azevedo
+    function azevedo() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+      const azvdo = document.getElementById('sgt__azevedo');
+      azvdo.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/azevedo.jpg'> O sargento <a href='https://www.instagram.com/pedro.gavriel?igsh=bmNkdmxteGVqdWE='>Azevedo</a> é conhecido por seu estilo gótico e peculiar roqueiro.";
+      azvdo.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        azvdo.style.display = 'none';
+      }, 5000);
+    }
 
-// sgt forgerini
-function forgerini() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const fgri = document.getElementById('sgt__forgerini');
-  fgri.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/forgerini.webp'> O sargento <a href='#'>Forgerini</a> é um dos terceiros sargentos responsáveis pelos recrutas. Ele é um sargento instrutor.";
-  fgri.style.display = 'block';
-audio.play();
-  setTimeout(() => {
-    fgri.style.display = 'none';
-  }, 5000);
-}
+    // sgt forgerini
+    function forgerini() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+      const fgri = document.getElementById('sgt__forgerini');
+      fgri.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/forgerini.webp'> O sargento <a href='#'>Forgerini</a> é um dos terceiros sargentos responsáveis pelos recrutas. Ele é um sargento instrutor.";
+      fgri.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        fgri.style.display = 'none';
+      }, 5000);
+    }
 
-// gregori
-function gregori() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const grgri = document.getElementById('sd__gregori');
-  grgri.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/gregori.jpg'> O soldado <a href='#'>Gregori</a> fez a melhor entrevista para a seção de informática e foi escolhido pelo capitão Vargas porque ele tinha experiências em consertar computadores.";
-  grgri.style.display = 'block';
-audio.play();
-  setTimeout(() => {
-    grgri.style.display = 'none';
-  }, 5000);
-}
+    // gregori
+    function gregori() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+      const grgri = document.getElementById('sd__gregori');
+      grgri.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/gregori.jpg'> O soldado <a href='#'>Gregori</a> fez a melhor entrevista para a seção de informática e foi escolhido pelo capitão Vargas porque ele tinha experiências em consertar computadores.";
+      grgri.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        grgri.style.display = 'none';
+      }, 5000);
+    }
 
-// isaias
-function isaias() {
-  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
-  const jesse = document.getElementById('sd__isaias');
-  jesse.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/isaias.jpg'> O soldado <a href='https://www.instagram.com/jovemduart?igsh=MTh5MHd5YWY2cnNiZA=='>Isaias</a> é um soldado que engajou e trabalha na seção do EB F@cil. O Jessé <a href='https://www.facebook.com/profile.php?id=100008310944263'>Isaias</a> Duart Pereira ingressou em 2023.";
-  jesse.style.display = 'block';
-audio.play();
-  setTimeout(() => {
-    jesse.style.display = 'none';
-  }, 5000);
-}
-</script>
+    // isaias
+    function isaias() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+      const jesse = document.getElementById('sd__isaias');
+      jesse.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/isaias.jpg'> O soldado <a href='https://www.instagram.com/jovemduart?igsh=MTh5MHd5YWY2cnNiZA=='>Isaias</a> é um soldado que engajou e trabalha na seção do EB F@cil. O Jessé <a href='https://www.facebook.com/profile.php?id=100008310944263'>Isaias</a> Duart Pereira ingressou em 2023.";
+      jesse.style.display = 'block';
+      audio.play();
+      setTimeout(() => {
+        jesse.style.display = 'none';
+      }, 5000);
+    }
+  </script>
 </body>
 
 </html>
