@@ -107,7 +107,7 @@ footer{
 </style>
 <body>
 <div class="search__container">
-  <input class="input__search" type="text" id="searchInput" onkeyup="filterTable()" placeholder="Buscar por nome...">
+  <input class="input__search" type="text" onblur="blured()" onfocus="foco()" id="searchInput" onkeyup="filterTable()" placeholder="Buscar por nome...">
 </div>
 <table id="militaryTable">
   <th>Grad</th>
@@ -249,10 +249,11 @@ footer{
     <tr>
     <td>Sd EP</td>
     <td></td>
-    <td><a href="https://www.facebook.com/profile.php?id=100008310944263">Isaias</a></td>
+    <td onclick="isaias()">Isaias</a></td>
     <td onclick="ebFacil()">EB F@cil</td>
   </tr>
   <div class="info" id="eb__facil"></div>
+  <div class="info" id="sd__isaias"></div>
     <tr>
     <td>Sd EP</td>
     <td></td>
@@ -375,9 +376,10 @@ footer{
     <tr>
     <td>Sd EV</td>
     <td>616</td>
-    <td>Gregori</td>
+    <td onclick="gregori()">Gregori</td>
     <td>Informática</td>
   </tr>
+  <div class="info" id="sd__gregori"></div>
     <tr>
     <td>Sd EV</td>
     <td>617</td>
@@ -567,14 +569,38 @@ footer{
   }
 }
 
+// input audio
+
+let audio;
+
+function foco() {
+  if (!audio) {
+    audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Jero3n - Military typing sound effect.opus');
+  }
+  audio.play();
+}
+
+function blured() {
+  if (audio) {
+    audio.pause(); 
+    audio.currentTime = 0;
+  }
+}
+
+
+const inputElement = document.getElementById('focus');
+inputElement.addEventListener('focus', foco);
+inputElement.addEventListener('blur', blured);
+
 
 // contingente
 
 function nucleo() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
       const infoDiv = document.getElementById('infoDiv');
       infoDiv.innerHTML = "O contingente é o núcleo de controle sobre os soldados recrutas.";
       infoDiv.style.display = 'block'; 
-
+audio.play();
       setTimeout(() => {
         infoDiv.style.display = 'none';
       }, 5000);
@@ -583,10 +609,11 @@ function nucleo() {
     // unknown 
     
     function unknown() {
+      const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const unknownDiv = document.getElementById('unknownDiv');
   unknownDiv.innerHTML = "Seção desconhecida ou não específicada.";
   unknownDiv.style.display = 'block'; 
-  
+audio.play();
   setTimeout(() => {
     unknownDiv.style.display = 'none'; 
   }, 5000);
@@ -594,10 +621,11 @@ function nucleo() {
 
 // eb f@cil
 function ebFacil() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const ebF = document.getElementById('eb__facil');
   ebF.innerHTML = "O EB F@cil é a seção de atendimento ao público geralmente idoso.";
   ebF.style.display = 'block';
-
+audio.play();
   setTimeout(() => {
     ebF.style.display = 'none';
   }, 5000);
@@ -606,10 +634,11 @@ function ebFacil() {
 // almox
 
 function almox() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const alx = document.getElementById('almox__section');
   alx.innerHTML = "O Almox é a seção responsável pela gestão e controle de estoques e materiais.";
   alx.style.display = 'block'; 
-  
+  audio.play()
   setTimeout(() => {
     alx.style.display = 'none'; 
   }, 5000);
@@ -617,10 +646,11 @@ function almox() {
 
 // hotel de trânsito 
 function ht() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const oht = document.getElementById('hotel__section');
   oht.innerHTML = "O Hotel de Trânsito destina-se a oferecer hospedagem aos militares das forças armadas e complementares, mediante indenização pecuniária.";
   oht.style.display = 'block';
-
+audio.play();
   setTimeout(() => {
     oht.style.display = 'none';
   }, 5000);
@@ -628,10 +658,11 @@ function ht() {
 
 // rancho
 function rancho() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const refeitorio = document.getElementById('rancho__section');
   refeitorio.innerHTML = "O rancho é conhecido informalmente como o refeitório. Ou seja, o local de alimentação dos militares.";
   refeitorio.style.display = 'block'; 
-  
+audio.play();
   setTimeout(() => {
     refeitorio.style.display = 'none'; 
   }, 5000);
@@ -640,10 +671,11 @@ function rancho() {
 // 609 carvalho
 
 function carvalho() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const sd609 = document.getElementById('sd__carvalho');
   sd609.innerHTML = "<img width='34x34' src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/609carvalho.jpg'> O soldado <a href='https://www.facebook.com/gui.abreu.313'>Carvalho</a> é reconhecido pela sua expulsão das Forças Armadas após se jogar no capô do carro da advogada Camila Dalcol.";
   sd609.style.display = 'block';
-
+audio.play();
   setTimeout(() => {
     sd609.style.display = 'none';
   }, 5000);
@@ -651,10 +683,11 @@ function carvalho() {
 
 // augusto bergmann
 function bergmann() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const agst = document.getElementById('sgt__bergmann');
   agst.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/bergmann.jpg'> Augusto <a href='https://www.facebook.com/augusto.cunha.984'>Bergmann</a> da Cunha é o terceiro sargento responsável pelos soldados recrutas.";
   agst.style.display = 'block'; 
-  
+  audio.play();
   setTimeout(() => {
     agst.style.display = 'none'; 
   }, 5000);
@@ -662,10 +695,11 @@ function bergmann() {
 
 // 614 te-i-xe-i-ra
 function teixeira() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Ribet - unfriended.opus');
   const txra = document.getElementById('sd__teixeira');
   txra.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/teixeira.jpg'> O soldado <a href='https://www.facebook.com/carloshenrique.teixeiradasilva.31'>Teixeira</a> cometeu suicídio ao pular de uma ponte em São Pedro do Sul no dia 08 de maio de 2024.";
   txra.style.display = 'block';
-
+audio.play();
   setTimeout(() => {
     txra.style.display = 'none';
   }, 5000);
@@ -673,10 +707,11 @@ function teixeira() {
 
 // honig
 function honig() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const hng = document.getElementById('sd__honig');
   hng.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/honig.jpg'> O soldado <a href='https://www.facebook.com/leonardo.honignogueira.7'>Hönig</a> tem a habilidade de se comunicar no idioma inglês, por esta razão foi escolhido para trabalhar no HT para receber estrangeiros de outros países.";
   hng.style.display = 'block';
-
+audio.play();
   setTimeout(() => {
     hng.style.display = 'none';
   }, 5000);
@@ -684,10 +719,11 @@ function honig() {
 
 // 602 weber
 function weber() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const wbr = document.getElementById('sd__weber');
   wbr.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/weber.jpg'> O soldado <a href='https://www.facebook.com/samuel.weber.526'>Weber</a> é o recruta 602.";
   wbr.style.display = 'block';
-
+audio.play();
   setTimeout(() => {
     wbr.style.display = 'none';
   }, 5000);
@@ -695,10 +731,11 @@ function weber() {
 
 // sgt azevedo
 function azevedo() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const azvdo = document.getElementById('sgt__azevedo');
   azvdo.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/azevedo.jpg'> O sargento <a href='https://www.instagram.com/pedro.gavriel?igsh=bmNkdmxteGVqdWE='>Azevedo</a> é conhecido por seu estilo gótico e peculiar roqueiro.";
   azvdo.style.display = 'block';
-
+audio.play();
   setTimeout(() => {
     azvdo.style.display = 'none';
   }, 5000);
@@ -706,15 +743,39 @@ function azevedo() {
 
 // sgt forgerini
 function forgerini() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const fgri = document.getElementById('sgt__forgerini');
   fgri.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/forgerini.webp'> O sargento <a href='#'>Forgerini</a> é um dos terceiros sargentos responsáveis pelos recrutas. Ele é um sargento instrutor.";
   fgri.style.display = 'block';
-
+audio.play();
   setTimeout(() => {
     fgri.style.display = 'none';
   }, 5000);
 }
 
+// gregori
+function gregori() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const grgri = document.getElementById('sd__gregori');
+  grgri.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/gregori.jpg'> O soldado <a href='#'>Gregori</a> fez a melhor entrevista para a seção de informática e foi escolhido pelo capitão Vargas porque ele tinha experiências em consertar computadores.";
+  grgri.style.display = 'block';
+audio.play();
+  setTimeout(() => {
+    grgri.style.display = 'none';
+  }, 5000);
+}
+
+// isaias
+function isaias() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const jesse = document.getElementById('sd__isaias');
+  jesse.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/isaias.jpg'> O soldado <a href='https://www.instagram.com/jovemduart?igsh=MTh5MHd5YWY2cnNiZA=='>Isaias</a> é um soldado que engajou e trabalha na seção do EB F@cil. O Jessé <a href='https://www.facebook.com/profile.php?id=100008310944263'>Isaias</a> Duart Pereira ingressou em 2023.";
+  jesse.style.display = 'block';
+audio.play();
+  setTimeout(() => {
+    jesse.style.display = 'none';
+  }, 5000);
+}
 </script>
 </body>
 
