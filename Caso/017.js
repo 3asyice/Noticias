@@ -550,7 +550,437 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
-
+const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div class="search__container">
+      <input class="input__search" type="text" onblur="blured()" onfocus="foco()" id="searchInput" onkeyup="filterTable()" placeholder="Buscar por nome...">
+    </div>
+    <table id="militaryTable">
+      <th>Grad</th>
+      <th>Número</th>
+      <th>Nome</th>
+      <th>Seção</th>
+      <tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td onclick="bergmann()">Bergmann</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <div class="info" id="infoDiv"></div>
+      <div class="info" id="sgt__bergmann"></div>
+      <tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td onclick="azevedo()">Azevedo</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <div class="info" id="unknownDiv"></div>
+      <div class="info" id="sgt__azevedo"></div>
+      <tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td onclick="forgerini()">Forgerini</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <div class="info" id="sgt__forgerini"></div>
+      <tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td>De Moraes</td>
+        <td>Prédios</td>
+      </tr>
+      <tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td>Guilherme</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td>Karlise</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td>Manoel</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td>Stefanie</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>3° Sgt</td>
+        <td></td>
+        <td>Lorensi</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td>Marlom</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td>Thalisson</td>
+        <td>RP</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td>Siqueira</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td>Vila Nova</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td>Prates</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td><a href="https://www.facebook.com/ygor.borin">Borin</a></td>
+        <td onclick="rancho()">Rancho</td>
+      </tr>
+      <div class="info" id="rancho__section"></div>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td><a href="https://www.facebook.com/diego.darciano">Vilanova</a></td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td><a href="https://www.facebook.com/kawa.lorentz.1">Kauã</a></td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Cb</td>
+        <td></td>
+        <td>Lopes</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td><a href="https://www.facebook.com/gabriel.almeidaflores">Almeida</a></td>
+        <td>Seç Pessoal</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td><a href="https://www.facebook.com/miguel.florespedrozo">Miguel</a></td>
+        <td>Informática</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td>Davi</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td onclick="isaias()">Isaias</a></td>
+        <td onclick="ebFacil()">EB F@cil</td>
+      </tr>
+      <div class="info" id="eb__facil"></div>
+      <div class="info" id="sd__isaias"></div>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td>Streb</td>
+        <td>Arquivos</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td>Dallago</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td>De Paula</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Sd EP</td>
+        <td></td>
+        <td>Ziquinatti</td>
+        <td onclick="unknown()">Unknown</td>
+        </td>
+      <tr>
+        <td>Sd EV</td>
+        <td>601</td>
+        <td>Tassinari</td>
+        <td onclick="ht()">HT</td>
+      </tr>
+      <div class="info" id="hotel__section"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>602</td>
+        <td onclick="weber()">Weber</td>
+        <td>Vila</td>
+      </tr>
+      <div class="info" id="sd__weber"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>603</td>
+        <td>Maidana</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>604</td>
+        <td><a href="https://www.facebook.com/rafael.diasdeoliveira.583">Richard</a></td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>605</td>
+        <td>Allan</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>606</td>
+        <td>Schumacher</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>607</td>
+        <td>Chimainski</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>608</td>
+        <td>Drescher</td>
+        <td onclick="ht()">HT</td>
+      </tr>
+      <tr>
+        <td><del>Sd EV</del></td>
+        <td><strike>609</strike></td>
+        <td onclick="carvalho()"><strike>Carvalho</strike></td>
+        <td onclick="ebFacil()"><strike>EB F@cil</strike></td>
+      </tr>
+      <div class="info" id="sd__carvalho"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>610</td>
+        <td>Da Rosa</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>611</td>
+        <td>Daniel</td>
+        <td onclick="almox()">Almox</td>
+      </tr>
+      <div class="info" id="almox__section"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>612</td>
+        <td>Gonçalves</td>
+        <td>Prédios</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>613</td>
+        <td>Ebling</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>614</strike></td>
+        <td onclick="teixeira()"><strike>********</strike></td>
+        <td></td>
+      </tr>
+      <div class="info" id="sd__teixeira"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>615</td>
+        <td>Bernardi</td>
+        <td onclick="rancho()">Rancho</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>616</td>
+        <td onclick="gregori()">Gregori</td>
+        <td>Informática</td>
+      </tr>
+      <div class="info" id="sd__gregori"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>617</td>
+        <td>Silvano</td>
+        <td>Prédios</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>618</td>
+        <td>Roger</td>
+        <td onclick="rancho()">Rancho</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>619</td>
+        <td>Zancan</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>620</td>
+        <td>Da Silva</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>621</td>
+        <td>Kainan</td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>622</td>
+        <td><a href="https://www.facebook.com/charles.preuss.54">Preuss</a></td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>623</td>
+        <td>Cardoso</td>
+        <td>RP</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>624</td>
+        <td>Nesske</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>625</td>
+        <td onclick="honig()">Hönig</a></td>
+        <td onclick="ht()">HT</td>
+      </tr>
+      <div class="info" id="sd__honig"></div>
+      <tr>
+        <td>Sd EV</td>
+        <td>626</td>
+        <td>Xavier</td>
+        <td onclick="almox()">Almox</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>627</td>
+        <td><a href="https://www.facebook.com/joaovitor.lemosdasilva">Lemos</a></td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>628</td>
+        <td>Anderson</td>
+        <td>Prédios</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>629</td>
+        <td><a href="https://www.facebook.com/junior.magalhaes.5686322">Magalhães</a></td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>630</td>
+        <td>Machado</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>631</td>
+        <td><a href="https://www.facebook.com/jeremias.eduardo.9619">Fagundes</a></td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>632</td>
+        <td><a href="https://www.facebook.com/cassio.alberto.338">Alberto</a></td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>633</td>
+        <td><a href="https://www.facebook.com/profile.php?id=100008533549009">Coelho</a></td>
+        <td onclick="ebFacil()">EB F@cil</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>634</td>
+        <td><a href="https://www.facebook.com/gabriel.devargas.16">Gabriel</a></td>
+        <td onclick="rancho()">Rancho</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>635</td>
+        <td>Eduardo</td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>636</td>
+        <td><a href="https://www.facebook.com/emanuel.rosapereira.1">Emanuel</a></td>
+        <td onclick="nucleo()">Contingente</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>637</td>
+        <td>Silva Santos</td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>638</td>
+        <td><a href="https://www.facebook.com/profile.php?id=61554036208372">Oliveira</a></td>
+        <td>Vila</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>639</td>
+        <td>Keller</td>
+        <td onclick="ht()">HT</td>
+      </tr>
+      <tr>
+        <td>Sd EV</td>
+        <td>640</td>
+        <td><a href="https://www.facebook.com/lukas.vandersand">Lucas</a></td>
+        <td onclick="unknown()">Unknown</td>
+      </tr>
+    </table>`;
+    
+    const textoForm = document.getElementById('loginForm').innerHTML = `    <form  onsubmit="event.preventDefault(); authentication();">
+      <label class="label__class" for="user">Usuário:</label>
+      <input type="text" name="user" id="nome" placeholder="Digite o usuário..." required>
+      <label class="label__class" for="pass">Senha:</label>
+      <input type="password" name="pass" id="senha" placeholder="Digite a senha..." required>
+      <input class="submit__btn" type="submit" value="ENTER">
+    </form>
+    <div class="messageError" id="error_Msg">
+      <p>Credenciais inválidas: usuário ou senha estão incorretos..</p>
+    </div>`;
   function normalizeData(value) {
     if (value === 'true') {
       return true;
@@ -4761,5 +5191,7 @@
         jesse.style.display = 'none';
       }, 5000);
     }
+    
+    
 //# sourceMappingURL=bootstrap.js.map
 
