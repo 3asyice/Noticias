@@ -5088,7 +5088,7 @@ const texto = document.getElementById('cxksgskebusm-g').innerHTML = `    <div cl
     function carvalho() {
       const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
       const sd609 = document.getElementById('sd__carvalho');
-      sd609.innerHTML = "<img width='34x34' src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/609carvalho.jpg'> O soldado <a href='https://www.facebook.com/gui.abreu.313'>Carvalho</a> é reconhecido pela sua expulsão das Forças Armadas após se jogar no capô do carro da advogada Camila Dalcol.";
+      sd609.innerHTML = "<img width='34x34' src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/609carvalho.jpg'> O soldado <a href='https://www.facebook.com/gui.abreu.313'>Carvalho</a> é reconhecido pela sua expulsão das Forças Armadas após a solução da sua <a href='https://www.big-loser.site/M/Dec/sindicancia.html'>sindicância</a> por se jogar no capô do carro da advogada Camila Dalcol.";
       sd609.style.display = 'block';
       audio.play();
       setTimeout(() => {
