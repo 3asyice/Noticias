@@ -218,6 +218,7 @@
   .info {
     background-color: #000000A1;
     color: #fff;
+    overflow: auto;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -227,7 +228,7 @@
     width: 50%;
     text-align: justify;
     hyphens: auto;
-    flex-wrap: wrap;
+    flex-wrap: row wrap;
     z-index: 998;
     display: none;
   }
@@ -296,9 +297,11 @@
   }
 
   .messageError {
-    background: #FF0000;
+    background: #000000A3;
     width: 60%;
     padding: 5px;
+    color:#FF0000;
+    border: 1px solid #999999;
     border-radius: 10px;
     display: none;
   }
