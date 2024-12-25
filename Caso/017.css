@@ -179,6 +179,13 @@
   .search__container {
     text-align: center;
     padding-top: 50px;
+    background:url('https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/background__top.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    width:100%;
+    height:50%;
+    flex:100%;
     padding-bottom: 50px;
   }
 
