@@ -64,8 +64,8 @@
     footer {
       padding: 20px;
       background: #000000;
-      flex:100%;
-      width:100%;
+      flex: 100%;
+      width: 100%;
     }
 
     footer p {
@@ -88,16 +88,42 @@
     section.decreto_nr57272 p {
       font-size: 12px;
     }
-    p.cmt__Soares{
+
+    p.cmt__Soares {
       text-align: center;
       text-indent: 0;
     }
-    p.cmt__Soares strong.cmt{
+
+    p.cmt__Soares strong.cmt {
       text-indent: 0;
-      flex:100%;
-      color:#000000;
-      margin:0;
+      flex: 100%;
+      color: #000000;
+      margin: 0;
       text-align: center;
+    }
+
+    div {
+      position: absolute;
+    }
+
+    .info {
+
+      background-color: rgba(0, 0, 0, 0.8);
+      /* Ajuste na cor de fundo */
+      color: #fff;
+      overflow: auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      position: fixed;
+      left: 10%;
+      top: 20%;
+      hyphens: auto;
+      font-size: 12px;
+      width: 50%;
+      text-align: justify;
+      z-index: 998;
+      display: none;
     }
   </style>
 </head>
@@ -113,23 +139,33 @@
       NUP 65402.004444/2024-12</h3>
   </header>
   <main>
-    <p>1. Da análise das averiguações que mandei proceder por intermédio do 1° Sgt VITOR CACIANO <strong>SAUERESSIG</strong>, da B Adm Gu SM, conforme a Portaria n° 014-Cmt/B Adm Gu SM, de 3 de junho de 2024 (F1. 04), com a finalidade de averiguar as circunstâncias em torno do fato, para verificar se o evento caracteriza "acidente em serviço", bem como se houve negligência, imprudência, imperícia, indícios de crime militar, crime comum ou transgressão disciplinar por parte do Sd EV GUILHERME DE ABREU <strong>CARVALHO</strong>, resolvo <strong>CONCORDAR</strong> com o parecer do Sindicante, no sentido de que o evento <strong>caracteriza transgressão disciplinar passível de punição</strong>, prevista no Regulamento Disciplinar do Exército, amparado nos seguintes fatos e fundamentos:</p>
-    <p>a. a abertura da presente sindicância foi realizada em razão do conhecimento, por parte deste Comando, do Boletim de Ocorrência n° 10343/2024/983062 (Fls. 5-7), com <strong>data de comunicação</strong> em 26 MAIO 24 e de <strong>registro</strong> em 29 MAIO 24, emitido pela Brigada Militar do Estado do Rio Grande do Sul, envolvendo o militar GUILHERME DE ABREU <strong>CARVALHO</strong> (Sd EV), o qual presta serviço militar inicial obrigatório nesta Base Administrativa;</p>
-    <p>b. o histórico do relato policial anexo ao Boletim acima mencionado (Fl 7); em linhas gerais, informa ocorrência de atropelamento, que teve como vítima o Sd EV GUILHERME DE ABREU <strong>CARVALHO</strong>, que foi conduzido, após ocorrido, pela Equipe do Corpo de Bombeiros até a UPA Patronato. Relata ainda que, quando a Guarnição chegou ao local para onde o soldado foi conduzido para atendimento, o referido militar já havia se deslocado daquele lugar, tendo recusado atendimento devido a encontrar-se embriagado, conforme informação prestada pelo médico Lucas Rodrigues. O documento menciona ainda, como acusada do atropelamento, a senhora CAMILA DALCOL DA SILVA, que trafegava com seu veículo TOYOTA/ETIOS, placa IUE-3045, pela Avenida Liberdade, quando um indivíduo repentinamente se atirou em frente ao seu veiculo;</p>
+    <p>1. Da análise das averiguações que mandei proceder por intermédio do 1° Sgt VITOR CACIANO <strong onclick="saueressig()">SAUERESSIG</strong>, da B Adm Gu SM, conforme a Portaria n° 014-Cmt/B Adm Gu SM, de 3 de junho de 2024 (F1. 04), com a finalidade de averiguar as circunstâncias em torno do fato, para verificar se o evento caracteriza "acidente em serviço", bem como se houve negligência, imprudência, imperícia, indícios de crime militar, crime comum ou transgressão disciplinar por parte do Sd EV GUILHERME DE ABREU <strong onclick="carvalho()">CARVALHO</strong>, resolvo <strong onclick="agree()">CONCORDAR</strong> com o parecer do Sindicante, no sentido de que o evento <strong onclick="tds()">caracteriza transgressão disciplinar passível de punição</strong>, prevista no Regulamento Disciplinar do Exército, amparado nos seguintes fatos e fundamentos:</p>
+    <div class="info" id="saueressig_"></div>
+    <div class="info" id="carvalho_"></div>
+    <div class="info" id="rde"></div>
+    <div class="info" id="agree_"></div>
+    <p>a. a abertura da presente sindicância foi realizada em razão do conhecimento, por parte deste Comando, do Boletim de Ocorrência n° 10343/2024/983062 (Fls. 5-7), com <strong onclick="start()">data de comunicação</strong> em 26 MAIO 24 e de <strong onclick="registro()">registro</strong> em 29 MAIO 24, emitido pela Brigada Militar do Estado do Rio Grande do Sul, envolvendo o militar GUILHERME DE ABREU <strong onclick="carvalho()">CARVALHO</strong> (Sd EV), o qual presta serviço militar inicial obrigatório nesta Base Administrativa;</p>
+    <div class="info" id="nightmare"></div>
+    <div class="info" id="registro_"></div>
+    <p>b. o histórico do relato policial anexo ao Boletim acima mencionado (Fl 7); em linhas gerais, informa ocorrência de atropelamento, que teve como vítima o Sd EV GUILHERME DE ABREU <strong onclick="carvalho()">CARVALHO</strong>, que foi conduzido, após ocorrido, pela Equipe do Corpo de Bombeiros até a UPA Patronato. Relata ainda que, quando a Guarnição chegou ao local para onde o soldado foi conduzido para atendimento, o referido militar já havia se deslocado daquele lugar, tendo recusado atendimento devido a encontrar-se embriagado, conforme informação prestada pelo médico Lucas Rodrigues. O documento menciona ainda, como acusada do atropelamento, a senhora CAMILA DALCOL DA SILVA, que trafegava com seu veículo TOYOTA/ETIOS, placa IUE-3045, pela Avenida Liberdade, quando um indivíduo repentinamente se atirou em frente ao seu veiculo;</p>
     <p>c. em seu Termo de Inquirição de Testemunha (Fls, 14-15), senhora CAMILA DALCOL DA SILVA, ao ser indagada sobre como ocorreu o acidente, aduziu que estava trafegando pela Avenida Liberdade nas proximidades da esquina da Rua Venâncio Aires, nesta cidade. quando avistou o Sd CARVALHO <q><i>atravessando a rua na frente do seu carro, e posteriormente, se jogando no Capô</i></q> (<i>litteris</i>). Afirma ainda, que após o acidente desceu de seu automóvel, prestou os primeiros socorros e acionou os bombeiros, que chegaram por volta de 15 minutos após serem acionados, enquanto que a Brigada Militar também compareceu ao local, cerca de uma hora após o ocorrido. Assevera ainda, que o acidente ocorreu por volta das 18 horas e 45 minutos do dia 26 de MAIO de 2024, que possui um vídeo do acidente e que irá entregá-lo para compor os autos, e que o Sd CARVALHO tinha sinais comportamentais alterados, conforme outros vídeos anteriores ao acidente, que comprovam essa afirmação, e que também serão entregues para compor o processo;
     </p>
     <p>
       d. no Termo de Inquirição de Testemunha do Sd CARVALHO (Fls. 18-19), ele confirma a data e o local do acidente, que vão ao encontro do depoimento da Sra CAMILA DALCOL DA SILVA. Afirmou ainda, quando indagado sobre a forma em que ocorreu o acidente, que <q><i>estava bastante embriagado e lembra de ter corrido ao atravessar a avenida Liberdade e o Sd GONÇALVES que estava junto começou a gritar para ter cuidado, porque a avenida estava movimentada. Não chegou a atravessar a avenida e resolveu retornar, quando percebeu um flash de luz de um carro que estava passando no momento e colidiu com ele</i></q> (<i>litteris</i>). Ainda, em prosseguimento a seu depoimento, relata ter se evadido do pronto atendimento sem o devido tratamento e consentimento dos profissionais de saúde, e que após isto rumaram para a Base Administrativa da Guarnição de Santa Maria;
     </p>
-    <p>e. Quando interpelado sobre o que fez antes de ocorrer o acidente, aduziu que saiu com o Sd GONÇALVES, compraram 1 litro de conhaque Dreher. uma coca-cola e um saco de gelo e foram beber na praça do Mallet. No local, aguardaram a chegada do Sd ANDERSON para beber junto, e no transcurso da tarde os soldados ANDERSON e GONÇALVES foram jogar futebol com outras pessoas, enquanto o mesmo ficou bebendo sozinho até secar o litro de conhaque. Após o término do jogo, nas proximidades do lugar adquiriram mais uma garrafa de bebida alcoólica (Velho Barreiro), que consumiram até chegar a sua metade. Resolveram sair caminhar. seguindo ideia do Sd GONÇALVES, para ver se curavam a ressaca antes de retornar ao quartel, quando ocorreu o acidente. Por fim, quando questionado se teve alguma lesão ou ficou com alguma sequela por conta do acidente, respondeu que <strong>NÃO</strong>;</p>
-    <p>f. analisando o Termo de Inquirição de Testemunha do Sd GONÇALVES (Fls. 23-24), o mesmo é totalmente condizente com o Sd CARVALHO, naquilo que tange aos momentos e atitudes anteriores ao acidente, local para onde se deslocaram para beber, lugar e horário do atropelamento providências adotadas pela Sra. CAMILA. que prestou os primeiros socorros e acionou os Ôrgãos de Atendimento e Segurança Pública, até a evasão do sindicado do PA Patronato, e seu deslocamento até o aquartelamento;</p>
+    <p>e. Quando interpelado sobre o que fez antes de ocorrer o acidente, aduziu que saiu com o Sd GONÇALVES, compraram 1 litro de conhaque Dreher. uma coca-cola e um saco de gelo e foram beber na praça do Mallet. No local, aguardaram a chegada do Sd ANDERSON para beber junto, e no transcurso da tarde os soldados ANDERSON e GONÇALVES foram jogar futebol com outras pessoas, enquanto o mesmo ficou bebendo sozinho até secar o litro de conhaque. Após o término do jogo, nas proximidades do lugar adquiriram mais uma garrafa de bebida alcoólica (Velho Barreiro), que consumiram até chegar a sua metade. Resolveram sair caminhar. seguindo ideia do Sd GONÇALVES, para ver se curavam a ressaca antes de retornar ao quartel, quando ocorreu o acidente. Por fim, quando questionado se teve alguma lesão ou ficou com alguma sequela por conta do acidente, respondeu que <strong onclick="response()">NÃO</strong>;</p>
+    <div class="info" id="response_"></div>
+    <p>f. analisando o Termo de Inquirição de Testemunha do Sd GONÇALVES (Fls. 23-24), o mesmo é totalmente condizente com o Sd CARVALHO, naquilo que tange aos momentos e atitudes anteriores ao acidente, local para onde se deslocaram para beber, lugar e horário do atropelamento providências adotadas pela Sra. CAMILA, que prestou os primeiros socorros e acionou os Ôrgãos de Atendimento e Segurança Pública, até a evasão do sindicado do PA Patronato, e seu deslocamento até o aquartelamento;</p>
     <p>g. ao realizar o comparativo entre o depoimento das testemunhas acima descritos, não foram verificadas contradições entre os mesmos, naquilo que diz respeito à existência, horário, local e acontecimentos relativos ao incidente aludido;</p>
     <p>h. após a analise dos termos de inquirições das testemunhas, e do que estava anexo aos autos, indicante passou a considerar o Sd CARVALHO como sindicado, notificando o mesmo sobre sua nova oitiva, nesta condição, conforme documento de folha 26;</p>
     <p>i. em seu Termo de Inquirição de Sindicado (FIs. 28-29), o Sd CARVALHO repete todas as informações prestadas ao sindicante, quando estava na condição de testemunha, apresentando apenas como fato novo, a informação de que <q><i>entrou em contato com a Sra Camila, motorista do veiculo, e começou a pagar pelo prejuizo que causou (mencionou ter pago a primeira das 3 parcelas dos gastos com o carro)</i></q> (<i>litteris</i>);</p>
     <p>j. as imagens de vídeo confirmam as informações acima descritas, além de evidenciarem o estado etílico avançado em que se encontrava o Sd CARVALHO, que por diversas vezes caiu em via, e em outras tinha dificuldades em se manter em pé. Em um determinado momento aparece uma imagem em que o sindicado após se levantar do chão começa a urinar na calçada e em um muro, nas esquinas entre as ruas Liberdade e Venâncio Aires. Ressalta-se que todas estas situações descritas foram observadas por cidadãos que passavam pelo local em seus automóveis ou caminhando;</p>
     <p>k. assevera-se ainda, que ao chegar na guarda, o Sd CARVALHO foi desrespeitoso com a Cmt da Gda (Comandante da Guarda), que, ao exigir sua documentação, recebeu das mãos do militar um pedaço de papel higiênico, mostrando mais uma vez total descontrole com sua postura;</p>
-    <p>l. a postura adotada pelo Sd EV CARVALHO (antes, durante e após o acidente) evidencia que o sindicado agiu com <strong>imprudência</strong>, pois realizou ações sem as devidas precauções, agindo de forma precipitada, sem considerar os riscos, e também <strong>negligência</strong>, pois ingeriu quantidade exacerbada de bebida alcoólica, conforme próprio relato do mesmo acostado aos autos e não levou em consideração os riscos de atravessar uma avenida movimentada cidade, fora da faixa de segurança, vindo a colidir com um veículo civil, ocasionando o acidente, transtornos em via pública e o acionamento de Órgãos de Segurança para o atendimento da ocorrência;</p>
-    <p>m. o acidente em si <strong>NÃO</strong> se caracteriza como "acidente em serviço", tendo em vista que o fato não se enquadra em nenhuma das situações previstas nos Art. 1° e 2° do Decreto Nr 57.272, de 16 NOV 1965, além da excludente prevista no Art. 103 da Portaria Nr 461-DGP, de 20 SET 23, conforme se observa:</p>
+    <p>l. a postura adotada pelo Sd EV CARVALHO (antes, durante e após o acidente) evidencia que o sindicado agiu com <strong onclick="imprude()">imprudência</strong>, pois realizou ações sem as devidas precauções, agindo de forma precipitada, sem considerar os riscos, e também <strong onclick="negligencia()">negligência</strong>, pois ingeriu quantidade exacerbada de bebida alcoólica, conforme próprio relato do mesmo acostado aos autos e não levou em consideração os riscos de atravessar uma avenida movimentada cidade, fora da faixa de segurança, vindo a colidir com um veículo civil, ocasionando o acidente, transtornos em via pública e o acionamento de Órgãos de Segurança para o atendimento da ocorrência;</p>
+    <div class="info" id="def"></div>
+    <div class="info" id="negl"></div>
+    <p>m. o acidente em si <strong onclick="nope()">NÃO</strong> se caracteriza como "acidente em serviço", tendo em vista que o fato não se enquadra em nenhuma das situações previstas nos Art. 1° e 2° do Decreto Nr 57.272, de 16 NOV 1965, além da excludente prevista no Art. 103 da Portaria Nr 461-DGP, de 20 SET 23, conforme se observa:</p>
+    <div class="info" id="no_"></div>
 
     <section class="decreto_nr57272">
       <h3>Decreto Nr 57.272, de 16 NOV 1965:</h3>
@@ -157,8 +193,10 @@
         III- não serão considerados acidentes em serviço se os mesmos forem resultados de crime, transgressão disciplinar, imprudência ou desídia do militar acidentado ou de subordinado seu, com sua aquiescência.
       </p>
     </section>
-    <p>n. <strong>Não foi apurado</strong> indícios de crime militar ou crime comum por parte do sindicado, todavia o caso se acerca de transgressão disciplinar, prescrita no Regulamento Disciplinar do Exército;</p>
-    <p>o. assim sendo, o fato em si configura <strong>transgressão disciplinar</strong> capitulada nos números 09 (Deixar de cumprir prescrições expressamente estabelecidas no Estatuto dos Militares ou em outra leis e regulamentos, desde que não haja tipificação como crime ou contravenção penal, cuja violação afete os preceitos da hierarquia e disciplina, a ética militar, a honra pessoal, pundonor militar ou o decoro da classe), número 40 (Portar-se de maneira inconveniente ou sem compostura) e número 83 (Deixar de portar a identidade militar, estando ou não fardado), todos estes disciplinados no Anexo I - Relação de Transgressões, do Decreto Nr 4.346, de 26 AGO 02, que aprova o Regulamento Disciplinar do Exército - R4.</p>
+    <p>n. <strong onclick="apurado()">Não foi apurado</strong> indícios de crime militar ou crime comum por parte do sindicado, todavia o caso se acerca de transgressão disciplinar, prescrita no Regulamento Disciplinar do Exército;</p>
+    <div class="info" id="nao_foi_apurado"></div>
+    <p>o. assim sendo, o fato em si configura <strong onclick="fatd()">transgressão disciplinar</strong> capitulada nos números 09 (Deixar de cumprir prescrições expressamente estabelecidas no Estatuto dos Militares ou em outra leis e regulamentos, desde que não haja tipificação como crime ou contravenção penal, cuja violação afete os preceitos da hierarquia e disciplina, a ética militar, a honra pessoal, pundonor militar ou o decoro da classe), número 40 (Portar-se de maneira inconveniente ou sem compostura) e número 83 (Deixar de portar a identidade militar, estando ou não fardado), todos estes disciplinados no Anexo I - Relação de Transgressões, do Decreto Nr 4.346, de 26 AGO 02, que aprova o Regulamento Disciplinar do Exército - R4.</p>
+    <div class="info" id="fatd_"></div>
     <p>p. a Lei n° 6.880, de 9 DEZ 1980, a qual dispõe acerca do Estatuto dos Militares, em sua Seção II, da Ética Militar, traz em seu teor, preceitos básicos, intrínsecos à vida Castrense, os quais devem ser observados por todos os militares, estando na ativa ou não e em todos os momentos de sua vida, conforme se explana abaixo:</p>
 
     <section class="decreto_nr57272">
@@ -182,23 +220,111 @@
       </p>
     </section>
     <p>
-      2. Isto posto, conforme a análise do caso concreto, tomando por base o depoimento das testemunhas, do sindicado, das provas juntadas ao processo, conclui-se que o SD EV GUILHERME DE ABREU <strong>CARVALHO</strong>, ao ingerir bebida alcoólica de forma desproporcional. veio a cometer atitudes em via pública desta cidade, que estão em <strong>desacordo</strong> com o que se espera de um militar que enverga a farda Verde Oliva, fazendo com que a honra pessoal, o pundonor militar e o decoro da classe fossem comprometidos. Desta maneira, torna-se necessário o seu <strong>LICENCIAMENTO A BEM DA DISCIPLINA das fileiras do Exército Brasileiro</strong>, a fim de que a disciplina, pilar fundamental desta Instituição seja mantida, e assim sirva de exemplo a seus superiores, pares e subordinados.
+      2. Isto posto, conforme a análise do caso concreto, tomando por base o depoimento das testemunhas, do sindicado, das provas juntadas ao processo, conclui-se que o SD EV GUILHERME DE ABREU <strong onclick="carvalho()">CARVALHO</strong>, ao ingerir bebida alcoólica de forma desproporcional. veio a cometer atitudes em via pública desta cidade, que estão em <strong onclick="desacordo()">desacordo</strong> com o que se espera de um militar que enverga a farda Verde Oliva, fazendo com que a honra pessoal, o pundonor militar e o decoro da classe fossem comprometidos. Desta maneira, torna-se necessário o seu <strong onclick="licenciamento()">LICENCIAMENTO A BEM DA DISCIPLINA das fileiras do Exército Brasileiro</strong>, a fim de que a disciplina, pilar fundamental desta Instituição seja mantida, e assim sirva de exemplo a seus superiores, pares e subordinados.
     </p>
+    <div class="info" id="desacordo_"></div>
+    <div class="info" id="licenciamento_"></div>
     <p>3. O procedimento realizado se revestiu das formalidades estabelecidas nas Instruções Gerais para a Elaboração de Sindicância no Âmbito do Exército Brasileiro, aprovadas com a Portaria Nr 107-Cmt Ex, de 13 FEV 12 (EB 10-IG-09.001).</p>
     <p>4. Em consequência determino as seguintes medidas administrativas:</p>
-    <p>a. <strong>que a Assessoria de Apoio para Assuntos Juridicos da OM</strong>: <br>
+    <p>a. <strong onclick="assessoria()">que a Assessoria de Apoio para Assuntos Juridicos da OM</strong>: <br>
       1) providencie a publicação desta solução em AAA JUR; e <br>
       2) notifique o sindicado acerca do teor da presente decisão.</p>
-    <p>b. <strong>que a Seção de Pessoal e Comandante do Contingente</strong>: <br>
-      1) adote as providências devidas para o licenciamento a bem da disciplina das fileiras do Exército Brasileiro, do SD EV GUILHERME DE ABREU <strong>CARVALHO</strong>.</p>
+      <div class="info" id="assessoria_"></div>
+    <p>b. <strong onclick="contingente()">que a Seção de Pessoal e Comandante do Contingente</strong>: <br>
+      1) adote as providências devidas para o licenciamento a bem da disciplina das fileiras do Exército Brasileiro, do SD EV GUILHERME DE ABREU <strong onclick="carvalho()">CARVALHO</strong>.</p>
+      <div class="info" id="contingente_"></div>
     <p>5. por fim, arquive-se os autos desta sindicância no arquivo da OM.</p>
     <p style="text-align: right;">Santa Maria, RS, 08 de julho de 2024.</p>
     <p class="cmt__Soares"> <strong class="cmt">EVERTON CONCEIÇÃO SOARES - Cel</strong><br>
       Comandante da Base Administrativa da <br> Guarnição de Santa Maria</p>
+
   </main>
   <footer>
     <p>&copy; All Rights Reserved</p>
   </footer>
+  <script>
+    let currentOpenDiv = null;
+
+    function showDiv(divId, content) {
+      const div = document.getElementById(divId);
+
+      if (currentOpenDiv && currentOpenDiv !== div) {
+        currentOpenDiv.style.display = 'none'; // Fecha a div aberta
+      }
+
+      div.innerHTML = content;
+      div.style.display = 'block';
+
+      // Atualiza a div atualmente aberta
+      currentOpenDiv = div;
+
+      setTimeout(() => {
+        div.style.display = 'none';
+        currentOpenDiv = null; // Reseta a div atualmente aberta
+      }, 10000);
+    }
+
+    function imprude() {
+      showDiv('def', "Imprudência refere-se à falta de cuidado ou precaução em ações e decisões, resultando em comportamentos arriscados ou irresponsáveis. É a tendência de agir de maneira impulsiva, sem considerar as consequências potenciais, o que pode levar a danos a si mesmo ou a terceiros.");
+    }
+
+    function negligencia() {
+      showDiv('negl', "Negligência é a falta de cuidado que resulta em danos ou prejuízos. Pode ocorrer em áreas como medicina, direito e segurança, caracterizando-se pela omissão de ações que uma pessoa razoável tomaria.");
+    }
+
+    function tds() {
+      showDiv('rde', "Transgressão disciplinar passível de punição é a violação das normas de uma instituição, resultando em sanções. Essas transgressões incluem comportamentos inadequados e desrespeito às regras.");
+    }
+
+    function start() {
+      showDiv('nightmare', "Refere-se à data em que a informação sobre o Boletim de Ocorrência foi oficialmente transmitida ou registrada, ou seja, 26 de maio de 2024.");
+    }
+
+    function carvalho() {
+      showDiv('carvalho_', "Refere-se ao soldado GUILHERME DE ABREU CARVALHO, envolvido em um acidente enquanto prestava serviço militar na Base Administrativa da Guarnição de Santa Maria.");
+    }
+
+    function nope() {
+      showDiv('no_', "Indica que o acidente não é considerado <q>acidente em serviço</q>, pois não se encaixa nas definições dos artigos do Decreto Nr 57.272.");
+    }
+
+    function apurado() {
+      showDiv('nao_foi_apurado', "Significa que não foram encontrados ou verificados indícios ou evidências de crime militar ou comum relacionados ao sindicado.");
+    }
+
+    function saueressig() {
+      showDiv('saueressig_', "Refere-se ao 1° Sgt Vitor Caciano Saueressig, que averiguou um evento para verificar se era um <q>acidente em serviço</q> e se houve transgressão disciplinar do Sd Guilherme de Abreu Carvalho. O parecer concluiu que caracteriza uma transgressão disciplinar passível de punição.");
+    }
+
+    function registro() {
+      showDiv('registro_', "Refere-se ao Boletim de Ocorrência n° 10343/2024/983062, de 29 de maio de 2024, da Brigada Militar, confirmando o ocorrido com o militar Guilherme de Abreu Carvalho.");
+    }
+
+    function fatd() {
+      showDiv('fatd_', "Transgressão disciplinar é a violação de normas de uma instituição, resultando em comportamentos inadequados. Pode levar a sanções conforme as diretrizes disciplinares.");
+    }
+    function licenciamento() {
+      showDiv('licenciamento_', "Licenciamento a bem da disciplina é o desligamento de um militar do Exército Brasileiro por violação de normas, visando manter a ordem na instituição.");
+    }
+    
+    function desacordo() {
+      showDiv('desacordo_', "Desacordo é a falta de concordância ou entendimento entre partes, manifestando divergências de opiniões, ideias ou interesses.");
+    }
+    
+    function assessoria() {
+      showDiv('assessoria_', "A Assessoria de Apoio para Assuntos Jurídicos da OM deve garantir a publicação da solução em AAA JUR e informar o sindicado sobre a decisão.");
+    }
+    function contingente() {
+      showDiv('contingente_', "A Seção de Pessoal e o Comandante devem formalizar o licenciamento do Soldado Guilherme de Abreu Carvalho para manter a ordem no Exército.");
+    }
+    function response() {
+      showDiv('response_', "Indica que o sindicado afirmou não ter sofrido lesões do acidente.");
+    }
+function agree() {
+  showDiv('agree_', "Concordar é aceitar ou aprovar uma opinião ou ideia, compartilhando um entendimento comum.");
+}
+    
+  </script>
 </body>
 
 </html>
