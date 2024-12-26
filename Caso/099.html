@@ -1,25 +1,389 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecionamento</title>
-    <script>
-        // Função para obter o endereço IP do dispositivo do usuário
-        function getUserIp() {
-            // Em um ambiente de rede local, você pode definir o IP manualmente
-            return "http://192.168.0.112:3000/"; // Substitua com o IP do servidor local
-        }
 
-        // Redirecionar quando a página carregar
-        window.onload = function() {
-            var ip = getUserIp();
-            window.location.href = ip;
-        };
-    </script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Infohazard</title>
+  <style>
+    * {
+      user-select: none;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      background: #101010;
+    }
+
+    .title {
+      font-size: 24px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #97FFFC;
+      font-family: 'Times New Roman', Times, serif;
+      flex: 100%;
+      padding: 50px;
+      margin: 0;
+      animation: blinking__text 1s infinite linear;
+      border-bottom: 1px solid #198582;
+    }
+
+    .title:hover {
+      color: red;
+      animation: blinking__hovr 1s infinite linear;
+    }
+
+    @keyframes blinking__hovr {
+      0% {
+        text-shadow: 1px 1px 1px #B70000;
+      }
+
+      25% {
+        text-shadow: 1px 1px 12px #B70000;
+      }
+
+      50% {
+        text-shadow: 1px 1px 24px #B70000;
+      }
+
+      75% {
+        text-shadow: 1px 1px 12px #B70000;
+      }
+
+      100% {
+        text-shadow: 1px 1px 1px #B70000;
+      }
+    }
+
+    @keyframes blinking__text {
+      0% {
+        text-shadow: 1px 1px 1px #C3FFFD;
+      }
+
+      25% {
+        text-shadow: 1px 1px 12px #C3FFFD;
+      }
+
+      50% {
+        text-shadow: 1px 1px 24px #C3FFFD;
+      }
+
+      75% {
+        text-shadow: 1px 1px 12px #C3FFFD;
+      }
+
+      100% {
+        text-shadow: 1px 1px 1px #C3FFFD;
+      }
+    }
+
+    p {
+      color: #C5FFFD;
+      font-size: 12px;
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    #definition {
+      display: none;
+      text-align: justify;
+      hyphens: auto;
+      margin: 0;
+      line-height: 1.5rem;
+      border-bottom: 1px solid #198582;
+      border-left: 3px solid #00FFF8;
+      border-right: 3px solid #00FFF8;
+      padding-right: 5%;
+      padding-left: 5%;
+      flex: 90%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1em;
+      /* Ajuste o tamanho conforme necessário */
+      overflow: hidden;
+      /* Para esconder partes que saem da tela durante a animação */
+    }
+
+    .letter {
+      display: inline-block;
+      transform-origin: center;
+      /* Define o ponto de origem para a rotação */
+      animation: spin 1s infinite;
+      /* Animação em loop */
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotateX(0deg);
+      }
+
+      25% {
+        transform: rotateY(90deg);
+        /* Rotaciona para a direita */
+      }
+
+      50% {
+        transform: rotateX(180deg);
+        /* Rotaciona para baixo */
+      }
+
+      75% {
+        transform: rotateY(-90deg);
+        /* Rotaciona para a esquerda */
+      }
+
+      100% {
+        transform: rotateX(0deg);
+        /* Retorna à posição inicial */
+      }
+    }
+
+    footer {
+      background: #000000;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Times New Roman', Times, serif;
+      color: #ff0000;
+      margin: 0;
+      font-size: 14px;
+      border-bottom: 1px solid #198582;
+      border-left: 3px solid #00FFF8;
+      border-right: 3px solid #00FFF8;
+      text-transform: uppercase;
+      background: #1E0930;
+      padding-right: 5%;
+      padding-left: 5%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      flex: 100%;
+    }
+
+    .article {
+      text-indent: 12px;
+      text-align: justify;
+      hyphens: auto;
+      margin: 0;
+      line-height: 1.5rem;
+      border-bottom: 1px solid #198582;
+      border-left: 3px solid #00FFF8;
+      border-right: 3px solid #00FFF8;
+      padding-right: 5%;
+      padding-left: 5%;
+      flex: 90%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    section div {
+      background: #000000;
+      border-left: 3px solid #00FFF8;
+      border-right: 3px solid #00FFF8;
+    }
+
+    div p {
+      flex: 70%;
+      margin-left: 20%;
+      margin-right: 10%;
+      color: #FFFFFF;
+      font-family: sans-serif;
+
+    }
+
+    p.author {
+      padding-bottom: 10px;
+      color: #606060;
+    }
+
+    div .youtube,
+    .image {
+      color: #FFFFFF;
+      background: #7A1FA2;
+      border: transparent;
+
+    }
+
+    span.image {
+      position: absolute;
+      font-size: 24px;
+      display: flex;
+      margin-left: 5%;
+      margin-top: 1%;
+      width: 14px;
+      height: 14px;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+  </style>
 </head>
-<body>
-    <p>Redirecionando...</p>
+
+<body onload="carregar()">
+  <header>
+    <h1 ondblclick="colorChange()" class="title" id="title">
+      <img width="24x24" src="https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/icons8-danger-100.png" alt="danger">
+      <div class="header" id="header"></div>
+      <img width="24x24" src="https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/icons8-danger-100.png" alt="danger">
+    </h1>
+  </header>
+
+  <main>
+    <p></p>
+    <p id="definition"></p>
+    <section>
+      <h2>Bomba caseira</h2>
+      <div class="youtube">
+        <span class="image">P</span>
+        <p class="author" onclick="ytube_redc()">@pedroalvaressantos6220 • <span id="tempo__do__comentario">há 1 ano</span></p>
+        <p>O sistema quer que você acredite que você só se tornará algo após conquistar posições na sociedade e ser capaz de adquirir posses, mas a verdade é que você é um ser infinitamente poderoso porque seus laços congênitos estão diretamente ligados a fonte criativa da vida primordial você é um deus livre em essência, mas não querem que você tenha certeza disso. </p>
+      </div>
+      <article class="article">
+        <p>Muitas explosões ocorrem devido a reações de combustão, nas quais um combustível reage de forma rápida com um oxidante, tipicamente o oxigênio, resultando na liberação de calor e gases. Um exemplo comum dessa reação é a combustão de hidrocarbonetos.</p>
+        <p>Além disso, existem reações de decomposição, onde certas substâncias se quebram rapidamente em produtos gasosos, liberando energia. Um caso ilustrativo é a decomposição do peróxido de hidrogênio, que, ao se desintegrar em água e oxigênio, pode provocar uma explosão se a reação for acelerada.</p>
+        <p>Misturas explosivas também representam um risco significativo, pois certas combinações de substâncias químicas podem ser instáveis e suscetíveis a explosões. Por exemplo, a combinação de clorato de potássio com açúcar pode se tornar explosiva se não for manipulada com a devida cautela.</p>
+        <p>Ademais, alguns explosivos apresentam sensibilidade à fricção, calor ou impacto, o que implica que podem detonar acidentalmente se não forem manuseados com precaução. Por último, reações que produzem gases rapidamente podem resultar em explosões se ocorrerem em ambientes confinados, onde a pressão gerada não consegue se dissipar.</p>
+      </article>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; Infohazard</p>
+  </footer>
+
+  <script>
+let anos = 1; // Inicializa a contagem de anos
+
+function atualizarTempoComentario() {
+  const tempoElement = document.getElementById('tempo__do__comentario');
+
+  // Atualiza o texto para refletir o número de anos
+  tempoElement.textContent = `há ${anos} ano${anos > 1 ? 's' : ''}`;
+
+  // Incrementa o número de anos
+  anos++;
+  localStorage.setItem('anos', anos); 
+}
+
+// Configura a atualização para acontecer a cada 1 ano
+setInterval(atualizarTempoComentario, 31557600000); // Atualiza a cada 1 ano
+
+    function ytube_redc() {
+      window.location.href = "https://youtube.com/watch?v=Jg1TRLgsDls&lc=UgxlOT9bcBoKjPurHLh4AaABAg&si=cqioa1F_LTPBVSVz&t=51s";
+    }
+
+    const definitionText = 'Um risco que surge da disseminação de informações (verdadeiras) que podem causar dano ou permitir que algum agente cause dano.';
+    const imageHTML = '<img id="dangerImage" width="16" height="16" src="https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/icons8-danger-100.png" alt="danger">';
+    const definition = document.getElementById('definition');
+    definition.style.display = 'none';
+
+    function carregar() {
+      definition.style.display = 'block';
+      digitarTexto(definitionText + ' ', definition);
+      criarTitulo();
+    }
+
+    function digitarTexto(text, element) {
+      let index = 0;
+
+      function typing() {
+        if (index < text.length) {
+          element.textContent += text.charAt(index);
+          index++;
+          setTimeout(typing, 54);
+        } else {
+          element.innerHTML += imageHTML;
+          iniciarAnimacaoImagem();
+        }
+      }
+
+      typing();
+    }
+
+    function iniciarAnimacaoImagem() {
+      const image = document.getElementById('dangerImage');
+      image.style.display = 'inline-block'; // Exibe a imagem inicialmente
+
+      setInterval(() => {
+        if (image.style.display === 'inline-block') {
+          image.style.display = 'none'; // Esconde a imagem
+        } else {
+          image.style.display = 'inline-block'; // Mostra a imagem
+        }
+      }, 1000); // Alterna a cada 1 segundo
+    }
+
+    function criarTitulo() {
+      const titleText = "INFOHAZARD"; // Texto do título
+      const header = document.getElementById('header');
+
+      // Adiciona cada letra como um elemento separado
+      for (let i = 0; i < titleText.length; i++) {
+        const char = titleText[i];
+        const span = document.createElement('span');
+        span.classList.add('letter');
+        span.textContent = char;
+
+        // Aplica uma animação diferente a cada letra
+        const rotationDirection = Math.random() > 0.5 ? 1 : -1; // Decide aleatoriamente a direção
+        const animationDuration = Math.random() * 2 + 9; // Duração da animação entre 1s e 3s
+        span.style.animation = `spin ${animationDuration}s infinite`;
+
+        header.appendChild(span);
+      }
+    }
+
+    let clickCount = 0; // Contador de cliques
+
+    function colorChange() {
+      const title = document.getElementById('title');
+      clickCount++;
+
+      if (clickCount < 3) {
+        title.style.color = 'yellow'; // Muda a cor do texto para amarelo
+        title.style.textShadow = '1px 1px 18px blue'; // Adiciona sombra de texto azul
+      }
+      else if (clickCount < 4) {
+        title.style.color = 'pink';
+        title.style.textShadow = '1px 1px 18px pink ';
+      }
+      else if (clickCount < 5) {
+        title.style.color = '#00ff00';
+        title.style.textShadow = '1px 1px 18px #00ff00 ';
+      }
+
+      else if (clickCount < 6) {
+        title.style.color = 'red';
+        title.style.textShadow = '1px 1px 18px red ';
+      }
+      else {
+        // Reseta para o estado original
+        title.style.color = '#97FFFC'; // Cor original
+        title.style.textShadow = 'none'; // Remove a sombra
+        clickCount = 0; // Reseta o contador
+      }
+    }
+  </script>
 </body>
+
 </html>
