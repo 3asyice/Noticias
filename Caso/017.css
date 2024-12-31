@@ -303,16 +303,28 @@
     border: 2px solid #FF0000;
   }
 
+
   .messageError {
-    background: #000000A3;
-    width: 60%;
-    padding: 5px;
-    color:#FF0000;
-    border: 1px solid #999999;
-    border-radius: 10px;
-    display: none;
-  }
-  
+  height: 60px;
+  width: 150px;
+  display:none;
+  position: fixed; /* Mudei para fixed para centralizar em relação à janela */
+  top: 40%; /* Posiciona a partir do topo */
+  left: 50%; /* Posiciona a partir da esquerda */
+  transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+  text-align: center;
+  font-weight: 800;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 15px;
+  border: 2px solid rgba(3, 255, 0, 1);
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: rgba(3, 255, 0, 1);
+  cursor: pointer;
+  user-select: none;
+  text-transform: uppercase;
+}
+
 [data-bs-theme=dark] {
   color-scheme: dark;
   --bs-body-color: #dee2e6;
