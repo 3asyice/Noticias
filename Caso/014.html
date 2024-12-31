@@ -149,7 +149,7 @@
     <h4>Saudades eternas de um amigo que partiu, mas nunca será esquecido</h4>
   </header>
   <main>
-    <p class="text">Perder um amigo é como perder um pedaço de si mesmo, uma parte que você nunca mais vai recuperar. É como se alguém tivesse arrancado uma página do seu livro de histórias favorito, deixando uma lacuna que nunca mais será "preenchida". Mas mesmo na dor, há uma beleza. A lembrança do seu amigo é como uma esttela que brilha no céu noturno. Você não consegue tocá-la, mas pode sentir seu brilho, sua luz. E é isso o que resta: as lembranças, os momentos compartilhados, as risadas, as lágrimas. E são essas coisas que fazem você lembrar de que valeu a pena viver, mesmo que seja apenas por um instante.</p>
+    <p class="text">Perder um amigo é como perder um pedaço de si mesmo, uma parte que você nunca mais vai recuperar. É como se alguém tivesse arrancado uma página do seu livro de histórias favorito, deixando uma lacuna que nunca mais será "preenchida". Mas mesmo na dor, há uma beleza. A lembrança do seu amigo é como uma estrela que brilha no céu noturno. Você não consegue tocá-la, mas pode sentir seu brilho, sua luz. E é isso o que resta: as lembranças, os momentos compartilhados, as risadas, as lágrimas. E são essas coisas que fazem você lembrar de que valeu a pena viver, mesmo que seja apenas por um instante.</p>
     <section>
       <div class="profile">
         <img width="60" height="60" style="border-radius: 50%" src="https://raw.githubusercontent.com/3asyice/Noticias/main/M/Dec/T/teixeira.jpg" alt="Teixeira">
@@ -168,6 +168,26 @@
       </div>
 
       <img class="image_padding_margin" width="100%" height="100%" src="https://raw.githubusercontent.com/3asyice/Noticias/main/M/Dec/T/teixeira.jpg" alt="Teixeira" onclick="openFullscreen(this)">
+    </section>
+    <section>
+      <div class="profile">
+        <img width="60" height="60" style="border-radius: 50%" src="https://raw.githubusercontent.com/3asyice/Noticias/main/M/Dec/T/teixeira.jpg" alt="Teixeira">
+        <p>Carlos Henrique Teixeira da Silva <br>
+          <span>22 de ago. de 2019 • <span class="public material-symbols-outlined">public</span></span>
+        </p><br><br>
+      </div>
+
+      <img class="image_padding_margin" width="100%" height="100%" src="https://raw.githubusercontent.com/3asyice/Noticias/main/M/Dec/T/teixeira_p.jpg" alt="Teixeira" onclick="openFullscreen(this)">
+    </section>
+    <section>
+      <div class="profile">
+        <img width="60" height="60" style="border-radius: 50%" src="https://raw.githubusercontent.com/3asyice/Noticias/main/M/Dec/T/teixeira.jpg" alt="Teixeira">
+        <p>Carlos Henrique Teixeira da Silva <br>
+          <span>22 de ago. de 2019 • <span class="public material-symbols-outlined">public</span></span>
+        </p><br><br>
+      </div>
+
+      <img class="image_padding_margin" width="100%" height="100%" src="https://raw.githubusercontent.com/3asyice/Noticias/main/M/Dec/T/teixeira_q.jpg" alt="Teixeira" onclick="openFullscreen(this)">
     </section>
     <section>
       <div class="profile">
@@ -325,107 +345,107 @@
 
   <script>
     function openFullscreen(img) {
-  const container = document.createElement('div');
-  container.style.position = 'fixed';
-  container.style.top = '0';
-  container.style.left = '0';
-  container.style.width = '100%';
-  container.style.height = '100%';
-  container.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-  container.style.display = 'flex';
-  container.style.justifyContent = 'center';
-  container.style.alignItems = 'center';
-  container.style.zIndex = '9999';
+      const container = document.createElement('div');
+      container.style.position = 'fixed';
+      container.style.top = '0';
+      container.style.left = '0';
+      container.style.width = '100%';
+      container.style.height = '100%';
+      container.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+      container.style.display = 'flex';
+      container.style.justifyContent = 'center';
+      container.style.alignItems = 'center';
+      container.style.zIndex = '9999';
 
-  const fullscreenImg = document.createElement('img');
-  fullscreenImg.src = img.src;
-  fullscreenImg.style.maxWidth = '95%';
-  fullscreenImg.style.maxHeight = '90%';
-  fullscreenImg.style.border = '1px solid #00ff00';
-  fullscreenImg.style.objectFit = 'contain';
+      const fullscreenImg = document.createElement('img');
+      fullscreenImg.src = img.src;
+      fullscreenImg.style.maxWidth = '95%';
+      fullscreenImg.style.maxHeight = '90%';
+      fullscreenImg.style.border = '1px solid #00ff00';
+      fullscreenImg.style.objectFit = 'contain';
 
-  const viewFullscreenButton = document.createElement('span');
-  viewFullscreenButton.className = 'material-symbols-outlined';
-  viewFullscreenButton.innerText = 'fullscreen';
-  viewFullscreenButton.style.position = 'absolute';
-  viewFullscreenButton.style.top = '20px';
-  viewFullscreenButton.style.right = '100px'; // Posição à esquerda do botão de compartilhar
-  viewFullscreenButton.style.padding = '10px';
-  viewFullscreenButton.style.backgroundColor = 'rgba(0, 0, 0, 0)'; // Fundo semi-transparente
-  viewFullscreenButton.style.color = '#00ff00';
-  viewFullscreenButton.style.borderRadius = '5px';
-  viewFullscreenButton.style.cursor = 'pointer';
-  viewFullscreenButton.style.zIndex = '10000';
+      const viewFullscreenButton = document.createElement('span');
+      viewFullscreenButton.className = 'material-symbols-outlined';
+      viewFullscreenButton.innerText = 'fullscreen';
+      viewFullscreenButton.style.position = 'absolute';
+      viewFullscreenButton.style.top = '20px';
+      viewFullscreenButton.style.right = '100px'; // Posição à esquerda do botão de compartilhar
+      viewFullscreenButton.style.padding = '10px';
+      viewFullscreenButton.style.backgroundColor = 'rgba(0, 0, 0, 0)'; // Fundo semi-transparente
+      viewFullscreenButton.style.color = '#00ff00';
+      viewFullscreenButton.style.borderRadius = '5px';
+      viewFullscreenButton.style.cursor = 'pointer';
+      viewFullscreenButton.style.zIndex = '10000';
 
-  viewFullscreenButton.onclick = function(e) {
-    e.stopPropagation(); 
-    if (fullscreenImg.requestFullscreen) {
-      fullscreenImg.requestFullscreen();
-    } else if (fullscreenImg.mozRequestFullScreen) {
-      fullscreenImg.mozRequestFullScreen();
-    } else if (fullscreenImg.webkitRequestFullscreen) {
-      fullscreenImg.webkitRequestFullscreen();
-    } else if (fullscreenImg.msRequestFullscreen) {
-      fullscreenImg.msRequestFullscreen();
+      viewFullscreenButton.onclick = function(e) {
+        e.stopPropagation();
+        if (fullscreenImg.requestFullscreen) {
+          fullscreenImg.requestFullscreen();
+        } else if (fullscreenImg.mozRequestFullScreen) {
+          fullscreenImg.mozRequestFullScreen();
+        } else if (fullscreenImg.webkitRequestFullscreen) {
+          fullscreenImg.webkitRequestFullscreen();
+        } else if (fullscreenImg.msRequestFullscreen) {
+          fullscreenImg.msRequestFullscreen();
+        }
+      };
+
+      const shareButton = document.createElement('span');
+      shareButton.className = 'material-symbols-outlined';
+      shareButton.innerText = 'share';
+      shareButton.style.position = 'absolute';
+      shareButton.style.top = '20px';
+      shareButton.style.right = '50px';
+      shareButton.style.padding = '10px';
+      shareButton.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+      shareButton.style.color = '#00ff00';
+      shareButton.style.borderRadius = '5px';
+      shareButton.style.cursor = 'pointer';
+      shareButton.style.zIndex = '10000';
+
+      const exitButton = document.createElement('span');
+      exitButton.className = 'material-symbols-outlined';
+      exitButton.innerText = 'close';
+      exitButton.style.position = 'absolute';
+      exitButton.style.top = '20px';
+      exitButton.style.right = '10px';
+      exitButton.style.padding = '10px';
+      exitButton.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+      exitButton.style.color = '#00ff00';
+      exitButton.style.borderRadius = '5px';
+      exitButton.style.cursor = 'pointer';
+      exitButton.style.zIndex = '10000';
+      exitButton.onclick = function(e) {
+        e.stopPropagation();
+        document.body.removeChild(container);
+      };
+      shareButton.onclick = function(e) {
+        e.stopPropagation();
+        const shareUrl = img.src;
+        if (navigator.share) {
+          navigator.share({
+            title: 'Compartilhar Imagem',
+            url: shareUrl,
+          }).then(() => {
+            console.log('Imagem compartilhada com sucesso!');
+          }).catch((error) => {
+            console.error('Erro ao compartilhar:', error);
+          });
+        } else {
+          alert('Compartilhe este link: ' + shareUrl);
+        }
+      };
+
+      container.appendChild(fullscreenImg);
+      container.appendChild(viewFullscreenButton);
+      container.appendChild(shareButton);
+      container.appendChild(exitButton);
+
+      document.body.appendChild(container);
+      container.onclick = function() {
+        document.body.removeChild(container);
+      };
     }
-  };
-
-  const shareButton = document.createElement('span');
-  shareButton.className = 'material-symbols-outlined';
-  shareButton.innerText = 'share';
-  shareButton.style.position = 'absolute';
-  shareButton.style.top = '20px';
-  shareButton.style.right = '50px';
-  shareButton.style.padding = '10px';
-  shareButton.style.backgroundColor = 'rgba(0, 0, 0, 0)'; 
-  shareButton.style.color = '#00ff00';
-  shareButton.style.borderRadius = '5px';
-  shareButton.style.cursor = 'pointer';
-  shareButton.style.zIndex = '10000';
-
-  const exitButton = document.createElement('span');
-  exitButton.className = 'material-symbols-outlined';
-  exitButton.innerText = 'close';
-  exitButton.style.position = 'absolute';
-  exitButton.style.top = '20px';
-  exitButton.style.right = '10px';
-  exitButton.style.padding = '10px';
-  exitButton.style.backgroundColor = 'rgba(0, 0, 0, 0)';
-  exitButton.style.color = '#00ff00';
-  exitButton.style.borderRadius = '5px';
-  exitButton.style.cursor = 'pointer';
-  exitButton.style.zIndex = '10000';
-  exitButton.onclick = function(e) {
-    e.stopPropagation(); 
-    document.body.removeChild(container); 
-  };
-  shareButton.onclick = function(e) {
-    e.stopPropagation(); 
-    const shareUrl = img.src; 
-    if (navigator.share) {
-      navigator.share({
-        title: 'Compartilhar Imagem',
-        url: shareUrl,
-      }).then(() => {
-        console.log('Imagem compartilhada com sucesso!');
-      }).catch((error) => {
-        console.error('Erro ao compartilhar:', error);
-      });
-    } else {
-      alert('Compartilhe este link: ' + shareUrl);
-    }
-  };
-
-  container.appendChild(fullscreenImg);
-  container.appendChild(viewFullscreenButton);
-  container.appendChild(shareButton);
-  container.appendChild(exitButton);
-
-  document.body.appendChild(container);
-  container.onclick = function() {
-    document.body.removeChild(container);
-  };
-}
   </script>
 </body>
 
