@@ -1024,7 +1024,7 @@
       <input class="submit__btn" type="submit" value="ENTER">
     </form>
     <div class="messageError" id="error_Msg">
-      <p>Credenciais inválidas: usuário ou senha estão incorretos..</p>
+      <p>Access Denied</p>
     </div>`;
 
   function normalizeData(value) {
