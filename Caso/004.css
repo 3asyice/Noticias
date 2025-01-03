@@ -1,66 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
-  
-  *{
-      font-size: 24px;
-      font-family: 'Times New Roman', sans-serif;
-  }
-    html, body {
-      width:100%;
-      overflow-y: scroll;
-      background:#000000;
-      margin:0;
-    }
-    
-    .h1__title {
-      text-align: center;
-      font-size: 24px;
-      color:#00FF30;
-      font-family: 'Times New Roman', sans-serif;
-    }
-    .search-container {
-      justify-content: center;
-      display:flex;
-      margin:50px;
-    }
-    .search-input {
-      padding:15px;
-      
-    }
-    a {
-      color:rgba(18, 255, 0, 1);
-      font-size: 14px;
-      flex-wrap: wrap;
-      padding:5px;
-      text-transform: lowercase;
-      background:rgba(0, 0, 0, 1);
-      text-decoration: none;
-    }
-    a:hover {
-      color:rgba(207, 32, 32, 1);
-      padding:8px;
-    }
-    .date {
-      color:rgba(252, 255, 0, 1);
-      flex-wrap: wrap;
-      padding:0px;
-      background:rgba(0, 0, 0, 1);
-      font-size: 12px;
-      float: right;
-      margin-right: 20px
-    }
-    .date, a {
-      margin-left: 20px;
-    }
-    .link-item {
-      display:inline-block;
-    }
-    #links {
-      background:url('https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/leonardo.jpg') center / cover no-repeat fixed;
-    }
-    footer {
-      font-size: 12px;
-      padding:15px;
-      text-align: center;
-      color:rgba(255, 255, 255, 1);
-    }
+* {
+  font-size: 24px;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-y: scroll;
+  background: #000000;
+  margin: 0;
+}
+
+.h1__title {
+  text-align: center;
+  font-size: 24px;
+  color: #00FF30;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+.search-container {
+  justify-content: center;
+  display: flex;
+  margin: 50px;
+}
+
+.search-input {
+  padding: 15px;
+
+}
+
+a {
+  color: rgba(18, 255, 0, 1);
+  font-size: 14px;
+  flex-wrap: wrap;
+  padding: 5px;
+  text-transform: lowercase;
+  background: #0000008F;
+  border: 5px solid black;
+  outline: 1px solid #00ff00;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(207, 32, 32, 1);
+  padding: 8px;
+}
+
+.date {
+  margin: 5px;
+  color: rgba(252, 255, 0, 1);
+  flex-wrap: wrap;
+  border: 3px solid black;
+  outline: 1px solid #00FFE3;
+  padding:5px 0px 5px 0px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 1);
+  font-size: 12px;
+  float: right;
+  text-transform: lowercase;
+  margin-right: 20px
+}
+
+.date,
+a {
+  margin-left: 20px;
+}
+
+.link-item {
+  display: inline-block;
+  background:#0000008F;
+  flex:100%;
+  width:100%;
+}
+
+#links {
+  background: url('https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/leonardo.jpg') center / cover no-repeat fixed;
+}
+
+footer {
+  font-size: 12px;
+  padding: 15px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
