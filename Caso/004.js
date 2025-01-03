@@ -230,7 +230,7 @@ const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML
         <hr>
       </div>
       <div class="link-item">
-        <a href="https://web.archive.org/web/20240915200033/https://www.big-loser.site/Project_Apocalypse/comandante.html">big-loser - cel Soares / updated</a>
+        <a href="https://web.archive.org/web/20240915200033/https://www.big-loser.site/Project_Apocalypse/comandante.html">big-loser - cel Soares</a>
         <p class="date">Sep 15, 2024</p>
         <hr>
       </div>
@@ -460,6 +460,11 @@ const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML
         <p class="date">Aug 27, 2024</p>
         <hr>
       </div>
+                      <div class="link-item">
+          <a href="https://web.archive.org/web/20240827213157/https://ponte.org/militar-do-exercito-e-encontrado-morto-com-indicios-de-suicidio-em-quartel-de-sp/">Antônio - Suicídio </a>
+          <p class="date">Aug 27, 2024</p>
+          <hr>
+        </div>
       <div class="link-item">
         <a href="https://web.archive.org/web/20240827173350/https://www.big-loser.site/Caso/004_4RCH1V3S">Caso - 004.html / New</a>
         <p class="date">Aug 27, 2024</p>
