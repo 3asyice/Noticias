@@ -190,12 +190,12 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20241001131537/https://jack-sbraincancer.github.io/NoticiasDelTomorrow/s/suicide">Suicídio do Sd 614 Teixeira/</a>
+          <a href="https://web.archive.org/web/20241001131537/https://jack-sbraincancer.github.io/NoticiasDelTomorrow/s/suicide">Suicídio do Sd 614/</a>
           <p class="date">Oct 01, 2024</p>
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20241001131730/https://jack-sbraincancer.github.io/NoticiasDelTomorrow/s/sindicancia">Expulsão do Sd 609 Carvalho/</a>
+          <a href="https://web.archive.org/web/20241001131730/https://jack-sbraincancer.github.io/NoticiasDelTomorrow/s/sindicancia">Expulsão do Sd 609/</a>
           <p class="date">Oct 01, 2024</p>
           <hr>
         </div>
@@ -631,7 +631,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="http://web.archive.org/web/20240715034331/https://3asyice.github.io/military/">Diario de um Militar origem/</a>
+          <a href="http://web.archive.org/web/20240715034331/https://3asyice.github.io/military/">Diario de um Militar/</a>
           <p class="date">Jul 15, 2024</p>
           <hr>
         </div>
@@ -656,7 +656,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240419155855/https://bandersnatch.club/">bandersnatch.club origem/</a>
+          <a href="https://web.archive.org/web/20240419155855/https://bandersnatch.club/">bandersnatch.club /</a>
           <p class="date">Apr 19, 2024</p>
           <hr>
         </div>
@@ -666,7 +666,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240418171838/https://www.malditonatal.online/">malditonatal.online origem/</a>
+          <a href="https://web.archive.org/web/20240418171838/https://www.malditonatal.online">malditonatal.online/</a>
           <p class="date">Apr 18, 2024</p>
           <hr>
         </div> <div>`;
