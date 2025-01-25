@@ -280,6 +280,16 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
+          <a href="https://web.archive.org/web/20240809042433/https://bandersnatch.club/">bandersnatch.club/</a>
+          <p class="date">Sep 15, 2024</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20240809042434/https://3asyice.github.io/Regulamento-Disciplinar-do-Ex-rcito-Brasileiro/">Artigo do RDE/</a>
+          <p class="date">Sep 15, 2024</p>
+          <hr>
+        </div>
+        <div class="link-item">
           <a href="https://web.archive.org/web/20240915115222/https://badmgusm.eb.mil.br/index.php/todas-as-noticias/2232-incorporacao-dos-novos-recrutas-do-ano-de-2024">BADMGUSM - Incorporação/</a>
           <p class="date">Sep 15, 2024</p>
           <hr>
@@ -491,12 +501,12 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240827180851/https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/Conversa%20do%20WhatsApp%20com%20B%20ADM%20GU%20SM%F0%9F%94%B0%F0%9F%87%A7%F0%9F%87%B7.txt">CONVERSATION.TXT</a>
+          <a href="https://web.archive.org/web/20240827180851/https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/Conversa%20do%20WhatsApp%20com%20B%20ADM%20GU%20SM%F0%9F%94%B0%F0%9F%87%A7%F0%9F%87%B7.txt">CONVERSATION.TXT/</a>
           <p class="date">Aug 22, 2024</p>
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://onedrive.live.com/?authkey=%21AE%5FJKH8TjAFMdmU&id=E2112D3399C3A63A%21109&cid=E2112D3399C3A63A&parId=root&parQt=sharedby&o=OneUp">SECRET CON</a>
+          <a href="https://onedrive.live.com/?authkey=%21AE%5FJKH8TjAFMdmU&id=E2112D3399C3A63A%21109&cid=E2112D3399C3A63A&parId=root&parQt=sharedby&o=OneUp">SECRET CON/</a>
           <p class="date">Aug 22, 2024</p>
           <hr>
         </div>
@@ -523,16 +533,6 @@ function filterItems() {
         <div class="link-item">
           <a href="https://web.archive.org/web/20240809042409/https://www.big-loser.site/">big-loser.site/</a>
           <p class="date">Aug 09, 2024</p>
-          <hr>
-        </div>
-        <div class="link-item">
-          <a href="https://web.archive.org/web/20240809042433/https://bandersnatch.club/">bandersnatch.club/</a>
-          <p class="date">Sep 15, 2024</p>
-          <hr>
-        </div>
-        <div class="link-item">
-          <a href="https://web.archive.org/web/20240809042434/https://3asyice.github.io/Regulamento-Disciplinar-do-Ex-rcito-Brasileiro/">Artigo do RDE/</a>
-          <p class="date">Sep 15, 2024</p>
           <hr>
         </div>
         <div class="link-item">
