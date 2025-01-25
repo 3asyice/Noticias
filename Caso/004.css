@@ -120,7 +120,7 @@ footer {
 @media (max-width: 600px) {
    a{
     color:#61EA53 ;
-    font-size: 14px;
+    font-size: 12px;
     background:transparent;
     border:none;
     outline:none;
@@ -130,6 +130,7 @@ footer {
    }
    .date{
     color:#CEFCD2;
+    font-size:12px;
     background:transparent;
     border:none;
     outline:none;
