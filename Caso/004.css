@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+@font-face {
+    font-family: 'OCRA';
+	src: url(/fancyindex/OCRA.woff2) format('woff2');
+    font-display: swap;
+}
+
+* {
+  font-size: 24px;
+  font-family: 'OCRA', monospace;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-y: scroll;
+  background: #000;
+  margin: 0;
+}
+
+.h1__title {
+  text-align: center;
+  font-size: 24px;
+  color: #00FF30;
+  font-family: 'OCRA', monospace;
+}
+
+.search-container {
+  justify-content: center;
+  display: flex;
+  margin: 50px;
+}
+#search {
+	color: #000000;				/* [000000] Font color inside the search box */
+	background-color: #61EA53;			/* [61EA53] Background color of the search box */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    font-size: 18px;
+    font-family: 'OCRA', monospace;
+	width: 250px;
+    outline:none;
+    padding: 5px;
+    border:none;
+	margin-top: 0px;				/* [10] Space above the search box */
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-appearance: textfield;
+	-webkit-transition: all 300ms ease-in;
+	-ms-transition: all 300ms ease-in;
+	-o-transition: all 300ms ease-in;
+	transition: all 300ms ease-in;
+}
+#search:focus{
+    outline:none;
+    border:none;
+    font-family: 'OCRA', monospace;
+}
+
+a {
+  color: rgba(18, 255, 0, 1);
+  font-size: 14px;
+  flex-wrap: wrap;
+  padding: 5px;
+  text-transform: lowercase;
+  background: #0000008F;
+  border: 5px solid black;
+  outline: 1px solid #00ff00;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(207, 32, 32, 1);
+  padding: 8px;
+}
+
+.date {
+  margin: 5px;
+  color: rgba(252, 255, 0, 1);
+  flex-wrap: wrap;
+  border: 3px solid black;
+  outline: 1px solid #00FFE3;
+  padding:5px 0px 5px 0px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 1);
+  font-size: 12px;
+  float: right;
+  text-transform: lowercase;
+  margin-right: 20px
+}
+
+.date,
+a {
+  margin-left: 20px;
+}
+
+.link-item {
+  display: inline-block;
+  background:#0000008F;
+  flex:100%;
+  width:100%;
+}
+
+#links {
+    margin-left:3%;
+    margin-right: 3%;
+    border-radius: 10px;
+  background: url('https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/leonardo.jpg') center / cover no-repeat fixed;
+}
+
+footer {
+  font-size: 12px;
+  padding: 15px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 600px) {
+   a{
+    color:#61EA53 ;
+    font-size: 14px;
+    background:transparent;
+    border:none;
+    outline:none;
+   }
+   a:hover{
+    color:#fff;
+   }
+   .date{
+    color:#CEFCD2;
+    background:transparent;
+    border:none;
+    outline:none;
+   }
+   .date:hover{
+    color:#fff;
+   }
+    
+  }
+
+  /* Para telas médias (tablets) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    a{
+        color:#61EA53 ;
+        font-size: 16px;
+        background:transparent;
+        border:none;
+        margin-left: 10%;
+        outline:none;
+       }
+       a:hover{
+        color:#fff;
+       }
+       .date{
+        margin-right: 10%;
+        font-size: 16px;
+        color:#CEFCD2;
+        background:transparent;
+        border:none;
+        outline:none;
+       }
+       .date:hover{
+        color:#fff;
+       }
+        
+  }
+
+  @media (min-width: 1025px) {
+    a{
+        color:#61EA53 ;
+        font-size: 18px;
+        background:transparent;
+        border:none;
+        margin-left: 5%;
+        outline:none;
+       }
+       a:hover{
+        color:#fff;
+       }
+       .date{
+        margin-right: 5%;
+        font-size: 18px;
+        color:#CEFCD2;
+        background:transparent;
+        border:none;
+        outline:none;
+       }
+       .date:hover{
+        color:#fff;
+       }
+     
+  }
