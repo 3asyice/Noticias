@@ -1,21 +1,3 @@
-User-agent: Googlebot
-Disallow: /private/
-Disallow: /tmp/
-Disallow: /cgi-bin/
-Allow: /public/
-Allow: /images/
-Sitemap: http://www.example.com/sitemap.xml
-
-User-agent: Bingbot
-Disallow: /temp/
-Disallow: /archive/
-Allow: /blog/
-Allow: /resources/
-Sitemap: http://www.example.com/sitemap_bing.xml
-
-User-agent: *
-Allow: /Caso/
-
 User-agent: *
 Disallow: /administrator/
 Disallow: /bin/
@@ -35,31 +17,7 @@ Disallow: /login/
 Disallow: /register/
 Disallow: /checkout/
 Disallow: /user/
-Allow: /static/
 Disallow: /downloads/
+Allow: /static/
 Allow: /about/
-Sitemap: http://www.example.com/sitemap_general.xml
-
-User-agent: Slurp
-Disallow: /hidden/
-Disallow: /private/
-Allow: /public/
-Sitemap: http://www.example.com/sitemap_slurp.xml
-
-User-agent: DuckDuckBot
-Disallow: /temp/
-Disallow: /secret/
-Allow: /products/
-Sitemap: http://www.example.com/sitemap_duckduck.xml
-
-# Additional rules for specific crawlers
-User-agent: Baiduspider
-Disallow: /forbidden/
-Allow: /content/
-
-User-agent: Yandex
-Disallow: /old/
-Allow: /new/
-
-User-agent: magicsearchbot
-Disallow: /uploads/
+Allow: /Caso/
