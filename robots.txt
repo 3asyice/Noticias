@@ -20,4 +20,4 @@ Disallow: /user/
 Disallow: /downloads/
 Allow: /static/
 Allow: /about/
-Allow: /Caso/
+Allow: /Caso/*.html
