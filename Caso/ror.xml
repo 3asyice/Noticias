@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://www.big-loser.site/music</title>
+  <link>https://www.big-loser.site/music</link>
+
+<item>
+     <link>https://www.big-loser.site/music</link>
+     <title>SongParty</title>
+     <description>Um site com uma playlist de músicas.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.big-loser.site/M/page/01.html</link>
+     <title>SongParty</title>
+     <description>Um site com uma playlist de músicas.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.big-loser.site/M/page/02</link>
+     <title>SongParty</title>
+     <description>Um site com uma playlist de músicas.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.big-loser.site/M/page/03</link>
+     <title>SongParty</title>
+     <description>Um site com uma playlist de músicas.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
