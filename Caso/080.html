@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alunos do curso de informática da Escola Estatual Ensino Técnico 25 de Julho. Ano de 2025 - 202*">
+  <meta name="keywords" content="nomes, alunos, pontuação, fotos, vermelho, informática, estudos, aulas">
+  <meta name="author" content="anonymous">
+  <title>Clube da Internet</title>
+
+</head>
+<style type="text/css" media="all">
+  @import url('https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&family=Mirza:wght@400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Archivo+Black&family=Geostar+Fill&family=Jacquard+24&family=Jacquard+24+Charted&family=Jacquarda+Bastarda+9+Charted&family=Jersey+10+Charted&family=Jersey+15+Charted&family=Jersey+20+Charted&family=Micro+5&family=Rubik+Broken+Fax&family=Rubik+Glitch&family=Rubik+Lines&family=Sixtyfour&family=Workbench&display=swap');
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    background: #000;
+  }
+
+  h1 {
+    font-family: 'Jacquard 24 Charted';
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    flex-wrap: wrap;
+    font-style: normal;
+    color: #f00;
+  }
+
+  a.links {
+    font-size: 7px;
+    color: #D00000;
+    text-transform: uppercase;
+    padding-left: 2%;
+    text-decoration: none;
+    font-family: 'Faster One';
+    padding-right: 2%;
+    font-family: "Faster One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  nav {
+    flex: 100%;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 12px;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    background: #000000C9;
+    width: 100%;
+    font-family: 'Faster One', serif;
+    position: fixed;
+    color: #FF3B3B;
+  }
+
+  section h2 {
+    margin-top: 35px;
+    font-family: "Sixtyfour",
+      serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    color: #FF0000;
+    font-variation-settings: "BLED" 0,
+      "SCAN" 0;
+  }
+
+  section.section_btn {
+    text-align: center;
+  }
+
+  .start_btn {
+    color: #F6FF00;
+    font-family: "Rubik Glitch", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #8F0000;
+    margin-top: 50px;
+  }
+
+  div.div_btn {
+    color: rgba(255, 255, 255, 0.1);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: cover;
+    position: fixed;
+    overflow: auto;
+    display: none;
+    background-image: linear-gradient(123deg, rgba(20, 20, 20, 1), rgba(0, 0, 0, 1));
+  }
+
+  div.div_btn footer.p {
+    display: none;
+  }
+
+  div.div_btn h3 {
+    font-family: "Workbench",
+      serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "BLED" 0,
+      "SCAN" 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    color: #DB1717;
+  }
+
+  div.div_btn p.title {
+    color: #FFF425;
+    letter-spacing: 3px;
+    background: #3B3B3B;
+    font-family: "Alumni Sans Collegiate One", serif;
+    font-weight: 100;
+    font-size: 24px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 15px;
+    font-style: normal;
+  }
+
+  div.div_btn p {
+    font-family: "Archivo Black", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: bottom:15px;
+    hyphens: auto;
+    text-align: justify;
+    font-size: 16px;
+    color: #8D8D8D;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  div.div_btn p span {
+    color: #FFFFFF;
+  }
+
+  div.div_btn p span.programming {
+    color: #FF2E2E;
+  }
+
+  textarea {
+    width: 100%;
+    height: 275px;
+    background: #333333;
+    color: #E3E3E3;
+    font-family: 'monospace', serif;
+    font-size: 14px;
+  }
+
+  .copy_btn {
+    float: right;
+    border-radius: 5px;
+    position: relative;
+    top: 22px;
+  }
+
+  textarea.plus_size {
+    height: 400px;
+  }
+
+  .react_textarea {
+    height: 275px;
+  }
+
+  .angular_textarea {
+    height: 220px;
+  }
+
+  .sql_textarea {
+    height: 110px;
+  }
+
+  .sql_textarea2 {
+    height: 70px;
+  }
+
+  .sql_textarea3 {
+    height: 40px;
+  }
+   #resultado {
+            
+        }
+        .highlight {
+            background-color: #0015FF;
+        }
+</style>
+
+<body>
+  <header>
+    <h1>Clube da Internet</h1>
+  </header>
+  <nav>
+    <a class="links" target="_blank" href="https://big-loser.site">informática</a>
+    <a class="links" target="_blank" href="https://bandersnatch.club">arte da escolha</a>
+    <a class="links" target="_blank" href="https://big-loser.site/Caso/004">arquivos</a>
+  </nav>
+
+  <section class="section_btn">
+    <h2>Curso de Informática</h2>
+    <button class="start_btn" onclick="toggleDiv()">START</button>
+  </section>
+  <div  class="div_btn" id="div_btn">
+    <input type="text" id="searchInput" placeholder="Digite uma palavra para buscar...">
+<button onclick="buscarPalavra()">Buscar</button>
+    <div id="resultado">
+      
+    <h3>conceitos básicos</h3>
+    <p class="title">O que é HARDWARE?</p>
+    <p><span>Hardware</span> é a parte física do computador, ou seja, os componentes que você pode tocar. Aqui estão alguns dos principais componentes: </p>
+    <p><span>Processador</span> (<span>CPU</span>): É o "cérebro" do computador, responsável por executar as instruções e processar dados.</p>
+    <p><span>Memória RAM</span> (<span>Memória de Acesso Aleatório</span>): Armazena temporariamente os dados que o processador está usando. Quanto mais RAM, mais tarefas o computador pode realizar simultaneamente.</p>
+    <p><span>Disco Rígido</span> (<span>HDD/SSD</span>): É onde os dados são armazenados permanentemente, como o sistema operacional, programas e arquivos. HDDs são mecânicos, enquanto SSDs são mais rápidos e silenciosos.
+    </p>
+    <p><span>Placa-mãe</span>: Conecta todos os componentes do computador e permite que se comuniquem entre si. </p>
+    <p><span>Placa de Vídeo</span>: Responsável por renderizar gráficos e imagens, essencial para jogos e design gráfico.</p>
+
+    <p class="title"> O que é Software?</p>
+    <p><span>Software</span> refere-se aos programas e sistemas que fazem o hardware funcionar. Existem dois tipos principais:</p>
+    <p><span>Software de Sistema</span>: Inclui o sistema operacional (como Windows, macOS, Linux), que gerencia o hardware e fornece uma interface para o usuário.</p>
+    <p><span>Software Aplicativo</span>: Programas que realizam tarefas específicas, como editores de texto (Microsoft Word), navegadores de internet (Google Chrome) e softwares de design (Adobe Photoshop).</p>
+    <p class="title">O que é um Sistema Operacional?</p>
+    <p>Um <span>sistema operacional</span> (<span>SO</span>) é um conjunto de programas que gerencia o hardware do computador e fornece serviços para o software. Ele atua como uma ponte entre o usuário e o hardware. Os principais sistemas operacionais incluem:</p>
+    <p><span>Windows</span>: Desenvolvido pela Microsoft, é o sistema mais utilizado em PCs.</p>
+    <p><span>macOS</span>: Sistema da Apple, usado em computadores Macintosh.</p>
+    <p><span>Linux</span>: Um sistema operacional de código aberto que pode ser personalizado. Existem várias distribuições, como Ubuntu e Fedora.</p>
+    <p><span>Android</span> e <span>iOS</span>: Sistemas operacionais para dispositivos móveis.</p>
+    <p class="title">Funções do Sistema Operacional</p>
+    <p><span>Gerenciamento de Processos</span>: Controla a execução de programas e garante que o processador use os recursos de forma eficiente.</p>
+    <p><span>Gerenciamento de Memória</span>: Aloca e libera memória para os programas em execução.</p>
+    <p><span>Gerenciamento de Dispositivos</span>: Controla e se comunica com os dispositivos de hardware, como impressoras e discos rígidos.</p>
+    <p><span>Interface do Usuário</span>: Fornece uma interface gráfica ou de linha de comando para que os usuários interajam com o computador.</p>
+
+    <p class="title">Gerenciamento de Recursos do Sistema</p>
+    <p>O gerenciamento de recursos é uma das funções mais críticas de um sistema operacional. Ele envolve a alocação eficiente de recursos, incluindo CPU, memória, dispositivos de armazenamento e periféricos.</p>
+    <p class="title">Gerenciamento de CPU</p>
+    <p><span>Escalonamento de Processos</span>: O sistema operacional decide qual processo receberá tempo de CPU e por quanto tempo. Isso é feito através de algoritmos de escalonamento, que garantem a eficiência e a equidade na alocação do tempo de CPU.</p>
+    <p class="title">Gerenciamento de Memória</p>
+    <p><span>Alocação Dinâmica</span>: O sistema operacional aloca memória para processos conforme necessário e libera essa memória quando os processos terminam.</p>
+    <p><span>Memória Virtual</span>: Utiliza uma parte do disco rígido como "memória adicional" quando a RAM está cheia, permitindo que programas maiores sejam executados.</p>
+    <p class="title">Gerenciamento de Dispositivos</p>
+    <p><span>Drivers</span>: O sistema operacional usa drivers para se comunicar com hardware, traduzindo comandos entre o software e o hardware.</p>
+    <p><span>Buffers</span>: O SO usa buffers para armazenar dados temporariamente enquanto eles estão sendo transferidos entre dispositivos, melhorando a eficiência.</p>
+    <p class="title">Relação entre Hardware e Software</p>
+    <p>A relação entre hardware e software é fundamental para o funcionamento de um computador.</p>
+    <p><span>Interdependência</span>: O hardware precisa de software para funcionar, e o software não pode operar sem hardware. Por exemplo, um processador (hardware) precisa de um sistema operacional (software) para gerenciar as tarefas que ele executa.</p>
+    <p><span>Compatibilidade</span>: Nem todo software é compatível com todos os hardwares. É importante garantir que o software que você deseja usar seja compatível com o seu sistema operacional e hardware.</p>
+    <p><span>Atualizações</span>: Às vezes, o hardware precisa ser atualizado para suportar novos softwares, especialmente jogos e aplicativos que exigem mais recursos.</p>
+    <p class="title">O que são Linguagens de Programação?</p>
+    <p>As <span>linguagens de programação</span> são conjuntos de instruções e regras que permitem aos programadores escreverem programas que o computador pode entender e executar. Elas servem como uma ponte entre os humanos e as máquinas.</p>
+    <p class="title">Tipos de Linguagens de Programação</p>
+    <p><span>Linguagens de Baixo Nível</span>: Mais próximas da linguagem de máquina (ex.: Assembly). São complexas e menos portáveis.</p>
+    <p><span>Linguagens de Alto Nível</span>: Mais próximas da linguagem humana e mais fáceis de usar (ex.: Python, Java, C++). São mais portáveis e abstraem muitos detalhes do hardware.</p>
+    <p class="title">Principais Linguagens de Programação</p>
+    <p><span class="programming">PYTHON</span></p>
+    <p><span>Descrição</span>: Python é uma linguagem de programação de alto nível, interpretada e muito popular, conhecida por sua simplicidade e legibilidade.</p>
+    <p><span>Uso</span>: Desenvolvimento web, ciência de dados, automação, inteligência artificial, entre outros.</p>
+    <p><span>Sintaxe</span>: A sintaxe do Python é simples e fácil de entender. Veja um exemplo básico de um programa que imprime "Olá, Mundo!":</p>
+    <p>print("Olá, Mundo!")</p>
+    <p><span class="programming">JAVA</span></p>
+    <p><span>Descrição</span>: Java é uma linguagem de programação orientada a objetos, muito utilizada para desenvolvimento de aplicações empresariais e aplicativos móveis (Android).</p>
+    <p><span>Uso</span>: Desenvolvimento de aplicativos web, sistemas corporativos, jogos, entre outros.</p>
+    <p><span>Sintaxe</span>: A sintaxe do Java é mais rigorosa em comparação ao Python. Veja um exemplo:</p>
+    <p>public class OláMundo { <br>
+      public static void <br> main(String[] args) { <br>
+      System.out.println("Olá, Mundo!"); <br>
+      }
+      }</p>
+    <p><span class="programming">C++</span></p>
+    <p><span>Descrição</span>: C++ é uma linguagem de programação de alto desempenho, que suporta programação orientada a objetos e é frequentemente usada em desenvolvimento de sistemas e jogos.</p>
+    <p><span>Uso</span>: Desenvolvimento de sistemas operacionais, jogos, software de alto desempenho.</p>
+    <p><span>Sintaxe</span>: A sintaxe do C++ é semelhante à do C, mas com recursos adicionais para orientação a objetos. Veja um exemplo:</p>
+    <p>#include < iostream> <br>
+        using namespace std;<br>
+
+        int main() {<br>
+        cout << "Olá, Mundo!" << endl;<br>
+          return 0;
+          }</p>
+    <p class="title">Estrutura de Programas</p>
+    <p>Independentemente da linguagem, a maioria dos programas segue uma estrutura básica:</p>
+    <p><span>Entrada</span>: Dados que o usuário fornece ao programa.</p>
+    <p><span>Processamento</span>: O que o programa faz com os dados. Isso inclui cálculos, manipulações e lógica.</p>
+    <p><span>Saída</span>: O que o programa apresenta ao usuário (resultados, mensagens).</p>
+    <p class="title">Exemplo Estruturado em Python
+    </p>
+    <p># Entrada <br>
+      nome = input("Qual é o seu nome? ")
+      <br>
+      # Processamento <br>
+      mensagem = f"Olá, {nome}!"
+      <br>
+      # Saída <br>
+      print(mensagem)
+    </p>
+    <p class="title">Algoritmos</p>
+    <p>Um <span>algoritmo</span> é uma sequência de passos ou instruções que descrevem como realizar uma tarefa ou resolver um problema. Os algoritmos podem ser expressos em linguagem natural, pseudocódigo ou em uma linguagem de programação.</p>
+    <p class="title">Exemplo de um Algoritmo Simples</p>
+    <p><span>Problema</span>: Calcular a soma de dois números.</p>
+    <p>1. Iniciar <br>
+      2. Ler o primeiro número (A) <br>
+      3. Ler o segundo número (B) <br>
+      4. Calcular a soma: Soma = A + B <br>
+      5. Exibir a soma <br>
+      6. Fim</p>
+    <p>Esse algoritmo pode ser implementado em várias linguagens, como:</p>
+    <p>Em <span class="programming">Python</span>:</p>
+    <p>import java.util.Scanner; <br>
+
+      public class Soma { <br>
+      public static void main(String[] args) { <br>
+      Scanner scanner = new Scanner(System.in); <br>
+      System.out.print("Digite o primeiro número: "); <br>
+      double A = scanner.nextDouble(); <br>
+      System.out.print("Digite o segundo número: "); <br>
+      double B = scanner.nextDouble(); <br>
+      double soma = A + B; <br>
+      System.out.println("A soma é: " + soma); <br>
+      }
+      }</p>
+    <p class="title">O Que é Desenvolvimento Web?</p>
+    <p>O <span>desenvolvimento web</span> refere-se ao processo de construção de sites e aplicações que são acessíveis através da internet. Ele pode ser dividido em duas partes principais:</p>
+    <p><span>Front-end</span>: A parte do site com a qual os usuários interagem diretamente. Envolve a criação da interface do usuário.
+    </p>
+    <p><span>Back-end</span>: A parte que lida com a lógica de negócios, manipulação de dados e comunicação com bancos de dados. Normalmente, não é visível para os usuários.</p>
+    <p class="title">Front-end: HTML, CSS e JavaScript</p>
+    <p><span class="programming">HTML (HyperText Markup Language)</span></p>
+    <p>O HTML é a linguagem de marcação usada para estruturar o conteúdo da web. Ele define a estrutura básica de uma página web.</p>
+    <p><span>Elementos</span>: Os elementos HTML são as unidades básicas que compõem uma página. Por exemplo, um parágrafo é representado pela tag
+    <p>Um parágrafo é representado pela tag: <code>&lt;p&gt;</code></p>
+    <p>Um cabeçalho é representado pela tag: <code>&lt;h1&gt;</code></p>
+    <p>Um exemplo de imagem é representado pela tag: <code>&lt;img&gt;</code></p>
+    <p><span>Exemplo de HTML Básico</span>:</p>
+    <button class="copy_btn" onclick="copiarTexto()">copy code</button>
+    <textarea id="codigoHtml">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Primeiro Site</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Meu Site!</h1>
+    <p>Este é um parágrafo de exemplo.</p>
+    <img src="imagem.jpg" alt="Descrição da Imagem">
+</body>
+</html>
+    </textarea>
+    <p><span class="programming">CSS (Cascading Style Sheets)</span></p>
+    <p>O CSS é usado para estilizar e formatar o conteúdo HTML. Ele permite que você controle a aparência visual da sua página.</p>
+    <p><span>Seletores</span>: Os seletores permitem que você aplique estilos a elementos HTML específicos. Você pode definir cores, fontes, margens, espaçamentos, etc.</p>
+    <p><span>Exemplo de CSS Básico</span>:</p>
+
+    <button class="copy_btn" onclick="copiarCss()">copy code</button>
+    <textarea id="codigoCss">
+  body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+}
+
+h1 {
+color: blue;
+}
+
+p {
+font-size: 16px;
+line-height: 1.5;
+}
+</textarea>
+    <p><span>Integrando HTML e CSS</span>:</p>
+    <button class="copy_btn" onclick="htmlAndcss()">copy code</button>
+    <textarea id="cssAndhtml">
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Primeiro Site</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Bem-vindo ao Meu Site!</h1>
+    <p>Este é um parágrafo de exemplo.</p>
+</body>
+</html>
+</textarea id="scriptJava">
+
+<p><span class="programming">JavaScript</span></p>
+<p>O JavaScript é uma linguagem de programação que permite adicionar interatividade às páginas web. Com ele, você pode criar animações, validar formulários, manipular elementos da página, e muito mais.</p>
+<p><span>Exemplo de JavaScript Básico</span>:</p>
+<button class="copy_btn" onclick="copyScript()">copy code</button>
+<textarea class="plus_size" id="textoScript">
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Primeiro Site com JavaScript</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Meu Site!</h1>
+    <button onclick="mostrarMensagem()">Clique aqui</button>
+    
+    <script>
+        function mostrarMensagem() {
+            alert("Olá! Você clicou no botão.");
+        }
+    </script>
+</body>
+</html>
+</textarea>
+
+    <p class="title">Frameworks JavaScript</p>
+    <p>Os frameworks JavaScript facilitam a construção de aplicações web complexas, oferecendo estruturas e ferramentas prontas para uso.</p>
+    <p> <span class="programming">React</span></p>
+    <p><span>Descrição</span>: React é uma biblioteca JavaScript desenvolvida pelo Facebook para construir interfaces de usuário. Ele permite criar componentes reutilizáveis, facilitando o desenvolvimento de aplicações dinâmicas.
+    </p>
+    <p><span>Características</span>: Virtual DOM, componentes, e unidirecionalidade de dados.</p>
+    <p><span>Exemplo de Componente React</span>:</p>
+
+    <button class="copy_btn" onclick="copyReact()">copy code</button>
+    <textarea class="react_textarea" id="reactTexto">
+  import React from 'react';
+
+function App() {
+    return (
+        <div>
+            <h1>Bem-vindo ao Meu Site!</h1>
+            <p>Este é um parágrafo de exemplo.</p>
+        </div>
+    );
+}
+
+export default App;
+</textarea>
+    <p><span class="programming">Angular</span></p>
+    <p><span>Descrição</span>: Angular é um framework front-end desenvolvido pelo Google, usado para construir aplicações web de uma única página (SPA).</p>
+
+    <p><span>Características</span>: Estrutura MVC (Model-View-Controller), injeção de dependência e dois sentidos de ligação de dados.</p>
+    <p><span>Exemplo de Componente Angular</span>:</p>
+
+    <button class="copy_btn" onclick="copyAngular()">copy code</button>
+    <textarea class="angular_textarea" id="angularText">
+  import { Component } from '@angular/core';
+
+@Component({
+selector: 'app-root',
+template: `
+<h1>Bem-vindo ao Meu Site!</h1>
+<p>Este é um parágrafo de exemplo.</p>
+`
+})
+export class AppComponent {}
+</textarea>
+
+    <p class="title">O Que é um Banco de Dados?</p>
+    <p>Um <span>banco de dados</span> é uma coleção organizada de dados que pode ser acessada, gerenciada e atualizada de forma eficiente. Os bancos de dados são usados para armazenar informações de maneira estruturada, permitindo que os usuários realizem consultas, adições, alterações e exclusões de dados.</p>
+    <p class="title">Tipos de Banco de Dados</p>
+    <p><span>Bancos de Dados Relacionais</span>: Armazenam dados em tabelas que podem ser relacionadas entre si. Exemplos: MySQL, PostgreSQL, Oracle.
+    </p>
+    <p><span>Bancos de Dados Não Relacionais</span>: Armazenam dados de forma mais flexível, como documentos ou pares chave-valor. Exemplos: MongoDB, Cassandra.</p>
+    <p class="title">Conceitos de Gerenciamento de Dados</p>
+    <p>O <span>gerenciamento de dados</span> envolve a organização, armazenamento e recuperação de informações em um banco de dados. Alguns conceitos-chave incluem:</p>
+    <p><span>Dados</span>: Fatos ou informações brutas que podem ser processadas.
+    </p>
+    <p><span>Informação</span>: Dados que foram organizados e processados para ter significado.
+    </p>
+    <p><span>Gerenciamento de Dados</span>: Conjunto de práticas e processos para garantir que os dados sejam precisos, acessíveis e seguros.</p>
+
+    <p class="title">SQL (Structured Query Language)</p>
+    <p>O SQL é a linguagem padrão utilizada para interagir com bancos de dados relacionais. Com o SQL, você pode executar operações como criar, ler, atualizar e excluir dados.</p>
+    <p class="title">Comandos Básicos do SQL</p>
+    <p><span>Criar uma Tabela</span>:</p>
+
+    <button class="copy_btn" onclick="copySql()">copy code</button>
+    <textarea class="sql_textarea" id="sqlText">
+  CREATE TABLE usuarios (
+id INT PRIMARY KEY,
+nome VARCHAR(100),
+email VARCHAR(100)
+);
+</textarea>
+    <p><span>Inserir Dados</span>:</p>
+
+    <button class="copy_btn" onclick="copySql2()">copy code</button>
+    <textarea class="sql_textarea2" id="sqlText2">
+  INSERT INTO usuarios (id,
+  nome, email) VALUES (1, 'Maria', 'maria@example.com');
+</textarea>
+    <p><span>Consultar Dados</span>:</p>
+    <button class="copy_btn" onclick="copySql3()">copy code</button>
+    <textarea class="sql_textarea3" id="sqlText3">
+  SELECT * FROM usuarios;
+</textarea>
+    <p><span>Atualizar Dados</span>:</p>
+
+    <button class="copy_btn" onclick="copySql4()">copy code</button>
+    <textarea class="sql_textarea2" id="sqlText4">
+  UPDATE usuarios SET email = 'maria.novo@example.com'
+  WHERE id = 1;
+</textarea>
+    <p><span>Excluir Dados</span>:</p>
+
+    <button class="copy_btn" onclick="copySql5()">copy code</button>
+
+    <textarea class="sql_textarea3" id="sqlText5">
+  DELETE FROM usuarios 
+  WHERE id = 1;
+</textarea>
+
+    <p class="title">Modelagem de Dados</p>
+    <p>A <span>modelagem de dados</span> é o processo de definir a estrutura de um banco de dados. Isso envolve identificar as entidades (tabelas), atributos (colunas) e relacionamentos entre os dados.</p>
+    <p class="title">Principais Etapas da Modelagem de Dados</p>
+    <p>1. <span>Identificação de Entidades</span>: O que você deseja armazenar? (ex.: usuários, produtos).</p>
+    <p>2. <span>Definição de Atributos</span>: Quais informações cada entidade terá? (ex.: nome, email).</p>
+    <p>3. <span>Estabelecimento de Relacionamentos</span>: Como as entidades se relacionam? (ex.: um usuário pode fazer vários pedidos).</p>
+    <p><span>Exemplo de Modelagem</span>:</p>
+    <p>- <span>Entidade Usuário</span>:
+      - Atributos: ID, Nome, Email </p>
+    <p>- <span>Entidade Pedido</span>:
+      - Atributos: ID, Data, Valor </p>
+    <p>- <span>Relacionamento</span>: Um usuário pode ter vários pedidos.
+    </p>
+
+    <p class="title">Sistemas de Gerenciamento de Banco de Dados (SGBD)</p>
+    <p>Um <span>SGBD</span> é um software que permite a criação, manipulação e gerenciamento de bancos de dados. Alguns exemplos populares incluem:
+    </p>
+    <p><span>MySQL</span>: Um dos SGBDs mais usados, ideal para aplicações web.
+    </p>
+    <p>
+      <span>PostgreSQL</span>: Um SGBD avançado, conhecido por sua conformidade com padrões e extensibilidade.
+    </p>
+    <p><span>Oracle</span>: Usado principalmente em grandes empresas, oferece recursos robustos. </p>
+    <p><span>Microsoft SQL Server</span>: SGBD da Microsoft, utilizado em ambientes corporativos.</p>
+    <p class="title">Funções do SGBD</p>
+    <p><span>Armazenamento de Dados</span>: Permite que os dados sejam armazenados de forma segura. </p>
+    <p><span>Consultas</span>: Realiza operações de consulta para recuperar dados. </p>
+    <p><span>Segurança</span>: Controla o acesso aos dados, garantindo que apenas usuários autorizados possam realizar operações.</p>
+    <p><span>Backup e Recuperação</span>: Garante que os dados possam ser recuperados em caso de falhas.</p>
+    <p class="title">O Que é uma Rede de Computadores?</p>
+    <p>Uma <span>rede de computadores</span> é um conjunto de dispositivos interconectados que podem compartilhar recursos e informações. As redes são fundamentais para a comunicação moderna, permitindo que computadores, smartphones e outros dispositivos se conectem e troquem dados.</p>
+    <p class="title">Tipos de Redes</p>
+    <p><span>Redes Locais</span> (<span>LAN</span>): Redes que cobrem uma área geográfica limitada, como uma casa ou escritório. </p>
+    <p><span>Redes de Longa Distância</span> (<span>WAN</span>): Conectam redes que estão geograficamente distantes. A internet é o maior exemplo de WAN. </p>
+    <p><span>Redes Metropolitanas</span> (<span>MAN</span>): Cobrem uma área maior que uma LAN, mas menor que uma WAN, como uma cidade.</p>
+    <p class="title">Fundamentos de Redes</p>
+    <p>Os principais componentes de uma rede de computadores incluem:</p>
+    <p><span>Dispositivos de Rede</span>: Incluem computadores, servidores, roteadores, switches e hubs.</p>
+    <p><span>Meios de Transmissão</span>: Físicos (cabos Ethernet, fibra óptica) ou sem fio (Wi-Fi).</p>
+    <p><span>Protocolos de Comunicação</span>: Conjuntos de regras que determinam como os dados são transmitidos.</p>
+
+    <p class="title">Topologias de Rede</p>
+    <p>A topologia se refere à disposição física ou lógica dos dispositivos em uma rede. As principais topologias incluem:</p>
+    <p><span>Topologia em Estrela</span>: Todos os dispositivos estão conectados a um ponto central (hub ou switch).
+      <span>Topologia em Barramento</span>: Todos os dispositivos compartilham um único meio de transmissão.
+      <span>Topologia em Anel</span>: Cada dispositivo está conectado a dois outros, formando um circuito fechado.
+    </p>
+    <p class="title">Protocolos de Comunicação</p>
+    <p>Os <span>protocolos de comunicação</span> são regras que definem como os dados são transmitidos e recebidos em uma rede. Alguns dos principais protocolos incluem:</p>
+    <p><span>TCP</span>/<span>IP</span> (<span>Transmission Control Protocol/Internet Protocol</span>): O protocolo fundamental da internet, responsável por garantir a entrega confiável de dados. </p>
+    <p> <span>HTTP</span>/<span>HTTPS</span> (<span>HyperText Transfer Protocol/Secure</span>): Usado para transferência de dados na web. </p>
+    <p><span>FTP</span> (<span>File Transfer Protocol</span>): Usado para transferir arquivos entre computadores. </p>
+    <p><span>DHCP</span> (<span>Dynamic Host Configuration Protocol</span>): Atribui endereços IP automaticamente aos dispositivos em uma rede.</p>
+    <p class="title">Segurança em Redes</p>
+    <p>A <span>segurança em redes</span> é vital para proteger dados e dispositivos contra acessos não autorizados e ataques. Algumas práticas comuns incluem:</p>
+    <p><span>Firewalls</span>: Dispositivos ou software que monitoram e controlam o tráfego de rede, bloqueando acessos indesejados.</p>
+    <p><span>Criptografia</span>: Técnica que codifica dados para que apenas usuários autorizados possam acessá-los. </p>
+    <p><span>VPN</span> (<span>Virtual Private Network</span>): Cria uma conexão segura entre o usuário e a internet, criptografando os dados transmitidos e ocultando o endereço IP. </p>
+    <p><span>Wi-Fi Seguro</span>: Use senhas fortes para redes Wi-Fi e considere desativar a transmissão do SSID (nome da rede) para aumentar a segurança.</p>
+    <p><span>Autenticação</span>: Processo de verificação da identidade de um usuário ou dispositivo antes de permitir o acesso à rede. </p>
+    <p><span>Atualizações de Segurança</span>: Manter o software e os dispositivos atualizados para proteger contra vulnerabilidades conhecidas.</p>
+    <p class="title">Configuração de Redes Locais</p>
+    <p>A configuração de uma rede local (LAN) envolve conectar dispositivos e configurar as definições necessárias para que eles se comuniquem. Aqui estão os passos básicos:</p>
+    <p class="title">Equipamentos Necessários</p>
+    <p><span>Roteador</span>: Conecta a rede local à internet. </p>
+    <p><span>Switch</span>: Conecta vários dispositivos dentro da rede local. </p>
+    <p><span>Cabos de Rede</span>: Usados para conectar dispositivos via Ethernet.</p>
+    <p class="title">Passo a Passo da Configuração</p>
+    <p>1. <span>Conectar o Roteador</span>: Conecte o roteador à fonte de internet (modem) e ligue-o. </p>
+    <p>2. <span>Conectar o Switch</span>: Se estiver usando um switch, conecte-o ao roteador usando um cabo Ethernet. </p>
+    <p>3. <span>Conectar Dispositivos</span>: Conecte computadores, impressoras e outros dispositivos ao switch ou roteador. </p>
+    <p>4. <span>Configurar o Roteador</span>: Acesse a interface do roteador através de um navegador (normalmente, digitando o endereço IP do roteador) e configure as opções de rede, como nome da rede (SSID) e senha. </p>
+    <p>5. <span>Verificar Conexão</span>: Teste a conexão em cada dispositivo para garantir que todos estão se comunicando corretamente.</p>
+    <p class="title">O Que é Segurança da Informação?</p>
+    <p>A <span>Segurança da Informação</span> refere-se a um conjunto de práticas e tecnologias que visam proteger dados e informações contra acessos não autorizados, destruição, alteração ou divulgação. O principal objetivo é garantir a confidencialidade, integridade e disponibilidade da informação.</p>
+    <p class="title">Princípios Fundamentais</p>
+    <p><span>Confidencialidade</span>: Garantir que a informação seja acessível apenas por pessoas autorizadas. </p>
+    <p><span>Integridade</span>: Proteger a informação contra alterações não autorizadas. </p>
+    <p><span>Disponibilidade</span>: Assegurar que a informação esteja acessível quando necessário.</p>
+    <p class="title">Práticas de Proteção de Dados</p>
+    <p>Existem várias práticas que podem ser adotadas para proteger dados. Algumas das mais importantes incluem:</p>
+    <p><span>Senhas Fortes</span>: Use senhas complexas e exclusivas para cada conta. Combine letras maiúsculas e minúsculas, números e caracteres especiais. </p>
+    <p><span>Autenticação em Dois Fatores</span> (<span>2FA</span>): Adicione uma camada extra de segurança, exigindo não apenas a senha, mas também um segundo fator, como um código enviado para o seu celular. </p>
+    <p><span>Backup Regular</span>: Realize cópias de segurança dos seus dados para evitar perda em caso de falhas ou ataques. Utilize armazenamento em nuvem ou dispositivos externos. </p>
+    <p><span>Atualizações de Software</span>: Mantenha todo o software, incluindo sistemas operacionais e aplicativos, atualizados para proteger-se contra vulnerabilidades conhecidas.</p>
+    <p class="title">Criptografia</p>
+    <p>A <span>criptografia</span> é a técnica de codificar dados para que apenas pessoas autorizadas possam lê-los. Ela é fundamental para proteger informações sensíveis, como senhas e dados financeiros.</p>
+    <p class="title">Tipos de Criptografia</p>
+    <p><span>Criptografia Simétrica</span>: Usa a mesma chave para cifrar e decifrar a informação. É rápida, mas a chave deve ser mantida em segredo. </p>
+    <p><span>Criptografia Assimétrica</span>: Usa um par de chaves (uma pública e uma privada). A chave pública é compartilhada, enquanto a chave privada é mantida em segredo. É mais segura, mas mais lenta.</p>
+    <p class="title">Exemplos de Uso</p>
+    <p><span>Transações Online</span>: Sites de comércio eletrônico utilizam criptografia para proteger informações de pagamento. </p>
+    <p><span>Comunicações Seguras</span>: Aplicativos de mensagens, como WhatsApp, usam criptografia de ponta a ponta para proteger conversas.</p>
+    <p class="title">Defesa contra Ciberataques</p>
+    <p>Os ciberataques são tentativas maliciosas de acessar, danificar ou roubar informações. A defesa contra esses ataques envolve várias estratégias:
+    </p>
+    <p><span>Educação e Conscientização</span>: Treine os usuários sobre as melhores práticas de segurança e como identificar tentativas de phishing (e-mails fraudulentos que tentam roubar informações). </p>
+    <p><span>Monitoramento de Rede</span>: Use ferramentas de monitoramento para detectar atividades suspeitas na rede. </p>
+    <p><span>Resposta a Incidentes</span>: Tenha um plano de resposta a incidentes para lidar com possíveis ataques. Isso deve incluir a identificação, contenção e recuperação de incidentes de segurança.</p>
+    <p class="title">Tipos Comuns de Ciberataques</p>
+    <p><span>Phishing</span>: Tentativas de enganar usuários para que revelem informações pessoais. </p>
+    <p><span>Malware</span>: Software malicioso que pode danificar ou comprometer dispositivos. </p>
+    <p><span>Ransomware</span>: Tipo de malware que criptografa os dados do usuário, exigindo um resgate para a desencriptação.</p>
+    <p class="title">O Que é Inteligência Artificial?</p>
+    <p><span>Inteligência Artificial</span> (<span>IA</span>) é um ramo da ciência da computação que se concentra na criação de máquinas e sistemas capazes de simular a inteligência humana. Isso inclui a capacidade de raciocinar, aprender, resolver problemas e tomar decisões.</p>
+    <p class="title">Tipos de Inteligência Artificial</p>
+    <p><span>IA Fraca</span> (<span>Narrow AI</span>): Projetada para realizar uma tarefa específica, como assistentes virtuais (ex.: Siri, Alexa) ou sistemas de recomendação. </p>
+    <p><span>IA Forte</span> (<span>General AI</span>): Uma forma teórica de IA que teria a capacidade de entender, aprender e aplicar inteligência de maneira geral, semelhante a um ser humano. Esse tipo de IA ainda não existe.
+    </p>
+    <p class="title">Aprendizado de Máquina</p>
+    <p><span>Aprendizado de Máquina</span> é uma subárea da IA que se concentra em desenvolver algoritmos e modelos que permitem que os computadores aprendam com dados. Em vez de serem programados explicitamente para realizar uma tarefa, os sistemas de aprendizado de máquina usam exemplos para aprender e fazer previsões.</p>
+    <p class="title">Como Funciona o Aprendizado de Máquina</p>
+    <p><span>Dados</span>: O primeiro passo é coletar dados relevantes, que podem ser números, texto, imagens, etc.</p>
+    <p>2. <span>Treinamento</span>: O modelo é alimentado com esses dados para aprender padrões e características. </p>
+    <p>3. <span>Teste</span>: Após o treinamento, o modelo é testado com novos dados para verificar sua precisão. </p>
+    <p>4. <span>Predição</span>: O modelo pode então fazer previsões ou classificações com base em novos dados.</p>
+    <p class="title">Algoritmos de Aprendizado de Máquina</p>
+    <p>Existem vários tipos de algoritmos de aprendizado de máquina, cada um adequado a diferentes tipos de problemas. Aqui estão alguns dos principais:</p>
+    <p><span class="programming">Aprendizado Supervisionado</span></p>
+    <p><span>Definição</span>: O modelo é treinado com um conjunto de dados rotulado, onde a saída desejada é conhecida. </p>
+    <p><span>Exemplos de Algoritmos</span>:
+    <p><span>Regressão Linear</span>: Usada para prever valores contínuos (ex.: preço de casas). </p>
+    <p><span>Classificação</span>: Algoritmos como Árvore de Decisão, k-NN (k-Nearest Neighbors) e SVM (Support Vector Machine) são usados para classificar dados em categorias (ex.: e-mails como spam ou não spam).</p>
+    <p><span class="programming">Aprendizado Não Supervisionado</span></p>
+    <p><span>Definição</span>: O modelo é treinado com dados não rotulados e deve encontrar padrões ou agrupamentos por conta própria. </p>
+    <p><span>Exemplo de Algoritmos</span>: </p>
+    <p><span>K-Means</span>: Utilizado para agrupar dados em k grupos com base em características semelhantes. </p>
+    <p><span>Análise de Componentes Principais</span> (<span>PCA</span>): Usada para reduzir a dimensionalidade dos dados.</p>
+    <p><span class="programming">Aprendizado por Reforço</span></p>
+    <p><span>Definição</span>: O modelo aprende interagindo com um ambiente, recebendo recompensas ou penalidades com base em suas ações.</p>
+   <p> <span>Exemplo de Aplicação</span>: Jogos de vídeo, onde o agente aprende a jogar através de tentativas e erros.</p>
+<p class="title">Aplicações da Inteligência Artificial e Aprendizado de Máquina</p>
+<p>As aplicações de IA e aprendizado de máquina são vastas e impactam diversas áreas. Aqui estão algumas das principais:
+</p>
+<p><span>Assistentes Virtuais</span>: Como Siri e Alexa, que usam processamento de linguagem natural para entender e responder a comandos de voz. </p>
+<p><span>Recomendações Personalizadas</span>: Sistemas como os da Netflix e Amazon, que sugerem filmes ou produtos com base no comportamento anterior do usuário.</p>
+<p><span>Reconhecimento de Imagens</span>: Usado em aplicativos de fotos e segurança, onde sistemas identificam rostos ou objetos em imagens. </p>
+<p><span>Diagnóstico Médico</span>: Algoritmos que analisam exames e ajudam médicos a identificar doenças com maior precisão. </p>
+<p><span>Veículos Autônomos</span>: Carros que usam IA para interpretar o ambiente e tomar decisões em tempo real, como o Google Waymo.</p>
+
+<p class="title">O Que é Multimídia?</p>
+<p><span>Multimídia</span> refere-se à combinação de diferentes formas de conteúdo, como texto, imagens, áudio, vídeo e animação, para transmitir informações de maneira interativa e envolvente. É amplamente utilizada em áreas como marketing, educação, entretenimento e comunicação.</p>
+<p class="title">Componentes da Multimídia</p>
+<p><span>Texto</span>: Informações escritas que acompanham outros elementos. </p>
+<p><span>Imagens</span>: Fotografias, ilustrações e gráficos que ajudam a transmitir a mensagem visualmente. </p>
+<p><span>Áudio</span>: Sons, música ou narrações que complementam o conteúdo visual. </p>
+<p><span>Vídeo</span>: Sequências de imagens em movimento que contam uma história ou apresentam informações. </p>
+<p><span>Animação</span>: Elementos gráficos que se movem ou mudam ao longo do tempo.
+</p>
+<p class="title">Design Gráfico</p>
+<p><span>Design Gráfico</span> é a prática de criar conteúdo visual para comunicar mensagens. Utiliza tipografia, imagens, cores e layouts para criar peças visuais atraentes e funcionais.</p>
+<p class="title">Ferramentas de Design Gráfico</p>
+<p><span>Adobe Photoshop</span>: Um dos softwares de edição de imagem mais populares. Usado para criar e editar imagens, manipular fotografias e projetar gráficos. </p>
+<p><span>Adobe Illustrator</span>: Ideal para criar ilustrações vetoriais, logotipos e designs que precisam ser escaláveis sem perder qualidade. </p>
+<p><span>CorelDRAW</span>: Outro software de design gráfico popular, usado principalmente para ilustrações vetoriais e layouts gráficos. </p>
+<p><span>Canva</span>: Uma ferramenta online que permite criar designs de maneira fácil e rápida, com uma variedade de templates e elementos gráficos.</p>
+<p class="title">Técnicas de Design Gráfico</p>
+<p>1. <span>Composição</span>: A forma como os elementos visuais são organizados em um layout. A regra dos terços é uma técnica comum que ajuda a criar uma composição equilibrada.</p>
+<p>2. <span>Tipografia</span>: A escolha e o uso de fontes são essenciais para transmitir a mensagem de forma clara e atraente. A combinação de tipos de letra pode influenciar a percepção do design.</p>
+<p>3. <span>Teoria das Cores</span>: Compreender como as cores interagem e como elas afetam a emoção e o significado é crucial no design gráfico. Usar uma paleta de cores harmoniosa pode melhorar a estética do design.</p>
+<p>4. <span>Espaço em Branco</span>: O uso adequado de espaço em branco ajuda a criar um design mais limpo e organizado, permitindo que os elementos respirem e sejam mais legíveis.</p>
+<p class="title">Edição de Áudio e Vídeo</p>
+<p>A edição de áudio e vídeo é uma parte importante da criação de conteúdo multimídia. Aqui estão algumas ferramentas populares:</p>
+<p class="title">Ferramentas de Edição de Áudio</p>
+<p><span>Audacity</span>: Um software gratuito e de código aberto para gravação e edição de áudio. Permite cortar, copiar e aplicar efeitos ao áudio.</p>
+<p><span>Adobe Audition</span>: Um software profissional de edição de áudio, usado para mixagem, restauração e criação de efeitos sonoros.</p>
+<p class="title">Ferramentas de Edição de Vídeo</p>
+<p><span>Adobe Premiere Pro</span>: Um software de edição de vídeo amplamente utilizado, oferecendo uma ampla gama de ferramentas para edição, efeitos e correção de cores.</p>
+<p><span>Final Cut Pro</span>: Um software de edição de vídeo desenvolvido pela Apple, popular entre usuários de Mac, conhecido por sua interface intuitiva e desempenho rápido.</p>
+<p><span>DaVinci Resolve</span>: Uma ferramenta poderosa que combina edição de vídeo, correção de cores e efeitos visuais, disponível em uma versão gratuita com recursos robustos.</p>
+<p><span>iMovie</span>: Um software de edição de vídeo simples e fácil de usar, disponível para usuários de Mac e iOS.</p>
+<p class="title">Técnicas de Edição de Vídeo</p>
+<p>1. <span>Corte e Montagem</span>: Selecionar as melhores partes de filmagens e organizá-las em uma sequência coesa para contar uma história.</p>
+<p>2. <span>Transições</span>: Usar transições suaves entre clipes para melhorar o fluxo do vídeo. Isso pode incluir cortes diretos, fade-ins e fade-outs.</p>
+<p>3. <span>Efeitos Visuais</span>: Aplicar efeitos como sobreposição de texto, animações e gráficos para enriquecer o conteúdo.</p>
+<p>4. <span>Correção de Cores</span>: Ajustar a cor e a iluminação dos clipes para criar uma aparência consistente e profissional.</p>
+<p class="title">Práticas de Criação de Conteúdo</p>
+<p>Na criação de conteúdo multimídia, algumas práticas recomendadas incluem:
+</p>
+<p><span>Planejamento</span>: Antes de começar a criar, desenvolva um conceito claro e um roteiro se necessário. Isso ajuda a manter o foco e a direção do projeto.</p>
+<p><span>Feedback</span>: Compartilhe seus designs ou vídeos com colegas para obter feedback. Isso pode ajudar a identificar áreas de melhoria.</p>
+<p><span>Experimentação</span>: Não tenha medo de explorar novas técnicas e estilos. A criatividade muitas vezes vem da experimentação.</p>
+<p class="title">Ética em Informática</p>
+<p>A <span>ética em informática</span> refere-se aos princípios e valores que orientam o comportamento de indivíduos e organizações no uso da tecnologia. Com o avanço da tecnologia, surgem novas questões éticas que precisam ser consideradas.</p>
+<p class="title">Questões Éticas Comuns</p>
+<p><span>Privacidade</span>: Os usuários devem ter o direito de controlar suas informações pessoais. É ético coletar, armazenar e usar dados de forma transparente e com consentimento.</p>
+<p><span>Segurança da Informação</span>: Proteger dados e sistemas contra acessos não autorizados é uma responsabilidade ética. Isso inclui a proteção de informações sensíveis, como dados financeiros e de saúde.</p>
+<p><span>Desinformação</span>: Com o aumento das redes sociais, a propagação de informações falsas se tornou um problema. Compartilhar informações sem verificação pode ter consequências negativas.</p>
+<p><span>Uso Responsável da Tecnologia</span>: O uso de tecnologias deve ser responsável e não prejudicial. Isso inclui evitar comportamentos como cyberbullying e assédio online.</p>
+<p class="title">Proteção de Dados</p>
+<p>A <span>proteção de dados</span> refere-se às práticas que garantem a segurança e a privacidade das informações pessoais. Com o aumento do uso da tecnologia e da coleta de dados, a proteção de dados se tornou uma preocupação fundamental.</p>
+<p class="title">Legislação de Proteção de Dados</p>
+<p><span>LGPD</span> (<span>Lei Geral de Proteção de Dados</span>): Em vigor no Brasil desde 2020, a LGPD estabelece regras sobre a coleta, armazenamento, uso e compartilhamento de dados pessoais. Seus principais princípios incluem:</p>
+<p><span>Consentimento</span>: Os titulares dos dados devem dar consentimento explícito para o uso de suas informações.</p>
+<p><span>Transparência</span>: As organizações devem informar como os dados são coletados e utilizados.</p>
+<p><span>Segurança</span>: Medidas devem ser adotadas para proteger os dados contra vazamentos e acessos indevidos.</p>
+<p><span>Direitos dos Titulares</span>: Os indivíduos têm o direito de acessar, corrigir e solicitar a exclusão de seus dados.</p>
+<p class="title">Direitos Autorais</p>
+<p>Os <span>direitos autorais</span> protegem as obras criativas, garantindo que os autores tenham controle sobre o uso e a distribuição de suas criações. Isso se aplica a textos, músicas, imagens, vídeos e software.</p>
+<p class="title">Aspectos dos Direitos Autorais</p>
+<p><span>Propriedade Intelectual</span>: Refere-se aos direitos legais sobre criações da mente, como invenções, obras literárias e artísticas.</p>
+<p><span>Licenciamento</span>: Os autores podem licenciar suas obras, permitindo que outras pessoas as usem sob certas condições. Licenças comuns incluem Creative Commons, que oferecem diferentes níveis de permissão.</p>
+<p><span>Plágio</span>: Usar o trabalho de outra pessoa sem dar crédito é considerado plágio, uma violação ética e legal dos direitos autorais.</p>
+<p class="title">Consequências da Violação dos Direitos Autorais</p>
+<p><span>Processos Judiciais</span>: A violação de direitos autorais pode resultar em ações legais, multas e danos à reputação.</p>
+<p><span>Responsabilidade Pessoal e Profissional</span>: Profissionais da área de tecnologia devem estar cientes das implicações legais do uso de software e conteúdo protegido por direitos autorais.</p>
+</div>
+
+
+
+
+
+
+
+
+  </div>
+  <footer>
+    <p>&copy; all rights reserved.</p>
+  </footer>
+  <script type="text/javascript" charset="utf-8">
+    var x = document.getElementById('div_btn');
+    var y = false;
+
+    function toggleDiv() {
+      y = !y;
+      x.style.display = y ? 'block' : 'none';
+      x.setAttribute('aria-expanded', y);
+
+      // removendo o rodapé se a div for exibido
+      var footer = document.querySelector('footer');
+      footer.style.display = y ? 'none' : 'block';
+    }
+
+    function copiarTexto() {
+      const textarea = document.getElementById('codigoHtml');
+      textarea.select();
+      document.execCommand('copy');
+      alert('Código copiado para a área de transferência!');
+    }
+
+    function copiarCss() {
+      const textarea = document.getElementById('codigoCss');
+      textarea.select();
+      document.execCommand('copy');
+      alert('Código copiado para a área de transferência!');
+    }
+
+    function htmlAndcss() {
+      const textarea = document.getElementById('cssAndhtml');
+      textarea.select();
+      document.execCommand('copy');
+      alert('Código copiado para a área de transferência!');
+    }
+
+    function copyScript() {
+      const textarea = document.getElementById('textoScript');
+      textarea.select();
+      document.execCommand('copy');
+      alert('Código copiado para a área de transferência!');
+    }
+
+    function copyReact() {
+      const textarea = document.getElementById('reactTexto');
+      textarea.select();
+      document.execCommand('copy');
+      alert('Código copiado para a área de transferência!');
+    }
+
+    function copyAngular() {
+      const textarea = document.getElementById('angularText');
+      textarea.select();
+      document.execCommand('copy');
+      alert('Código copiado para a área de transferência!');
+    }
+
+    function copySql() {
+      const textarea = document.getElementById('sqlText');
+      textarea.select();
+      document.execCommand('copy');
+      alert('Código copiado para a área de transferência!');
+    }
+
+    function copySql2() {
+      const textarea = document.getElementById('sqlText2');
+      textarea.select();
+      document.execCommand('copy');
+      alert('Código copiado para a área de transferência!');
+    }
+
+    function copySql3() {
+      const textarea = document.getElementById('sqlText3');
+      textarea.select();
+      document.execCommand('copy');
+      alert('Código copiado para a área de transferência!');
+    }
+
+    function copySql4() {
+      const textarea = document.getElementById('sqlText4');
+      textarea.select();
+      document.execCommand('copy');
+      alert('Código copiado para a área de transferência!');
+    }
+
+    function copySql5() {
+      const textarea = document.getElementById('sqlText5');
+      textarea.select();
+      document.execCommand('copy');
+      alert('Código copiado para a área de transferência!');
+    }
+    
+    
+    function buscarPalavra() {
+  const input = document.getElementById('searchInput');
+  const texto = document.getElementById('resultado');
+  const palavra = input.value.trim();
+
+  // Limpar destaques anteriores
+  texto.innerHTML = texto.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
+
+  if (palavra) {
+    // Criar uma expressão regular para encontrar a palavra
+    const regex = new RegExp(`(${palavra})`, 'gi');
+    texto.innerHTML = texto.innerHTML.replace(regex, '<span class="highlight">$1</span>');
+
+    // Rolar até a palavra encontrada
+    const highlight = texto.querySelector('.highlight');
+    if (highlight) {
+      highlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+}
+  </script>
+</body>
+
+</html>
