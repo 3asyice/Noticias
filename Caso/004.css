@@ -113,7 +113,7 @@ a {
   margin-left: 3%;
   margin-right: 3%;
   border-radius: 10px;
-  background: url('https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/leonardo.jpg') center / cover no-repeat fixed;
+  background: url('https://big-loser.site/Caso/aeropass/leonardo.jpg') center / cover no-repeat fixed;
 }
 
 footer {
@@ -207,4 +207,19 @@ footer {
     color: #fff;
   }
   
+}
+
+div.tape a {
+  padding: 0;
+  font-size: 7px;
+  
+  margin: 0;
+  text-transform: initial;
+  
+}
+
+div.tape {
+  margin-bottom: 50px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
