@@ -22,7 +22,178 @@ function filterItems() {
   
   
   // linkScripted 
-  const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML = `<div id="links"> <div class="link-item">
+  const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML = `<div id="links"> 
+  
+           <div class="link-item">
+           <a href="https://docs.google.com/document/d/1Efy3SJXIWxvfZS-2DAayph6DKpgwggCY/edit?usp=drivesdk&ouid=110305946732979825489&rtpof=true&sd=true">história de um recruta/</a>
+           <p class="date">feb 16, 2024</p>
+           <hr>
+         </div>
+         <div class="link-item">
+   <a href="https://docs.google.com/document/d/1LJSJu4HxLEwiAy7bkEPqqC3SsH2C1lGA3pArmm2pVpc/edit?usp=drivesdk">abuso de poder policial/</a>
+   <p class="date">feb 16, 2024</p>
+   <hr>
+ </div>
+
+                 <div class="link-item">
+         <a href="https://web.archive.org/web/20250216171319/https://www.big-loser.site/Caso/004">archives 004/</a>
+         <p class="date">Feb 16, 2025</p>
+         <hr>
+       </div>
+       <div class="link-item">
+          <a href="https://web.archive.org/web/20250216164225/https://www.big-loser.site/A/Audio/FITA-3,-LADO-B.opus">10:38 fita 3, lado b/</a>
+          <p class="date">Feb 16, 2025</p>
+          <hr>
+        </div> 
+       <div class="link-item">
+          <a href="https://web.archive.org/web/20250216163930/https://www.big-loser.site/A/Audio/FITA-3,-LADO-A.opus">14:43 fita 3, lado a/</a>
+          <p class="date">Feb 16, 2025</p>
+          <hr>
+        </div> 
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250216163513/https://www.big-loser.site/A/Audio/FITA-2,-LADO-B.m4a">4:10 fita 2, lado b/</a>
+          <p class="date">Feb 16, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+  <a href="https://web.archive.org/web/20250216163326/https://www.big-loser.site/A/Audio/FITA-2,-LADO-A.m4a">1:22 fita 2, lado a/</a>
+  <p class="date">Feb 16, 2025</p>
+  <hr>
+</div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250216163024/https://www.big-loser.site/A/Audio/FITA-1,-LADO-B.opus">2:08 fita 1, lado b/</a>
+          <p class="date">Feb 16, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250216162814/https://www.big-loser.site/A/Audio/FITA%201,%20LADO%20A.opus">6:06 fita 1, lado a/</a>
+          <p class="date">Feb 16, 2025</p>
+          <hr>
+        </div>
+        
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250216144046/https://www.big-loser.site/M/Fev/Big%20Loser%20-%20Sd%20609%20Carvalho%20FITA%201,%20LADO%20A.m4a"> 6:06 fita 1, lado a/</a>
+          <p class="date">Feb 16, 2025</p>
+          <hr>
+        </div>
+        
+        <div class="link-item">
+          <a href="http://g7ejphhubv5idbbu3hb3wawrs5adw7tkx7yjabnf65xtzztgg4hcsqqd.onion/">official defcon site/</a>
+          <p class="date">Feb 11, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250208032740/https://www.big-loser.site/Caso/004">Caso 004/</a>
+          <p class="date">Feb 08, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250208025819/https://www.big-loser.site/">big loser.site/</a>
+          <p class="date">Feb 08, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250201102618/https://www.big-loser.site/">big loser.site/</a>
+          <p class="date">Feb 01, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250127170619/https://www.big-loser.site/">big loser.site/</a>
+          <p class="date">Jan 27, 2025</p>
+          <hr>
+        </div>
+        <div <div <div class="link-item">
+          <a href="https://youtu.be/F9fflX-9wRA">big loser podcast/</a>
+          <p class="date">Jan 19, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250125013140/https://www.big-loser.site/Caso/aeropass/VID-20240825-WA0000.mp4">Video do atropelamento/</a>
+          <p class="date">Jan 19, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250118021045/https://www.big-loser.site/Caso/040">B0letim d4 0corrência/</a>
+          <p class="date">Jan 18, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250114010510/https://www.big-loser.site/Project_Apocalypse/scherer">douglas Scherer/</a>
+          <p class="date">Jan 14, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250110005911/https://www.big-loser.site/Caso/050">S0ar5s br0s [project]/</a>
+          <p class="date">Jan 10, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="http://web.archive.org/web/20250109232809/https://www.big-loser.site/Caso/033">033 RDE/</a>
+          <p class="date">Jan 09, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="http://web.archive.org/web/20250109234242/https://www.big-loser.site/Project_Apocalypse/assedio">assédio em alojamento/</a>
+          <p class="date">Jan 09, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="http://web.archive.org/web/20250109233559/https://www.big-loser.site/Project_Apocalypse/atropelamento">atropelamento/</a>
+          <p class="date">Jan 09, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="http://web.archive.org/web/20250109232651/https://www.big-loser.site/Project_Apocalypse/expulso">expulsão de Carvalho/</a>
+          <p class="date">Jan 09, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="http://web.archive.org/web/20250109232308/https://www.big-loser.site/Project_Apocalypse/suicide">Suicídio do sd 614/</a>
+          <p class="date">Jan 09, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250106222448/https://www.poder360.com.br/poder-brasil/numero-de-pessoas-em-situacao-de-rua-aumenta-25-no-brasil/">situação de rua no BR/</a>
+          <p class="date">Jan 06, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="http://web.archive.org/web/20250103042712/https://www.big-loser.site/Caso/004">004rquives&copy;/</a>
+          <p class="date">Jan 03, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250103042712/https://www.big-loser.site/Caso/004"> 004Archives&copy;/</a>
+          <p class="date">Jan 03, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250103014950/https://blogatualidade.com/militar-morre-e-outros-tres-ficam-feridos-apos-acidente-em-atividade-dentro-de-quartel-em-santa-maria/">morte do sd breno/</a>
+          <p class="date">Jan 03, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250103013604/http://radaraltovale.com/noticia/noticias/soldado-de-fraiburgo-comete-suicidio-no-quartel-do-exercito-e-deixa-carta-de-despedida-51071">Suicídio de Wennigkamp/</a>
+          <p class="date">Jan 03, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20241231005253/https://www.big-loser.site/Caso/014">014 - Memorial/</a>
+          <p class="date">Dec 31, 2024</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20241230181835/https://www.big-loser.site/M/Dec/sindicancia.html">solução de sindicância/</a>
+          <p class="date">Dec 30, 2024</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20241230180953/https://3asyice.github.io/login/salvar_senhas.html">Save Passwords/</a>
+          <p class="date">Dec 30, 2024</p>
+          <hr>
+        </div>
+  
+  <div class="link-item">
           <a href="https://web.archive.org/web/20241230175328/https://www.big-loser.site/Caso/099">099 - infohazard/</a>
           <p class="date">Dec 30, 2024</p>
           <hr>
