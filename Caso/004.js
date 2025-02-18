@@ -25,12 +25,12 @@ function filterItems() {
   const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML = `<div id="links"> 
   
            <div class="link-item">
-           <a href="https://docs.google.com/document/d/1Efy3SJXIWxvfZS-2DAayph6DKpgwggCY/edit?usp=drivesdk&ouid=110305946732979825489&rtpof=true&sd=true">história de um recruta/</a>
+           <a href="https://docs.google.com/document/d/1Efy3SJXIWxvfZS-2DAayph6DKpgwggCY/edit?usp=drivesdk&ouid=110305946732979825489&rtpof=true&sd=true">a recruit's story/</a>
            <p class="date">feb 16, 2024</p>
            <hr>
          </div>
          <div class="link-item">
-   <a href="https://docs.google.com/document/d/1LJSJu4HxLEwiAy7bkEPqqC3SsH2C1lGA3pArmm2pVpc/edit?usp=drivesdk">abuso de poder policial/</a>
+   <a href="https://docs.google.com/document/d/1LJSJu4HxLEwiAy7bkEPqqC3SsH2C1lGA3pArmm2pVpc/edit?usp=drivesdk">police power abuse/</a>
    <p class="date">feb 16, 2024</p>
    <hr>
  </div>
@@ -108,12 +108,12 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250125013140/https://www.big-loser.site/Caso/aeropass/VID-20240825-WA0000.mp4">Video do atropelamento/</a>
+          <a href="https://web.archive.org/web/20250125013140/https://www.big-loser.site/Caso/aeropass/VID-20240825-WA0000.mp4">Vídeo atropelamento/</a>
           <p class="date">Jan 19, 2025</p>
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250118021045/https://www.big-loser.site/Caso/040">B0letim d4 0corrência/</a>
+          <a href="https://web.archive.org/web/20250118021045/https://www.big-loser.site/Caso/040">040 ocorrência/</a>
           <p class="date">Jan 18, 2025</p>
           <hr>
         </div>
@@ -123,7 +123,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250110005911/https://www.big-loser.site/Caso/050">S0ar5s br0s [project]/</a>
+          <a href="https://web.archive.org/web/20250110005911/https://www.big-loser.site/Caso/050">S0ar5s [project]/</a>
           <p class="date">Jan 10, 2025</p>
           <hr>
         </div>
@@ -133,7 +133,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="http://web.archive.org/web/20250109234242/https://www.big-loser.site/Project_Apocalypse/assedio">assédio em alojamento/</a>
+          <a href="http://web.archive.org/web/20250109234242/https://www.big-loser.site/Project_Apocalypse/assedio">assédio alojamento/</a>
           <p class="date">Jan 09, 2025</p>
           <hr>
         </div>
@@ -153,7 +153,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250106222448/https://www.poder360.com.br/poder-brasil/numero-de-pessoas-em-situacao-de-rua-aumenta-25-no-brasil/">situação de rua no BR/</a>
+          <a href="https://web.archive.org/web/20250106222448/https://www.poder360.com.br/poder-brasil/numero-de-pessoas-em-situacao-de-rua-aumenta-25-no-brasil/">situação de rua/</a>
           <p class="date">Jan 06, 2025</p>
           <hr>
         </div>
@@ -173,7 +173,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250103013604/http://radaraltovale.com/noticia/noticias/soldado-de-fraiburgo-comete-suicidio-no-quartel-do-exercito-e-deixa-carta-de-despedida-51071">Suicídio de Wennigkamp/</a>
+          <a href="https://web.archive.org/web/20250103013604/http://radaraltovale.com/noticia/noticias/soldado-de-fraiburgo-comete-suicidio-no-quartel-do-exercito-e-deixa-carta-de-despedida-51071">Wennigkamp's suicide/</a>
           <p class="date">Jan 03, 2025</p>
           <hr>
         </div>
@@ -183,7 +183,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20241230181835/https://www.big-loser.site/M/Dec/sindicancia.html">solução de sindicância/</a>
+          <a href="https://web.archive.org/web/20241230181835/https://www.big-loser.site/M/Dec/sindicancia.html">sindicância/</a>
           <p class="date">Dec 30, 2024</p>
           <hr>
         </div>
@@ -210,7 +210,7 @@ function filterItems() {
         </div>
   
               <div class="link-item">
-          <a href="https://web.archive.org/web/20241230172113/https://www.big-loser.site/Caso/030">sindicância & Expulsão/</a>
+          <a href="https://web.archive.org/web/20241230172113/https://www.big-loser.site/Caso/030">Expulsão das FAB/</a>
           <p class="date">Dec 30, 2024</p>
           <hr>
         </div>
@@ -260,7 +260,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://1drv.ms/u/c/e2112d3399c3a63a/ETqmw5kzLREggOJrAAAAAAABM-cVStNc7DRLRGMdD8Li9A">OneDrive Saved Archives/</a>
+          <a href="https://1drv.ms/u/c/e2112d3399c3a63a/ETqmw5kzLREggOJrAAAAAAABM-cVStNc7DRLRGMdD8Li9A">OneDrive - Archives/</a>
           <p class="date">Dec 06, 2024</p>
           <hr>
         </div>
@@ -401,7 +401,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240915200033/https://www.big-loser.site/Project_Apocalypse/comandante.html">big-loser - cel Soares/</a>
+          <a href="https://web.archive.org/web/20240915200033/https://www.big-loser.site/Project_Apocalypse/comandante.html">big-loser - Soares/</a>
           <p class="date">Sep 15, 2024</p>
           <hr>
         </div>
@@ -461,7 +461,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240915115222/https://badmgusm.eb.mil.br/index.php/todas-as-noticias/2232-incorporacao-dos-novos-recrutas-do-ano-de-2024">BADMGUSM - Incorporação/</a>
+          <a href="https://web.archive.org/web/20240915115222/https://badmgusm.eb.mil.br/index.php/todas-as-noticias/2232-incorporacao-dos-novos-recrutas-do-ano-de-2024">Incorporação/</a>
           <p class="date">Sep 15, 2024</p>
           <hr>
         </div>
@@ -476,7 +476,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240915053759/https://www.malditonatal.online/daniele.html">malditonatal - daniele/</a>
+          <a href="https://web.archive.org/web/20240915053759/https://www.malditonatal.online/daniele.html">malditonatal - dani/</a>
           <p class="date">Sep 15, 2024</p>
           <hr>
         </div>
@@ -496,7 +496,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="http://web.archive.org/web/20240913052319/https://3asyice.github.io/MirrorNEWS/chop-suey.html">MirrorNEWS - chopSuey/</a>
+          <a href="http://web.archive.org/web/20240913052319/https://3asyice.github.io/MirrorNEWS/chop-suey.html">MirrorNEWS - chop/</a>
           <p class="date">Sep 13, 2024</p>
           <hr>
         </div>
@@ -511,18 +511,18 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="http://web.archive.org/web/20240913051624/https://3asyice.github.io/MirrorNEWS/julho.html">MirrorNEWS - julhoNews/</a>
+          <a href="http://web.archive.org/web/20240913051624/https://3asyice.github.io/MirrorNEWS/julho.html">MirrorNEWS - julho/</a>
           <p class="date">Sep 13, 2024</p>
           <hr>
         </div>
         <div class="link-item">
-          <a href="http://web.archive.org/web/20240913051401/https://3asyice.github.io/MirrorNEWS/junho.html">MirrorNEWS - junhoNews/</a>
+          <a href="http://web.archive.org/web/20240913051401/https://3asyice.github.io/MirrorNEWS/junho.html">MirrorNEWS - junho/</a>
           <p class="date">Sep 13, 2024</p>
           <hr>
         </div>
         <div class="link-item">
         
-          <a href="http://web.archive.org/web/20240913045629/https://3asyice.github.io/MirrorNEWS/maio.html">MirrorNEWS - maioNews/</a>
+          <a href="http://web.archive.org/web/20240913045629/https://3asyice.github.io/MirrorNEWS/maio.html">MirrorNEWS - maio/</a>
           <p class="date">Sep 13, 2024</p>
           <hr>
         </div>
@@ -822,7 +822,7 @@ function filterItems() {
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240603235628/https://www.big-loser.site/">big-loser.site origem/</a>
+          <a href="https://web.archive.org/web/20240603235628/https://www.big-loser.site/">big-loser.site old/</a>
           <p class="date">Jun 03, 2024</p>
           <hr>
         </div>
