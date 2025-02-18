@@ -2,10 +2,9 @@
 
 @font-face {
   font-family: 'OCRA';
-  src: url(/fancyindex/OCRA.woff2) format('woff2');
+  src: url('/004 arquivos/OCRA Alt.otf') format('woff2');
   font-display: swap;
 }
-
 
 * {
   font-size: 24px;
@@ -123,17 +122,16 @@ footer {
 }
 div.tape a {
   padding: 0;
-  font-size: 7px;
+  font-size: 10px;
+  line-height: 15px;
   margin: 0;
+  font-family: 'OCRA', monospace;
+  display:inline-flex;
   text-transform: initial;
-  
 }
 
 div.tape {
-  display:block;
-  text-align: center;
-  margin-left: 2%;
-  margin-right: 2%;
+  display:inline-block;
 }
 
 @media (max-width: 600px) {
@@ -151,7 +149,8 @@ div.tape {
   
   .date {
     color: #CEFCD2;
-    font-size: 12px;
+    font-size: 9px;
+    display:inline-block;
     background: transparent;
     border: none;
     outline: none;
