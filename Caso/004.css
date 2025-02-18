@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'OCRA';
-  src: url('/Caso/OCRA Alt.otf') format('woff2');
+  src: url('/Caso/OCRA Alt.otf') format('otf');
   font-display: swap;
 }
 
