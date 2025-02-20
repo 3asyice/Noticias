@@ -26,12 +26,12 @@ function filterItems() {
   
            <div class="link-item">
            <a href="https://docs.google.com/document/d/1Efy3SJXIWxvfZS-2DAayph6DKpgwggCY/edit?usp=drivesdk&ouid=110305946732979825489&rtpof=true&sd=true">a recruit's story/</a>
-           <p class="date">feb 16, 2024</p>
+           <p class="date">feb 16, 2025</p>
            <hr>
          </div>
          <div class="link-item">
    <a href="https://docs.google.com/document/d/1LJSJu4HxLEwiAy7bkEPqqC3SsH2C1lGA3pArmm2pVpc/edit?usp=drivesdk">police power abuse/</a>
-   <p class="date">feb 16, 2024</p>
+   <p class="date">feb 16, 2025</p>
    <hr>
  </div>
 
