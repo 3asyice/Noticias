@@ -134,6 +134,10 @@ div.tape {
 margin-right: 5%;
   display:inline-table;
 }
+div.tape h2 {
+  color:#61CF5A;
+  font-size: 16px;
+}
 
 @media (max-width: 600px) {
   a {
