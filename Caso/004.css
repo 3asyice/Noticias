@@ -22,25 +22,28 @@ body {
 .h1__title {
   text-align: center;
   font-size: 34px;
+  z-index: 1;
   color: #00FF30;
-  font-family: "Alumni Sans Collegiate One", serif;
+  font-family: "OCRA", serif;
   font-weight: 400;
-  margin:0;
-  padding:30px;
-  background: repeating-linear-gradient(
-    to bottom,
-    #282828, /* preto */
-    #282828 1px, /* altura do preto */
-    #000 1px, /* cinza */
-    #000 3px /* altura do cinza (1px preto + 2px cinza) */
-  );
+  text-shadow: 2px 2px 5px #000;
+  margin: 0;
+  padding: 50px;
+  background-image:
+    url('https://www.big-loser.site/Caso/img/004.png'),
+    repeating-linear-gradient(to bottom,
+      #282828,
+      #282828 1px,
+      #000 1px,
+      #000 3px);
+  background-size:
+    180px auto,
+    cover;
+  background-position:
+    center,
+    center;
+    background-repeat: no-repeat;
   font-style: normal;
-}
-
-.search-container {
-  justify-content: center;
-  display: flex;
-  margin: 50px;
 }
 
 #search {
@@ -54,6 +57,8 @@ body {
   width: 250px;
   outline: none;
   padding: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   border: none;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -149,16 +154,20 @@ div.tape {
 h2 {
   color: #70D866;
   font-size: 16px;
-  margin:0;
+  margin: 0;
   flex: 100%;
-  background: repeating-linear-gradient(
-    to bottom,
-    #282828, /* preto */
-    #282828 1px, /* altura do preto */
-    #000 1px, /* cinza */
-    #000 3px /* altura do cinza (1px preto + 2px cinza) */
-  );
-  padding:10px;
+  padding-top: 50px;
+  background: repeating-linear-gradient(to bottom,
+      #282828,
+      /* preto */
+      #282828 1px,
+      /* altura do preto */
+      #000 1px,
+      /* cinza */
+      #000 3px
+      /* altura do cinza (1px preto + 2px cinza) */
+    );
+  padding-bottom: 10px;
 }
 
 @media (max-width: 600px) {
