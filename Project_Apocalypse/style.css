@@ -346,14 +346,20 @@ font-style: normal;
     color:#00FF71;
     text-align: center;
     width:65%;
+    text-align: center;
     margin-left: 10%;
     margin-right:10%;
-    top:35%;
+    top:25%;
+    display: block;
     position:fixed;
   }
   div.deuteromonios p{
     hyphens: auto;
     text-transform: uppercase;
     text-align: justify;
+  }
+  div.deuteromonios img {
+    width:40%;
+    position:relative;
   }
  }
