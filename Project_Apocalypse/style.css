@@ -227,6 +227,7 @@ footer {
   background: linear-gradient(123deg, #EFD9AF, #EBD9BF, #EFD4B6);
   color: #053768;
   text-align: center;
+  font-style: italic;
   padding: 20px 0;
   border-top: 2px solid #000;
   font-size: 0.8rem;
@@ -249,10 +250,8 @@ footer {
 }
 
 .share__btn:hover {
-  
-  border: 1px solid #000000;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(255, 0, 0, 0.8);
+  color: #D12450;
+  background-color: #00A387;
 }
 
 h1 span.blink {
@@ -266,10 +265,10 @@ h1 span.blink {
 .deuteromonios {
   padding: 10px;
   border-radius: 10px;
-  background: #000;
+  background: #F3CAA0;
   color: #00FF71;
   text-align: center;
-  width: 85%;
+  width: 85.3%;
   margin-left: 5%;
   margin-right: 5%;
   top: 35%;
@@ -370,7 +369,7 @@ h1 span.blink {
     background: #000;
     color:#00FF71;
     text-align: center;
-    width:65%;
+    width:60%;
     text-align: center;
     margin-left: 10%;
     margin-right:10%;
