@@ -25,6 +25,15 @@ body {
   color: #00FF30;
   font-family: "Alumni Sans Collegiate One", serif;
   font-weight: 400;
+  margin:0;
+  padding:30px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #282828, /* preto */
+    #282828 1px, /* altura do preto */
+    #000 1px, /* cinza */
+    #000 3px /* altura do cinza (1px preto + 2px cinza) */
+  );
   font-style: normal;
 }
 
@@ -56,6 +65,7 @@ body {
   transition: all 300ms ease-in;
   
 }
+
 #search:focus {
   outline: none;
   border: none;
@@ -120,6 +130,7 @@ footer {
   text-align: center;
   color: rgba(255, 255, 255, 1);
 }
+
 div.tape a {
   padding: 0;
   font-size: 10px;
@@ -130,13 +141,24 @@ div.tape a {
 }
 
 div.tape {
-  margin-left: 5%;
-margin-right: 5%;
-  display:inline-table;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: inline-table;
 }
-div.tape h2 {
-  color:#61CF5A;
+
+h2 {
+  color: #70D866;
   font-size: 16px;
+  margin:0;
+  flex: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    #282828, /* preto */
+    #282828 1px, /* altura do preto */
+    #000 1px, /* cinza */
+    #000 3px /* altura do cinza (1px preto + 2px cinza) */
+  );
+  padding:10px;
 }
 
 @media (max-width: 600px) {
@@ -155,7 +177,7 @@ div.tape h2 {
   .date {
     color: #CEFCD2;
     font-size: 9px;
-    display:inline-block;
+    display: inline-block;
     background: transparent;
     border: none;
     outline: none;
@@ -181,8 +203,9 @@ div.tape h2 {
   a:hover {
     color: #fff;
   }
-  div.tape a{
-font-size: 14px;
+  
+  div.tape a {
+    font-size: 14px;
   }
   
   .date {
@@ -209,6 +232,7 @@ font-size: 14px;
     margin-left: 5%;
     outline: none;
   }
+  
   div.tape a {
     font-size: 16px;
   }
@@ -231,4 +255,3 @@ font-size: 14px;
   }
   
 }
-
