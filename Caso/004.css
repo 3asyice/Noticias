@@ -32,8 +32,8 @@ body {
   background-image:
     url('https://www.big-loser.site/Caso/img/004.png'),
     repeating-linear-gradient(to bottom,
-      #282828,
-      #282828 1px,
+      #1F1B1C,
+      #1F1B1C 1px,
       #000 1px,
       #000 3px);
   background-size:
@@ -42,7 +42,7 @@ body {
   background-position:
     center,
     center;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   font-style: normal;
 }
 
@@ -152,15 +152,17 @@ div.tape {
 }
 
 h2 {
-  color: #70D866;
-  font-size: 16px;
+  color: #69E25B;
+  font-weight: normal;
+  font-size: 14px;
+  text-indent: 20px;
   margin: 0;
   flex: 100%;
   padding-top: 50px;
   background: repeating-linear-gradient(to bottom,
-      #282828,
+      #1F1B1C,
       /* preto */
-      #282828 1px,
+      #1F1B1C 1px,
       /* altura do preto */
       #000 1px,
       /* cinza */
