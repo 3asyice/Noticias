@@ -42,23 +42,21 @@ function e() {
 }
 
 let deferredPrompt;
-        
-        window.addEventListener('beforeinstallprompt', (e) => {
-          e.preventDefault();
-          deferredPrompt = e;
-          const addBtn = document.querySelector('#add-button');
-          addBtn.style.display = 'flex';
-        
-          addBtn.addEventListener('click', () => {
-            addBtn.style.display = 'block';
-            deferredPrompt.prompt();
-            deferredPrompt.userChoice.then((choiceResult) => {
-              if (choiceResult.outcome === 'accepted') {
-                console.log('Usuário aceitou o prompt de instalação');
-              } else {
-                console.log('Usuário rejeitou o prompt de instalação');
-              }
-              deferredPrompt = null;
-            });
-          });
-        });
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+    document.getElementById('installButton').style.display = 'block';
+});
+document.getElementById('installButton').addEventListener('click', () => {
+  document.getElementById('installButton').style.display = 'none';
+  deferredPrompt.prompt();
+  deferredPrompt.userChoice.then((choiceResult) => {
+    if (choiceResult.outcome === 'accepted') {
+      console.log('Usuário aceitou o prompt de instalação');
+    } else {
+      console.log('Usuário rejeitou o prompt de instalação');
+    }
+    deferredPrompt = null;
+  });
+});
