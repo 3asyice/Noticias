@@ -15,6 +15,12 @@
   <title>BABEL'S VAULT</title>
 </head>
 <style type="text/css" media="all">
+
+@font-face {
+  font-family: 'OCRA';
+  src: url('https://www.big-loser.site/Caso/OCRA Alt.otf') format('woff2');
+  font-display: swap;
+}
     * {
     user-select: none;
     margin: 0;
@@ -25,8 +31,9 @@
   html,
   body {
     background-color: rgba(0, 0, 0, 0.66);
-    font-family: 'Courier', Courier, monospace, sans-serif;
+    font-family: 'OCRA', Courier, monospace, sans-serif;
     margin: 0;
+    font-size: 12px;
   }
 
   table {
@@ -85,26 +92,18 @@
   .input__search {
     width: 300px;
     padding: 10px;
-    /* Espaçamento interno */
     font-size: 18px;
-    /* Tamanho da fonte */
     border: 1px solid #ccc;
-    /* Borda */
     border-radius: 24px;
-    /* Bordas arredondadas */
+    font-family: 'OCRA';
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra */
     transition: box-shadow 0.3s;
-    /* Transição suave para a sombra */
   }
 
   .input__search[type="text"]:focus {
     outline: none;
-    /* Remove o contorno padrão */
     border-color: #4285f4;
-    /* Cor da borda ao focar */
     box-shadow: 0 4px 12px rgba(66, 133, 244, 0.5);
-    /* Sombra mais forte ao focar */
   }
 
   footer {
@@ -166,7 +165,7 @@
     margin: 20px;
     background: #1C1C1C;
     color: #00FF04;
-    font-family: 'Courier', sans-serif;
+    font-family: 'OCRA', sans-serif;
     width: 80%;
     padding: 14px 16px;
     border-radius: 15px;
@@ -210,7 +209,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: 800;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'OCRA', Geneva, Verdana, sans-serif;
     border-radius: 15px;
     border: 2px solid rgba(3, 255, 0, 1);
     font-size: 20px;
@@ -231,7 +230,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: 800;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'OCRA', Geneva, Verdana, sans-serif;
     border-radius: 15px;
     border: 2px solid rgba(3, 255, 0, 1);
     font-size: 20px;
@@ -240,6 +239,9 @@
     cursor: pointer;
     user-select: none;
     text-transform: uppercase;
+  }
+  td strike{
+    color:red;
   }
 
   @media (max-width: 600px) {
@@ -573,18 +575,19 @@
         <td>Vila</td>
       </tr>
       <tr>
-        <td>Sd EV</td>
-        <td>604</td>
-        <td onclick="richard()">Richard</td>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>604</strike></td>
+        <td onclick="richard()"><strike>Richard</strike></td>
         <td onclick="unknown()">Unknown</td>
       </tr>
       <div class="info" id="sd__richard"></div>
       <tr>
-        <td>Sd EV</td>
-        <td>605</td>
-        <td>Allan</td>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>605</strike></td>
+        <td onclick="allan()"><strike>Allan</strike></td>
         <td onclick="nucleo()">Contingente</td>
       </tr>
+            <div class="info" id="sd__allan"></div>
       <tr>
         <td>Sd EV</td>
         <td>606</td>
@@ -600,30 +603,30 @@
       </tr>
       <div class="info" id="sd__chimainski"></div>
       <tr>
-        <td>Sd EV</td>
-        <td>608</td>
-        <td onclick="drescher()">Drescher</td>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>608</strike></td>
+        <td onclick="drescher()"><strike>Drescher</strike></td>
         <td onclick="ht()">HT</td>
       </tr>
       <div class="info" id="sd__drescher"></div>
       <tr>
-        <td><del>Sd EV</del></td>
+        <td><strike>Sd EV</strike></td>
         <td><strike>609</strike></td>
         <td onclick="carvalho()"><strike>Carvalho</strike></td>
-        <td onclick="ebFacil()"><strike>EB F@cil</strike></td>
+        <td onclick="ebFacil()">EB F@cil</td>
       </tr>
       <div class="info" id="sd__carvalho"></div>
       <tr>
-        <td>Sd EV</td>
-        <td>610</td>
-        <td onclick="daRosa()">Da Rosa</td>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>610</strike></td>
+        <td onclick="daRosa()"><strike>Da Rosa</strike></td>
         <td onclick="nucleo()">Contingente</td>
       </tr>
       <div class="info" id="sd__darosa"></div>
       <tr>
-        <td>Sd EV</td>
-        <td>611</td>
-        <td onclick="daniel()">Daniel</td>
+        <td><strike>Sd Ev</strike></td>
+        <td><strike>611</strike></td>
+        <td onclick="daniel()"><strike>Daniel</strike></td>
         <td onclick="almox()">Almox</td>
       </tr>
       <div class="info" id="sd__daniel"></div>
@@ -665,20 +668,21 @@
       <tr>
         <td><strike>Sd EV</strike></td>
         <td><strike>617</strike></td>
-        <td><strike>Silvano</strike></td>
+        <td onclick="silvano()"><strike>Silvano</strike></td>
         <td><strike></strike>Prédios</td>
       </tr>
+      <div class="info" id="sd__silvano"></div>
       <tr>
-        <td>Sd EV</td>
-        <td>618</td>
-      <td onclick="roger()">Roger</td>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>618</strike></td>
+      <td onclick="roger()"><strike>Roger</strike></td>
         <td onclick="rancho()">Rancho</td>
       </tr>
       <div class="info" id="sd__roger"></div>
       <tr>
-        <td>Sd EV</td>
-        <td>619</td>
-        <td onclick="zancan()">Zancan</td>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>619</strike></td>
+        <td onclick="zancan()"><strike>Zancan</strike></td>
         <td onclick="unknown()">Unknown</td>
       </tr>
       <div class="info" id="sd__zancan"></div>
@@ -703,9 +707,9 @@
       </tr>
       <div class="info" id="sd__preuss"></div>
       <tr>
-        <td>Sd EV</td>
-        <td>623</td>
-        <td onclick="cardoso()">Cardoso</td>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>623</strike></td>
+        <td onclick="cardoso()"><strike>Cardoso</strike></td>
         <td>RP</td>
       </tr>
       <div class="info" id="sd__cardoso"></div>
@@ -713,7 +717,7 @@
         <td><strike>Sd EV</strike></td>
         <td><strike>624</strike></td>
         <td><strike>Nesske</strike></td>
-        <td><strike>Vila</strike></td>
+        <td>Vila</td>
       </tr>
       <tr>
         <td>Sd EV</td>
@@ -737,15 +741,16 @@
       </tr>
       <div class="info" id="sd__lemos"></div>
       <tr>
-        <td>Sd EV</td>
-        <td>628</td>
-        <td>Anderson</td>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>628</strike></td>
+        <td onclick="anderson()"><strike>Anderson</strike></td>
         <td>Prédios</td>
       </tr>
+      <div class="info" id="sd__anderson"></div>
       <tr>
-        <td>Sd EV</td>
-        <td>629</td>
-        <td onclick="magalhaes()">Magalhães</td>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>629</strike></td>
+        <td onclick="magalhaes()"><strike>Magalhães</strike></td>
         <td>Vila</td>
       </tr>
       <div class="info" id="sd__magalhaes"></div>
@@ -753,13 +758,13 @@
         <td><strike>Sd EV</strike></td>
         <td><strike>630</strike></td>
         <td onclick="machado()"><strike>Machado</strike></td>
-        <td><strike>Vila</strike></td>
+        <td>Vila</td>
       </tr>
       <div class="info" id="sd__machado"></div>
       <tr>
-        <td>Sd EV</td>
-        <td>631</td>
-        <td onclick="fagundes()">Fagundes</td>
+        <td><strike>Sd Ev</strike></td>
+        <td><strike>631</strike></td>
+        <td onclick="fagundes()"><strike>Fagundes</strike></td>
         <td onclick="nucleo()">Contingente</td>
       </tr>
       <div class="info" id="sd__fagundes"></div>
@@ -791,9 +796,9 @@
         <td>Vila</td>
       </tr>
       <tr>
-        <td>Sd EV</td>
-        <td>636</td>
-        <td onclick="emanuel()">Emanuel</td>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>636</strike></td>
+        <td onclick="emanuel()"><strike>Emanuel</strike></td>
         <td onclick="nucleo()">Contingente</td>
       </tr>
       <div class="info" id="sd__emanuel"></div>
@@ -805,9 +810,9 @@
       </tr>
       <div class="info" id="sd__silvasantos"></div>
       <tr>
-        <td>Sd EV</td>
-        <td>638</td>
-        <td onclick="oliveira()">Oliveira</td>
+        <td><strike>Sd EV</strike></td>
+        <td><strike>638</strike></td>
+        <td onclick="oliveira()"><strike>Oliveira</strike></td>
         <td>Vila</td>
       </tr>
       <div class="info" id="sd__oliveira"></div>
@@ -827,10 +832,10 @@
     </table>`;
 
   const textoForm = document.getElementById('loginForm').innerHTML = `    <form  onsubmit="event.preventDefault(); authentication();">
-      <label class="label__class" for="user">Usuário:</label>
-      <input type="text" name="user" id="nome" placeholder="Digite o usuário..." required>
-      <label class="label__class" for="pass">Senha:</label>
-      <input type="password" name="pass" id="senha" placeholder="Digite a senha..." required>
+      <label class="label__class" for="user">USER:</label>
+      <input type="text" name="user" id="nome" placeholder="Type user..." required>
+      <label class="label__class" for="pass">PASSWORD:</label>
+      <input type="password" name="pass" id="senha" placeholder="Type password..." required>
       <input class="submit__btn" type="submit" value="ENTER">
     </form>
     <div class="messageError" id="error_Msg">
@@ -1009,13 +1014,47 @@ function rancho() {
 function carvalho() {
   const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const sd609 = document.getElementById('sd__carvalho');
-  sd609.innerHTML = "<img width='34x34' src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/609carvalho.jpg'> O soldado <a href='https://www.facebook.com/gui.abreu.313'>Carvalho</a> é reconhecido pela sua expulsão das Forças Armadas após a solução da sua <a style='color:gold' href='https://www.big-loser.site/M/Dec/sindicancia.html'>sindicância</a> por se jogar no capô do carro da advogada Camila Dalcol.";
+  sd609.innerHTML = "<img width='34x34' src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/609carvalho.jpg'> O soldado <a href='https://www.facebook.com/gui.abreu.313'>Carvalho</a> é reconhecido pela sua expulsão das Forças Armadas após a solução da sua <a style='color:gold' href='https://www.big-loser.site/M/Dec/sindicancia.html'>sindicância</a> por se jogar no capô do carro da advogada Camila Dalcol. <br> Excluído a bem da disciplina em 11 JUL 2024.";
   sd609.style.display = 'block';
   audio.play();
   setTimeout(() => {
     sd609.style.display = 'none';
   }, 5000);
 }
+
+function allan() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const allan = document.getElementById('sd__allan');
+  allan.innerHTML = "<img width='34x34' src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'> O soldado <a href='#anderson'>Allan</a> é quieto e ingênuo.  <br> Licenciado em 22 Janeiro 2025";
+  allan.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    allan.style.display = 'none';
+  }, 5000);
+}
+
+function anderson() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const anderson = document.getElementById('sd__anderson');
+  anderson.innerHTML = "<img width='34x34' src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'> O soldado <a href='#anderson'>Anderson</a> é um fumante nato.  <br> Licenciado em 22 Janeiro 2025";
+  anderson.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    anderson.style.display = 'none';
+  }, 5000);
+}
+
+function silvano() {
+  const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
+  const silvano = document.getElementById('sd__silvano');
+  silvano.innerHTML = "<img width='34x34' src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'> O soldado <a href='#_blank'>Silvano</a> é reconhecido por sua deserção das Forças Armadas <br> PROCURADO PELA POLÍCIA DO EXÉRCITO.";
+  silvano.style.display = 'block';
+  audio.play();
+  setTimeout(() => {
+    silvano.style.display = 'none';
+  }, 5000);
+}
+
 
 // augusto bergmann
 function bergmann() {
@@ -1127,7 +1166,7 @@ function gabriel() {
 function fagundes() {
   const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const fgnds = document.getElementById('sd__fagundes');
-  fgnds.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/fagundes.jpg'> O soldado 631 <a href='https://www.instagram.com/jeremias_fagundes?igsh=MWh1bjIyYW56eXZlYQ=='>Fagundes</a> é o soldado responsável por fazer as escalas de serviço. <br> Email: <a style='color:orange;' href='mailto: jeremias.eduardo2014@gmail.com'>jeremias.eduardo2014@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555196198815'>+51 9619-8815</a>";
+  fgnds.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/fagundes.jpg'> O soldado 631 <a href='https://www.instagram.com/jeremias_fagundes?igsh=MWh1bjIyYW56eXZlYQ=='>Fagundes</a> é o soldado responsável por fazer as escalas de serviço. <br> Email: <a style='color:orange;' href='mailto: jeremias.eduardo2014@gmail.com'>jeremias.eduardo2014@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555196198815'>+51 9619-8815</a> <br> Licenciado: 22 JAN 2025";
   fgnds.style.display = 'block';
   audio.play();
   setTimeout(() => {
@@ -1138,7 +1177,7 @@ function fagundes() {
 function roger() {
   const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const rgr = document.getElementById('sd__roger');
-  rgr.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/roger.jpg'> O soldado 618 <a href='https://www.instagram.com/luan_roger?igsh=NG1vZHYyMDMzbW41'>Roger</a> é um rancheiro. <br> CPF: <span style='color:red;'>024.691.350-95</span> <br> Email: <a style='color:orange;' href='mailto: luanroger2005@gmail.com'>luanroger2005@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555197402955'>+51 9740-2955</a>";
+  rgr.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/roger.jpg'> O soldado 618 <a href='https://www.instagram.com/luan_roger?igsh=NG1vZHYyMDMzbW41'>Roger</a> é um rancheiro. <br> CPF: <span style='color:red;'>024.691.350-95</span> <br> Email: <a style='color:orange;' href='mailto: luanroger2005@gmail.com'>luanroger2005@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555197402955'>+51 9740-2955</a> <br> Licenciado: 22 JAN 2025";
   rgr.style.display = 'block';
   audio.play();
   setTimeout(() => {
@@ -1184,7 +1223,7 @@ function tassinari() {
 function zancan() {
   const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const zancan = document.getElementById('sd__zancan');
-  zancan.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/zancan.jpg'> O soldado 619 <a href='https://www.instagram.com/alisson_maziero_?igsh=MWNpdDdlc3VwMXpjNg=='>Zancan</a> é um dos recrutas. A sua Seção não foi especificado ou é desconhecido. <br> CPF: <span style='color:red;'>046.338.890-95</span> <br> Email: <a style='color:orange;' href='mailto: alissonmazierozancan@gmail.com'>alissonmazierozancan@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555592138955'>+55 9213-8955</a>";
+  zancan.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/zancan.jpg'> O soldado 619 <a href='https://www.instagram.com/alisson_maziero_?igsh=MWNpdDdlc3VwMXpjNg=='>Zancan</a> é um dos recrutas. A sua Seção não foi especificado ou é desconhecido. <br> CPF: <span style='color:red;'>046.338.890-95</span> <br> Email: <a style='color:orange;' href='mailto: alissonmazierozancan@gmail.com'>alissonmazierozancan@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555592138955'>+55 9213-8955</a> <br> Licenciado: 22 JAN 2025";
   zancan.style.display = 'block';
   audio.play();
   setTimeout(() => {
@@ -1217,7 +1256,7 @@ function preuss() {
 function magalhaes() {
   const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const maga = document.getElementById('sd__magalhaes');
-  maga.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/magalhaes.jpg'> O soldado 629 <a href='https://www.instagram.com/29_magalhaes?igsh=djM5NTRwaW9uZXg4'>Magalhães</a> faz parte da vila militar. <br> Email: <a style='color:orange;'' href='mailto: juniormagalhaens2@gmail.com'>juniormagalhaens2@gmail.com</a> <br> Phone:<a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555195576011&text=Olá%20peguei%20seu%20número%20no%20site'>+ 51 9557-6011</a>";
+  maga.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/magalhaes.jpg'> O soldado 629 <a href='https://www.instagram.com/29_magalhaes?igsh=djM5NTRwaW9uZXg4'>Magalhães</a> faz parte da vila militar. <br> Email: <a style='color:orange;'' href='mailto: juniormagalhaens2@gmail.com'>juniormagalhaens2@gmail.com</a> <br> Phone:<a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555195576011&text=Olá%20peguei%20seu%20número%20no%20site'>+ 51 9557-6011</a> <br> Licenciado: 22 JAN 2025";
   maga.style.display = 'block';
   audio.play();
   setTimeout(() => {
@@ -1228,7 +1267,7 @@ function magalhaes() {
 function daRosa() {
   const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const daRosa = document.getElementById('sd__darosa');
-  daRosa.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/darosa.jpg'> O soldado 610 <a href='https://www.instagram.com/senhor_lucas_rosa?igsh=cjRuYjg4bnZxd2Vy'>Da Rosa</a> faz parte do contingente. <br> CPF: <span style='color:red;'>050.387.320-97</span> <br> Email: <a style='color:orange;' href='mailto: lucasrosayeshua@gmail.com'>lucasrosayeshua@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555599821442'>+55 9982-1442</a>";
+  daRosa.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/darosa.jpg'> O soldado 610 <a href='https://www.instagram.com/senhor_lucas_rosa?igsh=cjRuYjg4bnZxd2Vy'>Da Rosa</a> faz parte do contingente. <br> CPF: <span style='color:red;'>050.387.320-97</span> <br> Email: <a style='color:orange;' href='mailto: lucasrosayeshua@gmail.com'>lucasrosayeshua@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555599821442'>+55 9982-1442</a> <br> Licenciado: 22 JAN 2025";
   daRosa.style.display = 'block';
   audio.play();
   setTimeout(() => {
@@ -1261,7 +1300,7 @@ function keller() {
 function cardoso() {
   const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const cardoso = document.getElementById('sd__cardoso');
-  cardoso.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/cardoso.jpg'> O soldado 623 <a href='https://www.facebook.com/profile.php?id=61561739105797'>Cardoso</a> trabalha junto com o cabo Thalisson. <br> CPF: <span style='color:red;'>039.396.790.54</span> <br> Email: <a style='color:orange;' href='mailto: cardosojoaopedro2305@gmail.com'>cardosojoaopedro2305@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555591021864'>+55 9102-1864</a>";
+  cardoso.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/cardoso.jpg'> O soldado 623 <a href='https://www.facebook.com/profile.php?id=61561739105797'>Cardoso</a> trabalha junto com o cabo Thalisson. <br> CPF: <span style='color:red;'>039.396.790.54</span> <br> Email: <a style='color:orange;' href='mailto: cardosojoaopedro2305@gmail.com'>cardosojoaopedro2305@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555591021864'>+55 9102-1864</a> <br> Licenciado: 22 JAN 2025";
   cardoso.style.display = 'block';
   audio.play();
   setTimeout(() => {
@@ -1272,7 +1311,7 @@ function cardoso() {
 function drescher() {
   const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const drescher = document.getElementById('sd__drescher');
-  drescher.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/drescher.jpg'> O soldado 608 <a href='#'>Drescher</a> faz parte do Hotel de Trânsito. <br> CPF: <span style='color:red;'>049.496.270-40</span> <br> Email: <a style='color:orange;' href='mailto: gustavosoares1533727@gmail.com'>gustavosoares1533727@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555592154388'>+55 9215-4388</a>";
+  drescher.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/drescher.jpg'> O soldado 608 <a href='#'>Drescher</a> faz parte do Hotel de Trânsito. <br> CPF: <span style='color:red;'>049.496.270-40</span> <br> Email: <a style='color:orange;' href='mailto: gustavosoares1533727@gmail.com'>gustavosoares1533727@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555592154388'>+55 9215-4388</a> <br> Licenciado: 22 JAN 2025";
   drescher.style.display = 'block';
   audio.play();
   setTimeout(() => {
@@ -1294,7 +1333,7 @@ function xavier() {
 function emanuel() {
   const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const emanuel = document.getElementById('sd__emanuel');
-  emanuel.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/emanuel.jpg'> O soldado 636 <a href='https://www.facebook.com/emanuel.rosapereira.1?mibextid=ZbWKwL'>Emanuel</a> faz parte do contingente. <br> CPF: <span style='color:red;'>042.712.190-61</span> <br> Email: <a style='color:orange;' href='mailto: emanuelrosap19@gmail.com'>emanuelrosap19@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555597259687'>+55 9725-9687</a>";
+  emanuel.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/emanuel.jpg'> O soldado 636 <a href='https://www.facebook.com/emanuel.rosapereira.1?mibextid=ZbWKwL'>Emanuel</a> faz parte do contingente. <br> CPF: <span style='color:red;'>042.712.190-61</span> <br> Email: <a style='color:orange;' href='mailto: emanuelrosap19@gmail.com'>emanuelrosap19@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555597259687'>+55 9725-9687</a> <br> Licenciado: 22 JAN 2025";
   emanuel.style.display = 'block';
   audio.play();
   setTimeout(() => {
@@ -1316,7 +1355,7 @@ function goncalves() {
 function daniel() {
   const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const daniel = document.getElementById('sd__daniel');
-  daniel.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/daniel.jpg'> O soldado 611 <a href='https://www.instagram.com/_cdan1el_?igsh=MXdkbHQxZTdvbm9lZQ=='>Daniel</a> trabalha junto com o Xavier no almox. <br> CPF: <span style='color:red;'>060.247.960-64</span> <br> Email: <a style='color:orange;' href='mailto: cd700350@gmail.com'>cd700350@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555191405917'>+51 9140-5917</a> ";
+  daniel.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/daniel.jpg'> O soldado 611 <a href='https://www.instagram.com/_cdan1el_?igsh=MXdkbHQxZTdvbm9lZQ=='>Daniel</a> trabalha junto com o Xavier no almox. <br> CPF: <span style='color:red;'>060.247.960-64</span> <br> Email: <a style='color:orange;' href='mailto: cd700350@gmail.com'>cd700350@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555191405917'>+51 9140-5917</a> <br> Licenciado: 22 JAN 2025";
   daniel.style.display = 'block';
   audio.play();
   setTimeout(() => {
@@ -1338,7 +1377,7 @@ function machado() {
 function richard() {
   const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const richard = document.getElementById('sd__richard');
-  richard.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/richard.jpg'> O soldado 604 <a href='https://www.facebook.com/rafael.diasdeoliveira.583'>Richard</a> trabalha em uma seção individual não especificado. <br> CPF: <span style='color:red;'>040.474.960-73</span> <br> Email: <a style='color:orange;' href='mailto: richardrafaeldias2@gmail.com'>richardrafaeldias2@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555591055832'>+55 9105-5832</a> ";
+  richard.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/richard.jpg'> O soldado 604 <a href='https://www.facebook.com/rafael.diasdeoliveira.583'>Richard</a> trabalha em uma seção individual não especificado. <br> CPF: <span style='color:red;'>040.474.960-73</span> <br> Email: <a style='color:orange;' href='mailto: richardrafaeldias2@gmail.com'>richardrafaeldias2@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555591055832'>+55 9105-5832</a> <br> Licenciado: 22 JAN 2025";
   richard.style.display = 'block';
   audio.play();
   setTimeout(() => {
@@ -1437,7 +1476,7 @@ function thalisson() {
 function oliveira() {
   const audio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/Keepinitzackary - unfriended dark web.opus');
   const oliveira = document.getElementById('sd__oliveira');
-  oliveira.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/oliveira.jpg'> O soldado 638 <a href='https://www.facebook.com/profile.php?id=61554036208372'>Oliveira</a> trabalha na prefeitura militar. <br> Email: <a style='color:orange;' href='mailto: oliveirajuliano2024@gmail.com'>oliveirajuliano2024@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555193477081'>+51 9347-7081</a>";
+  oliveira.innerHTML = "<img src='https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/aeropass/oliveira.jpg'> O soldado 638 <a href='https://www.facebook.com/profile.php?id=61554036208372'>Oliveira</a> trabalha na prefeitura militar. <br> Email: <a style='color:orange;' href='mailto: oliveirajuliano2024@gmail.com'>oliveirajuliano2024@gmail.com</a> <br> Phone: <a style='color:yellow;' href='https://api.whatsapp.com/send?phone=555193477081'>+51 9347-7081</a> <br> Licenciado: 22 JAN 2025";
   oliveira.style.display = 'block';
   audio.play();
   setTimeout(() => {
