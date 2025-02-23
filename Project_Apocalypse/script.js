@@ -40,3 +40,25 @@ function e() {
   h.style.display = s ?
     'block' : 'none';
 }
+
+let deferredPrompt;
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+          e.preventDefault();
+          deferredPrompt = e;
+          const addBtn = document.querySelector('#add-button');
+          addBtn.style.display = 'flex';
+        
+          addBtn.addEventListener('click', () => {
+            addBtn.style.display = 'block';
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choiceResult) => {
+              if (choiceResult.outcome === 'accepted') {
+                console.log('Usuário aceitou o prompt de instalação');
+              } else {
+                console.log('Usuário rejeitou o prompt de instalação');
+              }
+              deferredPrompt = null;
+            });
+          });
+        });
