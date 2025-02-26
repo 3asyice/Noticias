@@ -1,3 +1,13 @@
+function saveToWayback() {
+  const url = document.getElementById('urlInput').value;
+  if (url) {
+    const waybackUrl = `https://web.archive.org/save/${encodeURIComponent(url)}`;
+    window.open(waybackUrl, '_blank');
+  } else {
+    alert('Por favor, insira uma URL válida.');
+  }
+}
+
 function filterItems() {
   const searchInput = document.querySelector('.search-input').value.toLowerCase();
   const linkItems = document.querySelectorAll('.link-item');
