@@ -1,29 +1,41 @@
 function filterItems() {
-    const searchInput = document.querySelector('.search-input').value.toLowerCase();
-    const linkItems = document.querySelectorAll('.link-item');
+  const searchInput = document.querySelector('.search-input').value.toLowerCase();
+  const linkItems = document.querySelectorAll('.link-item');
   
-    linkItems.forEach(item => {
-      const link = item.querySelector('a');
-      const text = link.textContent.toLowerCase();
-      const date = item.querySelector('.date').textContent.toLowerCase();
-      const hr = item.querySelector('hr');
+  linkItems.forEach(item => {
+    const link = item.querySelector('a');
+    const text = link.textContent.toLowerCase();
+    const date = item.querySelector('.date').textContent.toLowerCase();
+    const hr = item.querySelector('hr');
+    
+    // Verifica se o texto de entrada corresponde ao link ou à data
+    if (text.includes(searchInput) || date.includes(searchInput)) {
+      item.style.display = '';
+      hr.style.display = ''; // Mostrar hr se o item corresponder
+    } else {
+      item.style.display = 'none';
+      hr.style.display = 'none'; // Ocultar hr se o item não corresponder
+    }
+  });
+}
+
+
+
+// linkScripted 
+const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML = `<div id="links"> 
   
-      // Verifica se o texto de entrada corresponde ao link ou à data
-      if (text.includes(searchInput) || date.includes(searchInput)) {
-        item.style.display = '';
-        hr.style.display = ''; // Mostrar hr se o item corresponder
-      } else {
-        item.style.display = 'none';
-        hr.style.display = 'none'; // Ocultar hr se o item não corresponder
-      }
-    });
-  }
-  
-  
-  
-  // linkScripted 
-  const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML = `<div id="links"> 
-  
+                   <div class="link-item">
+          <a href="https://web.archive.org/web/20250223035130/https://www.big-loser.site/A/Audio/Mensagem.m4a">Mensagem.m4a/</a>
+          <p class="date">Feb 23, 2025</p>
+          <hr>
+       </div>
+ <div class = "link-item">
+          <a href="https://web.archive.org/web/20250221180205/https://www.big-loser.site/">big-loser.site/</a> <p class = "date"> Feb 21, 2025 </p> <hr>
+          </div> <div class = "link-item">
+          <a href="https://web.archive.org/web/20250220055600/https://www.big-loser.site/A/Feb/soldiers%20salary%20.pdf">soldiers salary.pdf/</a> <p class = "date"> Feb 20, 2025 </p> <hr>
+          </div> <div class = "link-item">
+          <a href="https://web.archive.org/web/20250220013715/https://www.big-loser.site/BADMGUSM.xlsx">soldiers salary.xlsx/</a> <p class = "date"> Feb 20, 2025 </p> <hr>
+          </div>
            <div class="link-item">
            <a href="https://docs.google.com/document/d/1Efy3SJXIWxvfZS-2DAayph6DKpgwggCY/edit?usp=drivesdk&ouid=110305946732979825489&rtpof=true&sd=true">a recruit's story/</a>
            <p class="date">feb 16, 2025</p>
