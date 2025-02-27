@@ -34,6 +34,94 @@ function filterItems() {
 // linkScripted 
 const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML = `<div id="links"> 
   
+                  <div class="link-item">
+          <a href="https://web.archive.org/web/20250227180609/https://www.montedo.com.br/2024/10/31/familia-e-oab-contestam-versao-do-exercito-de-suicidio-de-soldado-em-quartel-do-rio/">morte sd Vitor.html/</a>
+          <p class="date"> Feb 26, 2025 </p>
+          <hr>
+        </div> <div class="link-item" >
+                <a href="https://youtu.be/Gfvo3kMHoUs?si=39SJPFIcAq486Gdv">morte sd Vitor/</a> <p class="date"> Feb 26, 2025 </p> <hr>
+                  </div>
+  
+          <div class="link-item">
+          <a href="https://web.archive.org/web/20250227173247/https://noticias.r7.com/minas-gerais/mg-record/videos/familia-de-soldado-que-se-matou-em-quartel-do-exercito-diz-que-ele-sofria-humilhacoes-21022018/">suicídio sd pablo/</a>
+          <p class="date"> Feb 27, 2025 </p>
+          <hr>
+        </div> <div class="link-item">
+        <a href="https://web.archive.org/web/20250227174730/https://www.big-loser.site/M/Fev/pablo_soares.mp4"> sd pablo soares.mp4/</a> <p class="date"> Feb 27, 2025 </p>
+        <hr>
+          </div> <div class="link-item">
+          <a href="https://web.archive.org/web/20250227172730/https://www1.folha.uol.com.br/fsp/brasil/fc22069814.htm">suicídio sd Weslley/</a> <p class ="date"> Feb 27, 2025 </p> <hr>
+          </div> <div class = "link-item">
+          <a href="https://web.archive.org/web/20250227170708/https://noticias.r7.com/hora7/morte-explorador-caverna-cabeca-para-baixo-eua-04122023/">John Edward Jones/</a> <p class ="date"> Feb 27, 2025 </p> <hr>
+          </div> <div class = "link-item">
+          <a href="https://web.archive.org/web/20250227090800/https://badmgusm.eb.mil.br/index.php/galeria-dos-eternos-comandantes">badmgusm eternos cmt/</a> <p class ="date"> Feb 27, 2025 </p> <hr>
+          </div> <div class = "link-item">
+          <a href="https://web.archive.org/web/20250226193728/https://g1.globo.com/rs/rio-grande-do-sul/video/policial-militar-e-flagrado-agredindo-mulher-gravida-com-cassetete-13360745.ghtml">pm agride grávida/</a> <p class ="date"> Feb 26, 2025 </p> <hr>
+          </div>
+  
+                  <div class="link-item">
+          <a href="https://web.archive.org/web/20250226192512/https://noticias.uol.com.br/cotidiano/ultimas-noticias/2025/02/21/policial-agride-mulher-gravida-rs.htm">pm agride grávida/</a>
+          <p class="date"> Feb 26, 2025 </p>
+          <hr>
+        </div>
+                <div class="link-item">
+          <a href="https://web.archive.org/web/20250226185730/https://www.big-loser.site/A/Audio/Audio_001">a dicisao errada/</a>
+          <p class="date"> Feb 26, 2025 </p>
+          <hr>
+        </div>
+                <div class="link-item">
+          <a href="https://web.archive.org/web/20250226183622/https://www.big-loser.site/Caso/095">095 audio files/</a>
+          <p class="date"> Feb 26, 2025 </p>
+          <hr>
+        </div>
+                <div class="link-item">
+          <a href="https://web.archive.org/web/20250226183419/https://www.big-loser.site/Caso/106">106 incorporacao/</a>
+          <p class="date"> Feb 26, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250226182415/https://www.big-loser.site/Caso/004">004 archives/</a>
+          <p class="date"> Feb 26, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250226181518/https://www.big-loser.site/">big-loser.site/</a>
+          <p class="date"> Feb 26, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250226055552/https://www.big-loser.site/Caso/053">053 nota falecimento/</a>
+          <p class="date"> Feb 26, 2025 </p>
+          <hr>
+        </div>
+        
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250226054326/https://www.big-loser.site/M/Fev/internato.txt">internato.txt/</a>
+          <p class="date"> Feb 26, 2025 </p>
+          <hr>
+        </div>
+        
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250226055003/https://www.big-loser.site/M/Fev/incorporacao.txt">incorporação.txt/</a>
+          <p class="date"> Feb 26, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250226055219/https://www.big-loser.site/M/Fev/decisao_errada.txt">decisao_errada.txt/</a>
+          <p class="date"> Feb 26, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250226054156/https://www.big-loser.site/M/Fev/plantao.txt">plantao.txt/</a>
+          <p class="date"> Feb 26, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://jack-sbraincancer.github.io/CHAT-ONLINE/frontend/index.html">chat online/</a>
+          <p class="date">Feb 23, 2025</p>
+          <hr>
+        </div>
+  
                    <div class="link-item">
           <a href="https://web.archive.org/web/20250223035130/https://www.big-loser.site/A/Audio/Mensagem.m4a">Mensagem.m4a/</a>
           <p class="date">Feb 23, 2025</p>
