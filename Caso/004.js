@@ -36,10 +36,10 @@ const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML
   
                   <div class="link-item">
           <a href="https://web.archive.org/web/20250227180609/https://www.montedo.com.br/2024/10/31/familia-e-oab-contestam-versao-do-exercito-de-suicidio-de-soldado-em-quartel-do-rio/">morte sd Vitor.html/</a>
-          <p class="date"> Feb 26, 2025 </p>
+          <p class="date"> Feb 27, 2025 </p>
           <hr>
         </div> <div class="link-item" >
-                <a href="https://youtu.be/Gfvo3kMHoUs?si=39SJPFIcAq486Gdv">morte sd Vitor/</a> <p class="date"> Feb 26, 2025 </p> <hr>
+                <a href="https://youtu.be/Gfvo3kMHoUs?si=39SJPFIcAq486Gdv">morte sd Vitor/</a> <p class="date"> Feb 27, 2025 </p> <hr>
                   </div>
   
           <div class="link-item">
