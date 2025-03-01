@@ -34,11 +34,58 @@ function filterItems() {
 // linkScripted 
 const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML = `<div id="links"> 
   
-                  <div class="link-item">
-          <a href="https://web.archive.org/web/20250227180609/https://www.montedo.com.br/2024/10/31/familia-e-oab-contestam-versao-do-exercito-de-suicidio-de-soldado-em-quartel-do-rio/">morte sd Vitor.html/</a>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250301032023/https://www.montedo.com.br/2024/10/31/familia-e-oab-contestam-versao-do-exercito-de-suicidio-de-soldado-em-quartel-do-rio/">suicídio do sd vitor/</a>
+          <p class="date">mar 01, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250301025023/https://www.big-loser.site/M/Fev/incorporacao.txt">incorporação.txt/</a>
+          <p class="date">mar 01, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250301024833/https://www.big-loser.site/M/Fev/decisao_errada.txt">decisao_errada.txt/</a>
+          <p class="date">mar 01, 2025 </p>
+          <hr>
+        </div>
+        
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250301024655/https://www.big-loser.site/M/Fev/internato.txt">internato.txt/</a>
+          <p class="date"> mar 01, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250301024455/https://www.big-loser.site/M/Fev/plantao.txt">plantao.txt/</a>
+          <p class="date">mar 01, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250301024124/https://www.big-loser.site/Caso/106">106 incorporacao/</a>
+          <p class="date"> mar 01, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250301023707/https://www.big-loser.site/Caso/095">095 audio files/</a>
+          <p class="date"> mar 01, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250301022959/https://www.big-loser.site/A/Audio/Mensagem.m4a">Mensagem.m4a/</a>
+          <p class="date">Mar 01, 2025</p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250301002826/https://www.saocarlosagora.com.br/regiao/seis-militares-suspeitos-de-torturar-soldado-sao-expulsos-do-exercito/179370/">tortura de sd/</a>
+          <p class="date"> Mar 01, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250227193616/https://www.sociedademilitar.com.br/2025/02/militares-do-exercito-faz-relatos-chocantes-em-entrevista-sobre-suicidio-na-forca-denuncias-de-humilhacao-perseguicao-e-adoecimento-psicologico.html">relatos chocantes/</a>
           <p class="date"> Feb 27, 2025 </p>
           <hr>
-        </div> <div class="link-item" >
+        </div>
+ <div class="link-item" >
                 <a href="https://youtu.be/Gfvo3kMHoUs?si=39SJPFIcAq486Gdv">morte sd Vitor/</a> <p class="date"> Feb 27, 2025 </p> <hr>
                   </div>
   
@@ -51,9 +98,7 @@ const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML
         <hr>
           </div> <div class="link-item">
           <a href="https://web.archive.org/web/20250227172730/https://www1.folha.uol.com.br/fsp/brasil/fc22069814.htm">suicídio sd Weslley/</a> <p class ="date"> Feb 27, 2025 </p> <hr>
-          </div> <div class = "link-item">
-          <a href="https://web.archive.org/web/20250227170708/https://noticias.r7.com/hora7/morte-explorador-caverna-cabeca-para-baixo-eua-04122023/">John Edward Jones/</a> <p class ="date"> Feb 27, 2025 </p> <hr>
-          </div> <div class = "link-item">
+          </div>  <div class = "link-item">
           <a href="https://web.archive.org/web/20250227090800/https://badmgusm.eb.mil.br/index.php/galeria-dos-eternos-comandantes">badmgusm eternos cmt/</a> <p class ="date"> Feb 27, 2025 </p> <hr>
           </div> <div class = "link-item">
           <a href="https://web.archive.org/web/20250226193728/https://g1.globo.com/rs/rio-grande-do-sul/video/policial-militar-e-flagrado-agredindo-mulher-gravida-com-cassetete-13360745.ghtml">pm agride grávida/</a> <p class ="date"> Feb 26, 2025 </p> <hr>
@@ -369,6 +414,9 @@ const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML
           <p class="date">Nov 17, 2024</p>
           <hr>
         </div>
+        <div class = "link-item">
+          <a href="https://web.archive.org/web/20241112232004/https://noticias.r7.com/hora7/morte-explorador-caverna-cabeca-para-baixo-eua-04122023/">John Edward Jones/</a> <p class ="date">nov 12, 2024 </p> <hr>
+          </div>
         <div class="link-item">
           <a href="https://web.archive.org/web/20241106052953/https://www.big-loser.site/Caso/015">Caso 015/</a>
           <p class="date">Nov 06, 2024</p>
@@ -652,7 +700,7 @@ const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240911205320/https://www.big-loser.site/dark_web/avoid">Caso - 009.html.Risks/</a>
+          <a href="https://web.archive.org/web/20240911205320/https://www.big-loser.site/dark_web/avoid">Caso - 009.html.Risk/</a>
           <p class="date">Sep 11, 2024</p>
           <hr>
         </div>
@@ -753,7 +801,7 @@ const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML
         </div>
         <div class="link-item">
           <a href="https://web.archive.org/web/20240827180851/https://raw.githubusercontent.com/3asyice/Noticias/main/Caso/Conversa%20do%20WhatsApp%20com%20B%20ADM%20GU%20SM%F0%9F%94%B0%F0%9F%87%A7%F0%9F%87%B7.txt">CONVERSATION.TXT/</a>
-          <p class="date">Aug 22, 2024</p>
+          <p class="date">Aug 27, 2024</p>
           <hr>
         </div>
         <div class="link-item">
