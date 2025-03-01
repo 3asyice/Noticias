@@ -23,7 +23,7 @@ body {
   text-align: center;
   font-size: 34px;
   z-index: 1;
-  color: #00FF30;
+  color: #9AFF1D;
   font-family: "OCRA", serif;
   font-weight: 400;
   text-shadow: 2px 2px 5px #000;
@@ -79,7 +79,7 @@ body {
 
 section.save {
   justify-content: center;
-  width:100%;
+  width: 100%;
   text-align: center;
   background-image:
     url(''),
@@ -96,35 +96,39 @@ section.save {
     center;
   background-repeat: no-repeat;
 }
-  #urlInput {
-    width:80%;
-    background:#5F4FA7;
-    color:#EEFF01;
-    font-weight: 800;
-    height:25px;
-    border:none;
-    font-size: 12px;
-    justify-content: center;
-    
-  }
-  #urlInput::placeholder{
-    color:#FF4F59;
-    font-family: 'OCRA', monospace;
-  }
-  #urlInput:focus{
-    outline:none;
-    border:none;
-  }
-  section.save button{
-    color:#0091A6;
-    margin-top:15px;
-    border:none;
-    padding:5px;
-    outline:none;
-    font-size: 16px;
-    border-radius: 5px;
-    background: #AB2E32;
-  }
+
+#urlInput {
+  width: 80%;
+  background-image: linear-gradient(1deg, rgba(97, 86, 155, 1), #6768AB);
+  color: #EEFF01;
+  font-weight: 800;
+  height: 25px;
+  border: none;
+  font-size: 12px;
+  justify-content: center;
+  
+}
+
+#urlInput::placeholder {
+  color:  #FF4F59;
+  font-family: 'OCRA', monospace;
+}
+
+#urlInput:focus {
+  outline: none;
+  border: none;
+}
+
+section.save button {
+  color: #5DC6C2;
+  margin-top: 15px;
+  border: none;
+  padding: 5px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  background-image: linear-gradient(1deg, red, rgba(171, 46, 50, 1), rgba(171, 46, 50, 1), rgba(171, 46, 50, 1), rgba(171, 46, 50, 1));
+}
 
 a {
   color: rgba(18, 255, 0, 1);
@@ -220,11 +224,13 @@ h2 {
     );
   padding-bottom: 10px;
 }
-#save__page{
-  background:transparent;
+
+#save__page {
+  background: transparent;
 }
-#save__page p{
-  color:#E20000;
+
+#save__page p {
+  color: #E20000;
 }
 
 @media (max-width: 600px) {
