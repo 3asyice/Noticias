@@ -33,7 +33,49 @@ function filterItems() {
 
 // linkScripted 
 const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML = `<div id="links"> 
-  
+
+
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250306020933/https://www.big-loser.site/Caso/004">004 archives/</a>
+          <p class="date">mar 06, 2025 </p>
+          <hr>
+        </div> <div class="link-item">
+        <a href="https://web.archive.org/web/20250306013305/https://www.big-loser.site/Caso/080TI.html">curso t.i./</a> <p class="date"> mar 06, 2025 </p> <hr>
+          </div> <div class="link-item">
+          <a href="https://web.archive.org/web/20250306013007/https://www.big-loser.site/Caso/080Aluno.html">Alunos T.I./</a> <p class="date"> mar 06, 2025 </p> <hr>
+          </div> <div class="link-item">
+          <a href="https://web.archive.org/web/20250306012825/https://www.big-loser.site/Caso/080">Gangsters de T.I./</a> <p class="date"> mar 06, 2025 </p> <hr>
+          </div> <div class="link-item">
+          <a href="https://web.archive.org/web/20250303005234/https://www.big-loser.site/M/Fev/plantao.txt">plantao.txt/</a> <p class="date"> mar 03, 2025 </p> <hr>
+          </div> <div class="link-item">
+          <a href="https://web.archive.org/web/20250303005031/https://www.big-loser.site/Caso/004">004 Archives/</a> <p class="date"> mar 03, 2025 </p> <hr>
+          </div>
+
+         <div class="link-item">
+         <a href="https://web.archive.org/web/20250303003949/https://www.big-loser.site/A/Audio/FITA-5,-LADO-B.opus">13:18 Fita 5 Lado B/</a>
+        <p class="date">mar 03, 2025 </p>
+             <hr>
+            </div>
+
+       <div class="link-item">
+          <a href="https://web.archive.org/web/20250302152958/https://www.big-loser.site/A/Audio/Fita-5,-Lado-A.opus">15:03 Fita 5 Lado A/</a>
+            <p class="date">mar 02, 2025 </p>
+                  <hr>
+                </div>
+                  
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250302153444/https://www.big-loser.site/A/Audio/FITA-4,-LADO-B.m4a">7:56 Fita 4 Lado B/</a>
+              <p class="date">mar 02, 2025 </p>
+                 <hr>
+                  </div>
+
+
+    <div class="link-item">
+     <a href="https://web.archive.org/web/20250302152744/https://www.big-loser.site/A/Audio/FITA-4,-LADO-A.opus">5:02 Fita 4 Lado A/</a>
+        <p class="date">mar 02, 2025 </p>
+           <hr>
+           </div>   
+
         <div class="link-item">
           <a href="https://web.archive.org/web/20250301032023/https://www.montedo.com.br/2024/10/31/familia-e-oab-contestam-versao-do-exercito-de-suicidio-de-soldado-em-quartel-do-rio/">suicídio do sd vitor/</a>
           <p class="date">mar 01, 2025 </p>
@@ -53,11 +95,6 @@ const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML
         <div class="link-item">
           <a href="https://web.archive.org/web/20250301024655/https://www.big-loser.site/M/Fev/internato.txt">internato.txt/</a>
           <p class="date"> mar 01, 2025 </p>
-          <hr>
-        </div>
-        <div class="link-item">
-          <a href="https://web.archive.org/web/20250301024455/https://www.big-loser.site/M/Fev/plantao.txt">plantao.txt/</a>
-          <p class="date">mar 01, 2025 </p>
           <hr>
         </div>
         <div class="link-item">
@@ -110,7 +147,7 @@ const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML
           <hr>
         </div>
                 <div class="link-item">
-          <a href="https://web.archive.org/web/20250226185730/https://www.big-loser.site/A/Audio/Audio_001">a dicisao errada/</a>
+          <a href="https://web.archive.org/web/20250226185730/https://www.big-loser.site/A/Audio/Audio_001">a decisão errada/</a>
           <p class="date"> Feb 26, 2025 </p>
           <hr>
         </div>
