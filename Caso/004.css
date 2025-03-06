@@ -18,7 +18,9 @@ body {
   background: #000;
   margin: 0;
 }
-
+div.link-item hr{
+  border:1px solid #8ED18C;
+}
 .h1__title {
   text-align: center;
   font-size: 34px;
