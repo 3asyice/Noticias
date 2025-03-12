@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -29,11 +30,12 @@
       font-size: 100%;
       vertical-align: baseline;
     }
-
+    
     html,
     body {
       overflow-y: scroll;
       margin: 0;
+      background: #f6f6f6;
       color: #121212;
       padding: 0;
       border: 0;
@@ -41,137 +43,217 @@
       font: inherit;
       vertical-align: baseline;
     }
-
+    
     .h1__element {
-      color: #940000;
-      font-size: 24px;
-      text-shadow: 2px 2px 3px#940000;
+      color: #ab0613;
+      font-size: 16px;
+      font-weight: 800;
+      text-shadow: 1px 0px 0px #ab0613;
       text-align: left;
       font-family: 'times new roman', sans-serif;
     }
-
+    
     ::selection {
-      color: #0084FF;
-      background: rgba(68, 193, 94, 1);
+      color: #000;
+      background: #F8E66A;
     }
-
+    
     h1,
     h2,
     h3,
-    p,
     a,
     details,
     summary {
-      margin: 20px;
+      margin-left: 16px;
+      margin-right: 14px;
+      font-size: 24px;
       flex-wrap: wrap;
+      line-height: 24px;
+      font-weight: 500;
     }
-
+    
+    h2 {
+      font-weight: 100;
+      text-shadow: 1px 1px 0px #000;
+    }
+    
+    h3 {
+      font-size: 14px;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      line-height: 16px;
+      font-weight: 500;
+      font-family: serif;
+    }
+    
+    section.link a {
+      font-size: 14px;
+      line-height: 18px;
+      color: #005689;
+      font-family: serif;
+      text-shadow: 1px 0px 0px #005689;
+      font-weight: 500;
+    }
+    
     .author {
-      color: #000000;
-      font-style: italic;
+      text-transform: uppercase;
+      color: #000;
       font-family: 'Impact', Times, sans-serif;
+      font-size: 12px;
       padding: 15px;
       display: flex;
     }
-
+    
     details,
     summary {
       text-decoration: none;
       list-style: none;
       font-size: 12px;
+      line-height: 16px;
       padding: 0;
-      margin-top: 1px;
+      margin-top: 0;
       margin-right: 0;
     }
-
+    
     .link {
       padding: 20px;
-      background: #000000;
+      background: #fff;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
       color: #FFFFFF;
     }
+    
 
-    .first__num {
-      font-size: 1.0rem;
-      font-weight: 900;
+    span.first__letter {
+      font-size: 10em;
+      float: left;
+      margin-right: 1px;
+      line-height: 1;
+      font-weight: 800;
     }
-
-    .first__letter {
-      font-size: 2rem;
-      font-weight: 900;
+    
+    a {
+      padding: 0;
+      margin: 0;
+      color: #c70000;
+      text-decoration-color: #DCDCDC;
     }
-
-    u {
-      text-decoration-color: #AFAFAF;
-    }
-
-    .u__red {
-      color: #D10000;
-    }
-
-    p {
-      text-align: justify;
-      line-height: 1.5rem;
-      hyphens: auto;
+    
+    a u {
       font-size: 14px;
+      color: #c70000;
+      margin: 0;
+      padding: 0;
+      text-decoration-color: #DCDCDC;
     }
-
-    .share__btn {
-      background: transparent;
+    
+    u {
+      text-decoration-color: #DCDCDC;
+      color: #c70000;
+      text-shadow: 1px 0px 0px #c70000;
+    }
+    
+    .blue{
+      color:#0084c6;
+      text-decoration-color: #DCDCDC;
+      text-shadow: 1px 0px 0px #0084c6;
+      
+    }
+    
+   a u.highlight {
+      color:#ff4e36;
       font-size: 18px;
-      border: 1px solid black;
-      width: 105px;
+      background: #ffe500;
+      font-style: italic;
+      line-height: 14px;
+      text-shadow: 1px 0px 0px #ff4e36;
+    }
+    
+    a .u__red {
+      color: #c70000;
+      display: inline-table;
+      font-size: 14px;
+      margin: 0;
+      text-decoration-color: #DCDCDC;
+      padding: 0;
+      text-shadow: 1px 0px 0px #c70000;
+      
+    }
+    
+    p {
+      text-align: left;
+      font-family: serif;
+      color: #121212;
+      line-height: 20px;
+      font-size: 14px;
+      font-weight: 100;
+      margin-left: 18px;
+      margin-top: 15px;
+      margin-right: 20px;
+    }
+    
+    p a {
+      display: inline;
+    }
+    
+    .share__btn {
+      background: #ffe500;
+      font-size: 18px;
+      width: 100px;
       font-size: 35px;
       border-radius: 20px;
     }
-
+    
+    button.share__btn span {
+      color: #000;
+      margin: right;
+    }
+    
     .share__section {
       justify-content: left;
-      padding: 30px;
+      padding: 18px;
       display: flex;
     }
-
+    
     footer {
-      text-align: center;
       color: rgba(255, 255, 255, 1);
       background-color: rgba(0, 0, 0, 1);
       padding: 15px;
       font-size: 12px;
     }
-
-    p a {
-      color: #000000;
-      margin: 0;
+    
+    footer a {
+      color: #90dcff;
+      text-align: left;
+      font-size: 14px;
+      margin-left: 16px;
+      text-decoration: none;
+      font-family: sans-serif;
     }
-
-    .carta {
-      text-align: justify;
-      padding: 20px;
-      border: 1px solid #000000;
-      margin: 10px;
-      color: #000000;
-      background: #FDFFC1;
-      border-radius: 20px;
-      line-height: 1.5rem;
-      border-bottom: 5px solid black;
-      border-right: 5px solid black;
+    
+    footer a span {
+      color: #ff4e36;
     }
+    
+
   </style>
 </head>
 
 <body>
   <header>
     <img src="https://raw.githubusercontent.com/3asyice/CelSoares-----/main/imagens/1723354111209.jpg" alt="carvalho" width="100%" layout shift score=impact fraction * distance fraction height="100%">
-    <h1 class="h1__element">Resultado de sindicância e expulsão</h1>
+    <h1 class="h1__element">Sindicância e expulsão</h1>
   </header>
   <section>
     <h2>Soldado é expulso da Base Administrativa da Guarnição de Santa Maria</h2>
-    <h3>Resultado de sindicância gerou a expulsão de um soldado recruta que prestou serviço obrigatório durante 4 meses</h3>
+    <h3>Resultado de sindicância gerou a expulsão de um soldado recruta que prestou serviço obrigatório durante quatro meses</h3>
   </section>
   <section class="link">
-    <a accesskey="g" onclick="location.href='./assedio'">• Assédio de um militar contra soldado não causou o afastamento do mesmo</a>
+    <a accesskey="g" onclick="location.href='./assedio'">📌 Assédio de um militar contra soldado não causou o afastamento do mesmo</a>
   </section>
   <section class="author">
-    <h4>Author: Anonymous</h4>
+    <h4>Author: <span style="color:#c70000;text-shadow: 1px 0px 0px #c70000;
+      ">Anonymous</span></h4>
     <details>
       <summary>
         Qui 11 Julho 2024
@@ -180,18 +262,18 @@
     </details>
   </section>
   <article>
-    <p><span class="first__letter">O</span> resultado de uma <a href="https://www.big-loser.site/M/Dec/sindicancia.html"><u class="u__red">sindicância</u></a> surpreendeu o soldado <u>Carvalho</u> ao determinar um licenciamento a bem da disciplina. Essa decisão foi ratificada pelo comandante Soares, que decidiu pelo afastamento do militar em decorrência da violação de três normas estabelecidas no Regulamento Disciplinar do Exército. Com base nas conclusões da sindicância, foram impostas ao soldado Carvalho as seguintes transgressões disciplinares:</p>
-    <p><a href="https://www.big-loser.site/Caso/033#9"><u>09 - deixar de cumprir prescrições expressamente estabelecidas no Estatuto dos Militares ou em outras leis e regulamentos, desde que não haja tipificações como crime ou contravenção penal, o pundonor militar ou decoro da classe</u></a>;</p>
+    <p><span class="first__letter">O</span> resultado de uma <a href="https://www.big-loser.site/M/Dec/sindicancia.html"><u class="u__red">sindicância</u></a> surpreendeu o soldado <u class="blue">Carvalho</u> ao determinar um licenciamento a bem da disciplina. Essa decisão foi ratificada pelo comandante Soares, que decidiu pelo afastamento do militar em decorrência da violação de três normas estabelecidas no Regulamento Disciplinar do Exército. Com base nas conclusões da sindicância, foram impostas ao soldado Carvalho as seguintes transgressões disciplinares:</p>
+    <p><a href="https://www.big-loser.site/Caso/033#9"><u class="highlight">09 - deixar de cumprir prescrições expressamente estabelecidas no Estatuto dos Militares ou em outras leis e regulamentos, desde que não haja tipificações como crime ou contravenção penal, o pundonor militar ou decoro da classe</u></a>;</p>
 
-    <p> <a href="https://www.big-loser.site/Caso/033#40"><u>40 - portar-se de maneira inconveniente ou sem compostura</u></a>;</p>
+    <p> <a href="https://www.big-loser.site/Caso/033#40"><u class="highlight">40 - portar-se de maneira inconveniente ou sem compostura</u></a>;</p>
 
-    <p><a href="https://www.big-loser.site/Caso/033#83"><u>83 - deixar de ter consigo documentos de identidade que o identifiquem</u></a>;</p>
+    <p><a href="https://www.big-loser.site/Caso/033#83"><u class="highlight">83 - deixar de ter consigo documentos de identidade que o identifiquem</u></a>;</p>
 
-    <p>O desfecho da sindicância, que culminou no licenciamento do soldado Guilherme de Abreu Carvalho sob a justificativa de "<a href="https://www.jusbrasil.com.br/artigos/a-expulsao-e-o-licenciamento-a-bem-da-disciplina/2655530502"><u class="u__red">a bem da disciplina</u></a>", não apenas ilustra a rigidez do sistema militar, mas também expõe uma preocupante ausência de empatia e entendimento em relação às complexidades emocionais e psicológicas que marcam a vida de um jovem militar. Ao ratificar essa decisão, o comandante <a href="https://www.big-loser.site/Project_Apocalypse/comandante"><u>Soares</u></a> parece ter desconsiderado que, por trás das transgressões disciplinares, existem seres humanos com suas vulnerabilidades, desafios e, em muitas ocasiões, crises pessoais profundas.</p>
+    <p>O desfecho da sindicância, que culminou no licenciamento do soldado Guilherme de Abreu Carvalho sob a justificativa <a href="https://www.jusbrasil.com.br/artigos/a-expulsao-e-o-licenciamento-a-bem-da-disciplina/2655530502"><u class="u__red">a bem da disciplina</u></a>, não apenas ilustra a rigidez do sistema militar, mas também expõe uma preocupante ausência de empatia e entendimento em relação às complexidades emocionais e psicológicas que marcam a vida de um jovem militar. Ao ratificar essa decisão, o comandante <a href="https://www.big-loser.site/Project_Apocalypse/comandante"><u class="blue">Soares</u></a> parece ter desconsiderado que, por trás das transgressões disciplinares, existem seres humanos com suas vulnerabilidades, desafios e, em muitas ocasiões, crises pessoais profundas.</p>
     <p>Ao ratificar essa decisão, o comandante Soares demonstra uma preocupante falta de sensibilidade em relação à realidade emocional dos jovens militares sob seu comando. Sua postura rígida e impessoal ignora completamente a complexidade das circunstâncias que cercam as transgressões disciplinares. Ao optar pela punição em vez da compreensão, Soares falha em reconhecer que, por trás das infrações, existem indivíduos lidando com vulnerabilidades e crises pessoais. Essa abordagem punitiva não só perpetua um ambiente hostil, mas também reflete uma <u class="u__red">liderança incapaz de equilibrar a disciplina</u> necessária com a compaixão que todos os soldados merecem.</p>
 
     <p>As infrações cometidas por Carvalho — não portar documentos de identificação, comportar-se de maneira inconveniente e deixar de cumprir prescrições — embora sérias, não justificam um afastamento tão drástico. Essas ações, resultantes de um momento de descontrole sob influência do álcool, deveriam ser tratadas como um sinal de que o jovem precisava de apoio e orientação, e não como um motivo para condená-lo à marginalização.</p>
-    <p>A entrega de seus pertences ao subtenente <u>Pires</u> simboliza não apenas a <u class="u__red">perda de um título militar</u>, mas também a destruição de inúmeras oportunidades futuras. O licenciamento à bem da disciplina não é apenas uma mancha no histórico militar de Carvalho; é um estigma que o acompanhará por toda a sua vida, limitando suas opções em termos de emprego, educação e cidadania. É inaceitável que, em um sistema que preza por valores como honra, lealdade e camaradagem, a resposta a um erro cometido por um jovem seja a exclusão severa e implacável, ao invés de uma abordagem que busque a reabilitação e o aprendizado.</p>
+    <p>A entrega de seus pertences ao subtenente <u class="blue">Pires</u> simboliza não apenas a <u class="u__red">perda de um título militar</u>, mas também a destruição de inúmeras oportunidades futuras. O licenciamento à bem da disciplina não é apenas uma mancha no histórico militar de Carvalho; é um estigma que o acompanhará por toda a sua vida, limitando suas opções em termos de emprego, educação e cidadania. É inaceitável que, em um sistema que preza por valores como honra, lealdade e camaradagem, a resposta a um erro cometido por um jovem seja a exclusão severa e implacável, ao invés de uma abordagem que busque a reabilitação e o aprendizado.</p>
     <p>Em uma sociedade que clama por empatia e compreensão, a falta de sensibilidade em relação às dificuldades enfrentadas por muitos jovens soldados é uma crítica contundente à cultura militar que ainda persiste em tratar comportamentos indesejados com mão de ferro. O soldado Carvalho, ao final de seu percurso militar, não apenas perdeu sua posição nas fileiras do Exército, mas também a chance de se tornar um cidadão pleno, capaz de contribuir de maneira significativa para a sociedade, a confiança em si mesmo, o respeito de seus colegas e superiores, e a possibilidade de um futuro promissor dentro de uma carreira que poderia ter sido gratificante e enriquecedora. Além disso, ele viu desmoronar suas aspirações, sonhos e a construção de uma identidade sólida, ao mesmo tempo em que enfrentou o estigma social associado ao seu <u class="u__red">afastamento</u>, que o marginaliza e o afasta ainda mais da reintegração à sociedade civil.</p>
   </article>
   <section class="share__section">
@@ -200,7 +282,9 @@
     </button>
   </section>
   <footer>
-    &copy; Direitos reservados.
+    &copy; 2024 - 2025 NEWS!
+    <br>
+    <a href="https://www.big-loser.site">Official Website - <span>www.big-loser.site</span></a>
   </footer>
   </div>
   <script>
