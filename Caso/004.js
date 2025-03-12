@@ -1,5 +1,29 @@
 function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="https://web.archive.org/save/"+encodeURIComponent(e),window.open(e,"_blank")):alert("Por favor, insira uma URL válida.")}function filterItems(){const t=document.querySelector(".search-input").value.toLowerCase();document.querySelectorAll(".link-item").forEach(e=>{var s=e.querySelector("a").textContent.toLowerCase(),a=e.querySelector(".date").textContent.toLowerCase(),i=e.querySelector("hr");s.includes(t)||a.includes(t)?(e.style.display="",i.style.display=""):(e.style.display="none",i.style.display="none")})}const linkstwentytwentyfour=document.getElementById("linksScripted").innerHTML=`<div id="links"> 
-
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250312130354/https://www.big-loser.site/Project_Apocalypse/comandante">everton soares/</a>
+          <p class="date">mar 12, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250312114500/https://www.big-loser.site/Project_Apocalypse/assedio">assédio 6bdainfbld/</a>
+          <p class="date">mar 12, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250312112446/https://www.big-loser.site/Project_Apocalypse/expulso">expulsão do carvalho/</a>
+          <p class="date">mar 12, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250312103040/https://www.big-loser.site/Project_Apocalypse/atropelamento">sd 609 carvalho/</a>
+          <p class="date">mar 12, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250312093156/https://www.big-loser.site/Project_Apocalypse/suicide">614 sd teixeira/</a>
+          <p class="date">mar 12, 2025 </p>
+          <hr>
+        </div>
         <div class="link-item">
           <a href="https://web.archive.org/web/20250310232106/https://designculture.com.br/tipografia-para-web/">tipografia web²/</a>
           <p class="date">mar 10, 2025 </p>
