@@ -1,40 +1,82 @@
-function saveToWayback() {
-  const url = document.getElementById('urlInput').value;
-  if (url) {
-    const waybackUrl = `https://web.archive.org/save/${encodeURIComponent(url)}`;
-    window.open(waybackUrl, '_blank');
-  } else {
-    alert('Por favor, insira uma URL válida.');
-  }
-}
+function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="https://web.archive.org/save/"+encodeURIComponent(e),window.open(e,"_blank")):alert("Por favor, insira uma URL válida.")}function filterItems(){const t=document.querySelector(".search-input").value.toLowerCase();document.querySelectorAll(".link-item").forEach(e=>{var s=e.querySelector("a").textContent.toLowerCase(),a=e.querySelector(".date").textContent.toLowerCase(),i=e.querySelector("hr");s.includes(t)||a.includes(t)?(e.style.display="",i.style.display=""):(e.style.display="none",i.style.display="none")})}const linkstwentytwentyfour=document.getElementById("linksScripted").innerHTML=`<div id="links"> 
 
-function filterItems() {
-  const searchInput = document.querySelector('.search-input').value.toLowerCase();
-  const linkItems = document.querySelectorAll('.link-item');
-  
-  linkItems.forEach(item => {
-    const link = item.querySelector('a');
-    const text = link.textContent.toLowerCase();
-    const date = item.querySelector('.date').textContent.toLowerCase();
-    const hr = item.querySelector('hr');
-    
-    // Verifica se o texto de entrada corresponde ao link ou à data
-    if (text.includes(searchInput) || date.includes(searchInput)) {
-      item.style.display = '';
-      hr.style.display = ''; // Mostrar hr se o item corresponder
-    } else {
-      item.style.display = 'none';
-      hr.style.display = 'none'; // Ocultar hr se o item não corresponder
-    }
-  });
-}
-
-
-
-// linkScripted 
-const linkstwentytwentyfour = document.getElementById('linksScripted').innerHTML = `<div id="links"> 
-
-
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250310232106/https://designculture.com.br/tipografia-para-web/">tipografia web²/</a>
+          <p class="date">mar 10, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250310231418/https://productoversee.com/um-guia-completo-de-tipografia-para-a-web/">tipografia para web/</a>
+          <p class="date">mar 10, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250310231032/https://rockcontent.com/br/blog/tipografia/">conceito tipografia/</a>
+          <p class="date">mar 10, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250310230359/https://www.futuraexpress.com.br/blog/o-que-e-tipografia/">termo tipografia/</a>
+          <p class="date">mar 10, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250310132256/https://www.big-loser.site/Caso/014">014 memorial/</a>
+          <p class="date">mar 10, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250310084236/https://www.change.org/p/stop-army-from-taking-back-signing-bonuses-10-years-later-after-vets-completed-contracts">army steals signing/</a>
+          <p class="date">mar 10, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250310062544/https://www.big-loser.site/Caso/004">004 Archived Media/</a>
+          <p class="date">mar 10, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250310061904/https://www.big-loser.site/A/Audio/FITA-6,-LADO-B.m4a">13:57 Fita 6 Lado b/</a>
+          <p class="date">mar 10, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250308234225/https://www.big-loser.site/M/May/cfc_2019_motivacao.mkv">29° bib cfc 2019.mkv/</a>
+          <p class="date">mar 08, 2025 </p>
+          <hr>
+        </div>
+        
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250308185226/https://www.big-loser.site/M/May/cfc_2019_motivation.mp4">29° bib cfc 2019.mp4/</a>
+          <p class="date">mar 08, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250308185734/https://www.big-loser.site/Caso/004">004 Archived media/</a>
+          <p class="date">mar 08, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250308175311/https://veja.abril.com.br/mundo/mais-de-70-mil-russos-morreram-lutando-na-ucrania-diz-levantamento">70 mil russos mortos/</a>
+          <p class="date">mar 08, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250308174549/https://www.big-loser.site/Project_Apocalypse/suicide">R.I.P 614 Teixeira/</a>
+          <p class="date">mar 08, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250307155847/https://www.big-loser.site/A/Audio/FITA-6,-LADO-A.opus">21:06 Fita 6 Lado A/</a>
+          <p class="date">mar 07, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250307162017/https://www.big-loser.site/Caso/img/helloNeo.gif">hello Neo.gif/</a>
+          <p class="date">mar 07, 2025 </p>
+          <hr>
+        </div>
+        
         <div class="link-item">
           <a href="https://web.archive.org/web/20250306020933/https://www.big-loser.site/Caso/004">004 archives/</a>
           <p class="date">mar 06, 2025 </p>
