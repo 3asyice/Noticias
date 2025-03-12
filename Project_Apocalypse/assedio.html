@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -29,11 +30,12 @@
       font-size: 100%;
       vertical-align: baseline;
     }
-
+    
     html,
     body {
       overflow-y: scroll;
       margin: 0;
+      background: #f6f6f6;
       color: #121212;
       padding: 0;
       border: 0;
@@ -41,119 +43,174 @@
       font: inherit;
       vertical-align: baseline;
     }
-
+    
     .h1__element {
-      color: #940000;
-      font-size: 24px;
-      text-shadow: 2px 2px 3px#940000;
+      color: #ab0613;
+      font-size: 16px;
+      font-weight: 800;
+      text-shadow: 1px 0px 0px #ab0613;
       text-align: left;
       font-family: 'times new roman', sans-serif;
     }
-
+    
     ::selection {
-      color: #0084FF;
-      background: rgba(68, 193, 94, 1);
+      color: #000;
+      background: #F8E66A;
     }
-
+    
     h1,
     h2,
     h3,
-    p,
     a,
     details,
     summary {
-      margin: 20px;
+      margin-left: 16px;
+      margin-right: 14px;
+      font-size: 24px;
       flex-wrap: wrap;
+      line-height: 24px;
+      font-weight: 500;
     }
-
+    
+    h2 {
+      font-weight: 100;
+      text-shadow: 1px 1px 0px #000;
+    }
+    
+    h3 {
+      font-size: 14px;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      line-height: 16px;
+      font-weight: 500;
+      font-family: serif;
+    }
+    
+    section.link a {
+      font-size: 14px;
+      line-height: 18px;
+      color: #005689;
+      font-family: serif;
+      text-shadow: 1px 0px 0px #005689;
+      font-weight: 500;
+    }
+    
     .author {
-      color: #000000;
-      font-style: italic;
+      text-transform: uppercase;
+      color: #000;
       font-family: 'Impact', Times, sans-serif;
+      font-size: 12px;
       padding: 15px;
       display: flex;
     }
-
+    
     details,
     summary {
       text-decoration: none;
       list-style: none;
       font-size: 12px;
+      line-height: 16px;
       padding: 0;
-      margin-top: 1px;
+      margin-top: 0;
       margin-right: 0;
     }
-
+    
     .link {
       padding: 20px;
-      background: #000000;
+      background: #fff;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
       color: #FFFFFF;
     }
-
+    
     .first__num {
       font-size: 1.0rem;
       font-weight: 900;
     }
-
-    .first__letter {
-      font-size: 2rem;
-      font-weight: 900;
+    
+    span.first__letter {
+      font-size:10em;
+      float: left;
+      margin-right:1px;
+      line-height:1;
+      font-weight:800;
     }
-
+    
     u {
-      text-decoration-color: #AFAFAF;
+      text-decoration-color: #DCDCDC;
     }
-
+    a{
+      margin:0;
+      text-decoration: none;
+      padding:0;
+    }
     .u__red {
-      color: #D10000;
-    }
-
-    p {
-      text-align: justify;
-      line-height: 1.5rem;
-      hyphens: auto;
+      color: #c70000;
       font-size: 14px;
+      display:inline;
+      text-shadow: 1px 0px 0px #c70000;
+      
     }
-
+    u.blue{
+      color:#0084c6;
+      font-size: 14px;
+      text-shadow: 1px 0px 0px #0084c6;
+      
+    }
+    strong{
+      color:#f1f8fc;
+      background:#121212;
+      padding:3px;
+      text-shadow: 1px 0px 0px #f1f8fc;
+      
+    }
+    p {
+      text-align: left;
+      font-family: serif;
+      color: #121212;
+      line-height: 20px;
+      font-size: 14px;
+      font-weight: 100;
+      margin-left: 18px;
+      margin-top: 15px;
+      margin-right: 20px;
+    }
+    
     .share__btn {
-      background: transparent;
+      background: #ffe500;
       font-size: 18px;
-      border: 1px solid black;
-      width: 105px;
+      width: 100px;
       font-size: 35px;
       border-radius: 20px;
     }
-
+    
+    button.share__btn span {
+      color: #000;
+      margin: right;
+    }
+    
     .share__section {
       justify-content: left;
-      padding: 30px;
+      padding: 18px;
       display: flex;
     }
-
+    
     footer {
-      text-align: center;
       color: rgba(255, 255, 255, 1);
       background-color: rgba(0, 0, 0, 1);
       padding: 15px;
       font-size: 12px;
     }
-
-    p a {
-      color: #000000;
-      margin: 0;
+    footer a{
+      color:#90dcff;
+      text-align: left;
+      font-size: 14px;
+      margin-left: 16px;
+      text-decoration:none;
+      font-family: sans-serif;
     }
-
-    .carta {
-      text-align: justify;
-      padding: 20px;
-      border: 1px solid #000000;
-      margin: 10px;
-      color: #000000;
-      background: #FDFFC1;
-      border-radius: 20px;
-      line-height: 1.5rem;
-      border-bottom: 5px solid black;
-      border-right: 5px solid black;
+    footer a span{
+      color:#ff4e36;
     }
   </style>
 </head>
@@ -168,20 +225,20 @@
     <h3>Ao acordar no meio da noite o militar presenciou assédio por parte de outro militar dentro do alojamento do quartel</h3>
   </section>
   <section class="link">
-    <a accesskey="g" onclick="location.href='./comandante'">• Comandante da Base Administrativa da Guarnição de Santa Maria</a>
+    <a accesskey="g" onclick="location.href='./comandante'">📌 Comandante da Base Administrativa da Guarnição de Santa Maria</a>
   </section>
   <section class="author">
-    <h4>Author: Anonymous</h4>
+    <h4>Author: <span style="color:#c70000;">Anonymous</span></h4>
     <details>
       <summary>
         Sáb 02 Novembro 2024
       </summary>
-      Última modificação: Dom 11 Ago 2024 04:30
+      Última modificação: QUA 12 Mar 2025 08:40
     </details>
   </section>
   <article>
     <p><span class="first__letter">D</span>urante a noite, um incidente alarmante de <a href="https://tst.jus.br/assedio-sexual"><u class="u__red">assédio sexual</u></a> ocorreu no alojamento militar, envolvendo um recruta, que embriagado após voltar de uma festa, decidiu provocar tumulto entre seus colegas. De acordo com relatos internos, o militar aguardou que o <u>soldado número 77</u> estivesse profundamente adormecido para executar o ato de assédio. Em um momento de total desrespeito e falta de consciência, <strong>o recruta colocou seu pênis na boca do jovem que estava dormindo</strong>. Em respeito à privacidade e dignidade dos envolvidos, não divulgaremos os nomes dos participantes desse lamentável episódio.</p>
-    <p>Diante dessa situação alarmante, o comandante da <a href="https://6bdainfbld.eb.mil.br/"><u class="u__red">6ª Brigada de Infantaria Blindada</u></a> se manifestou, afirmando que tomaria medidas para corrigir o comportamento inadequado dos militares e prevenir que episódios semelhantes viessem a ocorrer novamente. No entanto, a decisão que tomou em relação às consequências foi surpreendente e, em muitos aspectos, controversa: em vez de responsabilizar diretamente o autor do assédio, optou por aplicar uma punição coletiva a todos os soldados, como uma forma de represália pelo ato inaceitável cometido por um único indivíduo. Essa abordagem levanta sérias discussões sobre a noção de responsabilidade individual versus coletiva dentro das forças armadas.</p>
+    <p>Diante dessa situação alarmante, o comandante da <a href="https://6bdainfbld.eb.mil.br/"><u class="blue">6ª Brigada de Infantaria Blindada</u></a> se manifestou, afirmando que tomaria medidas para corrigir o comportamento inadequado dos militares e prevenir que episódios semelhantes viessem a ocorrer novamente. No entanto, a decisão que tomou em relação às consequências foi surpreendente e, em muitos aspectos, controversa: em vez de responsabilizar diretamente o autor do assédio, optou por aplicar uma punição coletiva a todos os soldados, como uma forma de represália pelo ato inaceitável cometido por um único indivíduo. Essa abordagem levanta sérias discussões sobre a noção de responsabilidade individual versus coletiva dentro das forças armadas.</p>
 
     <p>A medida adotada pelo comandante consistiu em <u class="u__red">aumentar o número de postos de serviço no alojamento militar</u>. Normalmente, existiam apenas três postos de serviço, mas, devido à conduta reprochável de um soldado, esse número foi elevado para impressionantes 12 postos de plantão. Essa alteração na escala de serviço foi implementada de maneira rigorosa, impondo uma carga de trabalho excessiva aos demais militares, que agora têm que arcar com essas responsabilidades adicionais.</p>
 
@@ -195,7 +252,9 @@
     </button>
   </section>
   <footer>
-    &copy; Direitos reservados.
+    &copy; 2024 - 2025 NEWS!
+    <br>
+    <a href="https://www.big-loser.site">Official Website - <span>www.big-loser.site</span></a>
   </footer>
   </div>
   <script>
