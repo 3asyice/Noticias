@@ -1,11 +1,16 @@
 function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="https://web.archive.org/save/"+encodeURIComponent(e),window.open(e,"_blank")):alert("Por favor, insira uma URL válida.")}function filterItems(){const t=document.querySelector(".search-input").value.toLowerCase();document.querySelectorAll(".link-item").forEach(e=>{var s=e.querySelector("a").textContent.toLowerCase(),a=e.querySelector(".date").textContent.toLowerCase(),i=e.querySelector("hr");s.includes(t)||a.includes(t)?(e.style.display="",i.style.display=""):(e.style.display="none",i.style.display="none")})}const linkstwentytwentyfour=document.getElementById("linksScripted").innerHTML=`<div id="links"> 
         <div class="link-item">
+          <a href="https://web.archive.org/web/20250318124659/https://www.big-loser.site/A/Audio/FITA-7,-LADO-B.opus">10:58 Fita 7 Lado B/</a>
+          <p class="date">mar 18, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
           <a href="https://web.archive.org/web/20250315131320/https://www.big-loser.site/A/Audio/FITA-7,-LADO-A.opus">8:12 Fita 7 Lado A/</a>
           <p class="date">mar 15, 2025 </p>
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250313093351/https://www.big-loser.site/Caso/070">609 Efeito Borboleta/</a>
+          <a href="https://web.archive.org/web/20250313093351/https://www.big-loser.site/Caso/070">609 butterfly/</a>
           <p class="date">mar 13, 2025 </p>
           <hr>
         </div>
@@ -30,7 +35,7 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250312112446/https://www.big-loser.site/Project_Apocalypse/expulso">expulsão do carvalho/</a>
+          <a href="https://web.archive.org/web/20250312112446/https://www.big-loser.site/Project_Apocalypse/expulso">expulsão - carvalho/</a>
           <p class="date">mar 12, 2025 </p>
           <hr>
         </div>
@@ -85,13 +90,13 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250308234225/https://www.big-loser.site/M/May/cfc_2019_motivacao.mkv">29° bib cfc 2019.mkv/</a>
+          <a href="https://web.archive.org/web/20250308234225/https://www.big-loser.site/M/May/cfc_2019_motivacao.mkv">29° bib²⁰¹⁹cfc.mkv/</a>
           <p class="date">mar 08, 2025 </p>
           <hr>
         </div>
         
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250308185226/https://www.big-loser.site/M/May/cfc_2019_motivation.mp4">29° bib cfc 2019.mp4/</a>
+          <a href="https://web.archive.org/web/20250308185226/https://www.big-loser.site/M/May/cfc_2019_motivation.mp4">29° bib²⁰¹⁹cfc.mp4/</a>
           <p class="date">mar 08, 2025 </p>
           <hr>
         </div>
@@ -101,7 +106,7 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250308175311/https://veja.abril.com.br/mundo/mais-de-70-mil-russos-morreram-lutando-na-ucrania-diz-levantamento">70 mil russos mortos/</a>
+          <a href="https://web.archive.org/web/20250308175311/https://veja.abril.com.br/mundo/mais-de-70-mil-russos-morreram-lutando-na-ucrania-diz-levantamento">70mil russos mortos/</a>
           <p class="date">mar 08, 2025 </p>
           <hr>
         </div>
@@ -163,7 +168,7 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
            </div>   
 
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250301032023/https://www.montedo.com.br/2024/10/31/familia-e-oab-contestam-versao-do-exercito-de-suicidio-de-soldado-em-quartel-do-rio/">suicídio do sd vitor/</a>
+          <a href="https://web.archive.org/web/20250301032023/https://www.montedo.com.br/2024/10/31/familia-e-oab-contestam-versao-do-exercito-de-suicidio-de-soldado-em-quartel-do-rio/">suicídio sd vitor/</a>
           <p class="date">mar 01, 2025 </p>
           <hr>
         </div>
@@ -222,7 +227,7 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           </div> <div class="link-item">
           <a href="https://web.archive.org/web/20250227172730/https://www1.folha.uol.com.br/fsp/brasil/fc22069814.htm">suicídio sd Weslley/</a> <p class ="date"> Feb 27, 2025 </p> <hr>
           </div>  <div class = "link-item">
-          <a href="https://web.archive.org/web/20250227090800/https://badmgusm.eb.mil.br/index.php/galeria-dos-eternos-comandantes">badmgusm eternos cmt/</a> <p class ="date"> Feb 27, 2025 </p> <hr>
+          <a href="https://web.archive.org/web/20250227090800/https://badmgusm.eb.mil.br/index.php/galeria-dos-eternos-comandantes">badmgusm last cmt/</a> <p class ="date"> Feb 27, 2025 </p> <hr>
           </div> <div class = "link-item">
           <a href="https://web.archive.org/web/20250226193728/https://g1.globo.com/rs/rio-grande-do-sul/video/policial-militar-e-flagrado-agredindo-mulher-gravida-com-cassetete-13360745.ghtml">pm agride grávida/</a> <p class ="date"> Feb 26, 2025 </p> <hr>
           </div>
@@ -249,7 +254,7 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250226055552/https://www.big-loser.site/Caso/053">053 nota falecimento/</a>
+          <a href="https://web.archive.org/web/20250226055552/https://www.big-loser.site/Caso/053">053 falecimento/</a>
           <p class="date"> Feb 26, 2025 </p>
           <hr>
         </div>
@@ -268,9 +273,9 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
  <div class = "link-item">
           <a href="https://web.archive.org/web/20250221180205/https://www.big-loser.site/">big-loser.site/</a> <p class = "date"> Feb 21, 2025 </p> <hr>
           </div> <div class = "link-item">
-          <a href="https://web.archive.org/web/20250220055600/https://www.big-loser.site/A/Feb/soldiers%20salary%20.pdf">soldiers salary.pdf/</a> <p class = "date"> Feb 20, 2025 </p> <hr>
+          <a href="https://web.archive.org/web/20250220055600/https://www.big-loser.site/A/Feb/soldiers%20salary%20.pdf">sd salary.pdf/</a> <p class = "date"> Feb 20, 2025 </p> <hr>
           </div> <div class = "link-item">
-          <a href="https://web.archive.org/web/20250220013715/https://www.big-loser.site/BADMGUSM.xlsx">soldiers salary.xlsx/</a> <p class = "date"> Feb 20, 2025 </p> <hr>
+          <a href="https://web.archive.org/web/20250220013715/https://www.big-loser.site/BADMGUSM.xlsx">sd salary.xlsx/</a> <p class = "date"> Feb 20, 2025 </p> <hr>
           </div>
            <div class="link-item">
            <a href="https://docs.google.com/document/d/1Efy3SJXIWxvfZS-2DAayph6DKpgwggCY/edit?usp=drivesdk&ouid=110305946732979825489&rtpof=true&sd=true">a recruit's story/</a>
@@ -289,12 +294,12 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
          <hr>
        </div>
        <div class="link-item">
-          <a href="https://web.archive.org/web/20250216164225/https://www.big-loser.site/A/Audio/FITA-3,-LADO-B.opus">10:38 fita 3, lado b/</a>
+          <a href="https://web.archive.org/web/20250216164225/https://www.big-loser.site/A/Audio/FITA-3,-LADO-B.opus">10:38 fita 3 lado b/</a>
           <p class="date">Feb 16, 2025</p>
           <hr>
         </div> 
        <div class="link-item">
-          <a href="https://web.archive.org/web/20250216163930/https://www.big-loser.site/A/Audio/FITA-3,-LADO-A.opus">14:43 fita 3, lado a/</a>
+          <a href="https://web.archive.org/web/20250216163930/https://www.big-loser.site/A/Audio/FITA-3,-LADO-A.opus">14:43 fita 3 lado a/</a>
           <p class="date">Feb 16, 2025</p>
           <hr>
         </div> 
@@ -326,7 +331,7 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
         </div>
         
         <div class="link-item">
-          <a href="http://g7ejphhubv5idbbu3hb3wawrs5adw7tkx7yjabnf65xtzztgg4hcsqqd.onion/">official defcon site/</a>
+          <a href="http://g7ejphhubv5idbbu3hb3wawrs5adw7tkx7yjabnf65xtzztgg4hcsqqd.onion/">ofc defcon site/</a>
           <p class="date">Feb 11, 2025</p>
           <hr>
         </div>
@@ -391,7 +396,7 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="http://web.archive.org/web/20250109232651/https://www.big-loser.site/Project_Apocalypse/expulso">expulsão de Carvalho/</a>
+          <a href="http://web.archive.org/web/20250109232651/https://www.big-loser.site/Project_Apocalypse/expulso">expulsão Carvalho/</a>
           <p class="date">Jan 09, 2025</p>
           <hr>
         </div>
@@ -421,7 +426,7 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20250103013604/http://radaraltovale.com/noticia/noticias/soldado-de-fraiburgo-comete-suicidio-no-quartel-do-exercito-e-deixa-carta-de-despedida-51071">Wennigkamp's suicide/</a>
+          <a href="https://web.archive.org/web/20250103013604/http://radaraltovale.com/noticia/noticias/soldado-de-fraiburgo-comete-suicidio-no-quartel-do-exercito-e-deixa-carta-de-despedida-51071">Wennigkamp suicide/</a>
           <p class="date">Jan 03, 2025</p>
           <hr>
         </div>
@@ -637,7 +642,7 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="./badmgusm.html">BADMGUSM SAVED LINKS/</a>
+          <a href="./badmgusm.html">BADMGUSM LINKS/</a>
           <p class="date">Sep 15, 2024</p>
           <hr>
         </div>
@@ -662,12 +667,12 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240915195559/https://www.big-loser.site/Project_Apocalypse/expulso">big-loser - expulsão/</a>
+          <a href="https://web.archive.org/web/20240915195559/https://www.big-loser.site/Project_Apocalypse/expulso">big-loser expulsão/</a>
           <p class="date">Sep 15, 2024</p>
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240915195338/https://www.big-loser.site/Project_Apocalypse/atropelamento">big-loser - acidente/</a>
+          <a href="https://web.archive.org/web/20240915195338/https://www.big-loser.site/Project_Apocalypse/atropelamento">big-loser acidente/</a>
           <p class="date">Sep 15, 2024</p>
           <hr>
         </div>
@@ -677,7 +682,7 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240915130525/https://3asyice.github.io/big-loser.site/">big-loser.site teste/</a>
+          <a href="https://web.archive.org/web/20240915130525/https://3asyice.github.io/big-loser.site/">big-loser.site test/</a>
           <p class="date">Sep 15, 2024</p>
           <hr>
         </div>
@@ -823,12 +828,12 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240911205320/https://www.big-loser.site/dark_web/avoid">Caso - 009.html.Risk/</a>
+          <a href="https://web.archive.org/web/20240911205320/https://www.big-loser.site/dark_web/avoid">Caso - 009 Risk/</a>
           <p class="date">Sep 11, 2024</p>
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240911205248/https://www.big-loser.site/dark_web/dados">Caso - 009.html.Data/</a>
+          <a href="https://web.archive.org/web/20240911205248/https://www.big-loser.site/dark_web/dados">Caso - 009 Data/</a>
           <p class="date">Sep 11, 2024</p>
           <hr>
         </div>
@@ -948,7 +953,7 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240809042446/https://3asyice.github.io/military/">Diario de um Militar/</a>
+          <a href="https://web.archive.org/web/20240809042446/https://3asyice.github.io/military/">Diario Militar/</a>
           <p class="date">Aug 09, 2024</p>
           <hr>
         </div>
@@ -968,12 +973,12 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="https://web.archive.org/web/20240806234351/https://3asyice.github.io/Regulamento-Disciplinar-do-Ex-rcito-Brasileiro/">Artigo do RDE origem/</a>
+          <a href="https://web.archive.org/web/20240806234351/https://3asyice.github.io/Regulamento-Disciplinar-do-Ex-rcito-Brasileiro/">Artigo do RDE/</a>
           <p class="date">Aug 06, 2024</p>
           <hr>
         </div>
         <div class="link-item">
-          <a href="http://web.archive.org/web/20240806234350/https://3asyice.github.io/military/">Diario de um Militar/</a>
+          <a href="http://web.archive.org/web/20240806234350/https://3asyice.github.io/military/">Diario Militar/</a>
           <p class="date">Aug 06, 2024</p>
           <hr>
         </div>
@@ -1053,7 +1058,7 @@ function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="h
           <hr>
         </div>
         <div class="link-item">
-          <a href="http://web.archive.org/web/20240715034331/https://3asyice.github.io/military/">Diario de um Militar/</a>
+          <a href="http://web.archive.org/web/20240715034331/https://3asyice.github.io/military/">Diario Militar/</a>
           <p class="date">Jul 15, 2024</p>
           <hr>
         </div>
