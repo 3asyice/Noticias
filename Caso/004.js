@@ -1,4 +1,15 @@
-function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="https://web.archive.org/save/"+encodeURIComponent(e),window.open(e,"_blank")):alert("Por favor, insira uma URL válida.")}function filterItems(){const t=document.querySelector(".search-input").value.toLowerCase();document.querySelectorAll(".link-item").forEach(e=>{var s=e.querySelector("a").textContent.toLowerCase(),a=e.querySelector(".date").textContent.toLowerCase(),i=e.querySelector("hr");s.includes(t)||a.includes(t)?(e.style.display="",i.style.display=""):(e.style.display="none",i.style.display="none")})}const linkstwentytwentyfour=document.getElementById("linksScripted").innerHTML=`<div id="links"> 
+
+function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="https://web.archive.org/save/"+encodeURIComponent(e),window.open(e,"_blank")):alert("Por favor, insira uma URL válida.")}function filterItems(){const t=document.querySelector(".search-input").value.toLowerCase();document.querySelectorAll(".link-item").forEach(e=>{var s=e.querySelector("a").textContent.toLowerCase(),a=e.querySelector(".date").textContent.toLowerCase(),i=e.querySelector("hr");s.includes(t)||a.includes(t)?(e.style.display="",i.style.display=""):(e.style.display="none",i.style.display="none")})}const linkstwentytwentyfour=document.getElementById("linksScripted").innerHTML=`<div id="links">
+        <div class="link-item">
+          <a style="text-transform:uppercase;text-shadow:1px 0 0 rgba(18, 255, 0, 1);" href="https://web.archive.org/web/20250320094119/https://www.big-loser.site/Caso/100">BACK TO BLACK/</a>
+          <p class="date">mar 20, 2025 </p>
+          <hr>
+        </div>
+        <div class="link-item">
+          <a href="https://web.archive.org/web/20250319102007/https://www.big-loser.site/Caso/004">004 Archived Media/</a>
+          <p class="date">mar 19, 2025 </p>
+          <hr>
+        </div>
         <div class="link-item">
           <a href="https://web.archive.org/web/20250318124659/https://www.big-loser.site/A/Audio/FITA-7,-LADO-B.opus">10:58 Fita 7 Lado B/</a>
           <p class="date">mar 18, 2025 </p>
