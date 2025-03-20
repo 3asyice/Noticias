@@ -238,6 +238,12 @@ h2 {
     color: #fff;
   }
 }
+section.logo{
+  text-align: center;
+  justify-items: center;
+  padding-top: 15px;
+  background: repeating-linear-gradient(to bottom, #1f1b1c, #1f1b1c 1px, #000 1px, #000 3px);
+}
 
 @media (min-width:601px) and (max-width:1024px) {
   a {
