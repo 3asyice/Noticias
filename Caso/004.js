@@ -1,5 +1,26 @@
+function saveToWayback() {
+  var e = document.getElementById("urlInput").value;
+  e ? (e = "https://web.archive.org/save/" + encodeURIComponent(e), window.open(e, "_blank")) : alert("Por favor, insira uma URL válida.")
+}
 
-function saveToWayback(){var e=document.getElementById("urlInput").value;e?(e="https://web.archive.org/save/"+encodeURIComponent(e),window.open(e,"_blank")):alert("Por favor, insira uma URL válida.")}function filterItems(){const t=document.querySelector(".search-input").value.toLowerCase();document.querySelectorAll(".link-item").forEach(e=>{var s=e.querySelector("a").textContent.toLowerCase(),a=e.querySelector(".date").textContent.toLowerCase(),i=e.querySelector("hr");s.includes(t)||a.includes(t)?(e.style.display="",i.style.display=""):(e.style.display="none",i.style.display="none")})}const linkstwentytwentyfour=document.getElementById("linksScripted").innerHTML=`<div id="links">
+function filterItems() {
+  const t = document.querySelector(".search-input").value.toLowerCase();
+  document.querySelectorAll(".link-item").forEach(e => {
+    var s = e.querySelector("a").textContent.toLowerCase(),
+      a = e.querySelector(".date").textContent.toLowerCase(),
+      i = e.querySelector("hr");
+    s.includes(t) || a.includes(t) ? (e.style.display = "", i.style.display = "") : (e.style.display = "none", i.style.display = "none")
+  })
+}
+const linkstwentytwentyfour = document.getElementById("linksScripted").innerHTML = `<div id="links">
+<div class="link-item">
+             <a href="https://web.archive.org/web/20250325075854/https://www.big-loser.site/A/Audio/FITA-9,-LADO-A.opus">2:03 Fita 9 Lado a/</a> <p class="date"> mar 25, 2025 </p> <hr> </div> <div class="link-item">
+<a href="https://web.archive.org/web/20250325075425/https://www.big-loser.site/A/Audio/FITA-8,-LADO-B.opus">0:59 Fita 8 Lado b/</a> <p class="date"> mar 25, 2025 </p> <hr> </div>
+  <div class="link-item">
+          <a href="https://web.archive.org/web/20250325075007/https://www.big-loser.site/A/Audio/FITA-8,-LADO-A.opus">1:59 Fita 8 Lado a/</a>
+          <p class="date">mar 25, 2025 </p>
+          <hr>
+        </div>
         <div class="link-item">
           <a style="text-transform:uppercase;text-shadow:1px 0 0 rgba(18, 255, 0, 1);" href="https://web.archive.org/web/20250320094119/https://www.big-loser.site/Caso/100">BACK TO BLACK/</a>
           <p class="date">mar 20, 2025 </p>
