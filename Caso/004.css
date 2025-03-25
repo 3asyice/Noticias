@@ -127,6 +127,7 @@ a {
 
 a:hover {
   color: rgba(207, 32, 32, 1);
+  text-shadow: 1px 0 0 rgba(18, 255, 0, 1);
   padding: 8px
 }
 
@@ -158,8 +159,9 @@ a {
 }
 
 #links {
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 0%;
+  margin-right: 0%;
+  width:100%;
   border-radius: 10px;
   background: url(https://www.big-loser.site/Caso/img/helloNeo.gif) center/cover no-repeat fixed
 }
@@ -177,7 +179,7 @@ div.tape a {
   line-height: 11px;
   margin:0 2px 0 2px;
   font-family: OCRA, monospace;
-  text-transform: initial;
+  text-transform: lowercase;
 }
 
 div.tape a.listen{
@@ -236,6 +238,7 @@ h2 {
   
   .date:hover {
     color: #fff;
+    text-shadow: 1px 0 0 rgba(18, 255, 0, 1);
   }
 }
 section.logo{
@@ -257,6 +260,7 @@ section.logo{
   
   a:hover {
     color: #fff;
+    text-shadow: 1px 0 0 rgba(18, 255, 0, 1);
   }
   
   div.tape a {
@@ -274,6 +278,7 @@ section.logo{
   
   .date:hover {
     color: #fff;
+    text-shadow: 1px 0 0 rgba(18, 255, 0, 1);
   }
 }
 
@@ -305,7 +310,8 @@ section.logo{
   }
   
   .date:hover {
-    color: #fff
+    color: #fff;
+    text-shadow: 1px 0 0 rgba(18, 255, 0, 1);
   }
 }
 
