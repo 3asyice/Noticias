@@ -13,6 +13,17 @@ function filterItems() {
   })
 }
 const linkstwentytwentyfour = document.getElementById("linksScripted").innerHTML = `<div id="links">
+
+<div class="link-item">
+             <a href="https://web.archive.org/web/20250328081437/https://aventurasnahistoria.com.br/noticias/reportagem/perdida-no-oceano-trajetoria-de-bahia-bakari-unica-sobrevivente-de-um-terrivel-acidente-de-aviao.phtml"> Bahia Bakari_survivor/</a><p class="date"> mar 28, 2025 </p> <hr> </div>
+<div class="link-item">
+             <a href="https://web.archive.org/web/20250328075757/https://www.cnnbrasil.com.br/nacional/sudeste/sp/queda-de-aviao-relembre-cronologia-do-acidente-da-voepass-em-vinhedo-sp/">Voepass 2283/</a> <p class="date"> mar 28, 2025 </p> <hr> </div>
+<div class="link-item">
+             <a href="https://web.archive.org/web/20250328075304/https://cgn.inf.br/noticia/1773188/mae-de-vitima-do-voo-2283-critica-voepass-e-como-se-eles-matassem-nossos-familiares-outra-vez"> critica Voepass/</a><p class="date"> mar 28, 2025 </p> <hr> </div>
+<div class="link-item">
+             <a href="https://web.archive.org/web/20250328072720/https://manchetempo.uff.br/?p=2941">242 mortes Boate Kiss/</a> <p class="date"> mar 28, 2025 </p> <hr> </div>
+<div class="link-item">
+             <a href="https://web.archive.org/web/20250328072137/https://www.bbc.com/portuguese/articles/c89y43gvdl4o">503 dead gran circus/</a> <p class="date"> mar 28, 2025 </p> <hr> </div>
 <div class="link-item">
              <a href="https://web.archive.org/web/20250325075854/https://www.big-loser.site/A/Audio/FITA-9,-LADO-A.opus">2:03 Fita 9 Lado a/</a> <p class="date"> mar 25, 2025 </p> <hr> </div> <div class="link-item">
 <a href="https://web.archive.org/web/20250325075425/https://www.big-loser.site/A/Audio/FITA-8,-LADO-B.opus">0:59 Fita 8 Lado b/</a> <p class="date"> mar 25, 2025 </p> <hr> </div>
