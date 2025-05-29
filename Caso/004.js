@@ -15,8 +15,25 @@ function filterItems() {
 const linkstwentytwentyfour = document.getElementById("linksScripted").innerHTML = `<div id="links">
 
 
+
+
+
 <div class="link-item">
-<a href="https://youtu.be/qZhD2cU0UOo?si=VYIdJaeVG6HnAjkp"/>YouTube Link/</a><p class="date">may 29, 2025 </p> <hr> </div>
+<a href="https://web.archive.org/web/20250529172715/https://www.big-loser.site/Caso/001"/>Caso 001/</a><p class="date">may 29, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250529172004/https://3asyice.github.io/Tapes/script/ep/11.html"/>Ep 11: A Expulsão/</a><p class="date">may 29, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250529171505/https://3asyice.github.io/Tapes/script/ep/10.html"/>Ep 10: A Alteração/</a><p class="date">may 29, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250529170535/https://3asyice.github.io/Tapes/script/ep/8.html"/>Ep 8: Incorporação/</a><p class="date">may 29, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250529165827/https://3asyice.github.io/Tapes/script/ep/7.html"/>Ep 7: O Campo/</a><p class="date">may 29, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://youtu.be/qZhD2cU0UOo?si=OJ_AZy7NqLPBwtb-"/>YouTube Link/</a><p class="date">may 29, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250520114123/https://3asyice.github.io/SixOhNine/script/sd/602.html"/>602 Weber/</a><p class="date">may 20, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250520113858/https://3asyice.github.io/SixOhNine/script/sd/601.html"/>601 Tassinari/</a><p class="date">may 20, 2025 </p> <hr> </div>
 <div class="link-item">
 <a href="https://web.archive.org/web/20250511220143/https://www.big-loser.site/M/Maio/everton-conceicao-soares-profile.mp4"/>everton soares.mp4/</a><p class="date">may 11, 2025 </p> <hr> </div>
 <div class="link-item">
