@@ -18,6 +18,42 @@ const linkstwentytwentyfour = document.getElementById("linksScripted").innerHTML
 
 
 
+
+
+
+
+<div class="link-item">
+<a style="text-transform:uppercase;font-weight:900;" href="https://web.archive.org/web/20250604203736/https://3asyice.github.io/SixOhNine/script/sd/609.html"/>609 Carvalho/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604203538/https://3asyice.github.io/SixOhNine/script/sd/608.html"/>608 gustavo drescher/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604203337/https://3asyice.github.io/SixOhNine/script/sd/607.html"/>607 Diniz Chimainski/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604203010/https://3asyice.github.io/SixOhNine/script/sd/606.html"/>606 Micael Schumacher/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604202744/https://3asyice.github.io/SixOhNine/script/sd/605.html"/>605 allan gabriel/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604202417/https://3asyice.github.io/SixOhNine/script/sd/604.html"/>604 Richard rafael/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604201720/https://3asyice.github.io/SixOhNine/script/sd/603.html"/>603 Guilherme Maidana/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604201248/https://3asyice.github.io/SixOhNine/script/sd/602.html"/>602 samuel weber/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604200937/https://3asyice.github.io/SixOhNine/script/sd/601.html"/>601 gabriel tassinari/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604200544/https://3asyice.github.io/SixOhNine/script/sd/39.html"/>39 grégori forgerini/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604200259/https://3asyice.github.io/SixOhNine/script/sd/37.html"/>37 augusto bergamnn/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604200120/https://3asyice.github.io/SixOhNine/script/sd/03.html"/>03 gabriel azevedo/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604195945/https://3asyice.github.io/SixOhNine/script/cel/soares.html"/>## everton soares bio/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250604194006/https://outraspalavras.net/outrasmidias/pioneiro-da-internet-brasileira-conta-como-se-vigia-a-rede/"/>backdoor e vigilância/</a><p class="date">jun 04, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250531193513/https://www.big-loser.site/M/Maio/Eterna%20Vigil%C3%A2ncia%20(Edward%20S_%20(Z-Library)"/>edward snowden.pdf/</a><p class="date">may 31, 2025 </p> <hr> </div>
+<div class="link-item">
+<a href="https://web.archive.org/web/20250529175736/https://3asyice.github.io/Spck-Test/butterfly-effect"/>teoria do caos/</a><p class="date">may 29, 2025 </p> <hr> </div>
 <div class="link-item">
 <a href="https://web.archive.org/web/20250529172715/https://www.big-loser.site/Caso/001"/>Caso 001/</a><p class="date">may 29, 2025 </p> <hr> </div>
 <div class="link-item">
